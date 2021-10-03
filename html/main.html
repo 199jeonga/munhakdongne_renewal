@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- main.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/main.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <div class="head_inner clearfix">
+        <h1>문학동네</h1>
+        <div id="headerNavIcon" class="clearfix">
+          <div class="search_btn"></div>
+          <div class="gnb_btn"></div>
+          <div id="gnb"></div>
+          
+        </div>
+      </div><!-- //head_inner-->
+    </header><!-- //headBox-->
+
+
+    <section id="viewBox">
+      <h2 class="blind">main view</h2>
+        <ul class="view_indcator">
+          <li class="view_indcator_btn indcator_btn_click"></li>
+          <li class="view_indcator_btn"></li>
+          <li class="view_indcator_btn"></li>
+          <li class="view_indcator_btn"></li>
+          <li class="view_indcator_btn"></li>
+          <li class="view_indcator_btn"></li>
+        </ul><!-- //view_indcator-->
+    </section><!-- //viewBox-->
+
+
+    <section id="mdpickBox">
+      <div class="mdpick_inner">
+        <h2>추천도서</h2>
+        <ul class="mdpick_tab">
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <li class="mdp_tab_con">한국문학</li>
+            <!-- <li class="mdp_tab_con">한국문학</li> -->
+        </ul>
+        <ul class="mdpick_booklist_area">
+          <li class="mdp_booklist_con"></li>
+          <li class="mdp_booklist_con"></li>
+          <li class="mdp_booklist_con"></li>
+          <li class="mdp_booklist_con"></li>
+          <li class="mdp_booklist_con"></li>
+          <!-- <li class="mdp_booklist_con"></li> -->
+        </ul>
+      </div><!-- //mdpick_inner-->
+    </section><!-- //mdpickBox-->
+
+
+    <section id="newbookBox">
+      <div class="newbook_inner">
+        <div class="newbook_title clearfix">
+          <h2>신간도서</h2>
+          <div class="moreview_btn">moreview</div>
+        </div>
+        <ul class="newbook_booklist_area clearfix">
+          <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li>
+          <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li>
+          <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li>
+          <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li>
+          <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li>
+          <!-- <li>
+            <div class="nb_img"></div>
+            <p class="nb_title">책 제목</p>
+            <p class="nb_writer">작가명</p>
+          </li> -->
+        </ul>
+        <div class="newbook_scroll">
+          <div class="newbook_scroll_bar"></div>
+        </div>
+      </div><!-- //newbook_inner-->
+    </section><!-- //newbookBox-->
+
+
+    <section id="dokpaBox">
+      <div class="dokpa_inner clearfix">
+        <h2 class="blind">완독챌린지 독파</h2>
+        <div id="dokpa_title">
+          <div class="dokpa_tab_challenge"></div>
+          <div class="dokpa_tab_open"></div>
+          <div class="dokpa_tab_bookex"></div>
+        </div>
+        <div class="dokpa_area">
+          <div class="dokpa_con">
+            <div class="dokpa_con_focus">
+              <p class="sub"></p>
+              <p class="title"></p>
+              <hr>
+              <p class="date"></p>
+              <div class="chappenge_btn"></div>
+          </div>
+          </div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+          <div class="dokpa_con"></div>
+
+        </div>
+      </div><!-- //dokpa_inner-->
+    </section><!-- //dokpaBox-->
+
+
+    <section id="awardBox">
+      <div class="award_title">
+        <div class="title_inner clearfix">
+          <h2>수상도서</h2>
+          <div class="award_tab title_tab_btn"></div>
+        </div>
+      </div><!-- // award_title -->
+      <div class="award_inner am_inner_area">
+        <ul class="book_part clearfix">
+          <li class="book_con">
+            <div class="book_con_click">
+              <p class="title"></p>
+              <p class="content"></p>
+            </div>
+          </li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+        </ul>
+        <div class="lrmore_btn"></div>
+      </div><!-- //award_inner -->
+    </section><!-- //awardBox -->
+
+
+    <section id="bookclubBox">
+      <h2 class="blind">북클럽</h2>
+      <div class="bookclub_inner">
+          <p class="title"></p>
+          <p class="sub_title"></p>
+          <p class="content"></p>
+      </div><!-- //bookclub_inner -->
+      <div class="bookclub_bg"></div>
+    </section><!-- //bookclubBox -->
+
+
+    <section id="shopBox">
+      <div class="shop_inner">
+        <div class="shop_title title_inner clearfix">
+          <h2>shop</h2>
+          <div class="moreview_btn"></div>
+        </div>
+        <ul class="shop_area">
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+          <li class="shop_con"></li>
+        </ul>
+      </div><!-- //shop_inner -->
+    </section><!-- //shopBox -->
+
+
+    <section id="magazineBox">
+      <div class="magazine_title">
+        <div class="title_inner clearfix">
+          <h2>Magazine</h2>
+          <div class="magazine_tab title_tab_btn"></div>
+        </div>
+      </div><!-- //magazine_title -->
+      <div class="magazine_inner am_inner_area">
+        <ul class="book_part clearfix">
+          <li class="book_con">
+            <div class="book_con_click">
+              <p class="title"></p>
+              <p class="content"></p>
+          </div>
+          </li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+          <li class="book_con"></li>
+        </ul>
+        <div class="lrmore_btn"></div>
+      </div>
+    </section><!-- //magazineBox -->
+
+
+    <section id="webzineBox">
+      <div class="webzine_inner">
+        <h2>Webzine</h2>
+        <div class="webzine_area clearfix">
+          <div class="wz_account_part">
+            <p></p>
+            <p></p>
+          </div><!-- //wz_account_part -->
+          <div class="wz_title_part">
+            <div class="wz_serial">연재중인 작품</div>
+            <div class="wz_finished">완결된 작품</div>
+            <div class="wz_published">출간된 작품</div>
+          </div><!-- //wz_title_part -->
+          <div class="wz_con_part">
+            <div class="wz_con_date">월요일</div>
+            <div class="wz_con_title"></div>
+            <div class="wz_con_episode"></div>
+          </div><!-- //wz_con_part -->
+        </div><!-- //webzine_area-->
+      </div><!-- //webzine_inner -->
+    </section><!-- //webzineBox -->
+
+
+    <section id="brandlistBox">
+      <div class="brandlist_inner">
+        <h2>문학동네 출판그룹</h2>
+        <div class="moreview_btn">moreview_btn</div>
+      </div><!-- //brandlist_inner -->
+      <div class="brandlist_wrap">
+        <ul class="brandlist_part_top">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul class="brandlist_part_bottom">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div><!-- //brandlist_con -->
+    </section><!-- //brandlistBox -->
+
+
+    <footer id="footBox">
+      <h2 class="blind">company info</h2>
+      <div class="foot_inner">
+        <div class="clearfix">
+          <ul class="footer_nav clearfix">
+            <li>개인정보처리방침</li>
+            <li>이용약관</li>
+            <li>제휴문의</li>
+            <li>채용안내</li>
+            <li>찾아오시는 길</li>
+            <li>전화번호 안내</li>
+          </ul>
+          <ul class="sns_link clearfix">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <p class="address"></p>
+      </div><!-- //foot_inner -->
+    </footer><!-- //footBox -->
+  </div><!--#wrap-->
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>
