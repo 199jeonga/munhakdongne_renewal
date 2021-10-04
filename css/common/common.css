@@ -25,9 +25,9 @@ h2{
 }
   .title_tab_btn{
     float:right;
-    width: 285px; height: 40px;
-    margin-top: 2px;
-    background-color: #c8a;
+    width: 140px; height: 40px;
+    margin-top: 2px; margin-right: 2px;
+    background-color: #c8a; 
   }
 .am_inner_area{
 width: 1170px; height: 400px;
