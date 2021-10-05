@@ -15,7 +15,11 @@ h2{
 }
 .moreview_btn{
   width: 172px; height: 35px;
-  background-color: #ff0;
+}
+
+button{
+  width: 100%; height: 100%;
+  background-color: #aaa;
 }
 
 /* award && magazine=================================== */
@@ -23,8 +27,12 @@ h2{
   width: 1144px; height: 45px;
   margin: 0 auto;
 }
-  .title_tab_btn{
+  .award_tab{
     float:right;
+    width: auto; height: auto;  
+  }
+  .title_tab_btn{
+    float: left;
     width: 140px; height: 40px;
     margin-top: 2px; margin-right: 2px;
     background-color: #c8a; 
@@ -44,12 +52,29 @@ background-color: #fff;
   }
   .book_con:last-child{margin-right: 0;}
     .book_con_click{width: 100%; height: auto; padding-top: 33px;}
+    .book_con_click a{display: block; width: 100%; height: 100%;}
       .title{width: 100%; height: 25px; margin-bottom: 26px; background-color: #fff;}
       .content{width: 100%; height: auto; min-height: 220px; background-color: #fff;}
 
 
-  .lrmore_btn{
-    width: 260px; height: 35px;
-    margin: 0 auto; margin-top: 50px;
+
+  .lr_btn .next{
+    position: absolute; top: 650px; left: 50%; margin-left: 70px;
+    width: 35px; height: 35px;
     background-color: #acc;
+  }
+  .lr_btn .prev{
+    position: absolute; top: 650px; left: 50%; margin-left: -112px;
+    width: 35px; height: 35px;
+    background-color: #acc;
+  }
+  .more_btn{
+    position: absolute; top: 650px; left: 50%; margin-left: -74px;
+    width: 140px; height: 35px;
+  }
+  .more_btn a{
+    display: block; 
+    width: 100%; height: 100%;
+    text-align: center; line-height: 35px;
+    background-color: #a8c;
   }

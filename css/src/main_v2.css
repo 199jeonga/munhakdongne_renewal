@@ -20,21 +20,30 @@ html, body{width: 100%; height: 100%;}
       font-weight: 900; font-size: 40px; line-height: 60px;
     }
     #headerNavIcon{
+      position: relative;
       float:right;
-      margin-top: 10px;
+      margin-top: 5px;
       width: 100px; height: auto;
     }
-      .search_btn{
-        float: left;
-        width: 40px; height: 40px; 
-        margin-right: 20px;
+    .gnb_btn{
+      position: absolute; top: 5px; right: 20px;
+      float: left;
+      width: 50px; height: 50px;
+      background-color: #aaa;
+    }
+      .gnb_btn button{
+        width: 100%; height: 100%;
         background-color: #aaa;
       }
-      .gnb_btn{
-        float: left;
-        width: 40px; height: 40px;
-        background-color: #aaa;
-      }
+    .search_btn{
+      position: absolute; top: 5px; right: 100px;
+      float: left;
+      width: 50px; height: 50px; 
+    }
+      .search_btn button{
+      width: 100%; height: 100%;
+      background-color: #aaa;
+    }
 
 
 /* viewBox
@@ -52,14 +61,18 @@ html, body{width: 100%; height: 100%;}
   }
     .view_indcator_btn{
       width: 50px; height: 8px;
+      cursor: pointer;
+    }
+    .view_indcator_btn a{
+      display: block;
+      width: 100%; height: 100%;
       border-radius: 5px;
       background-color: rgba(0,0,0,0.7);
-      cursor: pointer;
     }
     /* .view_indcator_btn:last-child{
       margin-right: 0;
     } */
-    .indcator_btn_click{
+    .indcator_btn_click a{
       background-color: #fff;
     }
 
@@ -67,14 +80,14 @@ html, body{width: 100%; height: 100%;}
 /* mdpickBox
 ============================================================================== */
 #mdpickBox{
+  position: relative;
   overflow: hidden;
-  width: 100%; height: auto;
+  width: 100%; height: 700px;
   padding: 125px 0;
 }
   .mdpick_inner{
-    width: 1294px; height: 450px;
-    margin-left: 147px;
-
+    position: absolute; top: 125px; left: 50%; margin-left: -40%;
+    width: 80%; height: 450px;
   }
     /* .mdpick_inner h2{} */
     .mdpick_tab{
@@ -85,15 +98,18 @@ html, body{width: 100%; height: 100%;}
         float:left;
         width: 125px; height: 30px;
         margin-right: 10px;
-        border-radius: 10px; box-shadow: 0px 5px 10px #eee;
-        background-color: #fff;
         cursor: pointer;
-      }
-      .mdp_tab_con:hover{
-        background-color: #EB4C38; color:#fff;
       }
       .mdp_tab_con:last-child{
         margin-right: 0;
+      }
+      .mdp_tab_con button{
+        width: 100%; height: 100%;
+        border-radius: 10px; box-shadow: 0px 5px 10px #eee;
+        background-color: #fff;
+      }
+      .mdp_tab_con button:hover{
+        background-color: #EB4C38; color:#fff;
       }
     .mdpick_booklist_area{
       width: 2000px; height: 275px;
@@ -105,6 +121,10 @@ html, body{width: 100%; height: 100%;}
         border-radius: 10px; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
         background-color: #aaa;
       }
+      .mdp_booklist_con a{
+        display: block; width: 100%; height: 100%;
+        
+      }
       .mdp_booklist_con:last-chlid{
         margin-right: 0;
       }
@@ -114,20 +134,21 @@ html, body{width: 100%; height: 100%;}
 /* newbookBox
 ============================================================================== */
 #newbookBox{
-  overflow: hidden;
-  width: 100%; height: auto;
-  padding: 125px 0;
+  position: relative;
+  overflow: hidden; 
+  width: 100%; height: 700px;
+  padding: 125px 0; 
 }
   .newbook_inner{
-    width: 1294px; height: auto; min-height: 450px;
-    margin-left: 147px;
+    position: absolute; top: 125px; left: 50%; margin-left: -40%;
+    width: 80%; height: 450px;
   }
     .newbook_title{
-      width: 1140px;
+      width: 1140px; height: auto;
       margin-bottom: 38px;
     }
       .newbook_title h2{
-        float: left;
+        float: left; width: auto; height: auto;
       }
       .newbook_title .moreview_btn{
         float: right;
@@ -144,6 +165,9 @@ html, body{width: 100%; height: 100%;}
       }
       .newbook_booklist_area li:last-child{
         margin-right: 0px;
+      }
+      .newbook_booklist_area a{
+        display: block; width: 100%; height: 100%;
       }
         .nb_img{
           width: 100%; height: 265px;
@@ -172,16 +196,16 @@ html, body{width: 100%; height: 100%;}
 /* dokpaBox
 ============================================================================== */
 #dokpaBox{
-  position: relative;
-  width: 100%; height: auto;
-  padding: 240px 0;
+  position: relative; 
+  width: 100%; height: 2200px;
+  /* height: auto; padding: 240px 0;  */
 }
   .dokpa_inner{
+    position: absolute; top: 200px; left: 0; right: 0; margin: 0 auto;
     width: 1250px; height: auto; min-height: 700px;
     margin: auto;
   }
     #dokpa_title{
-      position: absolute; top: 250px; left: 50%; margin-left: -630px;
       float: left;
       width: 440px; height: 600px;
       margin-top: 56px; padding: 0 5px; box-sizing: border-box;
@@ -200,6 +224,7 @@ html, body{width: 100%; height: 100%;}
       .dokpa_tab_bookex{
         margin-right: 0;
       }
+      /* #dokpa_title button{} */
     .dokpa_area{
       float: right;
       width: 780px; height: auto; min-height: 1400px;
@@ -239,16 +264,19 @@ html, body{width: 100%; height: 100%;}
             background-color: #fff;
           }
           .chappenge_btn{
-            width: 150px; height: 25px;
-            margin: 0 auto; margin-top: 140px;
+            width: 150px; height: 35px;
+            margin: 0 auto; margin-top: 120px;
             background-color: #fff;
           }
+          /* .chappenge_btn button{width: 100%; height: 100%;} */
+          
 
 
 
 /* awardBox
 ============================================================================== */
 #awardBox{
+  position: relative;
   width: 100%; height: auto;
   padding: 105px 0;
 }
@@ -266,7 +294,17 @@ html, body{width: 100%; height: 100%;}
   .award_inner{
   }
     /*.book_part{ }
-    .lrmore_btn{} */
+    .lrmore_btn{}
+    .lrmore_btn .next{
+    }
+    .lrmore_btn div{
+    }
+    .lrmore_btn a{
+    }
+    .lrmore_btn .prev{
+    }
+    */
+
 
 
 /* bookclubBox
@@ -298,7 +336,7 @@ html, body{width: 100%; height: 100%;}
   }
 .bookclub_bg{
   width: 100%; height: 355px;
-  background-color: rgba(177,177,177,0.1);
+  background-color: rgba(177,177,177,0.5);
 }
 
 /* shopBox
@@ -306,7 +344,7 @@ html, body{width: 100%; height: 100%;}
 #shopBox{
   width: 100%; height: auto;
   padding: 80px 0;
-  background-color: rgba(177,177,177,0.1);
+  background-color: rgba(177,177,177,0.5);
 }
 .shop_inner{
   width: 1140px; height: 680px;
@@ -335,6 +373,10 @@ html, body{width: 100%; height: 100%;}
   }
   .shop_con:nth-child(4n){margin-right: 0;}
   .shop_con:nth-last-child(-n+4){margin-bottom: 0;}
+  .shop_con a{
+    display: block;
+    width: 100%; height: 100%;
+  }
 
 
 /* magazineBox
