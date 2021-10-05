@@ -24,8 +24,10 @@
       <div class="head_inner clearfix">
         <h1><a href="./main.html" title="문학동네">문학동네</a></h1>
         <div id="headerNavIcon" class="clearfix">
-          <div class="gnb_btn"><button type="button">메뉴</button></div>
-          <div class="search_btn"><button type="button">검색</button></div>
+          <div class="headBox_btn">
+            <div class="gnb_btn"><button type="button">메뉴</button></div>
+            <div class="search_btn"><button type="button">검색</button></div>
+          </div>
           <div id="gnb" hidden></div>
         </div>
       </div><!-- //head_inner-->
@@ -76,7 +78,7 @@
       <div class="newbook_inner">
         <div class="newbook_title clearfix">
           <h2>신간도서</h2>
-          <div class="moreview_btn"><button type="button">moreview</button></div>
+          <div class="moreview_btn"><a href="#">moreview</a></div>
         </div>      
         <ul class="newbook_booklist_area clearfix">
           <li>
@@ -145,16 +147,16 @@
                 <p class="title"></p>
                 <hr>
                 <p class="date"></p>
-                <div class="chappenge_btn"><button type="button">자세히 보기</button></div>
+                <div class="challenge_btn"><a href="#">자세히 보기</a></div>
           </div>
           </div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
-          <div class="dokpa_con"><a href="#"></a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
+          <div class="dokpa_con"><a href="#">content</a></div>
         </div>
       </div><!-- //dokpa_inner-->
     </section><!-- //dokpaBox-->
@@ -199,7 +201,6 @@
           <p class="sub_title"></p>
           <p class="content"></p>
       </div><!-- //bookclub_inner -->
-      <div class="bookclub_bg"></div>
     </section><!-- //bookclubBox -->
 
 
@@ -207,7 +208,7 @@
       <div class="shop_inner">
         <div class="shop_title title_inner clearfix">
           <h2>shop</h2>
-          <div class="moreview_btn"></div>
+          <div class="moreview_btn"><a href="#">moreview</a></div>
         </div>
         <ul class="shop_area">
           <li class="shop_con"><a href="#">list</a></li>
@@ -227,23 +228,30 @@
       <div class="magazine_title">
         <div class="title_inner clearfix">
           <h2>Magazine</h2>
-          <div class="magazine_tab title_tab_btn"></div>
+          <div class="magazine_tab">
+            <button class="title_tab_btn" type="button">계간 문학동네</button>
+            <button class="title_tab_btn" type="button">미스테리아</button>
+          </div>
         </div>
       </div><!-- //magazine_title -->
       <div class="magazine_inner am_inner_area">
+        <div class="lr_btn">
+          <button class="next" type="button">next</button>
+          <button class="prev" type="button">prev</button>
+      </div>
         <ul class="book_part clearfix">
           <li class="book_con">
             <div class="book_con_click">
-              <p class="title"></p>
-              <p class="content"></p>
-          </div>
+                <p class="title"><a href="#">title</a></p>
+                <p class="content"><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</a></p>
+            </div>
           </li>
-          <li class="book_con"></li>
-          <li class="book_con"></li>
-          <li class="book_con"></li>
-          <li class="book_con"></li>
+          <li class="book_con">list</li>
+          <li class="book_con">list</li>
+          <li class="book_con">list</li>
+          <li class="book_con">list</li>
         </ul>
-        <div class="lrmore_btn"></div>
+        <div class="more_btn"><a href="#">More view</a></div>
       </div>
     </section><!-- //magazineBox -->
 
@@ -274,32 +282,32 @@
     <section id="brandlistBox">
       <div class="brandlist_inner">
         <h2>문학동네 출판그룹</h2>
-        <div class="moreview_btn">moreview_btn</div>
+        <div class="moreview_btn"><a href="#">moreview_btn</a></div>
       </div><!-- //brandlist_inner -->
       <div class="brandlist_wrap">
         <ul class="brandlist_part_top">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
+          <li><a href="#">brend_list</a></li>
         </ul>
         <ul class="brandlist_part_bottom">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
+          <li><a href="#">brand_list</a></li>
         </ul>
       </div><!-- //brandlist_con -->
     </section><!-- //brandlistBox -->
