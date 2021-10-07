@@ -13,7 +13,7 @@
 
   <script src="../js/common/modernizr-custom.js"></script>
 
-  <title></title>
+  <title>문학동네</title>
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../favicon.png">
 </head>
@@ -35,7 +35,7 @@
 
 
     <section id="viewBox">
-      <h2 class="blind">main view</h2>
+      <h2 class="blind">메인광고</h2>
         <ul class="view_indcator">
           <li class="view_indcator_btn indcator_btn_click"><a href="#">v_list</a></li>
           <li class="view_indcator_btn"><a href="#">v_list</a></li>
@@ -76,10 +76,7 @@
 
     <section id="newbookBox">
       <div class="newbook_inner">
-        <div class="newbook_title clearfix">
-          <h2>신간도서</h2>
-          <div class="moreview_btn"><a href="#">moreview</a></div>
-        </div>      
+        <h2>신간도서</h2>    
         <ul class="newbook_booklist_area clearfix">
           <li>
             <a href="#">
@@ -134,6 +131,7 @@
         <div class="newbook_scroll">
           <div class="newbook_scroll_bar"></div>
         </div>
+        <div class="moreview_btn"><a href="#">moreview</a></div>
       </div><!-- //newbook_inner-->
     </section><!-- //newbookBox-->
 
@@ -142,9 +140,18 @@
       <div class="dokpa_inner clearfix">
         <h2 class="blind">완독챌린지 독파</h2>
         <div id="dokpa_title">
-          <div class="dokpa_tab_challenge"><button type="button">독파챌린지</button></div>
-          <div class="dokpa_tab_open"><button type="button">오픈 예정 챌린지</button></div>
-          <div class="dokpa_tab_bookex"><button type="button">책구절</button></div>
+          <div class="dokpa_tab_challenge">
+              <h3 class="blind">독파챌린지</h3>
+              <button type="button">독파챌린지</button>
+          </div>
+          <div class="dokpa_tab_open">
+            <h3 class="blind">오픈 예정 챌린지</h3>
+            <button type="button">오픈 예정 챌린지</button>
+          </div>
+          <div class="dokpa_tab_bookex">
+            <h3 class="blind">책구절</h3>
+            <button type="button">책구절</button>
+          </div>
         </div>
         <div class="dokpa_area">
           <div class="dokpa_con">
@@ -186,8 +193,11 @@
         <ul class="book_part clearfix">
           <li class="book_con">
             <div class="book_con_click">
-              <p class="title"><a href="#">title</a></p>
-              <p class="content"><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</a></p>
+              <a href="#">
+                <p class="title">title></p>
+                <p class="content">Lorem ipsum, dolor sit amet consectetur
+                  adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</p>
+              </a>
             </div>
           </li>
           <li class="book_con"><a href="#">list</a></li>
@@ -203,9 +213,16 @@
     <section id="bookclubBox">
       <h2 class="blind">북클럽</h2>
       <div class="bookclub_inner">
-          <p class="title"></p>
-          <p class="sub_title"></p>
-          <p class="content"></p>
+          <p class="title">title</p>
+          <p class="sub_title">sub_title</p>
+          <p class="content">
+            contentcontentcontentcontentcontent<br />
+            contentcontentcontentcontentcontent<br />
+            contentcontentcontentcontentcontent<br />
+            contentcontentcontentcontentcontent<br />
+            contentcontentcontentcontentcontent<br />
+          </p>
+          <div class="bookclub_join"><a href="#">북클럽 가입하기</a></div>
       </div><!-- //bookclub_inner -->
     </section><!-- //bookclubBox -->
 
@@ -213,7 +230,7 @@
     <section id="shopBox">
       <div class="shop_inner">
         <div class="shop_title title_inner clearfix">
-          <h2>shop</h2>
+          <h2>북클럽 굿즈</h2>
           <div class="moreview_btn"><a href="#">moreview</a></div>
         </div>
         <ul class="shop_area">
@@ -233,7 +250,7 @@
     <section id="magazineBox">
       <div class="magazine_title">
         <div class="title_inner clearfix">
-          <h2>Magazine</h2>
+          <h2>매거진</h2>
           <div class="magazine_tab">
             <button class="title_tab_btn" type="button">계간 문학동네</button>
             <button class="title_tab_btn" type="button">미스테리아</button>
@@ -248,8 +265,10 @@
         <ul class="book_part clearfix">
           <li class="book_con">
             <div class="book_con_click">
-                <p class="title"><a href="#">title</a></p>
-                <p class="content"><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</a></p>
+              <a href="#">
+                <p class="title">title</p>
+                <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</p>
+              </a>
             </div>
           </li>
           <li class="book_con">list</li>
@@ -264,16 +283,25 @@
 
     <section id="webzineBox">
       <div class="webzine_inner">
-        <h2>Webzine</h2>
+        <h2>웹진</h2>
         <div class="webzine_area clearfix">
           <div class="wz_account_part">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, eaque!</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, eaque!</p>
           </div><!-- //wz_account_part -->
           <div class="wz_title_part">
-            <div class="wz_serial"><button type="button">연재중인 작품</button></div>
-            <div class="wz_finished"><button type="button">완결된 작품</button></div>
-            <div class="wz_published"><button type="button">출간된 작품</button></div>
+            <section class="wz_serial">
+              <h3 class="blind">연재중인 작품</h3>
+              <button type="button">연재중인 작품</button>
+            </section>
+            <section class="wz_finished">
+              <h3 class="blind">완결된 작품</h3>
+              <button type="button">완결된 작품</button>
+            </section>
+            <section class="wz_published">
+              <h3 class="blind">출간된 작품 작품</h3>
+              <button type="button">출간된 작품</button>
+            </section>
           </div><!-- //wz_title_part -->
           <div class="wz_con_part">
             <div class="wz_con_info">
@@ -330,31 +358,40 @@
 
 
     <footer id="footBox">
-      <h2 class="blind">company info</h2>
-      <div class="foot_inner">
+      <h2 class="blind">회사정보</h2>
+      <section class="foot_inner">
         <div class="clearfix">
-          <ul class="footer_nav clearfix">
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">제휴문의</a></li>
-            <li><a href="#">채용안내</a></li>
-            <li><a href="#">찾아오시는 길</a></li>
-            <li><a href="#">전화번호 안내</a></li>
-          </ul>
-          <ul class="sns_link clearfix">
-            <li><a href="#">sns</a></li>
-            <li><a href="#">sns</a></li>
-            <li><a href="#">sns</a></li>
-            <li><a href="#">sns</a></li>
-            <li><a href="#">sns</a></li>
-          </ul>
+          <div class="footer_nav">
+            <h3 class="blind">푸터 네비게이션</h3>
+            <ul class="clearfix">
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">채용안내</a></li>
+              <li><a href="#">찾아오시는 길</a></li>
+              <li><a href="#">전화번호 안내</a></li>
+            </ul>
+          </div>
+          <div class="sns_link">
+            <h3 class="blind">SNS 바로가기</h3>
+            <ul class="clearfix">
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+            </ul>
+          </div>
         </div>
-        <address>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          <p>Nemo odit, repellat nisi ad nesciunt deserunt totam rerum doloremque, </p>
-          <p>amet voluptatum dolorem sapiente quis dolor vero impedit cum possimus deleniti dignissimos.</p>
-        </address>
-      </div><!-- //foot_inner -->
+        <div class="company_address">
+          <h3 class="blind">주소</h3>
+          <address>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p>Nemo odit, repellat nisi ad nesciunt deserunt totam rerum doloremque, </p>
+            <p>amet voluptatum dolorem sapiente quis dolor vero impedit cum possimus deleniti dignissimos.</p>
+          </address>
+        </div>
+      </section><!-- //foot_inner -->
     </footer><!-- //footBox -->
   </div><!--#wrap-->
   <!-- script -->

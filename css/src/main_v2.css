@@ -1,3 +1,4 @@
+@charset "UTF-8";
 
 html, body{width: 100%; height: 100%;}
 #wrap{width: 1280px; height: auto; padding-top: 100px;}
@@ -127,7 +128,7 @@ html, body{width: 100%; height: 100%;}
         display: block; width: 100%; height: 100%;
         
       }
-      .mdp_booklist_con:last-chlid{
+      .mdp_booklist_con:last-child {
         margin-right: 0;
       }
 
@@ -145,23 +146,12 @@ html, body{width: 100%; height: 100%;}
     position: absolute; top: 125px; left: 50%; margin-left: -40%;
     width: 80%; height: 450px;
   }
-    .newbook_title{
-      width: 1140px; height: auto;
-      margin-bottom: 38px;
+    .newbook_inner h2{
+      float: left; width: auto; height: auto; margin-bottom: 38px;
     }
-      .newbook_title h2{
-        float: left; width: auto; height: auto;
-      }
-      .newbook_title .moreview_btn{
-        float: right;
-        margin-top: 5px;
-      }
-      .newbook_title .moreview_btn a{
-        display: block;
-      }
     .newbook_booklist_area{
       width: 2000px; height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 30px; margin-top: 100px;
     }
       .newbook_booklist_area li{
         float: left;
@@ -189,13 +179,19 @@ html, body{width: 100%; height: 100%;}
           width: 100%; height: auto;
           font-size: 18px; color:#757575;
         }
-    .newbook_scroll{
-      width: 1140px; height: 6px;
-      background-color: #eee;
-    }
-      .newbook_scroll_bar{
-        width: 25%; height:4px;
-        background-color:#333;
+      .newbook_scroll{
+        width: 1140px; height: 6px;
+        background-color: #eee;
+      }
+        .newbook_scroll_bar{
+          width: 25%; height:4px;
+          background-color:#333;
+        }
+      .newbook_inner .moreview_btn{
+        position:absolute; top: 5px; right: 0;
+      }
+      .newbook_inner .moreview_btn a{
+        display: block;
       }
 
 /* dokpaBox
@@ -326,6 +322,7 @@ html, body{width: 100%; height: 100%;}
   /* position: absolute; left:50%; top: 50%; margin-left: -400px; margin-top: -230px; */
   width: 800px; height: 460px;
   box-sizing: border-box;  padding: 68px 0; margin: auto; 
+  text-align:center;
   border-radius: 10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
   background-color: #fff;
 }
@@ -335,12 +332,21 @@ html, body{width: 100%; height: 100%;}
   }
   .sub_title{
     width: 100%; height: 34px;
-    margin: 15px 0 68px;
+    margin: 15px 0 40px;
     background-color: #acc;
   }
   .content{
     width: 100%; height: auto; min-height: 165px;
-    background-color: #acc;
+    background-color: #acc; margin-bottom: 10px;
+  }
+  .bookclub_join{
+    width: 200px; height: 40px; 
+    margin: auto;
+  }
+  .bookclub_join a{
+    display: block;
+    width: 100%; height: 100%;
+    background-color: #aad;
   }
 
 
@@ -390,7 +396,7 @@ html, body{width: 100%; height: 100%;}
 #magazineBox{
   position: relative;
   width: 100%; height: auto;
-  padding: 105px 0;
+  padding-bottom: 105px;
 }
 .magazine_title{
   width: 100%; height: 170px;
@@ -412,7 +418,7 @@ html, body{width: 100%; height: 100%;}
 ============================================================================== */
 #webzineBox{
   width: 100%; height: auto;
-  padding: 105 0px; margin-bottom: 90px;
+  padding: 105px 0; margin-bottom: 90px;
 }
 .webzine_inner{
   width: 1144px; height: 690px;
@@ -587,32 +593,38 @@ html, body{width: 100%; height: 100%;}
       width: 730px; height: auto;
       background-color: #aaa;
     }
+    .footer_nav ul{
+      width: 100%; height: 25px;
+    }
       .footer_nav li{
         float:left;
-        width: auto; height: 25px;
+        width: auto; height: 100%;
         margin-right: 40px;
         background-color: #fff;
       }
       .footer_nav li:last-child{margin-right: 0;}
-
     .sns_link{
       float:right;
       width: 270px; height: auto;
       background-color: #aaa;
     }
+    .sns_link ul{
+      width: 100%; height: 30px;
+    }
       .sns_link li{
         float: left;
-        width: 30px; height: 30px;
+        width: 30px; height: 100%;
         margin-right: 30px;
         background-color: #fff;
       }
       .sns_link li:last-child{margin-right: 0;}
 
-      address{
-      width: 100%; height: 60px;
-      color:#fff;
+  .company_address{
+  width: 100%; height: 60px;
+  color:#fff;
+  }
+    address{width: 100%; height: 100%;}
+      address p{
+      width: 100%; height: auto;
+      background-color: #aaa; 
       }
-        address p{
-        width: 100%; height: auto;
-        background-color: #aaa; 
-        }
