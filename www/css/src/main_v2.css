@@ -45,6 +45,74 @@ html, body{width: 100%; height: 100%;}
         /* width: 100%; height: 100%; */
         background-color: #aaa;
       }
+      
+      /* #gnbBox------------------------------------------------ */
+      #gnbBox{
+        position:fixed; left: 0; top: 0;
+        width: 100%; height: 100%;
+      }
+      .gnb_inner{
+        position: absolute; top: 50%; left: 50%; 
+        width: 1100px; height: auto;
+        color: #fff;
+        margin-top: -265px; margin-left: -577px;
+      }
+      .gnb_inner>li{
+        float: left;
+        width: 175px; height: 527px;
+        margin-right: 10px;
+        background-color: #aad;
+      }
+      .gnb_inner>li:last-child{
+        margin-right: 0;
+      }
+      .gnb_inner_title{
+        width: 100%; height: auto;
+      }
+      .gnb_inner_title a{
+          display: block;
+          width: 100%; height: 50px;
+          border-bottom: 2px solid #fff;
+          background-color: #faf;
+        }
+      .gnb_inner_con{
+        width: 100%; height: auto;
+      }
+        .gnb_inner_con a{
+          display: block;
+          width: 100%; height: 55px;
+          text-indent:10px;
+          border-bottom: 1px solid #fff;
+          background-color: #aaa;
+        }
+        .gnb_sns{
+          width: 100%; height: auto;
+          text-indent:10px;
+          padding: 2px;
+          background-color: #a5a;
+        }
+        .gnb_sns ul{
+          width: 100%; height: 100%;
+        }
+          .gnb_sns a{
+            float: left;
+            width: 30px; height: 30px;
+            margin-right: 4px;
+            background-color: #333;
+          }
+          .gnb_sns a:nth-of-type(5){margin-right: 0;}
+      #gnb_close{
+        position: absolute; 
+        width: 50px; height: 50px;
+      }
+      #gnb_close button{
+        width: 100%; height: 100%;
+        background-color: #add;
+      }
+      .gnb_bg{
+        width: 100%; height: 100%;
+        background-color: #333;
+      }
 
 
 /* viewBox
@@ -221,10 +289,8 @@ html, body{width: 100%; height: 100%;}
         margin-top: 536px; margin-right: 3px;
         background-color: #fff;
       }
-      /* .dokpa_tab_challenge{
-      }
-      .dokpa_tab_open{
-      } */
+      /* .dokpa_tab_challenge{}
+      .dokpa_tab_open{} */
       .dokpa_tab_bookex{
         margin-right: 0;
       }
@@ -291,25 +357,6 @@ html, body{width: 100%; height: 100%;}
     padding-top: 104px; box-sizing: border-box;
     background-color: #333;
   }
-    /* .title_inner{} */
-      .title_inner h2{
-        float: left;
-        color:#fff;
-      }
-      /* .title_tab_btn{} */
-  .award_inner{
-  }
-    /*.book_part{ }
-    .lrmore_btn{}
-    .lrmore_btn .next{
-    }
-    .lrmore_btn div{
-    }
-    .lrmore_btn a{
-    }
-    .lrmore_btn .prev{
-    }
-    */
 
 
 
@@ -405,15 +452,6 @@ html, body{width: 100%; height: 100%;}
   padding-top: 104px; box-sizing: border-box;
   background-color: #333;
 }
-  /* .title_inner{} */
-    .magazine_title h2{
-      float: left;
-      color:#fff;
-    }
-    /* .magazine_tab{} */
-/* .magazine_inner{} */
-/* .book_con{} */
-/* .lrmore_btn{} */
 
 
 /* webzineBox
