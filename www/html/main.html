@@ -24,10 +24,8 @@
       <div class="head_inner clearfix">
         <h1><a href="./main.html" title="문학동네">문학동네</a></h1>
         <div id="headerNavIcon" class="clearfix">
-          <div class="headBox_btn">
             <div class="gnb_btn"><button type="button">메뉴</button></div>
             <div class="search_btn"><button type="button">검색</button></div>
-          </div>
         </div><!--.headerNavIcon-->
         <nav id="gnbBox">
           <h2 class="blind">navigation</h2>
@@ -107,9 +105,26 @@
           </div><!--gnb_wrapper-->
           <div class="gnb_bg"></div>
         </nav><!-- #gnbBox -->
-        <div id="searchBox">
-          
-        </div>
+        <form action="#" method="GET" class="searchBox">
+          <fieldset>
+            <legend class="blind">검색</legend>
+            <label for="search_area" class="blind">
+              검색할 내용을 입력하세요.
+            </label>
+            <input
+              type="text"
+              id="search_area"
+              value=""
+              placeholder="검색할 내용을 입력하세요."
+              />
+              <input 
+                type="image" 
+                class="search_img"
+                src="../img/search.png" 
+                alt="검색"
+                />
+          </fieldset>
+        </form>
       </div><!-- //head_inner-->
     </header><!-- //headBox-->
 
@@ -242,9 +257,17 @@
                 <hr>
                 <p class="date"></p>
                 <div class="challenge_btn"><a href="#">자세히 보기</a></div>
+            </div>
+          </div>
+          <div class="dokpa_con">
+            <div class="action">
+              <p class="sub"></p>
+              <p class="title"></p>
+              <hr>
+              <p class="date"></p>
+              <div class="challenge_btn"><a href="#">자세히 보기</a></div>
           </div>
           </div>
-          <div class="dokpa_con"><a href="#">content</a></div>
           <div class="dokpa_con"><a href="#">content</a></div>
           <div class="dokpa_con"><a href="#">content</a></div>
           <div class="dokpa_con"><a href="#">content</a></div>
