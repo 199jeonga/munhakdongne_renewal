@@ -1,5 +1,5 @@
 html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
-#wrap{width: 1280px; height: auto; padding-top: 100px;}
+#wrap{width: 100%; height: auto; padding-top: 100px;}
 
 /* headBox
 ============================================================================== */
@@ -49,8 +49,8 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
           }
             .gnb_inner>li{
               float: left;
-              width: 175px; height: 527px;
-              margin-right: 10px;
+              width: 200px; height: 527px;
+              margin-right: 25px;
               background-color: #aad;
             }
             .gnb_inner>li:last-child{
