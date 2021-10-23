@@ -1,13 +1,13 @@
 html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
-#wrap{width: 100%; height: auto; padding-top: 100px;}
+#wrap{width: 100%; height: auto;}
 
 /* headBox
 ============================================================================== */
 #headBox{
   position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 1000;
-  width: calc(100% - 35px); height: 100px;
+  width: 100%; height: 100px;
   padding: 20px;
-  background-color: #fff;
+  background-color: transparent;
 }
   .head_inner{
     position: relative;
@@ -18,18 +18,20 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
       float: left;
       width: auto; height: 60px;
       font-weight: 900; font-size: 40px; line-height: 60px;
+      color:#fff;
     }
         .gnb_btn, .search_btn{
         position:absolute; top: 5px; z-index: 100;
         width: 50px; height: 50px;
         background-color: #aaa;
       }
-      .gnb_btn{right: 70px;}
-      .search_btn{right: 0;}
+      .gnb_btn{right: 0;}
+      .search_btn{right:70px;}
       
+
         .gnb_wrapper{width: 100%; height: auto;}
         .search_wrapper{width: 100%; height: 50px;}
-      /* #gnbBox------------------------------------------------ */
+/* #gnbBox-------------------------------------------------------------------- */
       #gnbBox{
         display: none;
         position:fixed; left: 0; top: 0; z-index: 900;
@@ -75,19 +77,16 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
                 .gnb_sns{
                   width: 100%; height: auto;
                   text-indent:10px;
-                  padding: 2px;
+                  padding: 2px; padding-left:30px;
                   background-color: #a5a;
                 }
-                  .gnb_sns ul{
-                    width: 100%; height: 100%;
-                  }
                   .gnb_sns a{
                     float: left;
                     width: 30px; height: 30px;
                     margin-right: 4px;
                     background-color: #333;
                   }
-                  .gnb_sns a:nth-of-type(5){margin-right: 0;}
+                  .gnb_sns li:last-child a{margin-right: 0;}
           #gnb_close{
             position: absolute; top: 25px; right: 0;
             width: 50px; height: 50px;
@@ -129,7 +128,9 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
 ============================================================================== */
 #viewBox{
   position: relative;
-  width: 100%; height: 620px;
+  width: 100%; height: 720px;
+  padding-top: 100px;
+  background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
 }
   .view_slide_wrap{
     overflow:hidden;
@@ -143,7 +144,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   } 
   .view_slide_part{
     --view-slide-con:6;
-    width: calc(calc( 440px * var(--view-slide-con) ) - 40px); height: auto%;
+    width: calc(calc( 440px * var(--view-slide-con) ) - 40px); height: auto;
   }
   .view_slide_part li{
     float:left;
@@ -154,41 +155,41 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   }
   .view_slide_part li:last-child{margin-right: 0;}
 
-
-  .view_indcator{
+/* view_indicator-------------------------------------------------------------------- */
+  .view_indicator{
     position: absolute; left: 50%; bottom: 24px;
     width: 310px; height:auto;
     transform:translateX(-50%);
     text-align: center;
   }
-    .stop{
+    .view_stop{
       float: right;
       width: 20px; height: 20px;
       color:#757575; 
     }
-    .view_indcator ul{
+    .view_indicator ul{
       float: left;
       width: auto; height: auto;
     }
-    .view_indcator li{
+    .view_indicator li{
       float: left;
       width: 20px; height: 20px;
       margin-right: 22px;
       cursor: pointer;
     }
-    .view_indcator li:last-child{
+    .view_indicator li:last-child{
       margin-right: 0;
     }
-    .view_indcator li a{
+    .view_indicator li a{
       display: block;
       width: 100%; height: 100%;
       border-radius: 5px;
       border: 2px solid #757575; box-sizing: border-box;
     }
-    .view_indcator .indcator_btn_click{
+    .view_indicator .indicator_btn_click{
       width: 54px;
     }
-    .indcator_btn_click a{
+    .indicator_btn_click a{
       background-color: #757575;
     }
 
@@ -197,15 +198,14 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
 /* mdpickBox
 ============================================================================== */
 #mdpickBox{
-  width: 100%; height: 700px;
+  width: 100%; height: auto;
   padding: 125px 0;
 }
 .mdpick_inner{
-    position: relative;
-    width: 1100px; height: auto;
+  position: relative;
+    width: 1100px; height: 500px;
     margin: 0 auto;
   }
-    /* .mdpick_inner h2{} */
     .mdpick_tab_area{
       width: 1500px; height: 30px;
       margin: 44px 0;
@@ -250,26 +250,18 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
       .mdp_booklist_con:last-child {
         margin-right: 0;
       }
-      .mdp_moreview_link{
-        position:absolute; top: 0; right: 0; margin-top: 450px;
-        width: 140px; height: 30px;
-      }
-      .mdp_moreview_link a{
-        display: block; width: 100%; height: 100%;
-        background-color: #aaa;
-      }
 
 
 
 /* newbookBox
 ============================================================================== */
 #newbookBox{
-  width: 100%; height: 700px;
+  width: 100%; height: auto;
   padding: 125px 0; 
 }
 .newbook_inner{
-    position: relative;
-    width: 1100px; height: auto;
+  position: relative;
+    width: 1100px; height: 490px;
     margin:0 auto;
   }
     .newbook_inner h2{
@@ -350,12 +342,9 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
         margin-top: 536px; margin-right: 3px;
         background-color: #fff;
       }
-      /* .dokpa_tab_challenge{}
-      .dokpa_tab_open{} */
       .dokpa_tab_bookex{
         margin-right: 0;
       }
-      /* #dokpa_title button{} */
     .dokpa_area{
       float: right;
       width: 780px; height: auto; min-height: 1400px;
@@ -419,11 +408,9 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   }
 
 
-
 /* bookclubBox
 ============================================================================== */
 #bookclubBox{
-  /* position: relative; */
   width: 100%; height: auto;
   padding-top: 50px; padding-bottom: 100px;
   background: linear-gradient(to top, rgba(177,177,177,0.5) 50%, #fff 50%);
@@ -503,6 +490,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
 
 /* magazineBox
 ============================================================================== */
+
 #magazineBox{
   position: relative;
   width: 100%; height: auto;
@@ -538,7 +526,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   box-sizing: border-box;
   background-color: #acc;
 }
-/* wz_account_part==================== */
+/* wz_account_part-------------------------------------------------------------------- */
 .wz_account_part{
   padding-top: 160px; padding-left: 45px;
 }
@@ -552,7 +540,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
     background-color: #fff;
   }
 
-  /* wz_title_part==================== */
+  /* wz_title_part-------------------------------------------------------------------- */
 .wz_title_part{
   margin: 0 2px;
 }
@@ -584,7 +572,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   }
 
 
-/* wz_con_part==================== */
+/* wz_con_part-------------------------------------------------------------------- */
 .wz_con_part{
   padding: 40px;
 }
@@ -706,16 +694,17 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
       .footer_nav li{
         float:left;
         width: auto; height: 100%;
-        margin-right: 40px;
+        margin-right: 20px;
         line-height: 30px;
       }
       .footer_nav li:last-child{margin-right: 0;}
       .footer_nav a{
         display: block; 
         width: 100%; height: 100%;
-        color:#fff;
+        text-align: center;  color:#fff;
+        padding: 0 5px;
       }
-      .footer_nav a:hover{ font-weight: 700; background-color: #777;}
+      .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
 
 
     .sns_link{

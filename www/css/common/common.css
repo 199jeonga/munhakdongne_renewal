@@ -8,6 +8,7 @@
 }
 
 
+
 h2{
   width: auto; height: 45px;
   font-size: 38px; line-height: 45px;
@@ -19,17 +20,40 @@ h2{
   width: 100%; height: 100%;
   background-color: #add;
 }
-
 button{
   width: 100%; height: 100%;
 }
 
-/* award && magazine=================================== */
+/* prev & next btn design - #mdpickBox, #newbookBox ===================================*/
+
+.stop_btn{
+  position: absolute; bottom:0; right: 0;
+  width: 30px; height: 30px;
+  background-color: #ada;
+}
+.prev_next_btn{
+  position:absolute; bottom: 0; right: 35px;
+  width: 70px; height: auto;
+  color:#000;
+}
+.next_btn, .prev_btn{
+  width: 30px; height: 30px;
+  margin-right: 5px;
+  background-color: #aad;
+}
+.next_btn{
+  float:right;
+}
+.prev_btn{
+  float:left;
+}
+
+/* award && magazine =================================== */
 .title_inner{
   width: 1144px; height: 45px;
   margin: 0 auto;
 }
-  .title_inner h2, .magazine_title h2{
+  .title_inner h2{
     float: left;
     color:#fff;
   }
@@ -63,32 +87,20 @@ button{
     .book_con:last-child{margin-right: 0;}
       .book_con .action{width: 100%; height: auto; padding-top: 33px;}
       .book_con dl{width: 100%; height: 100%;}
-      /* .book_con .action a{display: block; width: 100%; height: 100%;} */
         .title{width: 100%; height: 25px; margin-bottom: 26px; background-color: #fff;}
         .content{width: 100%; height: auto; min-height: 220px; background-color: #fff;}
-
-
   .pn_btn {
-    position: absolute; top: 640px; left: 50%; margin-left: -125px;
-    width: 250px; height: 35px;
+    position: absolute; top: 640px; left: 50%; margin-left: -105px;
+    width: 215px; height: 30px;
   }
-    .pn_btn .next{
-      float: right;
-      width: 35px; height: 35px;
-      background-color: #acc;
-    }
-    .pn_btn .prev{
-      float: left;
-      width: 35px; height: 35px;
-      background-color: #acc;
-    }
   .more_btn{
     position: absolute; top: 640px; left: 50%; margin-left: -70px;
-    width: 140px; height: 35px;
+    width: 140px; height: 30px;
   }
+  #magazineBox .pn_btn, #magazineBox .more_btn{top: 535px;}
     .more_btn a{
       display: block; 
       width: 100%; height: 100%;
-      text-align: center; line-height: 35px;
+      text-align: center; line-height: 30px;
       background-color: #a8c;
     }
