@@ -1,4 +1,10 @@
 /* common.css */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/earlyaccess/kopubbatang.css');
+
+
+body{font-family: 'NanumSquare', 'KoPub Batang', 'NanumSquare'serif;}
+
 .blind{
   display: block;
   width: 0; height: 0; overflow: hidden;}

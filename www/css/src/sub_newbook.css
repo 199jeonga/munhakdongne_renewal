@@ -1,0 +1,221 @@
+#wrap{
+  width: 100%; height: auto;
+  margin: auto;
+}
+
+/* headBox================================================= */
+/* headBox
+============================================================================== */
+#headBox{
+  position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 1000;
+  width: 100%; height: 100px;
+  padding: 20px;
+  background-color: transparent;
+}
+  .head_inner{
+    position: relative;
+    width: 1100px; height: 60px;
+    margin: auto;
+  }
+    h1{
+      float: left;
+      width: auto; height: 60px;
+      font-weight: 900; font-size: 40px; line-height: 60px;
+      color:#fff;
+    }
+        .gnb_btn, .search_btn{
+        position:absolute; top: 5px; z-index: 100;
+        width: 50px; height: 50px;
+        background-color: #aaa;
+      }
+      .gnb_btn{right: 0;}
+      .search_btn{right:70px;}
+      
+
+        .gnb_wrapper{width: 100%; height: auto;}
+        .search_wrapper{width: 100%; height: 50px;}
+/* #gnbBox-------------------------------------------------------------------- */
+      #gnbBox{
+        display: none;
+        position:fixed; left: 0; top: 0; z-index: 900;
+        width: 100%; height: 100%;
+      }
+        .gnb_wrapper{
+          position: absolute; top: 0; left: 50%;  margin-left: -550px;
+          width: 1100px; height: auto;
+        }
+          .gnb_inner{
+            width: 100%; height: auto;
+            padding-top: 100px;
+            color: #fff;
+          }
+            .gnb_inner>li{
+              float: left;
+              width: 200px; height: 527px;
+              margin-right: 25px;
+              background-color: #aad;
+            }
+            .gnb_inner>li:last-child{
+              margin-right: 0;
+            }
+              .gnb_inner_title{
+                width: 100%; height: auto;
+              }
+                .gnb_inner_title a{
+                  display: block;
+                  width: 100%; height: 50px;
+                  border-bottom: 2px solid #fff;
+                  background-color: #faf;
+                  }
+              .gnb_inner_con{
+                width: 100%; height: auto;
+              }
+                .gnb_inner_con a{
+                  display: block;
+                  width: 100%; height: 55px;
+                  text-indent:10px;
+                  border-bottom: 1px solid #fff;
+                  background-color: #aaa;
+                }
+                .gnb_sns{
+                  width: 100%; height: auto;
+                  text-indent:10px;
+                  padding: 2px; padding-left:30px;
+                  background-color: #a5a;
+                }
+                  .gnb_sns a{
+                    float: left;
+                    width: 30px; height: 30px;
+                    margin-right: 4px;
+                    background-color: #333;
+                  }
+                  .gnb_sns li:last-child a{margin-right: 0;}
+          #gnb_close{
+            position: absolute; top: 25px; right: 0;
+            width: 50px; height: 50px;
+          }
+            #gnb_close button{
+              width: 100%; height: 100%;
+              background-color: #add;
+            }
+      .gnb_bg{
+        width: 100%; height: 100%;
+        background-color: #333;
+      }
+  
+    /* searchBox----------------------------------------- */
+    .searchBox{
+      display:none;
+      position: absolute; top: 5px; right: 70px; z-index: 900;
+      width: 500px; height: 50px;
+    }
+    .searchBox fieldset{
+      width: 100%; height: 100%;
+    }
+    /* .searchBox legend{} */
+    /* .searchBox label{} */
+    #search_area{
+      float: left;
+      width: 430px; height: 50px;
+      text-indent: 20px;
+      border-bottom:3px solid #aad;
+    }
+    .search_img{
+      float: right;
+      width: 50px; height: 50px;
+      background-color: #aaa;
+    }
+
+/* subNavBox================================================= */
+#subNavBox{
+  width: 100%; height: 400px; padding-top: 310px;
+  background-color: #333;
+}
+.subnav_inner{
+  width: 1100px; height: auto;
+  margin: auto;
+  background-color: #aaa;
+}
+.breadcrumb{
+  width: auto; height: auto; 
+  margin-bottom: 10px;
+}
+.breadcrumb p, .breadcrumb i{
+  float: left;
+  width: auto; height: auto;
+  margin-right: 5px;
+  font-size: 14px; line-height: 14px; color:#fff;
+}
+.nav_list{
+  width: auto; height: 40px;
+  background-color: #fff;
+}
+
+/* subSearchBox================================================= */
+#subSearchBox{
+  width: 100%; height: 160px;
+  padding: 60px 0;
+  background-color: #aaa;
+}
+.subsearch_inner{
+  width: 816px; height: 40px;
+  margin:auto;
+  background-color: #fff;
+}
+
+/* bookConBox================================================= */
+#bookConBox{
+  width: 100%; height: 1790px;
+  padding-top: 20px;
+  background-color: #bbb;
+}
+.bookcon_inner{
+  width: 1144px; height: auto;
+  margin:auto;
+  background-color: #aad;
+}
+.bookcon_area {
+  float: left;
+  width: 560px; height: 330px;
+  margin-right: 24px; margin-bottom: 24px;
+  border-radius: 10px;
+  background-color: #ada;
+}
+.bookcon_area:nth-child(2n){
+  margin-right: 0;
+}
+.bookcon_area:nth-last-child(2){
+  margin-bottom: 0;
+}
+
+
+/* pageBtn================================================= */
+#pageBtn{
+  width: 100%; height: 180px;
+  padding-top: 55px;
+  background-color: #aaa;
+}
+.pagebtn_inner{
+  width: 690px; height: 40px;
+  margin:auto;
+  background-color: #ada;
+}
+.pagebtn_inner li{
+  float:left;
+  width: 40px; height: 40px;
+  margin-right: 10px;
+}
+.pagebtn_inner li:last-child{margin-right: 0;}
+.pagebtn_inner button{
+  display: block;
+  width: 100%; height: 100%;
+  border-radius:10px;
+  background-color: #aad;
+}
+
+
+/* footer================================================= */
+#footer{
+  width: 100%; height: 242px;
+  background-color: #ccc;
+}

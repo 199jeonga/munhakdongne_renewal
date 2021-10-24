@@ -140,7 +140,7 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
   .view_slide_area{
     overflow-x:auto; overflow-y: visible; 
     width: 1280px; height:auto;
-    padding-bottom: 200px; box-sizing: content-box;
+    padding-bottom: 50px; box-sizing: content-box;
   } 
   .view_slide_part{
     --view-slide-con:6;
@@ -213,29 +213,36 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
     .mdpick_tab_part{
       width: 100%; height: 100%;
     }
-      .mdp_tab_con{
-        float:left;
-        width: 125px; height: 30px;
-        margin-right: 10px;
-        cursor: pointer;
-      }
-      .mdp_tab_con:last-child{
-        margin-right: 0;
-      }
-      .mdp_tab_con button{
-        border-radius: 10px; box-shadow: 0px 5px 10px #eee;
-        background-color: #fff;
-      }
-      .mdp_tab_con button:hover{
-        background-color: #EB4C38; color:#fff;
-      }
-    .mdpick_booklist_area{
+    .mdp_tab_con{
+      float:left;
+      width: 125px; height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .mdp_tab_con:last-child{
+      margin-right: 0;
+    }
+    .mdp_tab_con button{
+      border-radius: 10px; box-shadow: 0px 5px 10px #eee;
+      background-color: #fff;
+    }
+    .mdp_tab_con button:hover{
+      background-color: #EB4C38; color:#fff;
+    }
+    .mdpick_con_wrap{
+      overflow:hidden;
       position: absolute; top: 150px; left: 50%; margin-left: -50vw;
       width: 100vw; height: 275px;
       padding-left: 30px;
     }
+    .mdpick_booklist_area{
+      overflow-x: auto; overflow-y:visible;
+      width: 100%; height: 275px;
+      padding-bottom: 100px; box-sizing: content-box;
+    }
     .mdpick_booklist_part{
-      width: 4000px; height: 100%;
+      --mdpickcon:10;
+      width: calc(calc(220px * var(--mdpickcon)) - 20px); height: 100%;
     }
       .mdp_booklist_con{
         float:left;
@@ -267,14 +274,20 @@ html, body{width: 100%; height: 100%; overflow-x: hidden; overflow-y:visible; }
     .newbook_inner h2{
       float: left; width: auto; height: auto; margin-bottom: 38px;
     }
-    .newbook_booklist_area{
+    .newbook_booklist_wrap{
       position:absolute;
       top: 100px; left: 50%; margin-left: -50vw;
       width: 100vw; height: auto;
       padding-left: 30px;
     }
+    .newbook_booklist_area{
+      width: 100%; height: 100%;
+      overflow-x: auto; overflow-y:visible;
+      padding-bottom: 50px;
+    }
     .newbook_booklist_part{
-      width: 4000px; height: auto;
+      --newbook:11;
+      width: calc(calc(220px * var(--newbook)) - 20px); height: auto;
       margin-bottom: 30px;
     }
       .newbook_booklist_part li{
