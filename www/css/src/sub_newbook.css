@@ -163,7 +163,7 @@
 }
 .nav_title_con{
   display: none;
-  position: absolute; top: 0; left: 0; z-index: -1;
+  position: absolute; top: 0; left: 0; z-index: -1;             
   width: 160px; height: 280px;
   padding-top: 40px;
   border-radius: 10px;
@@ -177,7 +177,7 @@
   width: 100%; height: 100%;
   text-align: center; line-height: 40px;
 }
-.nav_list:hover .nav_title_con{display: block;}
+.nav_list:hover .nav_title_con,.nav_list:focus-within .nav_title_con{display: block;}
 
 
 
@@ -216,9 +216,10 @@
   box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 #searchFilter{
+  position: relative;
   float: left;
   width: 158px; height: 36px;
-  border: 0; border-right: 1px solid #aaa;
+  border: 0; 
   text-align: center;
   background-color: transparent;
 }
@@ -226,33 +227,32 @@
   float: left;
   width: 610px; height: 36px;
   text-indent: 10px;
+  outline: none;
 }
+#searchBookBox:focus{border-radius: 10px; background-color: #eee;}
 #searchButton{
   float: right;
   width: 36px; height: 36px;
   border-radius: 10px;
-  background-color: #ffa;
-  
-  background-size: 50% 50%;
+  background-color: #1B2C7A;
 }
 
 /* bookConBox================================================= */
 #bookConBox{
   width: 100%; height: 1790px;
   padding-top: 20px;
-  background-color: #bbb;
 }
 .bookcon_inner{
   width: 1144px; height: auto;
   margin:auto;
-  background-color: #aad;
 }
 .bookcon_area {
   float: left;
   width: 560px; height: 330px;
-  margin-right: 24px; margin-bottom: 24px;
+  margin-right: 24px; margin-bottom: 24px;  padding: 12px;
   border-radius: 10px;
-  background-color: #ada;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 .bookcon_area:nth-child(2n){
   margin-right: 0;
@@ -260,41 +260,141 @@
 .bookcon_area:nth-last-child(2){
   margin-bottom: 0;
 }
+.bookcon_area a{
+  display: block;
+  width: 100%; height: 100%;
+}
+.bookcon_img{
+  float: left;
+  width: 220px; height: 100%;
+  border-radius: 10px;
+  background-color: #daa;
+}
+.bookcon_text{
+  float: right;
+  padding-top: 5px;
+  width: 300px; height: 100%;
+}
+.bookcon_text p{
+  width: 100%; height: 42px;
+  text-align: left; font-size: 18px; font-family: 'KoPub Batang';
+  margin-bottom: 10px;
+  background-color: #aaa;
+}
+.bookcon_text dl{
+  width: 100%; height: auto;
+}
+.bookcon_text dt{
+  float: left;
+  width: 60px; height: 40px;
+  margin-right: 6px;
+  text-align: left; font-weight: 600;
+  background-color: #aaa;
+}
+.bookcon_text dd{
+  float: left;
+  width: calc(100% - 66px); height: 40px;
+  text-align: left;
+  background-color: #ccc;
+}
+.bookcon_area:hover{outline:2px solid #757575;}
+.bookcon_area:focus{outline:2px solid #daa;}
 
 
 /* pageBtn================================================= */
 #pageBtn{
   width: 100%; height: 180px;
   padding-top: 55px;
-  background-color: #aaa;
 }
 .pagebtn_inner{
   width: 690px; height: 40px;
   margin:auto;
-  background-color: #ada;
+}
+.pagebtn_inner ul{
+  float: left;
+  width: auto; height: 100%;
+}
+.pagebtn_inner .sub_next_btn{
+  float: right;
 }
 .pagebtn_inner li{
   float:left;
   width: 40px; height: 40px;
   margin-right: 10px;
 }
-.pagebtn_inner li:last-child{margin-right: 0;}
+.sub_prev_btn li{float: right;}
+.sub_next_btn li:last-child{margin-right: 0;}
 .pagebtn_inner button{
   display: block;
   width: 100%; height: 100%;
   border-radius:10px;
   background-color: #fff; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
-
-
-/* footer================================================= */
-#footer{
-  width: 100%; height: 242px;
-  background-color: #ccc;
+.pagebtn_inner button:hover{
+  background-color: #EB4C38; color:#fff;
 }
 
-.daa{
-  width: 200px; height: 200px;
-  background-color: #dad;
-  padding: 4rem;
+
+/* footBox
+============================================================================== */
+#footBox{
+  width: 100%; height: auto;
 }
+  .link_inner{
+    width: 100%; height: 60px;
+    margin: auto;
+    background-color: #333;
+  }
+  .footer_link{
+    width: 1144px; height: 100%;
+    margin: 0 auto; margin-bottom: 40px;
+  }
+    .footer_link > div{
+      height: 30px; margin-top: 15px;
+    }
+    .footer_nav{
+      float: left;
+      width: auto; height: 100%;
+    }
+    .footer_nav ul{
+      width: 100%; height: 100%;
+    }
+      .footer_nav li{
+        float:left;
+        width: auto; height: 100%;
+        margin-right: 20px;
+        line-height: 30px;
+      }
+      .footer_nav li:last-child{margin-right: 0;}
+      .footer_nav a{
+        display: block; 
+        width: 100%; height: 100%;
+        text-align: center;  color:#fff;
+        padding: 0 5px;
+      }
+      .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
+
+
+    .sns_link{
+      float:right;
+      width: 270px; height: auto;
+    }
+    .sns_link ul{
+      width: 100%; height: 30px;
+    }
+      .sns_link li{
+        float: left;
+        width: 30px; height: 100%;
+        margin-right: 30px;
+        background-color: #fff;
+      }
+      .sns_link li:last-child{margin-right: 0;}
+
+  .company_address{
+  width: 1144px; height: auto;
+  color:#333;
+  margin: 0 auto; padding: 60px 0;
+  }
+    address{width: 100%; height: auto;}
+      address p{width: 100%; height: 100%; color:#333; margin-bottom: 5px;}
+      address p:last-child{margin-bottom: 0;}

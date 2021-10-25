@@ -285,7 +285,7 @@ body{ overflow-x: hidden; overflow-y:visible; }
     .newbook_booklist_area{
       width: 100%; height: auto;
       overflow-x: auto; overflow-y:visible;
-      padding-bottom: 50px; box-sizing: content-box;
+      padding-top: 2px; padding-bottom: 50px; box-sizing: content-box;
     }
     .newbook_booklist_part{
       --newbook:11;

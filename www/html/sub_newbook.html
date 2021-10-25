@@ -14,7 +14,7 @@
 
   <script src="../js/common/modernizr-custom.js"></script>
 
-  <title></title>
+  <title>문학동네</title>
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../favicon.png">
 
@@ -118,7 +118,7 @@
                     <input
                       type="image"
                       class="search_img"
-                      src="../img/search.png"
+                      src="../img/search_w.png"
                       alt="검색"
                       />
                 </fieldset>
@@ -176,7 +176,7 @@
             <input type="text" id="searchBookBox" name="searchBook__Box" value="" placeholder="검색할 내용을 입력해 주세요.">
             
             <label for="searchButton" class="blind">검색하기</label>
-            <input type="image" id="searchButton" src="../img/search.png" alt="검색하기">
+            <input type="image" id="searchButton" src="../img/search_w.png" alt="검색하기">
           </fieldset>
         </form>
       </div>
@@ -184,8 +184,50 @@
     <article id="bookConBox">
       <h2 class="blind">도서 리스트</h2>
       <ul class="bookcon_inner">
-        <li class="bookcon_area"><button type="button">list_01</button></li>
-        <li class="bookcon_area"><button type="button">list_02</button></li>
+        <li class="bookcon_area">
+          <a href="#" role="button">
+            <div class="bookcon_img">bookcon_img</div>
+            <div class="bookcon_text">
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut”</p>
+              <dl>
+                <dt>제목</dt>
+                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt>저자</dt>
+                <dd>이노션 인사이트 그룹</dd>
+                <dt>분야</dt>
+                <dd>경영</dd>
+                <dt>출판사</dt>
+                <dd>싱긋</dd>
+                <dt>발행일</dt>
+                <dd>2021-10-20</dd>
+                <dt>정가</dt>
+                <dd>18,000원</dd>
+              </dl>
+            </div>
+          </a>
+        </li>
+        <li class="bookcon_area">
+          <a href="#" role="button">
+            <div class="bookcon_img">bookcon_img</div>
+            <div class="bookcon_text">
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit ut”</p>
+              <dl>
+                <dt>제목</dt>
+                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt>저자</dt>
+                <dd>이노션 인사이트 그룹</dd>
+                <dt>분야</dt>
+                <dd>경영</dd>
+                <dt>출판사</dt>
+                <dd>싱긋</dd>
+                <dt>발행일</dt>
+                <dd>2021-10-20</dd>
+                <dt>정가</dt>
+                <dd>18,000원</dd>
+              </dl>
+            </div>
+          </a>
+        </li>
         <li class="bookcon_area"><button type="button">list_03</button></li>
         <li class="bookcon_area"><button type="button">list_04</button></li>
         <li class="bookcon_area"><button type="button">list_05</button></li>
@@ -198,24 +240,66 @@
     </article>
     <section id="pageBtn">
       <h2 class="blind">페이지 이동 버튼</h2>
-      <ul class="pagebtn_inner">
-          <li><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
-          <li><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
-          <li><button type="button">01</button></li>
-          <li><button type="button">02</button></li>
-          <li><button type="button">03</button></li>
-          <li><button type="button">04</button></li>
-          <li><button type="button">05</button></li>
-          <li><button type="button">06</button></li>
-          <li><button type="button">07</button></li>
-          <li><button type="button">08</button></li>
-          <li><button type="button">09</button></li>
-          <li><button type="button">10</button></li>
+      <div class="pagebtn_inner">
+        <ul class="sub_next_btn">
           <li><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
           <li><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
-      </ul>
+        </ul>
+          <ul class="sub_prev_btn">
+            <li><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
+            <li><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
+          </ul>
+          <ul class="sub_page_btn">
+            <li><button type="button">01</button></li>
+            <li><button type="button">02</button></li>
+            <li><button type="button">03</button></li>
+            <li><button type="button">04</button></li>
+            <li><button type="button">05</button></li>
+            <li><button type="button">06</button></li>
+            <li><button type="button">07</button></li>
+            <li><button type="button">08</button></li>
+            <li><button type="button">09</button></li>
+            <li><button type="button">10</button></li>
+          </ul>
+
+      </div>
     </section>
-    <div id="footer"></div>
+    <footer id="footBox">
+      <h2 class="blind">회사정보</h2>
+      <div class="link_inner">
+        <div class="footer_link clearfix">
+          <div class="footer_nav">
+            <h3 class="blind">푸터 네비게이션</h3>
+            <ul class="clearfix" role="menu">
+              <li role="listitem"><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+              <li role="listitem"><a href="#" title="이용약관">이용약관</a></li>
+              <li role="listitem"><a href="#" title="제휴문의">제휴문의</a></li>
+              <li role="listitem"><a href="#" title="채용안내">채용안내</a></li>
+              <li role="listitem"><a href="#" title="찾아오시는 길">찾아오시는 길</a></li>
+              <li role="listitem"><a href="#" title="전화번호 안내">전화번호 안내</a></li>
+            </ul>
+          </div>
+          <div class="sns_link">
+            <h3 class="blind">SNS 바로가기</h3>
+            <ul class="clearfix">
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+              <li><a href="#">sns</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- //foot_inner -->
+        <div class="company_address">
+          <h3 class="blind">주소</h3>
+          <address>
+            <p>(주)문학동네 &#124; 10881 경기도 파주시 회동길 210 &#124; 사업자번호 208-81-24906 &#124; 대표자 : 염현숙, 김소영 &#124; 이메일 : editor@munhak.com</p>
+            <p>고객센터 전화번호 : 031-955-8888 &#124; 사업자등록번호 : 208-81-24906 &#124; 대표 이메일 : web@munhak.com</p>
+            <p>COPYRIGHT 2019 (주) MUNHAKDONGNE Publishing Corp.</p>
+          </address>
+        </div>
+    </footer><!-- //footBox -->
   </div><!--#wrap-->
 
   <!-- script -->
