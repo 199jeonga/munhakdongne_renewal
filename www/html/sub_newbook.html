@@ -127,22 +127,59 @@
         </div><!--.headerWrap-->
       </div><!-- //head_inner-->
     </header><!-- //headBox-->
-    <nav id="subNavBox">
+    <nav id="subNavBox" class="clearfix">
       <h2 class="blind">도서 메뉴의 소메뉴 바로가기</h2>
-      <div class="subnav_inner">
+      <div class="subnav_inner clearfix">
         <div class="breadcrumb clearfix">
           <p>도서</p>
           <i class="fas fa-chevron-right"></i>
           <p>새로나온 책</p>
         </div>
-        <ul class="nav_list">
-          
+        <nav class="nav_list">
+          <h3 class="blind">도서 외 다른 메뉴로 가기</h3>
+          <div class="nav_title"><a href="#">도서</a></div>
+          <ul class="nav_title_con">
+            <li><a href="#">저자</a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">북클럽</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">웹진</a></li>
+            <li><a href="#">독파 </a></li>
+          </ul>
+        </nav>
+        <ul class="nav_list_sub clearfix" role="menu">
+          <li role="listitem"><a href="#">새로나온 책</a></li>
+          <li role="listitem"><a href="#">브랜드별 도서</a></li>
+          <li role="listitem"><a href="#">분야별 도서</a></li>
+          <li role="listitem"><a href="#">수상도서</a></li>
+          <li role="listitem"><a href="#">매거진</a></li>
+          <li role="listitem"><a href="#">정기구독</a></li>
         </ul>
       </div>
     </nav>
     <section id="subSearchBox">
       <h2 class="blind">도서 검색창</h2>
-      <div class="subsearch_inner"></div>
+      <div class="subsearch_inner">
+        <form action="#" method="GET">
+          <fieldset>
+            <legend class="blind">도서 검색하기</legend>
+            <label for="searchFilter" class="blind">도서검색 필터</label>
+            <select name="search__Filter" id="searchFilter">
+              <option value="all">전체</option>
+              <option value="bookName">도서명</option>
+              <option value="brandName">브랜드</option>
+              <option value="authorName">저자명</option>
+              <option value="translatorName">역자명</option>
+            </select>
+            
+            <label for="searchBookBox" class="blind">검색 내용 입력 칸</label>
+            <input type="text" id="searchBookBox" name="searchBook__Box" value="" placeholder="검색할 내용을 입력해 주세요.">
+            
+            <label for="searchButton" class="blind">검색하기</label>
+            <input type="image" id="searchButton" src="../img/search.png" alt="검색하기">
+          </fieldset>
+        </form>
+      </div>
     </section>
     <article id="bookConBox">
       <h2 class="blind">도서 리스트</h2>
@@ -156,14 +193,14 @@
         <li class="bookcon_area"><button type="button">list_07</button></li>
         <li class="bookcon_area"><button type="button">list_08</button></li>
         <li class="bookcon_area"><button type="button">list_09</button></li>
-        <li class="bookcon_area"><button type="button">list_010</button></li>
+        <li class="bookcon_area"><button type="button">list_10</button></li>
       </ul>
     </article>
     <section id="pageBtn">
       <h2 class="blind">페이지 이동 버튼</h2>
       <ul class="pagebtn_inner">
-          <li><button type="button">이전</button></li>
-          <li><button type="button">이전</button></li>
+          <li><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
+          <li><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
           <li><button type="button">01</button></li>
           <li><button type="button">02</button></li>
           <li><button type="button">03</button></li>
@@ -174,8 +211,8 @@
           <li><button type="button">08</button></li>
           <li><button type="button">09</button></li>
           <li><button type="button">10</button></li>
-          <li><button type="button">다음</button></li>
-          <li><button type="button">다음</button></li>
+          <li><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
+          <li><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
       </ul>
     </section>
     <div id="footer"></div>

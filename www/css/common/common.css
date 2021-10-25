@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/earlyaccess/kopubbatang.css');
 
 
-body{font-family: 'NanumSquare', 'KoPub Batang', serif;}
+body, button{font-family:'NanumSquare', 'KoPub Batang', serif;}
 
 .blind{
   display: block;
