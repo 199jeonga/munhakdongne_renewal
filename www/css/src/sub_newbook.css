@@ -167,7 +167,7 @@
   width: 160px; height: 280px;
   padding-top: 40px;
   border-radius: 10px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255,255,255,0.8);
 }
 .nav_title_con li{
   width: 100%; height: 40px;
@@ -178,6 +178,8 @@
   text-align: center; line-height: 40px;
 }
 .nav_list:hover .nav_title_con,.nav_list:focus-within .nav_title_con{display: block;}
+.nav_list a:hover{background-color: #ccc ; border-radius: 10px;}
+.nav_list a:focus{outline: none; background-color: #666; color:#fff; border-radius: 10px;}
 
 
 
@@ -198,9 +200,8 @@
   text-align: center; line-height: 40px; color:#fff; 
   border-radius: 10px;
 }
-.nav_list_sub a:hover{
-  background-color: #EB4C38;
-}
+.nav_list_sub a:hover{background-color: #EB4C38;}
+.nav_list_sub a:focus{outline: none; background-color: rgba(0,0,0,0.3); font-weight: 700; }
 
 
 /* subSearchBox================================================= */
@@ -249,10 +250,7 @@
 .bookcon_area {
   float: left;
   width: 560px; height: 330px;
-  margin-right: 24px; margin-bottom: 24px;  padding: 12px;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  margin-right: 24px; margin-bottom: 24px;
 }
 .bookcon_area:nth-child(2n){
   margin-right: 0;
@@ -263,6 +261,10 @@
 .bookcon_area a{
   display: block;
   width: 100%; height: 100%;
+  padding: 12px; box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
 }
 .bookcon_img{
   float: left;
@@ -297,8 +299,8 @@
   text-align: left;
   background-color: #ccc;
 }
-.bookcon_area:hover{outline:2px solid #757575;}
-.bookcon_area:focus{outline:2px solid #daa;}
+.bookcon_area > a:hover{outline:2px solid #757575;}
+.bookcon_area > a:focus{background-color: #eee;}
 
 
 /* pageBtn================================================= */
@@ -372,7 +374,8 @@
         text-align: center;  color:#fff;
         padding: 0 5px;
       }
-      .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
+      .footer_nav a:hover{background-color: #666; border-radius: 10px; }
+      .footer_nav a:focus{ font-weight: 700; background-color: #555; border-radius: 10px;  }
 
 
     .sns_link{
