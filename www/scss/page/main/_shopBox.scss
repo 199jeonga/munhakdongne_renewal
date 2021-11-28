@@ -1,0 +1,40 @@
+
+/* shopBox
+============================================================================== */
+#shopBox{
+  width: 100%; height: auto;
+  padding: 80px 0;
+  background-color: rgba(177,177,177,0.5);
+}
+.shop_inner{
+  position: relative;
+  width: 1140px; height: 680px;
+  margin: 0 auto;
+}
+  .shop_inner h2{
+    color:#333; margin-bottom: 80px;
+  }
+  .shop_area{
+    width: 100%; height: 560px;
+    margin-top: 80px;
+  }
+  .shop_con{
+    float: left;
+    width: 270px; height: 270px;
+    margin-right: 20px; margin-bottom: 20px;
+    background-color: #aa8;
+  }
+  .shop_con:nth-child(4n){margin-right: 0;}
+  .shop_con:nth-last-child(-n+4){margin-bottom: 0;}
+  .shop_con>a{
+    display: block;
+    width: 100%; height: 100%;
+  }
+  .shop_inner .moreview_btn{
+    position: absolute; top: 0; right: 0;
+    width: 172px; height: 35px;
+  }
+  .shop_inner .moreview_btn a{
+    display: block; width: 100%; height: 100%;
+  }
+  

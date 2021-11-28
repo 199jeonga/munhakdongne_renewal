@@ -1,0 +1,121 @@
+
+/* 
+============================================================================== */
+#webzineBox{
+  width: 100%; height: auto;
+  padding: 105px 0; margin-bottom: 90px;
+}
+.webzine_inner{
+  width: 1144px; height: 690px;
+  margin: auto;
+}
+.webzine_inner h2{
+  margin-bottom: 48px;
+}
+.webzine_area{
+  width: auto; height: auto;
+  background-color: #fff;
+}
+.webzine_area > div{
+  float: left;
+  width: 380px; height: 600px;
+  box-sizing: border-box;
+  background-color: #acc;
+}
+/* wz_account_part-------------------------------------------------------------------- */
+.wz_account_part{
+  padding-top: 160px; padding-left: 45px;
+}
+  .wz_account_part p:first-child{
+    width: 100%; height: 140px;
+    margin-bottom: 38px;
+    font-family: 'KoPub Batang';
+    background-color: #fff;
+  }
+  .wz_account_part p:nth-child(2){
+    width: 100%; height: auto; min-height: 100px;
+    font-family: 'KoPub Batang';
+    background-color: #fff;
+  }
+
+  /* wz_title_part-------------------------------------------------------------------- */
+.wz_title_part{
+  margin: 0 2px;
+}
+  .wz_title_part>div{
+    width: 100%;
+    box-sizing: border-box; padding-right: 30px;
+    font-size: 30px;
+  }
+  .wz_serial{
+    height: 300px;
+    padding-top: 200px;
+    background-color: #eb4c38;
+  }
+  .wz_finished{
+    width: 100%; height: 150px;
+    padding: 50px 0; 
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    background-color: #505050;
+  }
+  .wz_published{
+    width: 100%; height: 150px;
+    padding: 50px 0;
+    background-color: #505050;
+  }
+  .wz_title_part button{
+    width: 100%; height: 100%; 
+    color: #fff; text-align: right; font-size: 30px;
+    /* background-color: #daa; */
+  }
+
+
+/* wz_con_part-------------------------------------------------------------------- */
+.wz_con_part{
+  padding: 40px;
+}
+.wz_con_info{
+  width: 100%; height: 310px;
+}
+  .wz_con_date{
+    width: 100%; height: 43px;
+    color: #eb4c38; font-size: 26px; text-align: center;
+    border-top: 1px solid #eb4c38; border-bottom:1px solid #eb4c38;
+    margin: 0 auto; margin-bottom: 40px;
+  }
+  .wz_con_title{
+    width: 100%; height: auto; min-height: 220px;
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: #bbb; */
+  }
+    .wz_con_title p:nth-child(1){
+      width: 100%; height: 30px;
+      margin-bottom: 15px;
+      background-color: #fff;
+    }
+    .wz_con_title p:nth-child(2){
+      width: 100%; height: 30px;
+      margin-bottom: 30px;
+      background-color: #fff;
+    }
+    .wz_con_title p:nth-child(3){
+      width: 100%; height: auto;
+      background-color: #fff;
+    }
+
+.wz_con_episode{
+  width: 100%; height: 210px;
+  padding: 5px; box-sizing: border-box;
+  background-color: #bab;
+}
+.wz_con_episode div{
+  width: 100%; height: 33.3333%;
+  padding: 5px; box-sizing: border-box;
+  border-bottom: 1px solid #333;
+  background-color: #aad;
+}
+.wz_con_episode a{
+  display: block;
+  width: 100%; height: 100%;
+}

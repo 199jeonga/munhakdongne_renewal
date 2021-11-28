@@ -1,0 +1,82 @@
+/* prev & next btn design - #mdpickBox, #newbookBox ===================================*/
+
+.stop_btn{
+  position: absolute; bottom:0; right: 0;
+  width: 30px; height: 30px;
+  background-color: #ada;
+}
+.prev_next_btn{
+  position:absolute; bottom: 0; right: 35px;
+  width: 70px; height: auto;
+  color:#000;
+}
+.next_btn, .prev_btn{
+  width: 30px; height: 30px;
+  margin-right: 5px;
+  background-color: #aad;
+}
+.next_btn{
+  float:right;
+}
+.prev_btn{
+  float:left;
+}
+
+
+/* award && magazine
+===================================================================== */
+.title_inner{
+  width: 1144px; height: 45px;
+  margin: 0 auto;
+}
+  .title_inner h2{
+    float: left;
+    color:#fff;
+  }
+  .award_tab, .magazine_tab{
+    float:right;
+    width: auto; height: auto;  
+  }
+    .title_tab_btn{
+      float: left;
+      width: 140px; height: 40px;
+      margin-top: 2px; margin-right: 10px;
+      background-color: #c8a; 
+    }
+  .am_inner_area{
+  width: 1170px; height: 400px;
+  margin: auto; margin-top: 24px;
+  background-color: #fff;
+  }
+.book_part{
+  width: 100%; height: auto;
+}
+  .book_con{
+    float: left;
+    width: 230px; height: 314px; margin-right: 5px;
+    background-color: #777;
+    }
+    .book_con a{
+      display: block;
+      width: 100%; height: 100%;
+    }
+    .book_con:last-child{margin-right: 0;}
+      .book_con .action{width: 100%; height: auto; padding-top: 33px;}
+      .book_con dl{width: 100%; height: 100%;}
+        .title{width: 100%; height: 25px; margin-bottom: 26px; background-color: #fff;}
+        .content{width: 100%; height: auto; min-height: 220px; background-color: #fff;}
+  .pn_btn {
+    position: absolute; top: 640px; left: 50%; margin-left: -105px;
+    width: 215px; height: 30px;
+  }
+  .more_btn{
+    position: absolute; top: 640px; left: 50%; margin-left: -70px;
+    width: 140px; height: 30px;
+  }
+  #magazineBox .pn_btn, #magazineBox .more_btn{top: 535px;}
+    .more_btn a{
+      display: block; 
+      width: 100%; height: 100%;
+      text-align: center; line-height: 30px;
+      background-color: #a8c;
+    }

@@ -1,0 +1,61 @@
+#newbookBox{
+  width: 100%; height: auto;
+  padding: 125px 0; 
+}
+.newbook_inner{
+  position: relative;
+    width: 1100px; height: 490px;
+    margin:0 auto;
+  }
+    .newbook_inner h2{
+      float: left; width: auto; height: auto; margin-bottom: 38px;
+    }
+    .newbook_booklist_wrap{
+      overflow:hidden;
+      position:absolute;
+      top: 100px; left: 50%; margin-left: -50vw;
+      width: 100vw; height: 340px;
+      padding-left: 30px;
+    }
+    .newbook_booklist_area{
+      width: 100%; height: auto;
+      overflow-x: auto; overflow-y:visible;
+      padding-top: 2px; padding-bottom: 50px; box-sizing: content-box;
+    }
+    .newbook_booklist_part{
+      --newbook:11;
+      width: calc(calc(220px * var(--newbook)) - 20px); height: auto;
+      margin-bottom: 30px;
+    }
+      .newbook_booklist_part li{
+        float: left;
+        width: 200px; height: auto;
+        margin-right: 20px;
+      }
+      .newbook_booklist_part li:last-child{
+        margin-right: 0px;
+      }
+      .newbook_booklist_part a{
+        display: block; width: 100%; height: 100%;
+      }
+        .nb_img{
+          width: 100%; height: 265px;
+          margin-bottom: 14px;
+          border-radius: 10px; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+          background-color: #fff;
+        }
+        .nb_title{
+          width: 100%; height: auto;
+          font-size: 18px; color:#333; font-weight: 700;
+          margin-bottom: 4px;
+        }
+        .nb_writer{
+          width: 100%; height: auto;
+          font-size: 18px; color:#757575;
+        }
+      .newbook_inner .moreview_btn{
+        position:absolute; top: 5px; right: 0;
+      }
+      .newbook_inner .moreview_btn a{
+        display: block;
+      }

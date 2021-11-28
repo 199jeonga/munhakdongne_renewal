@@ -1,0 +1,66 @@
+#viewBox{
+  position: relative;
+  width: 100%; height: 720px;
+  padding-top: 100px;
+  background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
+}
+  .view_slide_wrap{
+    overflow:hidden;
+    width: 1280px; height: 550px;
+    margin: 0 auto;
+  }
+  .view_slide_area{
+    overflow-x:auto; overflow-y: visible; 
+    width: 1280px; height:auto;
+    padding-bottom: 50px; box-sizing: content-box;
+  } 
+  .view_slide_part{
+    --view-slide-con:6;
+    width: calc(calc( 440px * var(--view-slide-con) ) - 40px); height: auto;
+  }
+  .view_slide_part li{
+    float:left;
+    width: 400px; height: 550px;
+    margin-right: 40px;
+    border-radius: 10px;
+    background-color: #adc;
+  }
+  .view_slide_part li:last-child{margin-right: 0;}
+
+  /* view_indicator-------------------------------------------------------------------- */
+  .view_indicator{
+    position: absolute; left: 50%; bottom: 24px;
+    width: 310px; height:auto;
+    transform:translateX(-50%);
+    text-align: center;
+  }
+    .view_stop{
+      float: right;
+      width: 20px; height: 20px;
+      color:#757575; 
+    }
+    .view_indicator ul{
+      float: left;
+      width: auto; height: auto;
+    }
+    .view_indicator li{
+      float: left;
+      width: 20px; height: 20px;
+      margin-right: 22px;
+      cursor: pointer;
+    }
+    .view_indicator li:last-child{
+      margin-right: 0;
+    }
+    .view_indicator li a{
+      display: block;
+      width: 100%; height: 100%;
+      border-radius: 5px;
+      border: 2px solid #757575; box-sizing: border-box;
+    }
+    .view_indicator .indicator_btn_click{
+      width: 54px;
+    }
+    .indicator_btn_click a{
+      background-color: #757575;
+    }

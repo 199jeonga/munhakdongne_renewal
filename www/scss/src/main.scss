@@ -1,0 +1,26 @@
+@import "../common/variable", "../common/mixin";
+
+
+html, body{width: 100%; height: 100%;}
+body{ overflow-x: hidden; overflow-y:visible; }
+
+#wrap{width: 100%; height: auto;
+
+  
+}
+
+@import "../page/base/headBox";
+
+@import "../page/main/viewBox";
+@import "../page/main/newbookBox";
+@import "../page/main/mdpickBox";
+@import "../page/main/awardBox";
+@import "../page/main/dokpaBox";
+@import "../page/main/bookclubBox";
+@import "../page/main/shopBox";
+@import "../page/main/magazineBox";
+@import "../page/main/webzineBox";
+@import "../page/main/brandlistBox";
+@import "../page/base/mainCommonBox";
+
+@import "../page/base/footBox";

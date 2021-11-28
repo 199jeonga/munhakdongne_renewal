@@ -1,0 +1,40 @@
+#brandlistBox{
+  overflow:hidden ;
+  width: 100%; height: auto;
+  box-sizing: border-box;  padding: 90px 0;
+  background-color: rgba(85,85,85,0.3);
+}
+.brandlist_inner{
+  position: relative;
+  width: 1144px; height: 540px;
+  margin: 0 auto;
+}
+  .brandlist_inner h2{
+    margin-bottom: 80px;
+  }
+  .brandlist_wrap{
+    position: absolute; top: 120px; left: 50%; margin-left: -50vw;
+    width: 100vw; height: 310px;
+  }
+  .brandlist_wrap>ul{
+    width: 2000px; height: 140px;
+  }
+  .brandlist_part_top{
+    margin-bottom: 26px;
+  }
+  .brandlist_part_bottom{
+    margin-left: -70px;
+  }
+  .brandlist_wrap li{
+    float:left;
+    width: 140px; height: 140px; margin-right: 26px;
+    border-radius: 10px;
+    background-color: #555;
+  }
+  .brandlist_inner > .moreview_btn{
+    position: absolute; bottom: 0; right: 50%; margin-right: -86px;
+    width: 172px; height: 35px;
+  }
+  .brandlist_inner .moreview_btn a{
+    display: block;
+  }

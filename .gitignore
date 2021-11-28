@@ -1,0 +1,28 @@
+# .gitignore
+
+#---------------------------------------
+#.gitignore가 실행되지 않을 때 아래와 같이 처리
+# 1. gir rm -r --cached .
+# git add .
+# git coomit -m "fixed untracked files"
+#---------------------------------------
+
+# mac 사용자들을 위한 .DS_Store 파일 삭제
+**/DS_Store
+
+# scss변환 시 해당 내용 정보처리에 대한 자료
+**/*.css.map
+*.css.map
+
+
+# prepros이용하여 생긴 config 파일
+**/prepros.configs
+
+
+# node-module 삭제
+**/node_modules
+node_modules
+
+
+#.vscode
+**/*.vscode
