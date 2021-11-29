@@ -20,7 +20,11 @@
   background-position: 50% 50%;
 }
 
-.none {
+.none, .on {
+  display: none;
+}
+
+.gnb_wrapper .on {
   display: none;
 }
 

@@ -57,6 +57,7 @@ $baseSize: 16;
 
 
 
+
 @mixin mobile(){
   @media all and (max-width: #{$tablet - 1}){
     @content;
@@ -65,6 +66,12 @@ $baseSize: 16;
 
 @mixin tablet(){
   @media all and (min-width:$tablet) and (max-width:#{$laptop - 1}) {
+    @content; 
+  }
+}
+
+@mixin handle(){
+  @media all and (max-width:#{$laptop - 1}){
     @content; 
   }
 }

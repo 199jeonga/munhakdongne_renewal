@@ -17,7 +17,8 @@
   background-position: 50% 50%;
 }
 
-.none { display: none; }
+.none, .on { display: none;}
+.gnb_wrapper .on{display: none;}
 
 .clearfix { width:100%; height:auto; }
 .clearfix:after, .clearfix::after{

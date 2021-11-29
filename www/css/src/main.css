@@ -24,10 +24,8 @@ body {
   height: 100px;
   padding: 20px;
   background-color: transparent;
-  /* #gnbBox-------------------------------------------------------------------- */
+  /*tablet*/
   /* searchBox----------------------------------------- */
-  /* .searchBox legend{} */
-  /* .searchBox label{} */
 }
 #headBox .head_inner {
   position: relative;
@@ -58,8 +56,8 @@ body {
 #headBox .search_btn {
   right: 70px;
 }
-#headBox .gnb_btn:focus-within + #gnbBox, #headBox .gnb_btn:focus + #gnbBox {
-  display: block;
+#headBox #gnbBox {
+  display: none;
 }
 #headBox .gnb_wrapper {
   width: 100%;
@@ -69,96 +67,223 @@ body {
   width: 100%;
   height: 50px;
 }
-#headBox #gnbBox {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 900;
-  width: 100%;
-  height: 100%;
+@media all and (max-width: 1279px) {
+  #headBox {
+    height: auto;
+    padding: 30px 16px;
+  }
+  .head_inner {
+    width: 100%;
+    height: 100%;
+  }
+  .head_inner h1 {
+    width: auto;
+    height: 28px;
+    font-size: 38px;
+    line-height: 28px;
+  }
+  .head_inner .gnb_btn, .head_inner .search_btn {
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #aaa;
+  }
+  .head_inner .search_btn {
+    right: 50px;
+  }
+  .head_inner .search_wrapper {
+    width: 30px;
+  }
+  #gnbBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+  }
+  .gnb_wrapper {
+    position: relative;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+  }
+  .gnb_wrapper .gnb_inner > li {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .gnb_wrapper .gnb_inner_title {
+    float: left;
+    width: 120px;
+    height: 45px;
+    margin-left: calc(100% - 140px);
+    margin-top: 4px;
+  }
+  .gnb_wrapper .gnb_inner_title a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    background-color: #faf;
+  }
+  .gnb_wrapper .gnb_inner_con {
+    position: absolute;
+    right: 170px;
+    width: auto;
+    min-width: 130px;
+    height: auto;
+  }
+  .gnb_wrapper .gnb_inner_con a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    text-indent: 10px;
+    border-bottom: 1px solid #fff;
+    background-color: #aaa;
+  }
+  .gnb_sns {
+    position: absolute;
+    top: 450px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+    height: auto;
+    background-color: #a5a;
+  }
+  .gnb_sns li {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+  }
+  .gnb_sns a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #353;
+  }
+
+  #gnb_close {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  #gnb_close button {
+    width: 100%;
+    height: 100%;
+    background-color: #add;
+  }
+
+  #gnbBox .gnb_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+  }
 }
-#headBox .gnb_wrapper {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -550px;
-  width: 1100px;
-  height: auto;
-}
-#headBox .gnb_inner {
-  width: 100%;
-  height: auto;
-  padding-top: 100px;
-  color: #fff;
-}
-#headBox .gnb_inner > li {
-  float: left;
-  width: 200px;
-  height: 527px;
-  margin-right: 25px;
-  background-color: #aad;
-}
-#headBox .gnb_inner > li:last-child {
-  margin-right: 0;
-}
-#headBox .gnb_inner_title {
-  width: 100%;
-  height: auto;
-}
-#headBox .gnb_inner_title a {
-  display: block;
-  width: 100%;
-  height: 50px;
-  border-bottom: 2px solid #fff;
-  background-color: #faf;
-}
-#headBox .gnb_inner_con {
-  width: 100%;
-  height: auto;
-}
-#headBox .gnb_inner_con a {
-  display: block;
-  width: 100%;
-  height: 55px;
-  text-indent: 10px;
-  border-bottom: 1px solid #fff;
-  background-color: #aaa;
-}
-#headBox .gnb_sns {
-  width: 100%;
-  height: auto;
-  text-indent: 10px;
-  padding: 2px;
-  padding-left: 30px;
-  background-color: #a5a;
-}
-#headBox .gnb_sns a {
-  float: left;
-  width: 30px;
-  height: 30px;
-  margin-right: 4px;
-  background-color: #333;
-}
-#headBox .gnb_sns li:last-child a {
-  margin-right: 0;
-}
-#headBox #gnb_close {
-  position: absolute;
-  top: 25px;
-  right: 0;
-  width: 50px;
-  height: 50px;
-}
-#headBox #gnb_close button {
-  width: 100%;
-  height: 100%;
-  background-color: #add;
-}
-#headBox .gnb_bg {
-  width: 100%;
-  height: 100%;
-  background-color: #333;
+@media all and (min-width: 1280px) and (max-width: 1919px) {
+  #gnbBox {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+  }
+  #gnbBox .gnb_wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -550px;
+    width: 1100px;
+    height: auto;
+  }
+  #gnbBox .gnb_inner {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    color: #fff;
+  }
+  #gnbBox .gnb_inner > li {
+    float: left;
+    width: 200px;
+    height: 527px;
+    margin-right: 25px;
+    background-color: #aad;
+  }
+  #gnbBox .gnb_inner > li:last-child {
+    margin-right: 0;
+  }
+  #gnbBox .gnb_inner_title {
+    width: 100%;
+    height: auto;
+  }
+  #gnbBox .gnb_inner_title a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    background-color: #faf;
+  }
+  #gnbBox .gnb_inner_con {
+    width: 100%;
+    height: auto;
+  }
+  #gnbBox .gnb_inner_con a {
+    display: block;
+    width: 100%;
+    height: 55px;
+    text-indent: 10px;
+    border-bottom: 1px solid #fff;
+    background-color: #aaa;
+  }
+  #gnbBox .gnb_sns {
+    width: 100%;
+    height: auto;
+    text-indent: 10px;
+    padding: 2px;
+    padding-left: 30px;
+    background-color: #a5a;
+  }
+  #gnbBox .gnb_sns a {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    background-color: #333;
+  }
+  #gnbBox .gnb_sns li:last-child a {
+    margin-right: 0;
+  }
+  #gnbBox #gnb_close {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+  }
+  #gnbBox #gnb_close button {
+    width: 100%;
+    height: 100%;
+    background-color: #add;
+  }
+  #gnbBox .gnb_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+  }
 }
 #headBox .searchBox {
   display: none;
@@ -186,6 +311,7 @@ body {
   height: 50px;
   background-color: #aaa;
 }
+
 #viewBox {
   position: relative;
   width: 100%;
