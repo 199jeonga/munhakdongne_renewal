@@ -24,37 +24,17 @@ body {
   height: 100px;
   padding: 20px;
   background-color: transparent;
-  /*tablet*/
-  /* searchBox----------------------------------------- */
+  /*tablet ---------------------------------------------------------------------------------*/
 }
 #headBox .head_inner {
   position: relative;
-  width: 1100px;
-  height: 60px;
   margin: auto;
 }
 #headBox h1 {
   float: left;
   width: auto;
-  height: 60px;
   font-weight: 900;
-  font-size: 40px;
-  line-height: 60px;
   color: #fff;
-}
-#headBox .gnb_btn, #headBox .search_btn {
-  position: absolute;
-  top: 5px;
-  z-index: 100;
-  width: 50px;
-  height: 50px;
-  background-color: #aaa;
-}
-#headBox .gnb_btn {
-  right: 0;
-}
-#headBox .search_btn {
-  right: 70px;
 }
 #headBox #gnbBox {
   display: none;
@@ -78,21 +58,23 @@ body {
   }
   .head_inner h1 {
     width: auto;
-    height: 28px;
-    font-size: 38px;
-    line-height: 28px;
+    height: auto;
+    font-size: 32px;
+    line-height: 32px;
   }
   .head_inner .gnb_btn, .head_inner .search_btn {
-    top: 0px;
-    width: 30px;
-    height: 30px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
     background-color: #aaa;
+  }
+  .head_inner .gnb_btn {
+    right: 0;
   }
   .head_inner .search_btn {
     right: 50px;
-  }
-  .head_inner .search_wrapper {
-    width: 30px;
   }
   #gnbBox {
     position: fixed;
@@ -189,7 +171,34 @@ body {
     background-color: #333;
   }
 }
-@media all and (min-width: 1280px) and (max-width: 1919px) {
+@media all and (min-width: 1280px) {
+  #headBox {
+    /* searchBox----------------------------------------- */
+  }
+  #headBox .head_inner {
+    width: 1100px;
+    height: 100%;
+  }
+  #headBox .head_inner h1 {
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  #headBox .gnb_btn, #headBox .search_btn {
+    position: absolute;
+    top: 5px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+  }
+  #headBox .gnb_btn {
+    right: 0;
+  }
+  #headBox .search_btn {
+    right: 70px;
+  }
   #gnbBox {
     position: fixed;
     left: 0;
@@ -207,8 +216,8 @@ body {
     height: auto;
   }
   #gnbBox .gnb_inner {
-    width: 100%;
-    height: auto;
+    width: 1100px;
+    height: 60px;
     padding-top: 100px;
     color: #fff;
   }
@@ -284,32 +293,32 @@ body {
     height: 100%;
     background-color: #333;
   }
-}
-#headBox .searchBox {
-  display: none;
-  position: absolute;
-  top: 5px;
-  right: 70px;
-  z-index: 900;
-  width: 500px;
-  height: 50px;
-}
-#headBox .searchBox fieldset {
-  width: 100%;
-  height: 100%;
-}
-#headBox #search_area {
-  float: left;
-  width: 430px;
-  height: 50px;
-  text-indent: 20px;
-  border-bottom: 3px solid #aad;
-}
-#headBox .search_img {
-  float: right;
-  width: 50px;
-  height: 50px;
-  background-color: #aaa;
+
+  #headBox .searchBox {
+    display: none;
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    z-index: 900;
+    width: 500px;
+    height: 50px;
+  }
+  #headBox .searchBox fieldset {
+    width: 100%;
+    height: 100%;
+  }
+  #headBox #search_area {
+    float: left;
+    width: 430px;
+    height: 50px;
+    text-indent: 20px;
+    border-bottom: 3px solid #aad;
+  }
+  #headBox .search_submit {
+    width: 50px;
+    height: 40px;
+    background-color: #fff;
+  }
 }
 
 #viewBox {

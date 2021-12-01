@@ -103,7 +103,7 @@
               </nav><!-- //#gnbBox -->
             </div><!--//.gnb_wrapper-->
             <div class="search_wrapper">
-              <div class="search_btn"><button type="button">검색</button></div>
+              <div class="search_btn"><button type="button"><i class="fas fa-search"><span class="blind">검색창 열기</span></i></button></div>
               <form action="#" method="GET" class="searchBox">
                 <fieldset>
                   <legend class="blind">검색</legend>
@@ -114,32 +114,12 @@
                     type="text"
                     id="search_area"
                     value=""
+                    name="search__area"
                     placeholder="검색할 내용을 입력하세요."
                     />
-                    <input
-                      type="image"
-                      class="search_img"
-                      src="../img/search.png"
-                      alt="검색"
-                      />
-                </fieldset>
+                    <button type="submit" class="search_submit">검색</button>
               </form>
               <!-- .search_box -->
-            <!-- <div class="search_bar_area">
-              <div class="search_btn">
-                <button type="button"><i class="fas fa-search"><span class="blind">검색창 열기</span></i></button>
-              </div>
-              <form method="GET" action="#">
-                <fieldset>
-                  <legend>검색</legend>
-                    <label for="searchBar" class="blind"><span aria-hidden="true">검색어를 입력해 주세요</span></label>
-                    <input type="text" id="searchBar" name="search__Bar" value="" placeholder="검색어를 입력해 주세요" />
-                    <button type="submit">검색</button>
-                </fieldset>
-              </form>
-          </div> -->
-          <!--// .search_bar_area -->
-
             </div><!--//.search_wrapper-->
         </div><!--.headerWrap-->
       </div><!-- //head_inner-->
