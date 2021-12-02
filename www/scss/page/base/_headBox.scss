@@ -3,7 +3,7 @@
 
 #headBox{
   position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 1000;
-  width: 100%; height: 100px;
+  width: 100%; height: auto;
   padding: 20px;
   background-color: transparent;
 
@@ -31,7 +31,7 @@
         width: 100%; height: 100%;
     
       h1{
-        width: auto; height: auto;
+        width: auto; height: auto; margin-top: 5px;
         font-size: 32px; line-height: 32px;
       }
 
@@ -43,7 +43,6 @@
       .gnb_btn{right: 0;}
       .search_btn{right:50px;}
       @at-root #gnbBox{
-        // display: none;
         position:fixed; left: 0; top: 0; z-index: 900;
         width: 100%; height: 100%;
         @at-root .gnb_wrapper{
@@ -106,6 +105,25 @@
     }
     }//@at-root #gnbBox
     }//at-root .head_inner
+      /* searchBox----------------------------------------- */
+    .searchBox{
+      display:none;
+      position: absolute; top: 0; right: 0; z-index: 900;
+      width: 100%; height: 50px;
+    }
+    .searchBox fieldset{
+      width: 100%; height: 100%;
+    }
+    #search_area{
+      float: left;
+      width: calc(100% - 35px); height:35px;
+      text-indent: 20px;
+      border-bottom:3px solid $color_promary2;
+    }
+    .search_submit{
+      width: 35px; height: 35px;
+      background-color: #fff;
+    }
   }//include
 
 
@@ -125,7 +143,6 @@
       .gnb_btn{right: 0;}
       .search_btn{right:70px;}
       @at-root #gnbBox{
-        // display: none;
         position:fixed; left: 0; top: 0; z-index: 900;
         width: 100%; height: 100%;
       .gnb_wrapper{
@@ -195,7 +212,7 @@
         /* searchBox----------------------------------------- */
       .searchBox{
         display:none;
-        position: absolute; top: 5px; right: 70px; z-index: 900;
+        position: absolute; top: 5px; right: -20px; z-index: 900;
         width: 500px; height: 50px;
       }
       .searchBox fieldset{
@@ -205,10 +222,10 @@
         float: left;
         width: 430px; height: 50px;
         text-indent: 20px;
-        border-bottom:3px solid #aad;
+        border-bottom:3px solid $color_promary2;
       }
       .search_submit{
-        width: 50px; height: 40px;
+        width: 50px; height: 50px;
         background-color: #fff;
       }
   }//laptop

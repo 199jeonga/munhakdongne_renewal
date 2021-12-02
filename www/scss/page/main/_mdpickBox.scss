@@ -1,60 +1,79 @@
 #mdpickBox{
   width: 100%; height: auto;
   padding: 125px 0;
-}
+  
+  h2{
+    width: auto; height: 45px;
+    font-size: map-get($font_size, h2); line-height: 45px;
+  }
+  .mdpick_tab_area{
+    width: calc(135px * $mdpick_tab_slide); height: 30px;
+    margin: 44px 0; margin-left: 10px;
+  }
+  .mdpick_tab_part{
+    width: 100%; height: 100%;
+  }
+  .mdp_tab_con{
+    float:left;
+    width: 125px; height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .mdp_tab_con:last-child{
+    margin-right: 0;
+  }
+  .mdp_tab_con button{
+    border-radius: 10px; box-shadow: 0px 5px 10px #eee;
+    background-color: #fff;
+  }
+  .mdp_tab_con button:hover{
+    background-color: #EB4C38; color:#fff;
+  }
+  .mdpick_con_wrap{
+    overflow:hidden;
+    position: absolute; top: 150px; left: 50%; margin-left: -50vw;
+    width: 100vw; height: 275px;
+    padding-left: 30px;
+  }
+  .mdpick_booklist_area{
+    overflow-x: auto; overflow-y:visible;
+    width: 100%; height: 275px;
+    padding-bottom: 100px; box-sizing: content-box;
+  }
+  .mdpick_booklist_part{
+    --mdpickcon:10;
+    width: calc(calc(220px * var(--mdpickcon)) - 20px); height: 100%;
+  }
+    .mdp_booklist_con{
+      float:left;
+      width: 200px; height: 275px;
+      margin-right: 20px;
+      border-radius: 10px; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+      background-color: #aaa;
+    }
+    .mdp_booklist_con a{
+      display: block; width: 100%; height: 100%;
+    }
+    .mdp_booklist_con:last-child {
+      margin-right: 0;
+    }
+
+    
+  @include handle{
+    .mdpick_inner{
+      position: relative;
+        width: 100%; height: auto;
+        margin: 0 auto;
+      }
+          .prev_next_btn, .stop_btn{display: none;}
+  }// @include handle
+
+  @include laptop{
 .mdpick_inner{
   position: relative;
     width: 1100px; height: 500px;
     margin: 0 auto;
   }
-    .mdpick_tab_area{
-      width: 1500px; height: 30px;
-      margin: 44px 0;
-    }
-    .mdpick_tab_part{
-      width: 100%; height: 100%;
-    }
-    .mdp_tab_con{
-      float:left;
-      width: 125px; height: 30px;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-    .mdp_tab_con:last-child{
-      margin-right: 0;
-    }
-    .mdp_tab_con button{
-      border-radius: 10px; box-shadow: 0px 5px 10px #eee;
-      background-color: #fff;
-    }
-    .mdp_tab_con button:hover{
-      background-color: #EB4C38; color:#fff;
-    }
-    .mdpick_con_wrap{
-      overflow:hidden;
-      position: absolute; top: 150px; left: 50%; margin-left: -50vw;
-      width: 100vw; height: 275px;
-      padding-left: 30px;
-    }
-    .mdpick_booklist_area{
-      overflow-x: auto; overflow-y:visible;
-      width: 100%; height: 275px;
-      padding-bottom: 100px; box-sizing: content-box;
-    }
-    .mdpick_booklist_part{
-      --mdpickcon:10;
-      width: calc(calc(220px * var(--mdpickcon)) - 20px); height: 100%;
-    }
-      .mdp_booklist_con{
-        float:left;
-        width: 200px; height: 275px;
-        margin-right: 20px;
-        border-radius: 10px; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-        background-color: #aaa;
-      }
-      .mdp_booklist_con a{
-        display: block; width: 100%; height: 100%;
-      }
-      .mdp_booklist_con:last-child {
-        margin-right: 0;
-      }
+  }// @include tablet
+  
+}

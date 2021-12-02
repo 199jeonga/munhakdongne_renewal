@@ -41,10 +41,10 @@
 
 #wrap h2{
   width: auto; height: 45px;
-  font-size: map-get($font_size, "h2"); line-height: 45px;
+  font-size: map-get($font_size, h2); line-height: 45px;
 }
 .moreview_btn{
-  width: 172px; height: 35px;
+  width: 110px; height: 35px;
 }
 .moreview_btn a{
   width: 100%; height: 100%;

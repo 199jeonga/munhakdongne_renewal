@@ -1,61 +1,147 @@
 #footBox{
   width: 100%; height: auto;
-}
-  .link_inner{
-    width: 100%; height: 60px;
-    margin: auto;
-    background-color: #333;
-  }
-  .footer_link{
-    width: 1144px; height: 100%;
-    margin: 0 auto; margin-bottom: 40px;
-  }
-    .footer_link > div{
-      height: 30px; margin-top: 15px;
+
+  @include mobile{
+    .link_inner{
+      width: 100%; height: auto;
+      padding: 5px 0;
+      background-color: #333;
     }
-    .footer_nav{
-      float: left;
-      width: auto; height: 100%;
+    .footer_link{
+      width: 100%; height: auto;
     }
-    .footer_nav ul{
-      width: 100%; height: 100%;
-    }
-      .footer_nav li{
-        float:left;
+      .footer_nav{
         width: auto; height: 100%;
-        margin-right: 20px;
-        line-height: 30px;
       }
-      .footer_nav li:last-child{margin-right: 0;}
-      .footer_nav a{
-        display: block; 
+      .footer_nav ul{
         width: 100%; height: 100%;
-        text-align: center;  color:#fff;
-        padding: 0 5px;
+        display: flex; flex-wrap: wrap;
       }
-      .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
+        .footer_nav li{
+          width: auto; height: 100%;
+          margin-right: 20px;
+          line-height: 30px;
+        }
+        .footer_nav li:last-child{margin-right: 0;}
+        .footer_nav a{
+          display: block; 
+          width: 100%; height: 100%;
+          text-align: center;  color:#fff;
+          padding: 0 5px;
+        }
+        .footer_nav a:focus{ font-weight: 700; background-color: #666; border-radius: 10px; }
+  
+      .sns_link{display: none;}
 
+    @at-root .company_address{
+    width: 100%; height: auto;
+    color:#333; padding: 10px 0;
+    address{width: auto; height: auto; }
+      address p{display: none;}
+      address p:last-child{ display: block; width: 100%; height: 100%; color:#333; text-align: center; margin-bottom: 5px; }
+    }// .company_address
+  } //@include moblie
+  @include tablet{
+    .link_inner{
+      width: 100%; height: auto;
+      padding: 10px 0;
+      background-color: #333;
+    }
+    .footer_link{
+      width: 100%; height: auto;
+    }
+      .footer_nav{
+        width: auto; height: 100%;
+      }
+      .footer_nav ul{
+        width: 100%; height: 100%;
+        display: flex; flex-wrap: wrap;
+      }
+        .footer_nav li{
+          width: auto; height: 100%;
+          margin-right: 20px;
+          line-height: 30px;
+        }
+        .footer_nav li:last-child{margin-right: 0;}
+        .footer_nav a{
+          display: block; 
+          width: 100%; height: 100%;
+          text-align: center;  color:#fff;
+          padding: 0 5px;
+        }
+        .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
+        .footer_nav a:focus{ transform: scale(1.05); }
 
-    .sns_link{
-      float:right;
-      width: 270px; height: auto;
+      .sns_link{display: none;}
+
+      .company_address{
+        width: 100%; height: auto;
+        color:#333;
+        margin: 0 auto; padding: 20px 0;
+        }
+          address{width: 100%; height: auto;}
+            address p{width: 100%; height: 100%; color:#333; margin-bottom: 5px;}
+            address p:last-child{margin-bottom: 0;}
+  } //@include tablet
+  @include laptop{
+    .link_inner{
+      width: 100%; height: 60px;
+      margin: auto;
+      background-color: #333;
     }
-    .sns_link ul{
-      width: 100%; height: 30px;
+    .footer_link{
+      width: 1144px; height: 100%;
+      margin: 0 auto; margin-bottom: 40px;
     }
-      .sns_link li{
+      .footer_link > div{
+        height: 30px; margin-top: 15px;
+      }
+      .footer_nav{
         float: left;
-        width: 30px; height: 100%;
-        margin-right: 30px;
-        background-color: #fff;
+        width: auto; height: 100%;
       }
-      .sns_link li:last-child{margin-right: 0;}
-
-  .company_address{
-  width: 1144px; height: auto;
-  color:#333;
-  margin: 0 auto; padding: 60px 0;
-  }
-    address{width: 100%; height: auto;}
-      address p{width: 100%; height: 100%; color:#333; margin-bottom: 5px;}
-      address p:last-child{margin-bottom: 0;}
+      .footer_nav ul{
+        width: 100%; height: 100%;
+      }
+        .footer_nav li{
+          float:left;
+          width: auto; height: 100%;
+          margin-right: 20px;
+          line-height: 30px;
+        }
+        .footer_nav li:last-child{margin-right: 0;}
+        .footer_nav a{
+          display: block; 
+          width: 100%; height: 100%;
+          text-align: center;  color:#fff;
+          padding: 0 5px;
+        }
+        .footer_nav a:hover{ font-weight: 700; background-color: #666; border-radius: 10px; }
+  
+  
+      .sns_link{
+        float:right;
+        width: 270px; height: auto;
+      }
+      .sns_link ul{
+        width: 100%; height: 30px;
+      }
+        .sns_link li{
+          float: left;
+          width: 30px; height: 100%;
+          margin-right: 30px;
+          background-color: #fff;
+        }
+        .sns_link li:last-child{margin-right: 0;}
+  
+    .company_address{
+    width: 1144px; height: auto;
+    color:#333;
+    margin: 0 auto; padding: 60px 0;
+    }
+      address{width: 100%; height: auto;}
+        address p{width: 100%; height: 100%; color:#333; margin-bottom: 5px;}
+        address p:last-child{margin-bottom: 0;}
+  
+  } //@include laptop
+} // #footBox
