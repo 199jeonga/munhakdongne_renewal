@@ -2,10 +2,59 @@
 /* shopBox
 ============================================================================== */
 #shopBox{
+  
   width: 100%; height: auto;
-  padding: 80px 0;
+  padding: vwUnit(10) 0 vwUnit(120);
   background-color: rgba(177,177,177,0.5);
-}
+
+  @include handle{
+    .shop_inner{
+      position: relative;
+      width: vwUnit(308); height: vwUnit(204);
+      margin: 0 auto;
+    }
+      .shop_inner h2{
+        width: auto; height: 45px;
+        color:#333;
+        font-size: map-get($font_size, h2); line-height: 45px;
+      }
+      .shop_area{
+        display: flex; flex-wrap: wrap; justify-content: space-between;
+        width: 100%; height: 100%;
+        margin-top: vwUnit(30);
+      }
+      .shop_con{
+        width:vwUnit(100); height: vwUnit(100);
+        margin-bottom: vwUnit(4);
+        background-color: #aa8;
+        &.action{
+          background-color: rgba($color_black, 0.5);
+          a:before{ 
+            content: "자세히 보기2";
+            display: block; width: 90%; height: 90%;
+            margin: auto; margin-top: 5%; text-align: center;
+            border: 2px solid $color_white_op; box-sizing: border-box; border-radius: 5px;
+            
+          }
+          span{ width: 100%; height: auto; margin: auto;}
+        }
+      }
+      
+      .shop_con:nth-last-child(-n+5){margin-bottom: 0;}
+      .shop_con:nth-last-child(-n+2){@include blind;}
+      .shop_con>a{
+        display: block;
+        width: 100%; height: 100%;
+      }
+      .shop_inner .moreview_btn{
+        position: absolute; top: 0; right: 0;
+        width: 110px; height: 35px;
+      }
+      .shop_inner .moreview_btn a{
+        display: block; width: 100%; height: 100%;
+      }
+  }
+  @include laptop{
 .shop_inner{
   position: relative;
   width: 1140px; height: 680px;
@@ -37,4 +86,6 @@
   .shop_inner .moreview_btn a{
     display: block; width: 100%; height: 100%;
   }
+}// laptop
+}// #shopBox
   

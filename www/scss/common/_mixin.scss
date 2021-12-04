@@ -20,7 +20,7 @@
 }
 
 // image
-$imgPath:'../img/';
+$imgPath:'../../multi/img/';
 
 @mixin img($file, $repeat:no-repeat, $position:50% 50%, $size:initial){
   background: {
@@ -73,9 +73,14 @@ $baseDevice:320;
 }
 
 
+
+
+
+
+
+
+
 // @media query --------------------------------------
-
-
 
 
 @mixin mobile(){
