@@ -1,48 +1,102 @@
-/* prev & next btn design - #mdpickBox, #newbookBox ===================================*/
-
-.stop_btn{
-  position: absolute; bottom:0; right: 0;
-  width: 30px; height: 30px;
-  background-color: #ada;
-}
-.prev_next_btn{
-  position:absolute; bottom: 0; right: 35px;
-  width: 70px; height: auto;
-  color:#000;
-}
-.next_btn, .prev_btn{
-  width: 30px; height: 30px;
-  margin-right: 5px;
-  background-color: #aad;
-}
-.next_btn{
-  float:right;
-}
-.prev_btn{
-  float:left;
-}
-
-
-/* award && magazine
-===================================================================== */
-.title_inner{
-  width: 1144px; height: 45px;
-  margin: 0 auto;
-}
-  .title_inner h2{
-    float: left;
-    color:#fff;
+//moblie===========================================================================================
+@include mobile{
+  .award_title, .magazine_title{
+    width: 100%; height: 120px;
+    padding-top: 40px;
+    background-color: #333;
+    .title_inner{
+      width: 100%; height: 100%;
+      h2{
+        width: auto; height: 33px;
+        font-size: map-get($font_size, h3); line-height: 33px;
+      }
+      .award_tab, .magazine_tab{
+        display: flex; justify-content: left;
+        width: auto; height: 30px;  margin-top: 10px; 
+      }
+      .title_tab_btn{
+        width: 140px; height: 100%;
+        margin-right: 10px;
+        background-color: #08a; 
+      }
+    }// title_inner
+  }//award_title
+  .am_inner_area{
+  width: calc(100% - 20px); height: auto;
+  margin: auto; margin-top: 18px;
+  background-color: #fff;
   }
-  .award_tab, .magazine_tab{
-    float:right;
-    width: auto; height: auto;  
-  }
-    .title_tab_btn{
-      float: left;
-      width: 140px; height: 40px;
-      margin-top: 2px; margin-right: 10px;
-      background-color: #c8a; 
+.book_part{
+  width: 100%; height: auto;
+}
+  .book_con{
+    width: 100%; height: 150px; margin-bottom: 4px;
+    background-color: #777;
     }
+    .book_con a{
+      display: block;
+      width: 100%; height: 100%;
+    }
+    .book_con:last-child{margin-right: 0;}
+      .book_con .action{width: 100%; height: auto; padding-top: 33px;}
+      .book_con dl{width: 100%; height: 100%;}
+        .title{width: 100%; height: 25px; margin-bottom: 26px; background-color: #fff;}
+        .content{width: 100%; height: auto; min-height: 220px; background-color: #fff;}
+  .pn_btn {
+    position: absolute; top: 640px; left: 50%; margin-left: -105px;
+    width: 215px; height: 30px;
+  }
+  .more_btn{
+    position: absolute; top: 640px; left: 50%; margin-left: -70px;
+    width: 140px; height: 30px;
+  }
+  #magazineBox .pn_btn, #magazineBox .more_btn{top: 535px;}
+    .more_btn a{
+      display: block; 
+      width: 100%; height: 100%;
+      text-align: center; line-height: 30px;
+      background-color: #a8c;
+    }
+}//moblie
+
+
+
+//tablet===========================================================================================
+
+// @include tablet{
+  
+// }//tablet
+
+
+
+//laptop===========================================================================================
+
+@include laptop{
+  .award_title, .magazine_title{
+    width: 100%; height: 170px;
+    padding-top: 104px;
+    background-color: #333;
+    .title_inner{
+      // display: flex; justify-content: space-between;
+      width: 1144px; height: 45px;
+      margin: auto;
+      h2{
+        float: left;
+        width: auto; height: 45px;
+        font-size: map-get($font_size, h2); line-height: 45px;
+      }
+      .award_tab, .magazine_tab{
+        float: right;
+        display: flex; justify-content: space-between;
+        width: auto; height: 40px;  margin-top: 2px; 
+      }
+      .title_tab_btn{
+        width: 140px; height: 100%;
+        margin-left: 10px;
+        background-color: #08a; 
+      }
+    }// title_inner
+  }//award_title
   .am_inner_area{
   width: 1170px; height: 400px;
   margin: auto; margin-top: 24px;
@@ -80,3 +134,6 @@
       text-align: center; line-height: 30px;
       background-color: #a8c;
     }
+}//laptop
+
+

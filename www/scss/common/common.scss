@@ -39,10 +39,10 @@
 
 // design ----------------------------------
 
-#wrap h2{
-  width: auto; height: 45px;
-  font-size: map-get($font_size, h2); line-height: 45px;
-}
+// #wrap h2{
+//   width: auto; height: 45px;
+//   font-size: map-get($font_size, h2); line-height: 45px;
+// }
 .moreview_btn{
   width: 110px; height: 35px;
 }
@@ -54,3 +54,27 @@ button{
   width: 100%; height: 100%;
 }
 
+
+/* prev & next btn design - #mdpickBox, #newbookBox ===================================*/
+
+.stop_btn{
+  position: absolute; bottom:0; right: 0;
+  width: 30px; height: 30px;
+  background-color: #ada;
+}
+.prev_next_btn{
+  position:absolute; bottom: 0; right: 35px;
+  width: 70px; height: auto;
+  color:#000;
+}
+.next_btn, .prev_btn{
+  width: 30px; height: 30px;
+  margin-right: 5px;
+  background-color: #aad;
+}
+.next_btn{
+  float:right;
+}
+.prev_btn{
+  float:left;
+}

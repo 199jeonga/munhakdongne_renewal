@@ -36,6 +36,14 @@ $imgPath:'../img/';
   }
   @content;
 }
+// blind
+@mixin blind(){
+  display: block; width: 0; height: 0;
+  position: absolute; z-index:-1;
+  clip:rect(0,0,0,0);
+  overflow: hidden;
+}
+
 
 // size 
 @mixin full($file:false, $repeat:no-repeat, $position:50% 50%, $size:initial){
@@ -52,6 +60,18 @@ $baseSize: 16;
   #{$name}: #{$unit} + px;
   #{$name}: math.div($unit , $baseSize) + rem;
 }
+
+// @function remUnit2($unit){
+//   $pxCode :  #{$unit} + px;
+//   $remCode : math.div($unit , $baseSize) + rem;
+//   @return $pxCode , $remCode;
+// }
+
+$baseDevice:320;
+@function vwUnit($size, $deviceWidth:$baseDevice){
+  @return (math.div($size, $deviceWidth) * 100)+vw;
+}
+
 
 // @media query --------------------------------------
 
