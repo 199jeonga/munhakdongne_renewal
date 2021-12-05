@@ -1,40 +1,126 @@
 #brandlistBox{
   overflow:hidden ;
   width: 100%; height: auto;
-  box-sizing: border-box;  padding: 90px 0;
   background-color: rgba(85,85,85,0.3);
-}
-.brandlist_inner{
-  position: relative;
-  width: 1144px; height: 540px;
-  margin: 0 auto;
-}
+  
+  @include mobile{
+    padding:60px 0 ;
+  .brandlist_inner{
+    position: relative;
+    width: 100%; height: 350px;
+    margin: 0 auto;
+  }
   .brandlist_inner h2{
     margin-bottom: 80px;
+    width: auto; height: 45px;
+  font-size: map-get($font_size, h3); line-height: 45px;
   }
   .brandlist_wrap{
     position: absolute; top: 120px; left: 50%; margin-left: -50vw;
-    width: 100vw; height: 310px;
+    width: 100vw; height: 130px;
   }
   .brandlist_wrap>ul{
-    width: 2000px; height: 140px;
+    width: calc(70 * $brandlist_slide)+px; height: auto;
   }
   .brandlist_part_top{
-    margin-bottom: 26px;
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px;
   }
   .brandlist_part_bottom{
-    margin-left: -70px;
+    margin-left: -35px;
+    display: flex; justify-content: space-between;
   }
   .brandlist_wrap li{
-    float:left;
-    width: 140px; height: 140px; margin-right: 26px;
+    width: 60px; height: 60px;
     border-radius: 10px;
     background-color: #555;
   }
   .brandlist_inner > .moreview_btn{
-    position: absolute; bottom: 0; right: 50%; margin-right: -86px;
-    width: 172px; height: 35px;
+    position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 30px;
   }
   .brandlist_inner .moreview_btn a{
     display: block;
   }
+  } //moblie
+  @include tablet{
+    padding:60px 0 ;
+    .brandlist_inner{
+      position: relative;
+      width: 100%; height: 400px;
+      margin: 0 auto;
+    }
+    .brandlist_inner h2{
+      margin-bottom: 80px; margin-left: 10px;
+      width: auto; height: 45px;
+      font-size: map-get($font_size, h3); line-height: 45px;
+    }
+    .brandlist_wrap{
+      position: absolute; top: 120px; left: 50%; margin-left: -50vw;
+      width: 100vw; height: 130px;
+    }
+    .brandlist_wrap>ul{
+      width: calc(110 * $brandlist_slide)+px; height: auto;
+    }
+    .brandlist_part_top{
+      display: flex; justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .brandlist_part_bottom{
+      margin-left: -55px;
+      display: flex; justify-content: space-between;
+    }
+    .brandlist_wrap li{
+      width: 100px; height: 100px;
+      border-radius: 10px;
+      background-color: #555;
+    }
+    .brandlist_inner > .moreview_btn{
+      position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+      width: 120px; height: 30px;
+    }
+    .brandlist_inner .moreview_btn a{
+      display: block;
+    }
+  }//tablet
+  @include laptop{
+    padding: 90px 0;
+
+    .brandlist_inner{
+      position: relative;
+      width: 1144px; height: 540px;
+      margin: 0 auto;
+    }
+    .brandlist_inner h2{
+      margin-bottom: 80px;
+      width: auto; height: 45px;
+      font-size: map-get($font_size, h2); line-height: 45px;
+    }
+      .brandlist_wrap{
+        position: absolute; top: 120px; left: 50%; margin-left: -50vw;
+        width: 100vw; height: 310px;
+      }
+      .brandlist_wrap>ul{
+        width: 2000px; height: 140px;
+      }
+      .brandlist_part_top{
+        margin-bottom: 26px;
+      }
+      .brandlist_part_bottom{
+        margin-left: -70px;
+      }
+      .brandlist_wrap li{
+        float:left;
+        width: 140px; height: 140px; margin-right: 26px;
+        border-radius: 10px;
+        background-color: #555;
+      }
+      .brandlist_inner > .moreview_btn{
+        position: absolute; bottom: 0; right: 50%; margin-right: -86px;
+        width: 172px; height: 35px;
+      }
+      .brandlist_inner .moreview_btn a{
+        display: block;
+      }
+  }//laptop
+}

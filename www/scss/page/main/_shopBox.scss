@@ -4,10 +4,10 @@
 #shopBox{
   
   width: 100%; height: auto;
-  padding: vwUnit(10) 0 vwUnit(120);
   background-color: rgba(177,177,177,0.5);
-
+  
   @include handle{
+    padding: vwUnit(10) 0 vwUnit(120);
     .shop_inner{
       position: relative;
       width: vwUnit(308); height: vwUnit(204);
@@ -16,7 +16,7 @@
       .shop_inner h2{
         width: auto; height: 45px;
         color:#333;
-        font-size: map-get($font_size, h2); line-height: 45px;
+        font-size: map-get($font_size, h3); line-height: 45px;
         margin-left: 10px;
       }
       .moreview_btn{margin-right: 10px;}
@@ -58,6 +58,7 @@
       }
   }
   @include laptop{
+  padding: 40px 0 140px;
 .shop_inner{
   position: relative;
   width: 1140px; height: 680px;
@@ -69,16 +70,15 @@
     font-size: map-get($font_size, h2); line-height: 45px;
   }
   .shop_area{
-    width: 100%; height: 560px;
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    width: 100%; height: auto;
     margin-top: 80px;
   }
   .shop_con{
-    float: left;
     width: 270px; height: 270px;
-    margin-right: 20px; margin-bottom: 20px;
+    margin-bottom: 20px;
     background-color: #aa8;
   }
-  .shop_con:nth-child(4n){margin-right: 0;}
   .shop_con:nth-last-child(-n+4){margin-bottom: 0;}
   .shop_con>a{
     display: block;

@@ -26,9 +26,10 @@
   outline: none;
 }
 #searchBookBox:focus{border-radius: 10px; background-color: #eee;}
-#searchButton{
+.searchButton{
   float: right;
   width: 36px; height: 36px;
   border-radius: 10px;
   background-color: #1B2C7A;
 }
+button i{color:$color_white;}

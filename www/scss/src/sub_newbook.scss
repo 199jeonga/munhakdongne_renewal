@@ -1,4 +1,19 @@
-#wrap{
-  width: 100%; height: auto;
-  margin: auto;
+@import "../common/variable", "../common/mixin";
+
+
+html, body{width: 100%; height: 100%;}
+// body{ overflow-x: hidden; overflow-y:visible; }
+
+#wrap{width: 100%; height: auto;
+
+  
 }
+
+@import "../page/base/headBox";
+
+@import "../page/base/subNavTitleBox";
+@import "../page/sub_newbook/subSearchBox";
+@import "../page/sub_newbook/bookConBox";
+@import "../page/base/subPageBtn";
+
+@import "../page/base/footBox";
