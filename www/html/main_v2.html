@@ -398,14 +398,14 @@
       <div class="shop_inner">
         <h2>Goods</h2>
         <ul class="shop_area">
-          <li class="shop_con action"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
-          <li class="shop_con"><a href="#"><span>자세히보기</span></a></li>
+          <li class="shop_con action"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
+          <li class="shop_con"><a href="#"><span class="blind">자세히보기</span></a></li>
         </ul>
         <div class="moreview_btn"><a href="#" title="북클럽 굿즈 더보기">moreview</a></div>
       </div><!-- //shop_inner -->
@@ -427,22 +427,26 @@
           <button type="button" class="next_btn"><i class="fas fa-arrow-right"></i><span class="blind">다음으로 가기</span></button>
           <button type="button" class="prev_btn"><i class="fas fa-arrow-left"></i><span class="blind">이전으로 가기</span></button>
         </div>
-        <ul class="book_part clearfix">
-          <li class="book_con">
-            <a href="#">
-              <div class="action">
-                <dl>
-                  <dt class="title">title</dt>
-                  <dd class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</dd>
-                </dl>
-              </div>
-            </a>
-          </li>
-          <li class="book_con"><a href="#">list</a></li>
-          <li class="book_con"><a href="#">list</a></li>
-          <li class="book_con"><a href="#">list</a></li>
-          <li class="book_con"><a href="#">list</a></li>
-        </ul>
+        <div class="book_part_wrapper">
+          <div>
+            <ul class="book_part clearfix">
+              <li class="book_con">
+                <a href="#">
+                  <div class="action">
+                    <dl>
+                      <dt class="title">title</dt>
+                      <dd class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat tempora voluptatem magnam esse quia rem.</dd>
+                    </dl>
+                  </div>
+                </a>
+              </li>
+              <li class="book_con"><a href="#">list</a></li>
+              <li class="book_con"><a href="#">list</a></li>
+              <li class="book_con"><a href="#">list</a></li>
+              <li class="book_con"><a href="#">list</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="more_btn"><a href="#" title="더보기">More view</a></div>
       </div><!--magazine_inner-->
     </section><!-- //magazineBox -->
@@ -471,36 +475,315 @@
             </section>
           </div><!-- //wz_title_part -->
           <div class="wz_con_part">
-            <div class="wz_con_info">
-              <div class="wz_con_date">월요일</div>
-              <div class="wz_con_title">
-                <p>수면아래</p>
-                <p>이주란</p>
-                <p><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
-              </div>
-            </div><!--info-->
-            <div class="wz_con_episode">
-              <div><a href="#">
-                <dl>
-                  <dt>title</dt>
-                  <dd>contentcontentcontentcontentcontent</dd>
-                </dl>
-              </a></div>
-              <div><a href="#">
-                <dl>
-                  <dt>title</dt>
-                  <dd>contentcontentcontentcontentcontent</dd>
-                </dl>
-              </a></div>
-              <div><a href="#">
-                <dl>
-                  <dt>title</dt>
-                  <dd>contentcontentcontentcontentcontent</dd>
-                </dl>
-              </a></div>
+            <div>
+              <ul>
+                <li class="wz_con_content action">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+                <li class="wz_con_content">
+                  <a href="#">
+                    <div class="wz_con_info">
+                      <div class="wz_con_date">월요일</div>
+                      <div class="wz_con_title">
+                        <p class="wz_book_name">수면아래</p>
+                        <p class="wz_writer_name">이주란</p>
+                        <p class="detail"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. In provident, m molestiaeipsum dolor sit amet consectetur adipisicing elit. In provident,</a></p>
+                      </div>
+                    </div><!--info-->
+                  </a>
+                  <div class="wz_con_episode">
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                    <div class="wz_con_episode_link">
+                      <a href="#">
+                      <dl>
+                        <dt>title</dt>
+                        <dd>contentcontentcontentcontentcontent</dd>
+                      </dl>
+                    </a>
+                    </div>
+                  </div><!--wz_con_episode-->
+                </li><!-- //wz_con_content -->
+              </ul>
             </div>
-          </div><!-- //wz_con_part -->
-        </div><!-- //webzine_area-->
+        </div><!-- //wz_con_part-->
       </div><!-- //webzine_inner -->
     </section><!-- //webzineBox -->
 

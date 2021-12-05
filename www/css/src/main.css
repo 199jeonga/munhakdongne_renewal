@@ -1549,6 +1549,10 @@ body {
     color: #333;
     font-size: 38px;
     line-height: 45px;
+    margin-left: 10px;
+  }
+  #shopBox .moreview_btn {
+    margin-right: 10px;
   }
   #shopBox .shop_area {
     display: flex;
@@ -1568,13 +1572,17 @@ body {
     background-color: rgba(51, 51, 51, 0.5);
   }
   #shopBox .shop_con.action a:before {
-    content: "자세히 보기2";
+    content: "자세히 보기";
     display: block;
     width: 90%;
     height: 90%;
     margin: auto;
     margin-top: 5%;
     text-align: center;
+    line-height: 30.625vw;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
     border: 2px solid rgba(255, 255, 255, 0.7);
     box-sizing: border-box;
     border-radius: 5px;
@@ -1622,8 +1630,11 @@ body {
     margin: 0 auto;
   }
   #shopBox .shop_inner h2 {
+    width: auto;
+    height: 45px;
     color: #333;
-    margin-bottom: 80px;
+    font-size: 38px;
+    line-height: 45px;
   }
   #shopBox .shop_area {
     width: 100%;
@@ -1897,167 +1908,284 @@ body {
   padding: 105px 0;
   margin-bottom: 90px;
 }
-
-.webzine_inner {
-  width: 1144px;
-  height: 690px;
-  margin: auto;
+@media all and (max-width: 1279px) {
+  #webzineBox {
+    /* wz_account_part-------------------------------------------------------------------- */
+    /* wz_title_part-------------------------------------------------------------------- */
+    /* wz_con_part-------------------------------------------------------------------- */
+  }
+  #webzineBox .webzine_inner {
+    width: 100%;
+    height: 280px;
+  }
+  #webzineBox .webzine_inner h2 {
+    width: auto;
+    height: 45px;
+    font-size: 38px;
+    line-height: 45px;
+    margin-left: 10px;
+  }
+  #webzineBox .webzine_area {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+  #webzineBox .wz_account_part {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #webzineBox .wz_title_part {
+    display: flex;
+    margin: 30px 0;
+    margin-left: 5px;
+  }
+  #webzineBox .wz_title_part > section {
+    width: auto;
+    height: auto;
+    padding: 0 2px;
+    margin-right: 4px;
+    background-color: #000;
+  }
+  #webzineBox .wz_title_part button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    font-size: 16px;
+    /* background-color: #daa; */
+  }
+  #webzineBox .wz_con_part {
+    overflow: hidden;
+    width: 100%;
+    height: 170px;
+  }
+  #webzineBox .wz_con_part > div {
+    overflow-x: auto;
+    overflow-y: visible;
+    width: 100%;
+    height: auto;
+  }
+  #webzineBox .wz_con_part ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1075px;
+    height: 170px;
+  }
+  #webzineBox .wz_con_content {
+    overflow: hidden;
+    width: 130px;
+    height: 170px;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    padding-top: 5px;
+  }
+  #webzineBox .wz_con_info {
+    width: 100%;
+    height: 100%;
+  }
+  #webzineBox .wz_con_date {
+    width: 100%;
+    height: auto;
+    color: #eb4c38;
+    font-size: 18px;
+    text-align: center;
+    border-top: 1px solid #eb4c38;
+    border-bottom: 1px solid #eb4c38;
+    margin: 0 auto;
+  }
+  #webzineBox .wz_con_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #aad;
+  }
+  #webzineBox .wz_book_name {
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+  }
+  #webzineBox .wz_writer_name {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+  }
+  #webzineBox .detail {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #webzineBox .wz_con_episode {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
 }
-
-.webzine_inner h2 {
-  margin-bottom: 48px;
-}
-
-.webzine_area {
-  width: auto;
-  height: auto;
-  background-color: #fff;
-}
-
-.webzine_area > div {
-  float: left;
-  width: 380px;
-  height: 600px;
-  box-sizing: border-box;
-  background-color: #acc;
-}
-
-/* wz_account_part-------------------------------------------------------------------- */
-.wz_account_part {
-  padding-top: 160px;
-  padding-left: 45px;
-}
-
-.wz_account_part p:first-child {
-  width: 100%;
-  height: 140px;
-  margin-bottom: 38px;
-  font-family: "KoPub Batang";
-  background-color: #fff;
-}
-
-.wz_account_part p:nth-child(2) {
-  width: 100%;
-  height: auto;
-  min-height: 100px;
-  font-family: "KoPub Batang";
-  background-color: #fff;
-}
-
-/* wz_title_part-------------------------------------------------------------------- */
-.wz_title_part {
-  margin: 0 2px;
-}
-
-.wz_title_part > div {
-  width: 100%;
-  box-sizing: border-box;
-  padding-right: 30px;
-  font-size: 30px;
-}
-
-.wz_serial {
-  height: 300px;
-  padding-top: 200px;
-  background-color: #eb4c38;
-}
-
-.wz_finished {
-  width: 100%;
-  height: 150px;
-  padding: 50px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: #505050;
-}
-
-.wz_published {
-  width: 100%;
-  height: 150px;
-  padding: 50px 0;
-  background-color: #505050;
-}
-
-.wz_title_part button {
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  text-align: right;
-  font-size: 30px;
-  /* background-color: #daa; */
-}
-
-/* wz_con_part-------------------------------------------------------------------- */
-.wz_con_part {
-  padding: 40px;
-}
-
-.wz_con_info {
-  width: 100%;
-  height: 310px;
-}
-
-.wz_con_date {
-  width: 100%;
-  height: 43px;
-  color: #eb4c38;
-  font-size: 26px;
-  text-align: center;
-  border-top: 1px solid #eb4c38;
-  border-bottom: 1px solid #eb4c38;
-  margin: 0 auto;
-  margin-bottom: 40px;
-}
-
-.wz_con_title {
-  width: 100%;
-  height: auto;
-  min-height: 220px;
-  text-align: center;
-  margin: 0 auto;
-  /* background-color: #bbb; */
-}
-
-.wz_con_title p:nth-child(1) {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 15px;
-  background-color: #fff;
-}
-
-.wz_con_title p:nth-child(2) {
-  width: 100%;
-  height: 30px;
-  margin-bottom: 30px;
-  background-color: #fff;
-}
-
-.wz_con_title p:nth-child(3) {
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-}
-
-.wz_con_episode {
-  width: 100%;
-  height: 210px;
-  padding: 5px;
-  box-sizing: border-box;
-  background-color: #bab;
-}
-
-.wz_con_episode div {
-  width: 100%;
-  height: 33.3333%;
-  padding: 5px;
-  box-sizing: border-box;
-  border-bottom: 1px solid #333;
-  background-color: #aad;
-}
-
-.wz_con_episode a {
-  display: block;
-  width: 100%;
-  height: 100%;
+@media all and (min-width: 1280px) {
+  #webzineBox {
+    /* wz_account_part-------------------------------------------------------------------- */
+    /* wz_title_part-------------------------------------------------------------------- */
+    /* wz_con_part-------------------------------------------------------------------- */
+  }
+  #webzineBox .webzine_inner {
+    width: 1144px;
+    height: 690px;
+    margin: auto;
+  }
+  #webzineBox .webzine_inner h2 {
+    margin-bottom: 48px;
+  }
+  #webzineBox .webzine_area {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+  }
+  #webzineBox .webzine_area > div {
+    float: left;
+    width: 380px;
+    height: 600px;
+    box-sizing: border-box;
+    background-color: #acc;
+  }
+  #webzineBox .wz_account_part {
+    padding-top: 160px;
+    padding-left: 45px;
+  }
+  #webzineBox .wz_account_part p:first-child {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 38px;
+    font-family: "KoPub Batang";
+    background-color: #fff;
+  }
+  #webzineBox .wz_account_part p:nth-child(2) {
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    font-family: "KoPub Batang";
+    background-color: #fff;
+  }
+  #webzineBox .wz_title_part {
+    margin: 0 2px;
+  }
+  #webzineBox .wz_serial {
+    height: 300px;
+    padding-top: 200px;
+    background-color: #eb4c38;
+  }
+  #webzineBox .wz_finished {
+    width: 100%;
+    height: 150px;
+    padding: 50px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #505050;
+  }
+  #webzineBox .wz_published {
+    width: 100%;
+    height: 150px;
+    padding: 50px 0;
+    background-color: #505050;
+  }
+  #webzineBox .wz_title_part button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    font-size: 30px;
+    /* background-color: #daa; */
+  }
+  #webzineBox .wz_con_part {
+    padding: 40px;
+  }
+  #webzineBox ul {
+    width: 100%;
+    height: 100%;
+  }
+  #webzineBox .wz_con_content {
+    display: none;
+  }
+  #webzineBox .action {
+    display: block;
+  }
+  #webzineBox .wz_con_info {
+    width: 100%;
+    height: 310px;
+  }
+  #webzineBox .wz_con_date {
+    width: 100%;
+    height: 43px;
+    color: #eb4c38;
+    font-size: 26px;
+    text-align: center;
+    border-top: 1px solid #eb4c38;
+    border-bottom: 1px solid #eb4c38;
+    margin: 0 auto;
+  }
+  #webzineBox .wz_con_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 265px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #webzineBox .wz_book_name {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    font-size: 24px;
+    background-color: #fff;
+  }
+  #webzineBox .wz_writer_name {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    font-size: 18px;
+    background-color: #fff;
+  }
+  #webzineBox .detail {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #webzineBox .wz_con_episode {
+    width: 100%;
+    height: 210px;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #bab;
+  }
+  #webzineBox .wz_con_episode_link {
+    width: 100%;
+    height: 33.3333%;
+    padding: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #333;
+    background-color: #aad;
+  }
+  #webzineBox .wz_con_episode a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #brandlistBox {

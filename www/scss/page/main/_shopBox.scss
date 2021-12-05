@@ -17,7 +17,9 @@
         width: auto; height: 45px;
         color:#333;
         font-size: map-get($font_size, h2); line-height: 45px;
+        margin-left: 10px;
       }
+      .moreview_btn{margin-right: 10px;}
       .shop_area{
         display: flex; flex-wrap: wrap; justify-content: space-between;
         width: 100%; height: 100%;
@@ -30,9 +32,10 @@
         &.action{
           background-color: rgba($color_black, 0.5);
           a:before{ 
-            content: "자세히 보기2";
+            content: "자세히 보기"; 
             display: block; width: 90%; height: 90%;
-            margin: auto; margin-top: 5%; text-align: center;
+            margin: auto; margin-top: 5%; text-align: center; line-height: vwUnit(98);
+            font-size: map-get($font_size, content3 ); font-weight: 500; color:$color_white;
             border: 2px solid $color_white_op; box-sizing: border-box; border-radius: 5px;
             
           }
@@ -61,7 +64,9 @@
   margin: 0 auto;
 }
   .shop_inner h2{
-    color:#333; margin-bottom: 80px;
+    width: auto; height: 45px; 
+    color:#333;
+    font-size: map-get($font_size, h2); line-height: 45px;
   }
   .shop_area{
     width: 100%; height: 560px;
