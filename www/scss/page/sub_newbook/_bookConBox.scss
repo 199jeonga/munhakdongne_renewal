@@ -1,8 +1,7 @@
 
 /* bookConBox================================================= */
 #bookConBox{
-  width: 100%; height: 1790px;
-  padding-top: 20px;
+
 
   @include mobile{
 
@@ -10,14 +9,15 @@
 
 
   @include tablet{
-
+    width: 100%; height: auto;
+    padding-top: 20px;
     .bookcon_inner{
       display: flex; flex-wrap: wrap; justify-content: space-between;
       width: 610px; height: auto;
       margin:0 auto;
     }
     .bookcon_area {
-      width: 300px; height: 220px;
+      width: 300px; height: auto;
       margin-bottom: 20px;
     }
     .bookcon_area:nth-last-child(2){
@@ -40,21 +40,21 @@
     .extract_content{
       overflow: hidden;
       width: 100%; height: 60px;
-      text-align: left; font-size: map-get($font_size, book2 ); font-family: 'KoPub Batang';
-      margin-bottom: 20px; margin-top: 10px;
+      text-align: left; font-size: map-get( $font_size, book2); font-family: 'KoPub Batang';
       border-bottom: 2px solid $color_promary2;
-      text-overflow: clip;
+      text-overflow: ellipsis;
     }
     .explanation_content{
       width: 100%; height: auto;
+      padding: 10px 0;
     }
-    .bookcon_text dt{
+    .explanation_content dt{
       float: left;
       width: 60px; height: 25px;
       margin-right: 6px;
       text-align: left; font-weight: 600;
     }
-    .bookcon_text dd{
+    .explanation_content dd{
       float: left;
       width: calc(100% - 66px); height: 25px;
       text-align: left;
@@ -68,6 +68,8 @@
 
 
   @include laptop{
+    width: 100%; height: auto;
+    padding-top: 20px;
     .bookcon_inner{
       display: flex; flex-wrap: wrap; justify-content: space-between;
       width: 1144px; height: auto;

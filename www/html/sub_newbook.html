@@ -26,26 +26,25 @@
       <div class="head_inner clearfix">
         <h1><a href="./main_v2.html" title="문학동네">문학동네</a></h1>
         <div class="headerWrap clearfix">
-            <div class="gnb_wrapper">
               <div class="gnb_btn"><button type="button">메뉴</button></div>
               <nav id="gnbBox">
                 <h2 class="blind">메뉴</h2>
                 <div class="gnb_wrapper">
                   <ul class="gnb_inner clearfix" role="menu">
                     <li role="listitem">
-                      <div class="gnb_inner_title"><a href="#">도서</a></div>
+                      <div class="gnb_inner_title"><a href="../html/sub_newbook.html">도서</a></div>
                       <ul class="gnb_inner_con">
-                        <li><a href="#">list_00</a></li>
-                        <li><a href="#">list_01</a></li>
-                        <li><a href="#">list_02</a></li>
-                        <li><a href="#">list_03</a></li>
-                        <li><a href="#">list_04</a></li>
-                        <li><a href="#">list_05</a></li>
+                        <li><a href="../html/sub_newbook.html">새로나온책</a></li>
+                        <li><a href="#">브랜드별 도서</a></li>
+                        <li><a href="#">분야별 도서</a></li>
+                        <li><a href="#">수상도서</a></li>
+                        <li><a href="#">매거진</a></li>
+                        <li><a href="#">정기구독</a></li>
                       </ul>
                     </li>
                     <li role="listitem">
                       <div class="gnb_inner_title"><a href="#">브랜드</a></div>
-                      <ul class="gnb_inner_con">
+                      <ul class="gnb_inner_con" class="on">
                         <li><a href="#">list_00</a></li>
                         <li><a href="#">list_01</a></li>
                         <li><a href="#">list_02</a></li>
@@ -55,7 +54,7 @@
                     </li>
                     <li role="listitem">
                       <div class="gnb_inner_title"><a href="#">북클럽</a></div>
-                      <ul class="gnb_inner_con">
+                      <ul class="gnb_inner_con" class="on">
                         <li><a href="#">list_00</a></li>
                         <li><a href="#">list_01</a></li>
                         <li><a href="#">list_02</a></li>
@@ -66,7 +65,7 @@
                     </li>
                     <li role="listitem">
                       <div class="gnb_inner_title"><a href="#">고객지원</a></div>
-                      <ul class="gnb_inner_con">
+                      <ul class="gnb_inner_con" class="on">
                         <li><a href="#">list_00</a></li>
                         <li><a href="#">list_01</a></li>
                         <li><a href="#">list_02</a></li>
@@ -74,25 +73,21 @@
                         <li><a href="#">list_04</a></li>
                         <li><a href="#">list_05</a></li>
                         <li><a href="#">list_06</a></li>
-                        <li><a href="#">list_07</a></li>
+                        <li><a href="#">list_이거니?</a></li>
                       </ul>
                     </li>
                     <li role="listitem">
                       <div class="gnb_inner_title"><a href="#">웹진</a></div>
                       <div class="gnb_inner_title"><a href="#">독파</a></div>
-                      <ul class="gnb_inner_con">
-                        <li><a href="#">list_00</a></li>
-                        <li><a href="#">list_01</a></li>
-                        <li><a href="#">list_02</a></li>
-                        <li class="clearfix">
-                          <ul class="gnb_sns clearfix">
-                            <li><a href="#">01</a></li>
-                            <li><a href="#">02</a></li>
-                            <li><a href="#">03</a></li>
-                            <li><a href="#">04</a></li>
-                            <li><a href="#">05</a></li>
-                          </ul>
-                        </li>
+                      <div class="gnb_inner_title"><a href="#">로그인</a></div>
+                      <div class="gnb_inner_title"><a href="#">회원가입</a></div>
+                      <div class="gnb_inner_title"><a href="#">english</a></div>
+                      <ul class="gnb_sns">
+                        <li><a href="#">01</a></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                        <li><a href="#">04</a></li>
+                        <li><a href="#">05</a></li>
                       </ul>
                     </li>
                   </ul><!--.gnb_inner-->
@@ -102,7 +97,7 @@
               </nav><!-- //#gnbBox -->
             </div><!--//.gnb_wrapper-->
             <div class="search_wrapper">
-              <div class="search_btn"><button type="button">검색</button></div>
+              <div class="search_btn"><button type="button"><i class="fas fa-search"><span class="blind">검색창 열기</span></i></button></div>
               <form action="#" method="GET" class="searchBox">
                 <fieldset>
                   <legend class="blind">검색</legend>
@@ -113,18 +108,14 @@
                     type="text"
                     id="search_area"
                     value=""
+                    name="search__area"
                     placeholder="검색할 내용을 입력하세요."
                     />
-                    <input
-                      type="image"
-                      class="search_img"
-                      src="../img/search_w.png"
-                      alt="검색"
-                      />
-                </fieldset>
+                    <button type="submit" class="search_submit"><i class="fas fa-search"><span class="blind">검색</span></i></button>
+                    </fieldset>
               </form>
+              <!-- .search_box -->
             </div><!--//.search_wrapper-->
-        </div><!--.headerWrap-->
       </div><!-- //head_inner-->
     </header><!-- //headBox-->
     <nav id="subNavBox" class="clearfix">
@@ -200,8 +191,8 @@
           <a href="#" role="button">
             <div class="bookcon_img">bookcon_img</div>
             <div class="bookcon_text">
-              <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
-              <dl class="explanation_content">
+              <p class="extract_content">Lorem ipsum doasadaaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
+              <dl class="explanation_content clearfix">
                 <dt>제목</dt>
                 <dd>친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
@@ -422,12 +413,12 @@
       <h2 class="blind">페이지 이동 버튼</h2>
       <div class="pagebtn_inner">
         <ul class="sub_next_btn">
-          <li><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
-          <li><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
+          <li class="_next_btn"><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
+          <li class="_end_btn"><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
         </ul>
           <ul class="sub_prev_btn">
-            <li><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
-            <li><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
+            <li class="_prev_btn"><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
+            <li class="_start_btn"><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
           </ul>
           <ul class="sub_page_btn">
             <li><button type="button">01</button></li>
@@ -481,7 +472,7 @@
         </div>
     </footer><!-- //footBox -->
   </div><!--#wrap-->
-
+ 
   <!-- script -->
   <script>
   </script>

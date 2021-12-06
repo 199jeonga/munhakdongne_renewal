@@ -3,7 +3,42 @@
 #pageBtn{
   width: 100%; height: 180px;
   padding-top: 55px;
+  
+  @include mobile{}
+
+  @include tablet{
+    
+.pagebtn_inner{
+  width: 610px; height: 40px;
+  margin:auto;
 }
+.pagebtn_inner ul{
+  float: left;
+  width: auto; height: 100%;
+}
+.pagebtn_inner .sub_next_btn{
+  float: right;
+}
+.pagebtn_inner li{
+  float:left;
+  width: 40px; height: 40px;
+  margin-right:2px;
+}
+.sub_prev_btn li{float: right;}
+.sub_next_btn li:last-child{margin-right: 0;}
+.end_btn_detail, .start_btn_detail{@include blind;}
+.pagebtn_inner button{
+  display: block;
+  width: 100%; height: 100%;
+  border-radius:10px;
+  background-color: #fff; box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+.pagebtn_inner button:hover{
+  background-color: #EB4C38; color:#fff;
+}
+  }
+
+  @include laptop{
 .pagebtn_inner{
   width: 690px; height: 40px;
   margin:auto;
@@ -30,4 +65,6 @@
 }
 .pagebtn_inner button:hover{
   background-color: #EB4C38; color:#fff;
+}
+  }
 }
