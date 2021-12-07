@@ -154,20 +154,16 @@
     <section id="subSearchBox">
       <h2 class="blind">도서 검색창</h2>
       <div class="subsearch_inner">
+        <ul id="searchFilter">
+          <li class="all">전체</li>
+          <li class="bookName">도서명</li>
+          <li class="brandName">브랜드</li>
+          <li class="authorName">저자명</li>
+          <li class="translatorName">역자명</li>
+        </ul>
         <form action="#" method="GET">
-          <fieldset>
-            <legend class="blind">도서 검색하기</legend>
-            <label for="searchFilter" class="blind">도서검색 필터</label>
-            <select name="search__Filter" id="searchFilter">
-              <option value="all">전체</option>
-              <option value="bookName">도서명</option>
-              <option value="brandName">브랜드</option>
-              <option value="authorName">저자명</option>
-              <option value="translatorName">역자명</option>
-            </select>
-            
             <fieldset>
-              <legend class="blind">검색</legend>
+              <legend class="blind">도서 검색하기</legend>
               <label for="search_area" class="blind">
                 검색할 내용을 입력하세요.
               </label>
@@ -179,7 +175,6 @@
                 placeholder="검색할 내용을 입력하세요."
                 />
                 <button type="submit" class="searchButton"><i class="fas fa-search"><span class="blind">검색</span></i></button>
-                </fieldset>
           </fieldset>
         </form>
       </div>
@@ -413,12 +408,12 @@
       <h2 class="blind">페이지 이동 버튼</h2>
       <div class="pagebtn_inner">
         <ul class="sub_next_btn">
-          <li class="_next_btn"><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
-          <li class="_end_btn"><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
+          <li class="next_btn_detail"><button type="button"><span class="blind">다음으로 가기</span><i class="fas fa-chevron-right"></i></button></li>
+          <li class="end_btn_detail"><button type="button"><span class="blind">맨 끝으로 가기</span><i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></button></li>
         </ul>
           <ul class="sub_prev_btn">
-            <li class="_prev_btn"><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
-            <li class="_start_btn"><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
+            <li class="prev_btn_detail"><button type="button"><span class="blind">이전으로 가기</span><i class="fas fa-chevron-left"></i></button></li>
+            <li class="start_btn_detail"><button type="button"><span class="blind">맨 처음으로 가기</span><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-left"></i></button></li>
           </ul>
           <ul class="sub_page_btn">
             <li><button type="button">01</button></li>
