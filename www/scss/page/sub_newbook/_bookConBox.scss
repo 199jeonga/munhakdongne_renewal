@@ -2,68 +2,107 @@
 /* bookConBox================================================= */
 #bookConBox{
 
+//mobile ------------------------------------
+@include mobile{
+  width: 100%; height: auto;
+  padding-top: 20px;
+  @at-root .bookcon_inner{
+    display: flex; flex-wrap: wrap; justify-content: space-between;
+    width: 100%; height: auto;
+    .bookcon_area {
+      width: calc(100% - vwUnit(20)); max-width: 450px; height: 340px;
+      margin:0 auto;
+      padding: 10px 0;
+      a{
+        @include full;
+        padding: 10px; box-sizing: border-box;
+        @include shadow;
+      }
+    }//bookcon_area
+  }//bookcon_inner
+  .bookcon_img{
+    @include blind;
+  }
+  .extract_content{
+    overflow: hidden;
+    width: 100%; height: 55px;
+    text-align: left; font-size: map-get( $font_size, book2); font-family:'KoPub Batang';
+    border-bottom: 2px solid $color_promary2;
+    text-overflow: ellipsis;
+  }
+  @at-root .explanation_content{
+    width: 100%; height: auto;
+    padding: 10px 0;
+    dt{
+      float: left;
+      width: 60px; height: 40px; line-height: 40px;
+      margin-right: 6px;
+      text-align: left; font-weight: 600;
+    }//dt
+    dd{
+      float: left;
+      overflow: hidden;
+      width: calc(100% - 66px); height: 40px; line-height: 40px;
+      text-align: left;
+      border-bottom: 1px solid $color_gray_op2;
+      text-overflow: ellipsis;
+      &:last-child{border:none;}
+    }//dd
+  }//explanation_content
+  .bookcon_area > a:hover{outline:2px solid #757575;}
+  .bookcon_area > a:focus{background-color: #eee;}
+}//mobile
 
-  @include mobile{
 
-  }//mobile
-
-
+//tablet ------------------------------------
   @include tablet{
     width: 100%; height: auto;
     padding-top: 20px;
-    .bookcon_inner{
+    @at-root .bookcon_inner{
       display: flex; flex-wrap: wrap; justify-content: space-between;
       width: 610px; height: auto;
       margin:0 auto;
-    }
-    .bookcon_area {
-      width: 300px; height: 230px;
-      margin-bottom: 20px;
-    }
-    .bookcon_area:nth-last-child(2){
-      margin-bottom: 0;
-    }
-    .bookcon_area a{
-      display: block;
-      width: 100%; height: 100%;
-      padding: 12px; box-sizing: border-box;
-      border-radius: 10px;
-      background-color: #fff;
-      box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
-    }
+      .bookcon_area {
+        width: 300px; height: 340px;
+        padding: 10px 0;
+        a{
+                @include full;
+                padding: 10px; box-sizing: border-box;
+                @include shadow;
+        }
+      }//bookcon_area
+    }//bookcon_inner
     .bookcon_img{
       @include blind;
     }
-    .bookcon_text{
-      width: 100%; height: 100%;
-    }
     .extract_content{
       overflow: hidden;
-      width: 100%; height: 60px;
-      text-align: left; font-size: map-get( $font_size, book2); font-family: 'KoPub Batang';
+      width: 100%; height: 55px;
+      text-align: left; font-size: map-get( $font_size, book2); font-family:'KoPub Batang';
       border-bottom: 2px solid $color_promary2;
       text-overflow: ellipsis;
     }
-    .explanation_content{
+    @at-root .explanation_content{
       width: 100%; height: auto;
       padding: 10px 0;
-    }
-    .explanation_content dt{
-      float: left;
-      width: 60px; height: 25px;
-      margin-right: 6px;
-      text-align: left; font-weight: 600;
-    }
-    .explanation_content dd{
-      float: left;
-      width: calc(100% - 66px); height: 25px;
-      text-align: left;
-      // background-color: #ccc;
-    }
+      dt{
+        float: left;
+        width: 60px; height: 40px; line-height: 40px;
+        margin-right: 6px;
+        text-align: left; font-weight: 600;
+      }//dt
+      dd{
+        float: left;
+        overflow: hidden;
+        width: calc(100% - 66px); height: 40px; line-height: 40px;
+        text-align: left;
+        border-bottom: 1px solid $color_gray_op2;
+        text-overflow: ellipsis;
+        &:last-child{border:none;}
+      }//dd
+    }//explanation_content
     .bookcon_area > a:hover{outline:2px solid #757575;}
     .bookcon_area > a:focus{background-color: #eee;}
-    
-    
   }//tablet
 
 
@@ -86,9 +125,8 @@
       display: block;
       width: 100%; height: 100%;
       padding: 12px; box-sizing: border-box;
-      border-radius: 10px;
       background-color: #fff;
-      box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+      @include shadow;
     }
     .bookcon_img{
       float: left;
@@ -103,26 +141,27 @@
     }
     .extract_content{
       overflow: hidden;
-      width: 100%; height: 60px;
+      width: 100%; height: 55px;
       text-align: left; font-size: map-get($font_size, book2 ); font-family: 'KoPub Batang';
-      margin-bottom: 20px; margin-top: 20px;
+      margin-bottom: 5px; margin-top: 20px;
       border-bottom: 2px solid $color_promary2;
-      text-overflow: clip;
+      text-overflow: ellipsis;
     }
     .explanation_content{
       width: 100%; height: auto;
-    }
-    .bookcon_text dt{
-      float: left;
-      width: 60px; height: 30px;
-      margin-right: 6px;
-      text-align: left; font-weight: 600;
-    }
-    .bookcon_text dd{
-      float: left;
-      width: calc(100% - 66px); height: 30px;
-      text-align: left;
-      // background-color: #ccc;
+      dt{
+        float: left;
+        width: 60px; height: 35px; line-height: 35px;
+        margin-right: 6px;
+        text-align: left; font-weight: 600;
+      }
+      dd{
+        float: left;
+        overflow: hidden;
+        width: calc(100% - 66px); height: 35px; line-height: 35px;
+        text-align: left;
+        text-overflow: ellipsis;
+      }
     }
     .bookcon_area > a:hover{outline:2px solid #757575;}
     .bookcon_area > a:focus{background-color: #eee;}

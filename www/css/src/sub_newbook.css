@@ -345,134 +345,384 @@ html, body {
 }
 
 /* subNavBox================================================= */
-#subNavBox {
-  width: 100%;
-  height: 400px;
-  padding-top: 310px;
-  background-color: #333;
-}
+@media all and (max-width: 767px) {
+  #subNavBox {
+    width: 100%;
+    height: 250px;
+    padding-top: 100px;
+    background-image: url(../../multi/img/subNavTitleBg.svg);
+    background-repeat: no-repeat;
+    background-position: 25% 50%;
+    background-size: cover;
+  }
+  #subNavBox > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #subNavBox .subnav_inner {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #subNavBox .nav_list {
+    position: relative;
+    left: 50%;
+    top: 0;
+    z-index: 10;
+    transform: translateX(-50%);
+    width: 180px;
+    height: auto;
+    min-height: 40px;
+    margin-bottom: 44px;
+  }
+  #subNavBox .nav_list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+  }
+  #subNavBox .nav_list a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list a:focus {
+    outline: none;
+    background-color: #666;
+    color: #fff;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list .nav_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .nav_title_con {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 280px;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav_title_con li {
+    width: 100%;
+    height: 40px;
+  }
 
-.subnav_inner {
-  width: 1100px;
-  height: auto;
-  margin: auto;
+  #subNavBox .nav_list:hover .nav_title_con, #subNavBox .nav_list:focus-within .nav_title_con {
+    display: block;
+  }
+  #subNavBox .nav_list_sub {
+    position: relative;
+    z-index: 10;
+    width: 150px;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #subNavBox .nav_list_sub li {
+    display: none;
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+  }
+  #subNavBox .nav_list_sub li.action {
+    display: block;
+  }
+  #subNavBox .nav_list_sub li:last-child {
+    margin-right: 0;
+  }
+  #subNavBox .nav_list_sub a {
+    display: block;
+    width: auto;
+    height: 100%;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 40px;
+    color: #333333;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  #subNavBox .nav_list_sub:hover .nav_list_sub > li {
+    display: block;
+  }
+  #subNavBox .nav_list_sub a:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+  }
 }
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  #subNavBox {
+    width: 100%;
+    height: 300px;
+    padding-top: 150px;
+    background-image: url(../../multi/img/subNavTitleBg.svg);
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    background-size: cover;
+  }
+  #subNavBox > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #subNavBox .subnav_inner {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  #subNavBox .nav_list {
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: auto;
+    min-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+  #subNavBox .nav_list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+  }
+  #subNavBox .nav_list a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list a:focus {
+    outline: none;
+    background-color: #666;
+    color: #fff;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list .nav_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .nav_title_con {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 160px;
+    height: 280px;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav_title_con li {
+    width: 100%;
+    height: 40px;
+  }
 
-.breadcrumb {
-  width: auto;
-  height: auto;
-  margin-bottom: 15px;
-  padding-left: 10px;
+  #subNavBox .nav_list:hover .nav_title_con, #subNavBox .nav_list:focus-within .nav_title_con {
+    display: block;
+  }
+  #subNavBox .nav_list_sub {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #subNavBox .nav_list_sub li {
+    width: auto;
+    height: 100%;
+    margin-right: 5px;
+  }
+  #subNavBox .nav_list_sub li:last-child {
+    margin-right: 0;
+  }
+  #subNavBox .nav_list_sub a {
+    display: block;
+    width: auto;
+    height: 100%;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 40px;
+    color: #333333;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  #subNavBox .nav_list_sub a:hover {
+    background-color: #EB4C38;
+    color: #fff;
+    font-weight: 500;
+  }
+  #subNavBox .nav_list_sub a:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+  }
 }
+@media all and (min-width: 1280px) {
+  #subNavBox {
+    width: 100%;
+    height: 300px;
+    padding-top: 150px;
+    background-image: url(../../multi/img/subNavTitleBg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #subNavBox > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #subNavBox .subnav_inner {
+    width: 1100px;
+    height: auto;
+    margin: auto;
+  }
+  #subNavBox .nav_list {
+    position: relative;
+    z-index: 10;
+    width: 160px;
+    height: auto;
+    min-height: 40px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+  }
+  #subNavBox .nav_list a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+  }
+  #subNavBox .nav_list a:hover {
+    background-color: #ccc;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list a:focus {
+    outline: none;
+    background-color: #666;
+    color: #fff;
+    border-radius: 10px;
+  }
+  #subNavBox .nav_list .nav_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .nav_title_con {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 160px;
+    height: 280px;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav_title_con li {
+    width: 100%;
+    height: 40px;
+  }
 
-.breadcrumb p, .breadcrumb i {
-  float: left;
-  width: auto;
-  height: auto;
-  margin-right: 5px;
-  font-size: 14px;
-  line-height: 14px;
-  color: #fff;
-}
-
-.nav_list {
-  position: relative;
-  z-index: 10;
-  float: left;
-  width: 160px;
-  height: auto;
-  min-height: 40px;
-  margin-right: 40px;
-}
-
-.nav_title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 160px;
-  height: 40px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.nav_title_con {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 160px;
-  height: 280px;
-  padding-top: 40px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-.nav_title_con li {
-  width: 100%;
-  height: 40px;
-}
-
-.nav_list a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 40px;
-}
-
-.nav_list:hover .nav_title_con, .nav_list:focus-within .nav_title_con {
-  display: block;
-}
-
-.nav_list a:hover {
-  background-color: #ccc;
-  border-radius: 10px;
-}
-
-.nav_list a:focus {
-  outline: none;
-  background-color: #666;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.nav_list_sub {
-  float: left;
-  width: auto;
-  height: 40px;
-}
-
-.nav_list_sub li {
-  float: left;
-  width: auto;
-  height: 100%;
-  margin-right: 10px;
-}
-
-.nav_list_sub li:last-child {
-  margin-right: 0;
-}
-
-.nav_list_sub a {
-  display: block;
-  width: auto;
-  height: 100%;
-  padding: 0 20px;
-  text-align: center;
-  line-height: 40px;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.nav_list_sub a:hover {
-  background-color: #EB4C38;
-}
-
-.nav_list_sub a:focus {
-  outline: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  font-weight: 700;
+  #subNavBox .nav_list:hover .nav_title_con, #subNavBox .nav_list:focus-within .nav_title_con {
+    display: block;
+  }
+  #subNavBox .nav_list_sub {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #subNavBox .nav_list_sub li {
+    width: auto;
+    height: 100%;
+    margin-right: 10px;
+  }
+  #subNavBox .nav_list_sub li:last-child {
+    margin-right: 0;
+  }
+  #subNavBox .nav_list_sub a {
+    display: block;
+    width: auto;
+    height: 100%;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #333333;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  #subNavBox .nav_list_sub a:hover {
+    background-color: #EB4C38;
+    color: #fff;
+    font-weight: 500;
+  }
+  #subNavBox .nav_list_sub a:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+  }
 }
 
 /* subSearchBox================================================= */
@@ -488,32 +738,60 @@ html, body {
     max-width: 610px;
     margin: auto;
     padding: 2px;
-    border-radius: 10px;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #subSearchBox #searchFilter {
+  #searchFilter {
     position: relative;
     top: 0;
     left: 0;
-    z-index: 20;
     float: left;
     width: 50px;
-    height: auto;
+    height: 100%;
     border: 0;
     text-align: center;
-    background-color: #aad;
+    background-color: transparent;
     margin-right: 10px;
     border-radius: 10px;
-  }
-  #subSearchBox #searchFilter li {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 10px;
-    margin-bottom: 10px;
     background-color: #dda;
   }
+  #searchFilter ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #searchFilter ul li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  #searchFilter ul li::after, #searchFilter ul li:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    border-right: 1px solid rgba(117, 117, 117, 0.3);
+  }
+  #searchFilter ul li > button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #aad;
+  }
+  #searchFilter ul li.on {
+    display: block;
+  }
+  #searchFilter ul li:first-child {
+    margin-top: 0;
+  }
+
   #subSearchBox #searchBookBox {
     float: left;
     width: calc(100% - 40px);
@@ -532,7 +810,7 @@ html, body {
     border-radius: 10px;
     background-color: #1B2C7A;
   }
-  #subSearchBox button i {
+  #subSearchBox .searchButton > i {
     color: #fff;
   }
 }
@@ -542,22 +820,63 @@ html, body {
     height: 40px;
     margin: auto;
     padding: 2px;
-    border-radius: 10px;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #subSearchBox #searchFilter {
+  #searchFilter {
     position: relative;
+    top: 0;
+    left: 0;
     float: left;
     width: 158px;
     height: 36px;
     border: 0;
     text-align: center;
     background-color: transparent;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #dda;
   }
+  #searchFilter ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #searchFilter ul li {
+    display: none;
+    width: 100%;
+    height: 100%;
+    line-height: 36px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  #searchFilter ul li::after, #searchFilter ul li:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    border-right: 1px solid rgba(117, 117, 117, 0.3);
+  }
+  #searchFilter ul li > button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: #aad;
+  }
+  #searchFilter ul li.on {
+    display: block;
+  }
+  #searchFilter ul li:first-child {
+    margin-top: 0;
+  }
+
   #subSearchBox #searchBookBox {
     float: left;
-    width: 610px;
+    width: 600px;
     height: 36px;
     text-indent: 10px;
     outline: none;
@@ -573,44 +892,42 @@ html, body {
     border-radius: 10px;
     background-color: #1B2C7A;
   }
-  #subSearchBox button i {
+  #subSearchBox .searchButton > i {
     color: #fff;
   }
 }
 
 /* bookConBox================================================= */
-@media all and (min-width: 768px) and (max-width: 1279px) {
+@media all and (max-width: 767px) {
   #bookConBox {
     width: 100%;
     height: auto;
     padding-top: 20px;
   }
-  #bookConBox .bookcon_inner {
+  .bookcon_inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 610px;
+    width: 100%;
     height: auto;
+  }
+  .bookcon_inner .bookcon_area {
+    width: calc(100% - 6.25vw);
+    max-width: 450px;
+    height: 340px;
     margin: 0 auto;
+    padding: 10px 0;
   }
-  #bookConBox .bookcon_area {
-    width: 300px;
-    height: 230px;
-    margin-bottom: 20px;
-  }
-  #bookConBox .bookcon_area:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  #bookConBox .bookcon_area a {
+  .bookcon_inner .bookcon_area a {
     display: block;
     width: 100%;
     height: 100%;
-    padding: 12px;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
-    background-color: #fff;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
+
   #bookConBox .bookcon_img {
     display: block;
     width: 0;
@@ -620,39 +937,127 @@ html, body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #bookConBox .bookcon_text {
-    width: 100%;
-    height: 100%;
-  }
   #bookConBox .extract_content {
     overflow: hidden;
     width: 100%;
-    height: 60px;
+    height: 55px;
     text-align: left;
     font-size: 18px;
     font-family: "KoPub Batang";
     border-bottom: 2px solid #FA7950;
     text-overflow: ellipsis;
   }
-  #bookConBox .explanation_content {
+  .explanation_content {
     width: 100%;
     height: auto;
     padding: 10px 0;
   }
-  #bookConBox .explanation_content dt {
+  .explanation_content dt {
     float: left;
     width: 60px;
-    height: 25px;
+    height: 40px;
+    line-height: 40px;
     margin-right: 6px;
     text-align: left;
     font-weight: 600;
   }
-  #bookConBox .explanation_content dd {
+  .explanation_content dd {
     float: left;
+    overflow: hidden;
     width: calc(100% - 66px);
-    height: 25px;
+    height: 40px;
+    line-height: 40px;
     text-align: left;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    text-overflow: ellipsis;
   }
+  .explanation_content dd:last-child {
+    border: none;
+  }
+
+  #bookConBox .bookcon_area > a:hover {
+    outline: 2px solid #757575;
+  }
+  #bookConBox .bookcon_area > a:focus {
+    background-color: #eee;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  #bookConBox {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+  .bookcon_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 610px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .bookcon_inner .bookcon_area {
+    width: 300px;
+    height: 340px;
+    padding: 10px 0;
+  }
+  .bookcon_inner .bookcon_area a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #bookConBox .bookcon_img {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+  #bookConBox .extract_content {
+    overflow: hidden;
+    width: 100%;
+    height: 55px;
+    text-align: left;
+    font-size: 18px;
+    font-family: "KoPub Batang";
+    border-bottom: 2px solid #FA7950;
+    text-overflow: ellipsis;
+  }
+  .explanation_content {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+  .explanation_content dt {
+    float: left;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 6px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .explanation_content dd {
+    float: left;
+    overflow: hidden;
+    width: calc(100% - 66px);
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    border-bottom: 1px solid rgba(117, 117, 117, 0.3);
+    text-overflow: ellipsis;
+  }
+  .explanation_content dd:last-child {
+    border: none;
+  }
+
   #bookConBox .bookcon_area > a:hover {
     outline: 2px solid #757575;
   }
@@ -688,8 +1093,8 @@ html, body {
     height: 100%;
     padding: 12px;
     box-sizing: border-box;
-    border-radius: 10px;
     background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   #bookConBox .bookcon_img {
@@ -708,32 +1113,36 @@ html, body {
   #bookConBox .extract_content {
     overflow: hidden;
     width: 100%;
-    height: 60px;
+    height: 55px;
     text-align: left;
     font-size: 18px;
     font-family: "KoPub Batang";
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-top: 20px;
     border-bottom: 2px solid #FA7950;
-    text-overflow: clip;
+    text-overflow: ellipsis;
   }
   #bookConBox .explanation_content {
     width: 100%;
     height: auto;
   }
-  #bookConBox .bookcon_text dt {
+  #bookConBox .explanation_content dt {
     float: left;
     width: 60px;
-    height: 30px;
+    height: 35px;
+    line-height: 35px;
     margin-right: 6px;
     text-align: left;
     font-weight: 600;
   }
-  #bookConBox .bookcon_text dd {
+  #bookConBox .explanation_content dd {
     float: left;
+    overflow: hidden;
     width: calc(100% - 66px);
-    height: 30px;
+    height: 35px;
+    line-height: 35px;
     text-align: left;
+    text-overflow: ellipsis;
   }
   #bookConBox .bookcon_area > a:hover {
     outline: 2px solid #757575;

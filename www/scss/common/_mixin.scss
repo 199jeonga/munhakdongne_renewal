@@ -15,10 +15,6 @@
   }
 }
 
-@mixin effect_shadow_01 {
-	box-shadow:0px 1px 10px rgba(0,0,0,0.1);
-}
-
 // image
 $imgPath:'../../multi/img/';
 
@@ -52,6 +48,8 @@ $imgPath:'../../multi/img/';
   @if ($file) {
     @include img($file, $repeat, $position, $size){      @content;    }
   }
+
+  @content;
 }
 
 // unit
@@ -61,12 +59,6 @@ $baseSize: 16;
   #{$name}: math.div($unit , $baseSize) + rem;
 }
 
-// @function remUnit2($unit){
-//   $pxCode :  #{$unit} + px;
-//   $remCode : math.div($unit , $baseSize) + rem;
-//   @return $pxCode , $remCode;
-// }
-
 $baseDevice:320;
 @function vwUnit($size, $deviceWidth:$baseDevice){
   @return (math.div($size, $deviceWidth) * 100)+vw;
@@ -74,6 +66,12 @@ $baseDevice:320;
 
 
 
+
+// design
+@mixin shadow(){
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
 
 
 

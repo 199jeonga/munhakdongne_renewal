@@ -8,6 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" h ref="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" >
+  <link rel=”https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css” rel='stylesheet' type='text/css'>
+  <link rel=”fonts.googleapis.com/earlyaccess/kopubbatang.css” rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/src/sub_newbook.css">
@@ -118,14 +124,9 @@
             </div><!--//.search_wrapper-->
       </div><!-- //head_inner-->
     </header><!-- //headBox-->
-    <nav id="subNavBox" class="clearfix">
+    <nav id="subNavBox">
       <h2 class="blind">다른 메뉴로 가기</h2>
-      <div class="subnav_inner clearfix">
-        <div class="breadcrumb clearfix">
-          <p>도서</p>
-          <i class="fas fa-chevron-right"></i>
-          <p>새로나온 책</p>
-        </div>
+      <div class="subnav_inner">
         <nav class="nav_list">
           <h3 class="blind">도서 외 다른 메뉴로 가기</h3>
           <div class="nav_title"><a href="#">도서</a></div>
@@ -140,8 +141,8 @@
         </nav>
         <div>
           <h3 class="blind">도서 안의 다른 메뉴로 가기</h3>
-          <ul class="nav_list_sub clearfix" role="menu">
-            <li role="listitem"><a href="#">새로나온 책</a></li>
+          <ul class="nav_list_sub" role="menu">
+            <li class="action" role="listitem"><a href="#">새로나온 책</a></li>
             <li role="listitem"><a href="#">브랜드별 도서</a></li>
             <li role="listitem"><a href="#">분야별 도서</a></li>
             <li role="listitem"><a href="#">수상도서</a></li>
@@ -154,13 +155,15 @@
     <section id="subSearchBox">
       <h2 class="blind">도서 검색창</h2>
       <div class="subsearch_inner">
-        <ul id="searchFilter">
-          <li class="all">전체</li>
-          <li class="bookName">도서명</li>
-          <li class="brandName">브랜드</li>
-          <li class="authorName">저자명</li>
-          <li class="translatorName">역자명</li>
-        </ul>
+        <div id="searchFilter">
+          <ul>
+            <li class="all on"><button type="button">전체</button></li>
+            <li class="bookName"><button type="button">도서명</button></li>
+            <li class="brandName"><button type="button">브랜드</button></li>
+            <li class="authorName"><button type="button">저자명</button></li>
+            <li class="translatorName"><button type="button">역자명</button></li>
+          </ul>
+        </div>
         <form action="#" method="GET">
             <fieldset>
               <legend class="blind">도서 검색하기</legend>
@@ -188,8 +191,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doasadaaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content clearfix">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022부터 장문의 메세지를 입력한다면?</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -210,8 +213,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -232,8 +235,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -254,8 +257,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -276,8 +279,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -298,8 +301,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -320,8 +323,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -342,8 +345,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -364,8 +367,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
@@ -386,8 +389,8 @@
             <div class="bookcon_text">
               <p class="extract_content">Lorem ipsum doaaas wwf aaaaaaaalor sit amet, consectetur adipiscing elit ut</p>
               <dl class="explanation_content">
-                <dt>제목</dt>
-                <dd>친절한 트렌드 뒷담화 2022</dd>
+                <dt class="explanation_title">제목</dt>
+                <dd class="explanation_title_con">친절한 트렌드 뒷담화 2022</dd>
                 <dt>저자</dt>
                 <dd>이노션 인사이트 그룹</dd>
                 <dt>분야</dt>
