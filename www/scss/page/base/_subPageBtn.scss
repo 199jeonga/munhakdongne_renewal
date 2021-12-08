@@ -1,6 +1,6 @@
 
 /* pageBtn================================================= */
-#pageBtn{
+@at-root #pageBtn{
 
   @include mobile{
     width: 100%; height: auto;
