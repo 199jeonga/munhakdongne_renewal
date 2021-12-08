@@ -4,7 +4,8 @@
   padding-top: 100px;
 
   @include handle{
-    background-image: linear-gradient(to bottom, #171717 50%, #fff 30%);
+    background-image: linear-gradient(to bottom, $color_promary2 10%, #fff 80%);
+    // @include img('subNavTitleBg.svg', $position:25% 50%, $size:cover);
 
     .view_slide_wrap{
       overflow:hidden;
@@ -68,7 +69,8 @@
   } // handle
   
   @include laptop{
-    background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
+    background-image: linear-gradient(to bottom, $color_promary2 10%, #fff 70%);
+    // background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
     .view_slide_wrap{
       overflow:hidden;
       width: 1240px; height: 550px;

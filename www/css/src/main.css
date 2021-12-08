@@ -28,36 +28,20 @@ body {
     width: 100%;
     height: auto;
     background-color: transparent;
-    height: auto;
     padding: 30px 16px;
-    /* searchBox----------------------------------------- */
+    /* searchBox----------*/
   }
-  #headBox .head_inner {
+  .head_inner {
     position: relative;
+    width: 100%;
+    height: auto;
     margin: auto;
   }
-  #headBox h1 {
+  .head_inner h1 {
     float: left;
     width: auto;
     font-weight: 900;
     color: #fff;
-  }
-  #headBox #gnbBox {
-    display: none;
-  }
-  #headBox .gnb_wrapper {
-    width: 100%;
-    height: auto;
-  }
-  #headBox .search_wrapper {
-    width: 100%;
-    height: auto;
-  }
-  .head_inner {
-    width: 100%;
-    height: auto;
-  }
-  .head_inner h1 {
     width: auto;
     height: auto;
     margin-top: 5px;
@@ -70,15 +54,14 @@ body {
     z-index: 100;
     width: 35px;
     height: 35px;
+    right: 50px;
     background-color: #aaa;
   }
   .head_inner .gnb_btn {
     right: 0;
   }
-  .head_inner .search_btn {
-    right: 50px;
-  }
   #gnbBox {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -110,24 +93,53 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    color: #fff;
+    line-height: 45px;
+    text-indent: 5px;
     border-bottom: 2px solid #fff;
-    background-color: #faf;
   }
-  .gnb_wrapper .gnb_inner_con {
+  .gnb_wrapper .gnb_inner_title a:hover {
+    text-decoration: none;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  .gnb_wrapper .gnb_inner_title a:focus {
+    text-decoration: none;
+    background-color: #FA7950;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .gnb_inner_con {
+    display: none;
+  }
+  .gnb_inner_con.action {
+    display: block;
     position: absolute;
     right: 170px;
     width: auto;
     min-width: 130px;
     height: auto;
   }
-  .gnb_wrapper .gnb_inner_con a {
+  .gnb_inner_con.action a {
     display: block;
     width: 100%;
     height: 45px;
-    text-indent: 10px;
-    border-bottom: 1px solid #fff;
-    background-color: #aaa;
+    text-align: right;
+    line-height: 45px;
+    color: #fff;
+    padding-right: 10px;
   }
+  .gnb_inner_con.action a:hover {
+    text-decoration: none;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  .gnb_inner_con.action a:focus {
+    text-decoration: none;
+    color: #FA7950;
+    font-weight: 700;
+  }
+
   .gnb_sns {
     position: absolute;
     top: 450px;
@@ -136,14 +148,12 @@ body {
     justify-content: space-between;
     width: 170px;
     height: auto;
-    background-color: #a5a;
   }
   .gnb_sns li {
     width: 30px;
     height: 30px;
-    background-color: #333;
   }
-  .gnb_sns a {
+  .gnb_sns li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -160,7 +170,7 @@ body {
   #gnb_close button {
     width: 100%;
     height: 100%;
-    background-color: #add;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   #gnbBox .gnb_bg {
@@ -173,6 +183,10 @@ body {
     background-color: #333;
   }
 
+  #headBox .search_wrapper {
+    width: 100%;
+    height: auto;
+  }
   #headBox .searchBox {
     display: none;
     position: absolute;
@@ -194,12 +208,16 @@ body {
     width: calc(100% - 35px);
     height: 35px;
     text-indent: 20px;
-    border-bottom: 3px solid #FA7950;
+    border-bottom: 3px solid #757575;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   #headBox .search_submit {
     width: 35px;
     height: 35px;
     background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 @media all and (min-width: 1280px) {
@@ -394,7 +412,7 @@ body {
 }
 @media all and (max-width: 1279px) {
   #viewBox {
-    background-image: linear-gradient(to bottom, #171717 50%, #fff 30%);
+    background-image: linear-gradient(to bottom, #FA7950 10%, #fff 80%);
     /* view_indicator-------------------------------------------------------------------- */
   }
   #viewBox .view_slide_wrap {
@@ -474,7 +492,7 @@ body {
 }
 @media all and (min-width: 1280px) {
   #viewBox {
-    background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
+    background-image: linear-gradient(to bottom, #FA7950 10%, #fff 70%);
     /* view_indicator-------------------------------------------------------------------- */
   }
   #viewBox .view_slide_wrap {
@@ -795,6 +813,7 @@ body {
 @media all and (max-width: 767px) {
   #dokpaBox {
     width: 100%;
+    min-width: 320px;
     height: 296.875vw;
   }
   #dokpaBox .dokpa_inner {
@@ -808,14 +827,14 @@ body {
   }
   #dokpaBox .dokpa_view_part {
     width: calc(100% - 20px);
-    height: calc(100% - 50px);
+    height: calc(100% - 70px);
     margin: 0 auto;
     border-radius: 10px;
     background-color: #cc0;
   }
   #dokpaBox .dokpa_button_warpper {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -830,20 +849,25 @@ body {
   }
   #dokpaBox .dokpa_area {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     width: calc(100% - 20px);
     height: auto;
     margin: auto;
+    background-color: #ada;
   }
   #dokpaBox .dokpa_con {
     width: 43.75vw;
     height: 53.125vw;
     margin-bottom: 5px;
+    margin-left: 5px;
     background-color: #555;
   }
   #dokpaBox .dokpa_con:nth-last-child(-n+2) {
     margin-bottom: 0;
+  }
+  #dokpaBox .dokpa_con:nth-child(2n) {
+    margin-left: 0;
   }
   #dokpaBox .dokpa_con .action {
     display: none;
@@ -873,7 +897,7 @@ body {
   }
   #dokpaBox .title {
     display: block;
-    width: 100%;
+    width: calc(100% - 5px);
     height: auto;
     margin-left: 5px;
     margin-bottom: 10px;
@@ -910,15 +934,15 @@ body {
     top: 100px;
     left: 50%;
     transform: translateX(-50%);
-    width: 97.65625vw;
+    width: auto;
     height: auto;
     min-height: 700px;
-    background-color: #ada;
   }
   #dokpaBox #dokpa_title {
     position: relative;
     width: 350px;
     height: 310px;
+    margin-right: 10px;
   }
   #dokpaBox #dokpa_title button {
     width: auto;
@@ -943,14 +967,14 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 50.2604166667vw;
+    width: 50.78125vw;
     height: auto;
     margin: 0 auto;
   }
   #dokpaBox .dokpa_con {
     width: 24.7395833333vw;
     height: 29.9479166667vw;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     background-color: #555;
   }
   #dokpaBox .dokpa_con:nth-last-child(-n+2) {

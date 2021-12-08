@@ -22,36 +22,20 @@ html, body {
     width: 100%;
     height: auto;
     background-color: transparent;
-    height: auto;
     padding: 30px 16px;
-    /* searchBox----------------------------------------- */
+    /* searchBox----------*/
   }
-  #headBox .head_inner {
+  .head_inner {
     position: relative;
+    width: 100%;
+    height: auto;
     margin: auto;
   }
-  #headBox h1 {
+  .head_inner h1 {
     float: left;
     width: auto;
     font-weight: 900;
     color: #fff;
-  }
-  #headBox #gnbBox {
-    display: none;
-  }
-  #headBox .gnb_wrapper {
-    width: 100%;
-    height: auto;
-  }
-  #headBox .search_wrapper {
-    width: 100%;
-    height: auto;
-  }
-  .head_inner {
-    width: 100%;
-    height: auto;
-  }
-  .head_inner h1 {
     width: auto;
     height: auto;
     margin-top: 5px;
@@ -64,15 +48,14 @@ html, body {
     z-index: 100;
     width: 35px;
     height: 35px;
+    right: 50px;
     background-color: #aaa;
   }
   .head_inner .gnb_btn {
     right: 0;
   }
-  .head_inner .search_btn {
-    right: 50px;
-  }
   #gnbBox {
+    display: none;
     position: fixed;
     left: 0;
     top: 0;
@@ -104,24 +87,53 @@ html, body {
     display: block;
     width: 100%;
     height: 100%;
+    color: #fff;
+    line-height: 45px;
+    text-indent: 5px;
     border-bottom: 2px solid #fff;
-    background-color: #faf;
   }
-  .gnb_wrapper .gnb_inner_con {
+  .gnb_wrapper .gnb_inner_title a:hover {
+    text-decoration: none;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  .gnb_wrapper .gnb_inner_title a:focus {
+    text-decoration: none;
+    background-color: #FA7950;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+  .gnb_inner_con {
+    display: none;
+  }
+  .gnb_inner_con.action {
+    display: block;
     position: absolute;
     right: 170px;
     width: auto;
     min-width: 130px;
     height: auto;
   }
-  .gnb_wrapper .gnb_inner_con a {
+  .gnb_inner_con.action a {
     display: block;
     width: 100%;
     height: 45px;
-    text-indent: 10px;
-    border-bottom: 1px solid #fff;
-    background-color: #aaa;
+    text-align: right;
+    line-height: 45px;
+    color: #fff;
+    padding-right: 10px;
   }
+  .gnb_inner_con.action a:hover {
+    text-decoration: none;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  .gnb_inner_con.action a:focus {
+    text-decoration: none;
+    color: #FA7950;
+    font-weight: 700;
+  }
+
   .gnb_sns {
     position: absolute;
     top: 450px;
@@ -130,14 +142,12 @@ html, body {
     justify-content: space-between;
     width: 170px;
     height: auto;
-    background-color: #a5a;
   }
   .gnb_sns li {
     width: 30px;
     height: 30px;
-    background-color: #333;
   }
-  .gnb_sns a {
+  .gnb_sns li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -154,7 +164,7 @@ html, body {
   #gnb_close button {
     width: 100%;
     height: 100%;
-    background-color: #add;
+    background-color: rgba(255, 255, 255, 0.7);
   }
 
   #gnbBox .gnb_bg {
@@ -167,6 +177,10 @@ html, body {
     background-color: #333;
   }
 
+  #headBox .search_wrapper {
+    width: 100%;
+    height: auto;
+  }
   #headBox .searchBox {
     display: none;
     position: absolute;
@@ -188,12 +202,16 @@ html, body {
     width: calc(100% - 35px);
     height: 35px;
     text-indent: 20px;
-    border-bottom: 3px solid #FA7950;
+    border-bottom: 3px solid #757575;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   #headBox .search_submit {
     width: 35px;
     height: 35px;
     background-color: #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 @media all and (min-width: 1280px) {
@@ -783,7 +801,6 @@ html, body {
     max-width: 610px;
     margin: auto;
     padding: 2px;
-    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -806,29 +823,44 @@ html, body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #searchFilter ul::after, #searchFilter ul:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 47px;
+    width: 1px;
+    height: 20px;
+    margin-left: 5px;
+    border-right: 1px solid rgba(117, 117, 117, 0.3);
   }
   #searchFilter ul li {
     display: none;
+    float: left;
     width: 100%;
-    height: 100%;
+    height: 36px;
     line-height: 36px;
     border-radius: 10px;
     margin-top: 10px;
   }
-  #searchFilter ul li::after, #searchFilter ul li:after {
-    content: "";
+  #searchFilter ul li:hover {
     width: 100%;
     height: 100%;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
+    color: #FA7950;
+    font-weight: 700;
   }
   #searchFilter ul li > button {
     display: block;
     width: 100%;
     height: 100%;
-    float: left;
-    background-color: #aad;
+  }
+  #searchFilter ul li > button:hover {
+    width: 100%;
+    height: 36px;
+    color: #FA7950;
+    font-weight: 700;
   }
   #searchFilter ul li.on {
     display: block;
@@ -881,36 +913,44 @@ html, body {
     background-color: transparent;
     margin-right: 10px;
     border-radius: 10px;
-    background-color: #dda;
   }
   #searchFilter ul {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  #searchFilter ul::after, #searchFilter ul:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 1px;
+    height: 20px;
+    margin-left: 5px;
+    border-right: 1px solid rgba(117, 117, 117, 0.3);
   }
   #searchFilter ul li {
     display: none;
+    float: left;
     width: 100%;
-    height: 100%;
+    height: 36px;
     line-height: 36px;
     border-radius: 10px;
     margin-top: 10px;
-  }
-  #searchFilter ul li::after, #searchFilter ul li:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
   }
   #searchFilter ul li > button {
     display: block;
     width: 100%;
     height: 100%;
-    float: left;
-    background-color: #aad;
+  }
+  #searchFilter ul li > button:hover {
+    width: 100%;
+    height: 36px;
+    color: #FA7950;
+    font-weight: 700;
   }
   #searchFilter ul li.on {
     display: block;
