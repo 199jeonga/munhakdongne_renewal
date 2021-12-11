@@ -1,33 +1,35 @@
-#viewBox{
+@at-root #viewBox{
   position: relative;
   width: 100%; height: auto;
   padding-top: 100px;
 
   @include handle{
-    background-image: linear-gradient(to bottom, $color_promary2 10%, #fff 80%);
-    // @include img('subNavTitleBg.svg', $position:25% 50%, $size:cover);
+    background-image: linear-gradient(to bottom, $color_black 10%, #fff 80%);
 
-    .view_slide_wrap{
+    @at-root .view_slide_wrap{
       overflow:hidden;
-      width: 100%; height: 385px;
+      width: 100%; height: 395px;
       margin: 0 auto; margin-left: 10px;
-    }
-    .view_slide_area{
-      overflow-x:auto; overflow-y: visible; 
-      width: 100%; height:auto;
-      padding-bottom: 50px; box-sizing: content-box;
-    } 
-    .view_slide_part{
-      width: calc(calc( 280px * $view_slide ) - 20px); height: auto;
-    }
-    .view_slide_part li{
-      float:left;
-      width: 280px; height: 385px;
-      margin-right: 10px;
-      border-radius: 10px;
-      background-color: #adc;
-    }
-    .view_slide_part li:last-child{margin-right: 0;}
+      .view_slide_area{
+        overflow-x:auto; overflow-y: visible; 
+        width: 100%; height:auto;
+        padding-bottom: 50px;
+      } 
+      @at-root .view_slide_part{
+        width: calc(calc( 290px * $view_slide ) - 10px); height: auto;
+        li{
+          float:left;
+          width: 280px; height: 385px;
+          margin-right: 10px;
+          @include shadow;
+          @for $i from 1 through $view_slide{
+            &:nth-child( #{$i} ) { @include img( nth($link_viewPartImg, $i), $size:cover ) };
+          }//for
+          &:last-child{margin-right: 0;}
+          a{@include full;}
+        }//li
+      }//view_slide_part
+    }//
   
     /* view_indicator-------------------------------------------------------------------- */
     .view_indicator{
@@ -35,63 +37,64 @@
       width: 300px; height:auto;
       transform:translateX(-50%);
       text-align: center;
-    }
+      ul{
+        float: left;
+        width: auto; height: auto;
+      }
+      li{
+        float: left;
+        width: 20px; height: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        a{
+          display: block;
+          width: 100%; height: 100%;
+          border-radius: 5px;
+          border: 2px solid #757575; box-sizing: border-box;
+        }//a
+      }//li
+      &:last-child{        margin-right: 0;      }
+      .indicator_btn_click{
+        width: 54px;   
+        a{background-color: #757575;}
+      }//.indicator_btn_click
+    }//view_indicator
+
       .view_stop{
         float: right;
         width: 20px; height: 20px;
         color:#757575; 
       }
-      .view_indicator ul{
-        float: left;
-        width: auto; height: auto;
-      }
-      .view_indicator li{
-        float: left;
-        width: 20px; height: 20px;
-        margin-right: 20px;
-        cursor: pointer;
-      }
-      .view_indicator li:last-child{
-        margin-right: 0;
-      }
-      .view_indicator li a{
-        display: block;
-        width: 100%; height: 100%;
-        border-radius: 5px;
-        border: 2px solid #757575; box-sizing: border-box;
-      }
-      .view_indicator .indicator_btn_click{
-        width: 54px;
-      }
-      .indicator_btn_click a{
-        background-color: #757575;
-      }
+
   } // handle
   
   @include laptop{
-    background-image: linear-gradient(to bottom, $color_promary2 10%, #fff 70%);
+    background-image: linear-gradient(to bottom, $color_black 10%, #fff 70%);
     // background-image: linear-gradient(to bottom, #171717 70%, #fff 30%);
-    .view_slide_wrap{
+    @at-root .view_slide_wrap{
       overflow:hidden;
-      width: 1240px; height: 550px;
+      width: 1240px; height: 560px;
       margin: 0 auto;
+      .view_slide_area{
+        overflow-x:auto; overflow-y: visible; 
+        width: 1240px; height:auto;
+        padding-bottom: 50px; box-sizing: content-box;
+      } 
+      .view_slide_part{
+        width: calc(calc( 440px * $view_slide ) - 40px); height: auto;
+        li{
+          float:left;
+          width: 400px; height: 550px;
+          margin-right: 20px;
+          @include shadow;
+          @for $i from 1 through $view_slide{
+            &:nth-child( #{$i} ) { @include img( nth($link_viewPartImg, $i), $size:cover ) };
+          }//for
+          &:last-child{margin-right: 0;}
+          a{@include full;}
+        }
+      }
     }
-    .view_slide_area{
-      overflow-x:auto; overflow-y: visible; 
-      width: 1240px; height:auto;
-      padding-bottom: 50px; box-sizing: content-box;
-    } 
-    .view_slide_part{
-      width: calc(calc( 440px * $view_slide ) - 40px); height: auto;
-    }
-    .view_slide_part li{
-      float:left;
-      width: 400px; height: 550px;
-      margin-right: 20px;
-      border-radius: 10px;
-      background-color: #adc;
-    }
-    .view_slide_part li:last-child{margin-right: 0;}
   
     /* view_indicator-------------------------------------------------------------------- */
     .view_indicator{
@@ -99,37 +102,36 @@
       width: 310px; height:auto;
       transform:translateX(-50%);
       text-align: center;
-    }
+      ul{
+        float: left;
+        width: auto; height: auto;
+      }
+      li{
+        float: left;
+        width: 20px; height: 20px;
+        margin-right: 22px;
+        cursor: pointer;
+        &:last-child{
+          margin-right: 0;
+        }
+        & a{
+          display: block;
+          width: 100%; height: 100%;
+          border-radius: 5px;
+          border: 2px solid #757575; box-sizing: border-box;
+        }
+      }
+      .indicator_btn_click{
+        width: 54px;
+        a{background-color: #757575;}
+      }//indicator_btn_click
+    }//view_indicator
+
+
       .view_stop{
         float: right;
         width: 20px; height: 20px;
         color:#757575; 
       }
-      .view_indicator ul{
-        float: left;
-        width: auto; height: auto;
-      }
-      .view_indicator li{
-        float: left;
-        width: 20px; height: 20px;
-        margin-right: 22px;
-        cursor: pointer;
-      }
-      .view_indicator li:last-child{
-        margin-right: 0;
-      }
-      .view_indicator li a{
-        display: block;
-        width: 100%; height: 100%;
-        border-radius: 5px;
-        border: 2px solid #757575; box-sizing: border-box;
-      }
-      .view_indicator .indicator_btn_click{
-        width: 54px;
-      }
-      .indicator_btn_click a{
-        background-color: #757575;
-      }
   } //laptop
 } //#headBox
-  
