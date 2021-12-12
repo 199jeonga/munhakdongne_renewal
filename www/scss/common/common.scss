@@ -76,17 +76,21 @@ button{
 .stop_btn{
   position: absolute; bottom:0; right: 0;
   width: 30px; height: 30px;
-  background-color: #ada;
+  background-color: $color_promary2;
+  @include shadow;
+  button{ color:$color_white; }
+  &:hover{background-color: $color_light_gray;}
 }
 .prev_next_btn{
   position:absolute; bottom: 0; right: 35px;
   width: 70px; height: auto;
-  color:#000;
 }
 .next_btn, .prev_btn{
   width: 30px; height: 30px;
   margin-right: 5px;
-  background-color: #aad;
+  color:$color_black; background-color: $color_white;
+  @include shadow;
+  &:hover{background-color: $color_light_gray;}
 }
 .next_btn{
   float:right;

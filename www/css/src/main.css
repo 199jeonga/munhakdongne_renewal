@@ -967,26 +967,31 @@ body {
   padding-bottom: 20px;
   padding-top: 2px;
 }
-#mdpickBox .mdpick_tab_part {
+.mdpick_tab_part {
   display: flex;
   justify-content: space-between;
   width: 1290px;
   height: auto;
 }
-#mdpickBox .mdp_tab_con {
+.mdpick_tab_part .mdp_tab_con {
   width: 125px;
   height: 30px;
   cursor: pointer;
 }
-#mdpickBox .mdp_tab_con button {
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px #eee;
+.mdpick_tab_part .mdp_tab_con button {
   background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-#mdpickBox .mdp_tab_con button:hover {
-  background-color: #EB4C38;
+.mdpick_tab_part .mdp_tab_con button:hover {
+  background-color: #FA7950;
   color: #fff;
 }
+.mdpick_tab_part .mdp_tab_con.action button {
+  background-color: #505050;
+  color: #fff;
+}
+
 #mdpickBox .mdpick_con_wrap {
   overflow: hidden;
   position: absolute;
@@ -997,7 +1002,7 @@ body {
   height: 275px;
   padding-left: 30px;
 }
-#mdpickBox .mdpick_booklist_area {
+#mdpickBox .mdpick_con_wrap .mdpick_booklist_area {
   overflow-x: auto;
   overflow-y: visible;
   width: 100%;
@@ -1006,25 +1011,173 @@ body {
   box-sizing: content-box;
 }
 #mdpickBox .mdpick_booklist_part {
-  --mdpickcon:10;
-  width: calc(220px * var(--mdpickcon) - 20px);
+  display: flex;
+  justify-content: space-between;
+  width: 2180px;
   height: 100%;
 }
-#mdpickBox .mdp_booklist_con {
-  float: left;
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con {
   width: 200px;
   height: 275px;
-  margin-right: 20px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: #aaa;
 }
-#mdpickBox .mdp_booklist_con a {
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(1) {
+  background-image: url(../../../multi/img/bookImg07.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(1) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(2) {
+  background-image: url(../../../multi/img/bookImg08.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(2) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(3) {
+  background-image: url(../../../multi/img/bookImg09.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(3) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(4) {
+  background-image: url(../../../multi/img/bookImg11.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(4) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(5) {
+  background-image: url(../../../multi/img/bookImg12.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(5) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(6) {
+  background-image: url(../../../multi/img/bookImg12.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(6) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(7) {
+  background-image: url(../../../multi/img/bookImg13.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(7) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(8) {
+  background-image: url(../../../multi/img/bookImg14.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(8) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(9) {
+  background-image: url(../../../multi/img/bookImg15.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(9) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(10) {
+  background-image: url(../../../multi/img/bookImg16.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(10) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con a {
   display: block;
   width: 100%;
   height: 100%;
 }
-#mdpickBox .mdp_booklist_con:last-child {
+#mdpickBox .mdpick_booklist_part .mdp_booklist_con:last-child {
   margin-right: 0;
 }
 @media all and (max-width: 1279px) {
@@ -1065,7 +1218,7 @@ body {
   height: auto;
   padding-top: 125px;
 }
-#newbookBox .newbook_booklist_wrap {
+.newbook_booklist_wrap {
   overflow: hidden;
   position: absolute;
   top: 100px;
@@ -1075,7 +1228,7 @@ body {
   height: 340px;
   padding-left: 30px;
 }
-#newbookBox .newbook_booklist_area {
+.newbook_booklist_wrap .newbook_booklist_area {
   width: 100%;
   height: auto;
   overflow-x: auto;
@@ -1084,34 +1237,195 @@ body {
   padding-bottom: 50px;
   box-sizing: content-box;
 }
-#newbookBox .newbook_booklist_part {
+.newbook_booklist_part {
+  display: flex;
+  justify-content: space-between;
   width: 2400px;
   height: auto;
   margin-bottom: 30px;
 }
-#newbookBox .newbook_booklist_part li {
-  float: left;
+.newbook_booklist_part li {
   width: 200px;
   height: auto;
-  margin-right: 20px;
 }
-#newbookBox .newbook_booklist_part li:last-child {
-  margin-right: 0px;
+.newbook_booklist_part li:nth-child(1) .nb_img {
+  background-image: url(../../../multi/img/bookImg17.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
-#newbookBox .newbook_booklist_part a {
+.newbook_booklist_part li:nth-child(1) .nb_img > span {
   display: block;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
-#newbookBox .nb_img {
+.newbook_booklist_part li:nth-child(2) .nb_img {
+  background-image: url(../../../multi/img/bookImg18.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(2) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(3) .nb_img {
+  background-image: url(../../../multi/img/bookImg19.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(3) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(4) .nb_img {
+  background-image: url(../../../multi/img/bookImg20.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(4) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(5) .nb_img {
+  background-image: url(../../../multi/img/bookImg21.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(5) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(6) .nb_img {
+  background-image: url(../../../multi/img/bookImg22.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(6) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(7) .nb_img {
+  background-image: url(../../../multi/img/bookImg23.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(7) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(8) .nb_img {
+  background-image: url(../../../multi/img/bookImg24.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(8) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(9) .nb_img {
+  background-image: url(../../../multi/img/bookImg25.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(9) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(10) .nb_img {
+  background-image: url(../../../multi/img/bookImg26.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(10) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li:nth-child(11) .nb_img {
+  background-image: url(../../../multi/img/bookImg27.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.newbook_booklist_part li:nth-child(11) .nb_img > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.newbook_booklist_part li a {
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.nb_img {
   width: 100%;
   height: 265px;
   margin-bottom: 14px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
 }
-#newbookBox .nb_title {
+
+.nb_title {
   width: 100%;
   height: auto;
   font-size: 18px;
@@ -1119,12 +1433,14 @@ body {
   font-weight: 700;
   margin-bottom: 4px;
 }
-#newbookBox .nb_writer {
+
+.nb_writer {
   width: 100%;
   height: auto;
   font-size: 18px;
   color: #757575;
 }
+
 #newbookBox .newbook_inner .moreview_btn {
   position: absolute;
   top: 5px;
@@ -1202,14 +1518,26 @@ body {
     width: 100%;
     height: 65.625vw;
   }
-  #dokpaBox .dokpa_view_part {
+  #dokpaBox #dokpa_title .dokpa_view_part {
     width: calc(100% - 20px);
     height: calc(100% - 70px);
     margin: 0 auto;
     border-radius: 10px;
-    background-color: #cc0;
+    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
-  #dokpaBox .dokpa_button_warpper {
+  #dokpaBox #dokpa_title .dokpa_view_part > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #dokpaBox #dokpa_title .dokpa_button_warpper {
     position: absolute;
     bottom: 20px;
     display: flex;
@@ -1217,11 +1545,16 @@ body {
     width: 100%;
     height: 30px;
   }
-  #dokpaBox .dokpa_button_warpper button {
+  #dokpaBox #dokpa_title .dokpa_button_warpper button {
     width: auto;
-    max-width: 140px;
     height: 30px;
-    padding: 0 4px;
+    padding: 0 1.5625vw;
+    color: #333333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #dokpaBox #dokpa_title .dokpa_button_warpper button:hover {
     background-color: #FA7950;
   }
   #dokpaBox .dokpa_area {
