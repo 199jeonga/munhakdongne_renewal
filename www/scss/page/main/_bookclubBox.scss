@@ -1,6 +1,6 @@
 /* bookclubBox
 ============================================================================== */
-#bookclubBox{
+@at-root #bookclubBox{
 
   @include mobile{
     width: 100%; height: auto;
@@ -11,9 +11,8 @@
     display: flex; flex-direction: column; justify-content: center;
     width: vwUnit(280); height: 380px;
     margin: auto;
-    border-radius: 10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     background-color: $color_white;
-
+    @include shadow;
     dl{
       width: 100%; height: auto;
       .title{ 
@@ -23,14 +22,18 @@
       }
       dd{width: 100%; height: auto; margin-bottom: vwUnit(20);}
       .sub_title{
-        width: 100%; height: auto; background-color: #daa;
-        font-size: map-get($font_size, content2 ); text-align: center; font-weight: 500;
+        width: 100%; height: auto;
+        font-size: map-get($font_size, content2 ); text-align: center; font-weight: 500; color:$color_black;
       }
       .content { @include blind;}
     }
     .bookclub_join{
-      width: auto; height: 40px; margin: 0 auto;
-      a{display: block; width: 100%; height: 100%;}
+      width: 160px; height: 30px; margin: 0 auto; line-height: 30px; text-align: center;
+      a{
+        @include full;
+        &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
+        &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
+      }
     }//bookclub_join
   }//bookclub_inner
 
@@ -46,8 +49,8 @@
     display: flex; flex-direction: column; justify-content: center;
     width: vwUnit(720, 768); height: 500px;
     margin: 0 auto;
-    border-radius: 10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     background-color: $color_white;
+    @include shadow;
 
     dl{width: 100%; height: auto;}
     .title{ 
@@ -58,14 +61,13 @@
     dd{width: 100%; height: auto; background-color: #fff; margin-bottom: vwUnit(10); padding: 0 20px;}
     .sub_title{
       width: 100%; height: auto;
-      font-size: map-get($font_size, h3 ); text-align: center; font-weight: 500; background-color: #aac;
+      font-size: map-get($font_size, h3 ); text-align: center; font-weight: 500; color:$color_black;
       margin-bottom: vwUnit(5);
     }
     .content{
           width: 550px; height: auto;
-          font-size: map-get($font_size, content2);  font-weight: 500;
+          font-size: map-get($font_size, content2);  font-weight: 500; color:$color_black;
           margin: auto; 
-          background-color: #acc;
           p:before{
             content: "\f14a"; font-family: 'Font Awesome 5 Free';
             display: block; width: 5px; height: 5px; color: $color_promary2; line-height: 38px;
@@ -73,8 +75,13 @@
           }
     }
     .bookclub_join{
-      width: auto; height: 40px; margin: 0 auto; font-weight: 500; font-size: map-get($font_size, content2 );
-      a{display: block; width: 100%; height: 100%;}
+      width: auto; height: 40px; margin: 0 auto;
+      font-weight: 500; font-size: map-get($font_size, content2 ); line-height: 40px;
+      a{
+        @include full;
+        &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
+        &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
+      }
     }//bookclub_join
   }//bookclub_inner
   }//tablet
@@ -89,8 +96,8 @@
     display: flex; flex-direction: column; justify-content: center;
     width: 800px; height: 500px;
     margin: 0 auto;
-    border-radius: 10px; box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
     background-color: $color_white;
+    @include shadow;
 
     dl{width: 100%; height: auto;}
     .title{ 
@@ -99,15 +106,15 @@
       text-align: center;
       margin: auto; margin-bottom: vwUnit(5);
     }
-    dd{width: 100%; height: auto; background-color: #fff; margin-bottom: vwUnit(10); padding: 0 20px;}
+    dd{width: 100%; height: auto; margin-bottom: vwUnit(10); padding: 0 20px;}
     .sub_title{
       width: 100%; height: auto;
-      font-size: map-get($font_size, h3 ); text-align: center; font-weight: 700; clolr:$color_black;
+      font-size: map-get($font_size, h3 ); text-align: center; font-weight: 700; color:$color_black;
       margin-bottom: vwUnit(5);
     }
     .content{
           width: 550px; height: auto;
-          font-size: map-get($font_size, content2);  font-weight: 500;
+          font-size: map-get($font_size, content2);  font-weight: 500; color:$color_black;
           margin: auto; 
           p:before{
             content: "\f14a"; font-family: 'Font Awesome 5 Free';
@@ -116,8 +123,13 @@
           }
     }
     .bookclub_join{
-      width: auto; height: 40px; margin: 0 auto; font-weight: 500; font-size: map-get($font_size, content2 );
-      a{display: block; width: 100%; height: 100%;}
+      width: auto; height: 40px; margin: 0 auto;
+      font-weight: 500; font-size: map-get($font_size, content2 ); line-height: 40px;
+      a{
+        @include full;
+        &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
+        &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
+      }
     }//bookclub_join
   }//bookclub_inner
   }//laptop

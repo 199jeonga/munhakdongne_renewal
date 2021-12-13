@@ -1513,12 +1513,12 @@ body {
     width: 100%;
     height: auto;
   }
-  #dokpaBox #dokpa_title {
+  #dokpa_title {
     position: relative;
     width: 100%;
     height: 65.625vw;
   }
-  #dokpaBox #dokpa_title .dokpa_view_part {
+  #dokpa_title .dokpa_view_part {
     width: calc(100% - 20px);
     height: calc(100% - 70px);
     margin: 0 auto;
@@ -1528,7 +1528,7 @@ body {
     background-position: 50% 50%;
     background-size: cover;
   }
-  #dokpaBox #dokpa_title .dokpa_view_part > span {
+  #dokpa_title .dokpa_view_part > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -1537,7 +1537,7 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper {
+  #dokpa_title .dokpa_button_warpper {
     position: absolute;
     bottom: 20px;
     display: flex;
@@ -1545,7 +1545,7 @@ body {
     width: 100%;
     height: 30px;
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper > button {
+  #dokpa_title .dokpa_button_warpper > button {
     width: auto;
     height: 30px;
     padding: 0 1.5625vw;
@@ -1554,10 +1554,11 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover {
+  #dokpa_title .dokpa_button_warpper > button:hover, #dokpa_title .dokpa_button_warpper > button:focus {
     background-color: #FA7950;
     color: #fff;
   }
+
   .dokpa_area {
     display: flex;
     justify-content: center;
@@ -1705,24 +1706,36 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
+  }
+  .dokpa_con a > div {
+    display: none;
+  }
+  .dokpa_con a:hover .action, .dokpa_con a:focus .action {
+    display: flex;
+  }
+  .dokpa_con a:focus {
+    transform: scale(1.03);
   }
   .dokpa_con .action {
     display: block;
     width: 100%;
     height: 100%;
-    display: none;
     position: relative;
-    display: flex;
+    z-index: 1;
+    display: none;
     flex-direction: column;
     justify-content: center;
   }
-  .dokpa_con .action::after, .dokpa_con .action:after {
+  .dokpa_con .action::before, .dokpa_con .action::before {
     content: "";
     display: block;
     position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: rgba(117, 117, 117, 0.3);
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
   }
   .dokpa_con .action .sub {
     display: block;
@@ -1735,28 +1748,30 @@ body {
   }
   .dokpa_con .action .title {
     display: block;
-    width: calc(100% - 5px);
+    width: 100%;
     height: auto;
-    margin-left: 5px;
     margin-bottom: 10px;
-    background-color: #fff;
-  }
-  .dokpa_con .action hr {
-    border-color: #fff;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-indent: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
   }
   .dokpa_con .action .date {
     width: 100%;
     height: remUnit2(20);
     margin-bottom: 9.375vw;
     text-align: center;
-    background-color: #fff;
+    color: #fff;
   }
   .dokpa_con .action .challenge_link {
     width: 100%;
     height: auto;
-    font-size: 20px;
-    background-color: #daa;
+    font-size: 18px;
+  }
+  .dokpa_con .action .challenge_link button {
+    color: #fff;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1816,7 +1831,7 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover {
+  #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover, #dokpaBox #dokpa_title .dokpa_button_warpper > button:focus {
     background-color: #FA7950;
     color: #fff;
   }
@@ -1833,6 +1848,8 @@ body {
     width: 24.7395833333vw;
     height: 29.9479166667vw;
     margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .dokpa_con:nth-of-type(1) {
     background-image: url(../../../multi/img/bookImg28.jpg);
@@ -1957,24 +1974,42 @@ body {
   .dokpa_con:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
-  .dokpa_con.action {
-    display: none;
+  .dokpa_con a {
+    display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
   }
-  .dokpa_con.action a {
+  .dokpa_con a > div {
+    display: none;
+  }
+  .dokpa_con a:hover .action, .dokpa_con a:focus .action {
     display: flex;
+  }
+  .dokpa_con a:focus {
+    transform: scale(1.03);
+  }
+  .dokpa_con .action {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
     flex-direction: column;
     justify-content: center;
+  }
+  .dokpa_con .action::before, .dokpa_con .action::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
   }
-
-  #dokpaBox:hover .action, #dokpaBox:focus .action {
-    display: block;
-  }
-  #dokpaBox .sub {
+  .dokpa_con .action .sub {
     display: block;
     width: 0;
     height: 0;
@@ -1983,28 +2018,32 @@ body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #dokpaBox .title {
+  .dokpa_con .action .title {
     display: block;
     width: 100%;
     height: 25px;
     margin-bottom: 10px;
-    background-color: #fff;
+    padding-bottom: 10px;
+    text-indent: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
   }
-  #dokpaBox hr {
-    border-color: #fff;
-    margin-bottom: 10px;
-  }
-  #dokpaBox .date {
+  .dokpa_con .action .date {
     width: 100%;
     height: 20px;
     margin-bottom: 40px;
-    background-color: #fff;
+    color: #fff;
+    text-align: center;
   }
-  #dokpaBox .challenge_link {
+  .dokpa_con .action .challenge_link {
     width: 100%;
     height: auto;
-    font-size: 20px;
-    background-color: #fff;
+    font-size: 18px;
+  }
+  .dokpa_con .action .challenge_link button {
+    color: #fff;
   }
 }
 @media all and (min-width: 1280px) {
@@ -2025,29 +2064,50 @@ body {
     height: auto;
     min-height: 700px;
   }
-  #dokpaBox #dokpa_title {
+  #dokpa_title {
     position: relative;
     width: 440px;
     height: 600px;
   }
-  #dokpaBox .dokpa_view_part {
+  #dokpa_title .dokpa_view_part {
     width: 100%;
     height: 100%;
-    background-color: #cca;
+    border-radius: 10px;
+    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-repeat: no-repeat;
+    background-position: 20% 20%;
+    background-size: cover;
   }
-  #dokpaBox .dokpa_button_warpper {
-    display: flex;
-    justify-content: space-around;
+  #dokpa_title .dokpa_view_part > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #dokpa_title .dokpa_button_warpper {
     position: absolute;
     bottom: 10px;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 40px;
   }
-  #dokpaBox #dokpa_title button {
+  #dokpa_title .dokpa_button_warpper button {
     width: 140px;
     height: 40px;
+    color: #333333;
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
+  #dokpa_title .dokpa_button_warpper button:hover, #dokpa_title .dokpa_button_warpper button:focus {
+    background-color: #FA7950;
+    color: #fff;
+  }
+
   #dokpaBox .dokpa_area {
     display: flex;
     justify-content: space-between;
@@ -2056,59 +2116,205 @@ body {
     height: auto;
     min-height: 1400px;
   }
-  #dokpaBox .dokpa_con {
+  .dokpa_con {
     width: 370px;
     height: 450px;
     margin-bottom: 34px;
-    background-color: #555;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #dokpaBox .dokpa_con:nth-last-child(-n+2) {
+  .dokpa_con:nth-of-type(1) {
+    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(1) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(2) {
+    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(3) {
+    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(4) {
+    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(5) {
+    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(6) {
+    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(6) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(7) {
+    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(7) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(8) {
+    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(8) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
-  #dokpaBox .dokpa_con .action {
-    display: none;
+  .dokpa_con a {
+    display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
   }
-  #dokpaBox .dokpa_con .action a {
+  .dokpa_con a > div {
+    display: none;
+  }
+  .dokpa_con a:hover .action, .dokpa_con a:focus .action {
     display: flex;
+  }
+  .dokpa_con a:focus {
+    transform: scale(1.03);
+  }
+  .dokpa_con .action {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
     flex-direction: column;
     justify-content: center;
+  }
+  .dokpa_con .action::before, .dokpa_con .action::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
   }
-  #dokpaBox .dokpa_con:hover .action, #dokpaBox .dokpa_con:focus .action {
-    display: block;
-  }
-  #dokpaBox .sub {
+  .dokpa_con .sub {
     width: 100%;
-    height: 40px;
-    background-color: #fff;
+    height: 20px;
+    color: #fff;
+    font-size: 18px;
     margin-bottom: 20px;
+    text-indent: 10px;
   }
-  #dokpaBox .title {
+  .dokpa_con .title {
     display: block;
     width: 100%;
     height: 25px;
     margin-bottom: 10px;
-    background-color: #fff;
+    padding-bottom: 10px;
+    text-indent: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    border-bottom: 1px solid #fff;
   }
-  #dokpaBox hr {
-    border-color: #fff;
-    margin-bottom: 10px;
-  }
-  #dokpaBox .date {
+  .dokpa_con .date {
     width: 100%;
     height: 20px;
     margin-bottom: 40px;
-    background-color: #fff;
+    text-align: center;
+    color: #fff;
   }
-  #dokpaBox .challenge_link {
+  .dokpa_con .challenge_link {
     width: 100%;
     height: auto;
-    font-size: 20px;
-    background-color: #fff;
+    font-size: 18px;
+  }
+  .dokpa_con .challenge_link button {
+    color: #fff;
   }
 }
 
@@ -2120,12 +2326,114 @@ body {
   height: auto;
   padding: 105px 0;
 }
+#awardBox .award_title {
+  background-image: url(../../../multi/img/award_titleBg.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox .award_title > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#awardBox li.book_con:nth-child(1) {
+  background-image: url(../../../multi/img/bookImg37.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox li.book_con:nth-child(1) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#awardBox li.book_con:nth-child(2) {
+  background-image: url(../../../multi/img/bookImg38.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox li.book_con:nth-child(2) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#awardBox li.book_con:nth-child(3) {
+  background-image: url(../../../multi/img/bookImg39.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox li.book_con:nth-child(3) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#awardBox li.book_con:nth-child(4) {
+  background-image: url(../../../multi/img/bookImg40.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox li.book_con:nth-child(4) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#awardBox li.book_con:nth-child(5) {
+  background-image: url(../../../multi/img/bookImg41.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#awardBox li.book_con:nth-child(5) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 @media all and (max-width: 1279px) {
   #awardBox .award_title, #awardBox .magazine_title {
     width: 100%;
     height: 120px;
     padding-top: 40px;
-    background-color: #333;
+    background-image: url(../../../multi/img/award_titleBg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: initial;
+  }
+  #awardBox .award_title > span, #awardBox .magazine_title > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   #awardBox .award_title .title_inner, #awardBox .magazine_title .title_inner {
     width: 100%;
@@ -2137,6 +2445,7 @@ body {
     height: 33px;
     font-size: 30px;
     line-height: 33px;
+    color: #fff;
   }
   #awardBox .award_title .title_inner .award_tab, #awardBox .award_title .title_inner .magazine_tab, #awardBox .magazine_title .title_inner .award_tab, #awardBox .magazine_title .title_inner .magazine_tab {
     display: flex;
@@ -2149,84 +2458,109 @@ body {
     width: 140px;
     height: 100%;
     margin-right: 10px;
-    background-color: #08a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn.action, #awardBox .magazine_title .title_inner .title_tab_btn.action {
+    border-bottom: 2px solid #fff;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn:hover, #awardBox .magazine_title .title_inner .title_tab_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn:focus, #awardBox .magazine_title .title_inner .title_tab_btn:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   #awardBox .am_inner_area {
     width: calc(100% - 20px);
     height: auto;
     margin: auto;
     margin-top: 18px;
-    background-color: #fff;
   }
   #awardBox .book_part_wrapper {
     overflow: hidden;
     width: 100%;
-    height: 314px;
+    height: 325px;
   }
   #awardBox .book_part_wrapper > div {
     overflow-x: auto;
     overflow-y: visible;
+    padding-bottom: 25px;
     width: 100%;
     height: auto;
   }
-  #awardBox .book_part {
+  .book_part {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 1170px;
     height: 100%;
   }
-  #awardBox .book_con {
+  .book_part .book_con {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
     width: 230px;
     height: 314px;
-    margin-right: 5px;
-    background-color: #777;
   }
-  #awardBox .book_con:last-child {
-    margin-right: 0;
+  .book_part .book_con a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
   }
-  #awardBox .book_con a {
+  .book_part .book_con a:hover .action {
+    display: block;
+  }
+  .book_part .book_con a:focus .action {
+    display: block;
+    transform: scale(1.02);
+  }
+  .book_part .book_con .action {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .book_part .book_con .action::before, .book_part .book_con .action::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
+  }
+  .book_part .book_con .action dl {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #awardBox .book_con dl {
-    width: 100%;
-    height: 100%;
-  }
-  #awardBox .book_con.action {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  #awardBox .title {
+  .book_part .book_con .action .title {
     width: 100%;
     height: auto;
     padding-left: 10px;
-    background-color: #fff;
     font-size: 22px;
+    color: #fff;
+    font-weight: 500;
   }
-  #awardBox .content {
+  .book_part .book_con .action .content {
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  #awardBox .pn_btn, #awardBox .more_btn {
     display: none;
-  }
-  #awardBox .pn_btn {
-    display: none;
-  }
-  #awardBox .more_btn {
-    display: none;
-  }
-  #awardBox #magazineBox .pn_btn, #awardBox #magazineBox .more_btn {
-    top: 535px;
-  }
-  #awardBox .more_btn a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 30px;
-    background-color: #a8c;
   }
 }
 @media all and (min-width: 1280px) {
@@ -2234,7 +2568,6 @@ body {
     width: 100%;
     height: 170px;
     padding-top: 104px;
-    background-color: #333;
   }
   #awardBox .award_title .title_inner, #awardBox .magazine_title .title_inner {
     width: 1144px;
@@ -2247,6 +2580,7 @@ body {
     height: 45px;
     font-size: 38px;
     line-height: 45px;
+    color: #fff;
   }
   #awardBox .award_title .title_inner .award_tab, #awardBox .award_title .title_inner .magazine_tab, #awardBox .magazine_title .title_inner .award_tab, #awardBox .magazine_title .title_inner .magazine_tab {
     float: right;
@@ -2259,56 +2593,96 @@ body {
   #awardBox .award_title .title_inner .title_tab_btn, #awardBox .magazine_title .title_inner .title_tab_btn {
     width: 140px;
     height: 100%;
-    margin-left: 10px;
-    background-color: #08a;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn.action, #awardBox .magazine_title .title_inner .title_tab_btn.action {
+    border-bottom: 2px solid #fff;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn:hover, #awardBox .magazine_title .title_inner .title_tab_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #awardBox .award_title .title_inner .title_tab_btn:focus, #awardBox .magazine_title .title_inner .title_tab_btn:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   #awardBox .am_inner_area {
     width: 1170px;
     height: 400px;
     margin: auto;
     margin-top: 24px;
-    background-color: #fff;
   }
-  #awardBox .book_part {
-    width: 100%;
+  .book_part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
     height: auto;
   }
-  #awardBox .book_con {
-    float: left;
+  .book_con {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
     width: 230px;
     height: 314px;
-    margin-right: 5px;
-    background-color: #777;
   }
-  #awardBox .book_con a {
+  .book_con a {
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
   }
-  #awardBox .book_con:last-child {
-    margin-right: 0;
+  .book_con a:hover .action {
+    display: block;
   }
-  #awardBox .book_con .action {
-    width: 100%;
-    height: auto;
-    padding-top: 33px;
+  .book_con a:focus .action {
+    display: block;
+    transform: scale(1.02);
   }
-  #awardBox .book_con dl {
+  .book_con .action {
+    position: relative;
+    display: none;
     width: 100%;
     height: 100%;
   }
-  #awardBox .title {
+  .book_con .action::before, .book_con .action::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
     width: 100%;
-    height: 25px;
-    margin-bottom: 26px;
-    background-color: #fff;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
   }
-  #awardBox .content {
+  .book_con .action dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .book_con .action .title {
     width: 100%;
     height: auto;
-    min-height: 220px;
-    background-color: #fff;
+    padding-left: 10px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
   }
+  .book_con .action .content {
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+
   #awardBox .pn_btn {
     position: absolute;
     top: 640px;
@@ -2334,7 +2708,13 @@ body {
     height: 100%;
     text-align: center;
     line-height: 30px;
-    background-color: #a8c;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+  }
+  #awardBox .more_btn a:hover {
+    text-decoration: none;
+    color: #FA7950;
   }
 }
 
@@ -2355,9 +2735,9 @@ body {
     width: 87.5vw;
     height: 380px;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .bookclub_inner dl {
     width: 100%;
@@ -2391,10 +2771,10 @@ body {
   .bookclub_inner dl .sub_title {
     width: 100%;
     height: auto;
-    background-color: #daa;
     font-size: 18px;
     text-align: center;
     font-weight: 500;
+    color: #333333;
   }
   .bookclub_inner dl .content {
     display: block;
@@ -2406,14 +2786,26 @@ body {
     overflow: hidden;
   }
   .bookclub_inner .bookclub_join {
-    width: auto;
-    height: 40px;
+    width: 160px;
+    height: 30px;
     margin: 0 auto;
+    line-height: 30px;
+    text-align: center;
   }
   .bookclub_inner .bookclub_join a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  .bookclub_inner .bookclub_join a:hover {
+    text-decoration: none;
+    color: #FA7950;
+    font-weight: 700;
+  }
+  .bookclub_inner .bookclub_join a:focus {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(51, 51, 51, 0.05);
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -2431,9 +2823,9 @@ body {
     width: 93.75vw;
     height: 500px;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .bookclub_inner dl {
     width: 100%;
@@ -2471,7 +2863,7 @@ body {
     font-size: 30px;
     text-align: center;
     font-weight: 500;
-    background-color: #aac;
+    color: #333333;
     margin-bottom: 1.5625vw;
   }
   .bookclub_inner .content {
@@ -2479,8 +2871,8 @@ body {
     height: auto;
     font-size: 18px;
     font-weight: 500;
+    color: #333333;
     margin: auto;
-    background-color: #acc;
   }
   .bookclub_inner .content p:before {
     content: "\f14a";
@@ -2498,11 +2890,22 @@ body {
     margin: 0 auto;
     font-weight: 500;
     font-size: 18px;
+    line-height: 40px;
   }
   .bookclub_inner .bookclub_join a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  .bookclub_inner .bookclub_join a:hover {
+    text-decoration: none;
+    color: #FA7950;
+    font-weight: 700;
+  }
+  .bookclub_inner .bookclub_join a:focus {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(51, 51, 51, 0.05);
   }
 }
 @media all and (min-width: 1280px) {
@@ -2520,9 +2923,9 @@ body {
     width: 800px;
     height: 500px;
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .bookclub_inner dl {
     width: 100%;
@@ -2541,7 +2944,6 @@ body {
   .bookclub_inner dd {
     width: 100%;
     height: auto;
-    background-color: #fff;
     margin-bottom: 3.125vw;
     padding: 0 20px;
   }
@@ -2551,7 +2953,7 @@ body {
     font-size: 30px;
     text-align: center;
     font-weight: 700;
-    clolr: #333333;
+    color: #333333;
     margin-bottom: 1.5625vw;
   }
   .bookclub_inner .content {
@@ -2559,6 +2961,7 @@ body {
     height: auto;
     font-size: 18px;
     font-weight: 500;
+    color: #333333;
     margin: auto;
   }
   .bookclub_inner .content p:before {
@@ -2577,11 +2980,22 @@ body {
     margin: 0 auto;
     font-weight: 500;
     font-size: 18px;
+    line-height: 40px;
   }
   .bookclub_inner .bookclub_join a {
     display: block;
     width: 100%;
     height: 100%;
+  }
+  .bookclub_inner .bookclub_join a:hover {
+    text-decoration: none;
+    color: #FA7950;
+    font-weight: 700;
+  }
+  .bookclub_inner .bookclub_join a:focus {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(51, 51, 51, 0.05);
   }
 }
 
@@ -2742,12 +3156,102 @@ body {
   height: auto;
   padding-bottom: 105px;
 }
+#magazineBox .magazine_title {
+  background-color: #1B2C7A;
+}
+#magazineBox li.book_con:nth-child(1) {
+  background-image: url(../../../multi/img/bookImg42.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#magazineBox li.book_con:nth-child(1) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#magazineBox li.book_con:nth-child(2) {
+  background-image: url(../../../multi/img/bookImg43.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#magazineBox li.book_con:nth-child(2) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#magazineBox li.book_con:nth-child(3) {
+  background-image: url(../../../multi/img/bookImg44.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#magazineBox li.book_con:nth-child(3) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#magazineBox li.book_con:nth-child(4) {
+  background-image: url(../../../multi/img/bookImg45.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#magazineBox li.book_con:nth-child(4) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#magazineBox li.book_con:nth-child(5) {
+  background-image: url(../../../multi/img/bookImg46.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#magazineBox li.book_con:nth-child(5) > span {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
 @media all and (max-width: 1279px) {
   #magazineBox .award_title, #magazineBox .magazine_title {
     width: 100%;
     height: 120px;
     padding-top: 40px;
-    background-color: #333;
+    background-image: url(../../../multi/img/award_titleBg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: initial;
+  }
+  #magazineBox .award_title > span, #magazineBox .magazine_title > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   #magazineBox .award_title .title_inner, #magazineBox .magazine_title .title_inner {
     width: 100%;
@@ -2759,6 +3263,7 @@ body {
     height: 33px;
     font-size: 30px;
     line-height: 33px;
+    color: #fff;
   }
   #magazineBox .award_title .title_inner .award_tab, #magazineBox .award_title .title_inner .magazine_tab, #magazineBox .magazine_title .title_inner .award_tab, #magazineBox .magazine_title .title_inner .magazine_tab {
     display: flex;
@@ -2771,84 +3276,109 @@ body {
     width: 140px;
     height: 100%;
     margin-right: 10px;
-    background-color: #08a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn.action, #magazineBox .magazine_title .title_inner .title_tab_btn.action {
+    border-bottom: 2px solid #fff;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn:hover, #magazineBox .magazine_title .title_inner .title_tab_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn:focus, #magazineBox .magazine_title .title_inner .title_tab_btn:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   #magazineBox .am_inner_area {
     width: calc(100% - 20px);
     height: auto;
     margin: auto;
     margin-top: 18px;
-    background-color: #fff;
   }
   #magazineBox .book_part_wrapper {
     overflow: hidden;
     width: 100%;
-    height: 314px;
+    height: 325px;
   }
   #magazineBox .book_part_wrapper > div {
     overflow-x: auto;
     overflow-y: visible;
+    padding-bottom: 25px;
     width: 100%;
     height: auto;
   }
-  #magazineBox .book_part {
+  .book_part {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 1170px;
     height: 100%;
   }
-  #magazineBox .book_con {
+  .book_part .book_con {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
     width: 230px;
     height: 314px;
-    margin-right: 5px;
-    background-color: #777;
   }
-  #magazineBox .book_con:last-child {
-    margin-right: 0;
+  .book_part .book_con a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
   }
-  #magazineBox .book_con a {
+  .book_part .book_con a:hover .action {
+    display: block;
+  }
+  .book_part .book_con a:focus .action {
+    display: block;
+    transform: scale(1.02);
+  }
+  .book_part .book_con .action {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .book_part .book_con .action::before, .book_part .book_con .action::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
+  }
+  .book_part .book_con .action dl {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
   }
-  #magazineBox .book_con dl {
-    width: 100%;
-    height: 100%;
-  }
-  #magazineBox .book_con.action {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  #magazineBox .title {
+  .book_part .book_con .action .title {
     width: 100%;
     height: auto;
     padding-left: 10px;
-    background-color: #fff;
     font-size: 22px;
+    color: #fff;
+    font-weight: 500;
   }
-  #magazineBox .content {
+  .book_part .book_con .action .content {
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  #magazineBox .pn_btn, #magazineBox .more_btn {
     display: none;
-  }
-  #magazineBox .pn_btn {
-    display: none;
-  }
-  #magazineBox .more_btn {
-    display: none;
-  }
-  #magazineBox #magazineBox .pn_btn, #magazineBox #magazineBox .more_btn {
-    top: 535px;
-  }
-  #magazineBox .more_btn a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    line-height: 30px;
-    background-color: #a8c;
   }
 }
 @media all and (min-width: 1280px) {
@@ -2856,7 +3386,6 @@ body {
     width: 100%;
     height: 170px;
     padding-top: 104px;
-    background-color: #333;
   }
   #magazineBox .award_title .title_inner, #magazineBox .magazine_title .title_inner {
     width: 1144px;
@@ -2869,6 +3398,7 @@ body {
     height: 45px;
     font-size: 38px;
     line-height: 45px;
+    color: #fff;
   }
   #magazineBox .award_title .title_inner .award_tab, #magazineBox .award_title .title_inner .magazine_tab, #magazineBox .magazine_title .title_inner .award_tab, #magazineBox .magazine_title .title_inner .magazine_tab {
     float: right;
@@ -2881,56 +3411,96 @@ body {
   #magazineBox .award_title .title_inner .title_tab_btn, #magazineBox .magazine_title .title_inner .title_tab_btn {
     width: 140px;
     height: 100%;
-    margin-left: 10px;
-    background-color: #08a;
+    margin-right: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn.action, #magazineBox .magazine_title .title_inner .title_tab_btn.action {
+    border-bottom: 2px solid #fff;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn:hover, #magazineBox .magazine_title .title_inner .title_tab_btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  #magazineBox .award_title .title_inner .title_tab_btn:focus, #magazineBox .magazine_title .title_inner .title_tab_btn:focus {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   #magazineBox .am_inner_area {
     width: 1170px;
     height: 400px;
     margin: auto;
     margin-top: 24px;
-    background-color: #fff;
   }
-  #magazineBox .book_part {
-    width: 100%;
+  .book_part {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1170px;
     height: auto;
   }
-  #magazineBox .book_con {
-    float: left;
+  .book_con {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
     width: 230px;
     height: 314px;
-    margin-right: 5px;
-    background-color: #777;
   }
-  #magazineBox .book_con a {
+  .book_con a {
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
   }
-  #magazineBox .book_con:last-child {
-    margin-right: 0;
+  .book_con a:hover .action {
+    display: block;
   }
-  #magazineBox .book_con .action {
-    width: 100%;
-    height: auto;
-    padding-top: 33px;
+  .book_con a:focus .action {
+    display: block;
+    transform: scale(1.02);
   }
-  #magazineBox .book_con dl {
+  .book_con .action {
+    position: relative;
+    display: none;
     width: 100%;
     height: 100%;
   }
-  #magazineBox .title {
+  .book_con .action::before, .book_con .action::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
     width: 100%;
-    height: 25px;
-    margin-bottom: 26px;
-    background-color: #fff;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.7);
+    border-radius: 10px;
   }
-  #magazineBox .content {
+  .book_con .action dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .book_con .action .title {
     width: 100%;
     height: auto;
-    min-height: 220px;
-    background-color: #fff;
+    padding-left: 10px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
   }
+  .book_con .action .content {
+    padding-left: 10px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: #fff;
+  }
+
   #magazineBox .pn_btn {
     position: absolute;
     top: 640px;
@@ -2956,7 +3526,13 @@ body {
     height: 100%;
     text-align: center;
     line-height: 30px;
-    background-color: #a8c;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+  }
+  #magazineBox .more_btn a:hover {
+    text-decoration: none;
+    color: #FA7950;
   }
 }
 

@@ -1,10 +1,18 @@
 
 /* awardBox
 ============================================================================== */
-#awardBox{
+@at-root #awardBox{
   position: relative;
   width: 100%; height: auto;
   padding: 105px 0;
+  .award_title{
+    @include img('award_titleBg.svg' , $size:cover);
+  }
+  li.book_con{
+    @for $i from 1 through $award_slide{
+      &:nth-child( #{$i} ){ @include img( nth($link_awardImg, $i), $size:cover ) };
+    }
+  }
 
   @import "../base/mainCommonBox";
 }

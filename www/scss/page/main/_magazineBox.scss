@@ -6,6 +6,14 @@
   position: relative;
   width: 100%; height: auto;
   padding-bottom: 105px;
+  .magazine_title{
+    background-color: $color_primary1;
+  }
+  li.book_con{
+    @for $i from 1 through $magazine_slide{
+      &:nth-child( #{$i} ){ @include img( nth($link_magazineImg , $i), $size:cover ) };
+    }
+  }
 
   @import '../base/mainCommonBox';
 } //#magazineBox
