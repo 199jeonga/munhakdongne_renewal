@@ -1545,7 +1545,7 @@ body {
     width: 100%;
     height: 30px;
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper button {
+  #dokpaBox #dokpa_title .dokpa_button_warpper > button {
     width: auto;
     height: 30px;
     padding: 0 1.5625vw;
@@ -1554,49 +1554,177 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #dokpaBox #dokpa_title .dokpa_button_warpper button:hover {
+  #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover {
     background-color: #FA7950;
+    color: #fff;
   }
-  #dokpaBox .dokpa_area {
+  .dokpa_area {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: calc(100% - 20px);
     height: auto;
     margin: auto;
-    background-color: #ada;
   }
-  #dokpaBox .dokpa_con {
+
+  .dokpa_con {
     width: 43.75vw;
     height: 53.125vw;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    background-color: #555;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #dokpaBox .dokpa_con:nth-last-child(-n+2) {
+  .dokpa_con:nth-of-type(1) {
+    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(1) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(2) {
+    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(3) {
+    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(4) {
+    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(5) {
+    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(6) {
+    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(6) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(7) {
+    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(7) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(8) {
+    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(8) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
-  #dokpaBox .dokpa_con:nth-child(2n) {
+  .dokpa_con:nth-child(2n) {
     margin-left: 0;
   }
-  #dokpaBox .dokpa_con .action {
-    display: none;
+  .dokpa_con a {
+    display: block;
     width: 100%;
     height: 100%;
   }
-  #dokpaBox .dokpa_con .action a {
+  .dokpa_con .action {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .dokpa_con .action::after, .dokpa_con .action:after {
+    content: "";
+    display: block;
+    position: absolute;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(117, 117, 117, 0.3);
   }
-  #dokpaBox .dokpa_con:hover .action, #dokpaBox .dokpa_con:focus .action {
-    display: block;
-  }
-  #dokpaBox .sub {
+  .dokpa_con .action .sub {
     display: block;
     width: 0;
     height: 0;
@@ -1605,7 +1733,7 @@ body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #dokpaBox .title {
+  .dokpa_con .action .title {
     display: block;
     width: calc(100% - 5px);
     height: auto;
@@ -1613,18 +1741,18 @@ body {
     margin-bottom: 10px;
     background-color: #fff;
   }
-  #dokpaBox hr {
+  .dokpa_con .action hr {
     border-color: #fff;
     margin-bottom: 10px;
   }
-  #dokpaBox .date {
+  .dokpa_con .action .date {
     width: 100%;
     height: remUnit2(20);
     margin-bottom: 9.375vw;
     text-align: center;
     background-color: #fff;
   }
-  #dokpaBox .challenge_link {
+  .dokpa_con .action .challenge_link {
     width: 100%;
     height: auto;
     font-size: 20px;
@@ -1654,16 +1782,22 @@ body {
     height: 310px;
     margin-right: 10px;
   }
-  #dokpaBox #dokpa_title button {
-    width: auto;
-    height: 40px;
-    padding: 0 5px;
-    background-color: #fff;
-  }
   #dokpaBox #dokpa_title .dokpa_view_part {
     width: 100%;
     height: 260px;
-    background-color: #cca;
+    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #dokpaBox #dokpa_title .dokpa_view_part > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   #dokpaBox #dokpa_title .dokpa_button_warpper {
     display: flex;
@@ -1673,7 +1807,20 @@ body {
     width: 100%;
     height: 40px;
   }
-  #dokpaBox .dokpa_area {
+  #dokpaBox #dokpa_title .dokpa_button_warpper > button {
+    width: auto;
+    height: 40px;
+    padding: 0 5px;
+    color: #333333;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover {
+    background-color: #FA7950;
+    color: #fff;
+  }
+  .dokpa_area {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -1681,21 +1828,141 @@ body {
     height: auto;
     margin: 0 auto;
   }
-  #dokpaBox .dokpa_con {
+
+  .dokpa_con {
     width: 24.7395833333vw;
     height: 29.9479166667vw;
     margin-bottom: 10px;
-    background-color: #555;
   }
-  #dokpaBox .dokpa_con:nth-last-child(-n+2) {
+  .dokpa_con:nth-of-type(1) {
+    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(1) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(2) {
+    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(3) {
+    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(4) {
+    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(5) {
+    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(6) {
+    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(6) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(7) {
+    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(7) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-of-type(8) {
+    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .dokpa_con:nth-of-type(8) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .dokpa_con:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
-  #dokpaBox .dokpa_con .action {
+  .dokpa_con.action {
     display: none;
     width: 100%;
     height: 100%;
   }
-  #dokpaBox .dokpa_con .action a {
+  .dokpa_con.action a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1703,7 +1970,8 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
   }
-  #dokpaBox .dokpa_con:hover .action, #dokpaBox .dokpa_con:focus .action {
+
+  #dokpaBox:hover .action, #dokpaBox:focus .action {
     display: block;
   }
   #dokpaBox .sub {
