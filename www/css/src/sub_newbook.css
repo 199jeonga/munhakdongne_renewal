@@ -156,7 +156,7 @@ html, body {
     height: 30px;
   }
   .gnb_sns li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -171,7 +171,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -186,7 +186,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -201,7 +201,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -216,7 +216,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -444,7 +444,7 @@ html, body {
     margin-top: 5px;
   }
   #gnbBox .gnb_sns > li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -459,7 +459,7 @@ html, body {
     overflow: hidden;
   }
   #gnbBox .gnb_sns > li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -474,7 +474,7 @@ html, body {
     overflow: hidden;
   }
   #gnbBox .gnb_sns > li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -489,7 +489,7 @@ html, body {
     overflow: hidden;
   }
   #gnbBox .gnb_sns > li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -504,7 +504,7 @@ html, body {
     overflow: hidden;
   }
   #gnbBox .gnb_sns > li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -593,7 +593,7 @@ html, body {
     width: 100%;
     height: 250px;
     padding-top: 100px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 25% 50%;
     background-size: cover;
@@ -726,7 +726,7 @@ html, body {
     width: 100%;
     height: 300px;
     padding-top: 150px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 30% 50%;
     background-size: cover;
@@ -852,7 +852,7 @@ html, body {
     width: 100%;
     height: 300px;
     padding-top: 150px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
