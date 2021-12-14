@@ -999,7 +999,7 @@ body {
   left: 50%;
   margin-left: -50vw;
   width: 100vw;
-  height: 275px;
+  height: 285px;
   padding-left: 30px;
 }
 #mdpickBox .mdpick_con_wrap .mdpick_booklist_area {
@@ -1007,28 +1007,29 @@ body {
   overflow-y: visible;
   width: 100%;
   height: 275px;
+  padding-bottom: 25px;
   padding-bottom: 100px;
   box-sizing: content-box;
 }
-#mdpickBox .mdpick_booklist_part {
+.mdpick_booklist_part {
   display: flex;
   justify-content: space-between;
   width: 2180px;
   height: 100%;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con {
+.mdpick_booklist_part .mdp_booklist_con {
   width: 200px;
   height: 275px;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(1) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(1) {
   background-image: url(../../multi/img/bookImg07.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(1) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(1) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1037,13 +1038,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(2) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(2) {
   background-image: url(../../multi/img/bookImg08.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(2) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(2) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1052,13 +1053,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(3) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(3) {
   background-image: url(../../multi/img/bookImg09.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(3) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(3) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1067,13 +1068,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(4) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(4) {
   background-image: url(../../multi/img/bookImg11.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(4) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(4) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1082,13 +1083,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(5) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(5) {
   background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(5) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(5) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1097,13 +1098,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(6) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(6) {
   background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(6) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(6) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1112,13 +1113,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(7) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(7) {
   background-image: url(../../multi/img/bookImg13.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(7) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(7) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1127,13 +1128,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(8) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(8) {
   background-image: url(../../multi/img/bookImg14.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(8) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(8) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1142,13 +1143,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(9) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(9) {
   background-image: url(../../multi/img/bookImg15.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(9) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(9) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1157,13 +1158,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(10) {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(10) {
   background-image: url(../../multi/img/bookImg16.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:nth-child(10) > span {
+.mdpick_booklist_part .mdp_booklist_con:nth-child(10) > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1172,14 +1173,23 @@ body {
   height: 0;
   overflow: hidden;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con a {
+.mdpick_booklist_part .mdp_booklist_con a {
   display: block;
   width: 100%;
   height: 100%;
 }
-#mdpickBox .mdpick_booklist_part .mdp_booklist_con:last-child {
+.mdpick_booklist_part .mdp_booklist_con a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.mdpick_booklist_part .mdp_booklist_con a:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.mdpick_booklist_part .mdp_booklist_con:last-child {
   margin-right: 0;
 }
+
 @media all and (max-width: 1279px) {
   #mdpickBox h2 {
     width: auto;
@@ -1414,8 +1424,9 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li a {
-  border-radius: 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .nb_img {
   width: 100%;
@@ -2424,7 +2435,7 @@ body {
     background-image: url(../../multi/img/award_titleBg.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: initial;
+    background-size: cover;
   }
   #awardBox .award_title > span, #awardBox .magazine_title > span {
     display: block;
@@ -3039,41 +3050,128 @@ body {
     width: 31.25vw;
     height: 31.25vw;
     margin-bottom: 1.25vw;
-    background-color: #aa8;
   }
-  .shop_area .shop_con.action {
-    display: none;
-    background-color: rgba(51, 51, 51, 0.5);
+  .shop_area .shop_con:nth-of-type(1) {
+    background-image: url(../../multi/img/bookclubImg01.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
   }
-  .shop_area .shop_con.action:hover {
+  .shop_area .shop_con:nth-of-type(1) > span {
     display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
-  .shop_area .shop_con.action a:before, .shop_area .shop_con.action a::before {
+  .shop_area .shop_con:nth-of-type(2) {
+    background-image: url(../../multi/img/bookclubImg02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(3) {
+    background-image: url(../../multi/img/bookclubImg03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(4) {
+    background-image: url(../../multi/img/bookclubImg04.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(5) {
+    background-image: url(../../multi/img/bookclubImg05.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(6) {
+    background-image: url(../../multi/img/bookclubImg06.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(6) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con a {
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  .shop_area .shop_con a:before, .shop_area .shop_con a::before {
     content: "자세히 보기";
-    display: block;
-    width: 90%;
-    height: 90%;
-    margin: auto;
-    margin-top: 5%;
+    display: none;
+    width: 100%;
+    height: 100%;
     text-align: center;
-    line-height: 30.625vw;
+    line-height: 31.25vw;
     font-size: 16px;
     font-weight: 500;
     color: #fff;
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-  .shop_area .shop_con.action span {
-    width: 100%;
-    height: auto;
     margin: auto;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-sizing: border-box;
   }
-
-  #shopBox .shop_con:nth-last-child(-n+5) {
+  .shop_area .shop_con a:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+  }
+  .shop_area .shop_con a:hover:before, .shop_area .shop_con a:hover::before {
+    display: block;
+  }
+  .shop_area .shop_con:nth-last-child(-n+5) {
     margin-bottom: 0;
   }
-  #shopBox .shop_con:nth-last-child(-n+2) {
+  .shop_area .shop_con:nth-last-child(-n+2) {
     display: block;
     width: 0;
     height: 0;
@@ -3082,11 +3180,12 @@ body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #shopBox .shop_con > a {
+  .shop_area .shop_con > a {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   #shopBox .shop_inner .moreview_btn {
     position: absolute;
     top: 0;
@@ -3117,7 +3216,7 @@ body {
     font-size: 38px;
     line-height: 45px;
   }
-  #shopBox .shop_area {
+  .shop_area {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -3125,26 +3224,175 @@ body {
     height: auto;
     margin-top: 80px;
   }
-  #shopBox .shop_con {
+  .shop_area .shop_con {
     width: 270px;
     height: 270px;
     margin-bottom: 20px;
     background-color: #aa8;
   }
-  #shopBox .shop_con:nth-last-child(-n+4) {
+  .shop_area .shop_con:nth-of-type(1) {
+    background-image: url(../../multi/img/bookclubImg01.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(1) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(2) {
+    background-image: url(../../multi/img/bookclubImg02.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(3) {
+    background-image: url(../../multi/img/bookclubImg03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(4) {
+    background-image: url(../../multi/img/bookclubImg04.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(5) {
+    background-image: url(../../multi/img/bookclubImg05.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(6) {
+    background-image: url(../../multi/img/bookclubImg06.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(6) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(7) {
+    background-image: url(../../multi/img/bookclubImg07.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(7) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con:nth-of-type(8) {
+    background-image: url(../../multi/img/bookclubImg08.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .shop_area .shop_con:nth-of-type(8) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .shop_area .shop_con.action a {
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  .shop_area .shop_con.action a:before, .shop_area .shop_con.action a::before {
+    content: "자세히 보기";
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 270px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  .shop_area .shop_con.action a:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+  }
+  .shop_area .shop_con.action a:hover:before, .shop_area .shop_con.action a:hover::before {
+    display: block;
+  }
+  .shop_area .shop_con:nth-last-child(-n+4) {
     margin-bottom: 0;
   }
-  #shopBox .shop_con > a {
+  .shop_area .shop_con > a {
     display: block;
     width: 100%;
     height: 100%;
   }
+
   #shopBox .shop_inner .moreview_btn {
     position: absolute;
     top: 0;
     right: 0;
-    width: 172px;
+    width: 120px;
     height: 35px;
+    text-align: center;
   }
   #shopBox .shop_inner .moreview_btn a {
     display: block;
@@ -3247,7 +3495,7 @@ body {
     background-image: url(../../multi/img/award_titleBg.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: initial;
+    background-size: cover;
   }
   #magazineBox .award_title > span, #magazineBox .magazine_title > span {
     display: block;
@@ -3551,7 +3799,6 @@ body {
 }
 @media all and (max-width: 1279px) {
   #webzineBox {
-    /* wz_account_part-------------------------------------------------------------------- */
     /* wz_title_part-------------------------------------------------------------------- */
     /* wz_con_part-------------------------------------------------------------------- */
   }
@@ -3566,10 +3813,10 @@ body {
     line-height: 45px;
     margin-left: 10px;
   }
-  #webzineBox .webzine_area {
+  #webzineBox .webzine_inner .webzine_area {
+    display: block;
     width: 100%;
     height: 100%;
-    background-color: #fff;
   }
   #webzineBox .wz_account_part {
     display: block;
@@ -3580,44 +3827,70 @@ body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #webzineBox .wz_title_part {
+  .wz_title_part {
     display: flex;
-    margin: 30px 0;
-    margin-left: 5px;
+    margin: 20px 5px 40px;
+    margin-right: 0;
   }
-  #webzineBox .wz_title_part > section {
+  .wz_title_part > section {
+    position: relative;
     width: auto;
     height: auto;
-    padding: 0 2px;
     margin-right: 4px;
-    background-color: #000;
+    color: #333333;
   }
-  #webzineBox .wz_title_part button {
+  .wz_title_part > section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #757575;
+  }
+  .wz_title_part .action {
+    color: #FA7950;
+  }
+  .wz_title_part .action::before {
+    background-color: #FA7950;
+  }
+  .wz_title_part .action button {
+    font-weight: 700;
+  }
+  .wz_title_part button {
+    display: block;
     width: 100%;
     height: 100%;
-    color: #fff;
-    text-align: right;
+    padding: 0 0.625vw;
     font-size: 16px;
-    /* background-color: #daa; */
+    color: inherit;
   }
-  #webzineBox .wz_con_part {
+  .wz_title_part button:hover {
+    color: #FA7950;
+    font-weight: 700;
+  }
+
+  .wz_con_part {
     overflow: hidden;
     width: 100%;
     height: 170px;
   }
-  #webzineBox .wz_con_part > div {
+  .wz_con_part > div {
     overflow-x: auto;
     overflow-y: visible;
     width: 100%;
     height: auto;
   }
-  #webzineBox .wz_con_part ul {
+  .wz_con_part > div ul {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 1075px;
     height: 170px;
   }
+
   #webzineBox .wz_con_content {
     overflow: hidden;
     width: 130px;
@@ -3626,21 +3899,22 @@ body {
     border-radius: 10px;
     padding-top: 5px;
   }
-  #webzineBox .wz_con_info {
+  .wz_con_info {
+    display: block;
     width: 100%;
     height: 100%;
   }
-  #webzineBox .wz_con_date {
+  .wz_con_info .wz_con_date {
     width: 100%;
     height: auto;
     color: #eb4c38;
-    font-size: 18px;
+    font-family: "KoPub Batang";
     text-align: center;
     border-top: 1px solid #eb4c38;
     border-bottom: 1px solid #eb4c38;
     margin: 0 auto;
   }
-  #webzineBox .wz_con_title {
+  .wz_con_info .wz_con_title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3648,19 +3922,19 @@ body {
     height: 130px;
     text-align: center;
     margin: 0 auto;
-    background-color: #aad;
   }
-  #webzineBox .wz_book_name {
+  .wz_con_info .wz_con_title .wz_book_name {
     width: 100%;
     height: auto;
     font-size: 24px;
+    font-family: "KoPub Batang";
   }
-  #webzineBox .wz_writer_name {
+  .wz_con_info .wz_con_title .wz_writer_name {
     width: 100%;
     height: auto;
     font-size: 18px;
   }
-  #webzineBox .detail {
+  .wz_con_info .wz_con_title .detail {
     display: block;
     width: 0;
     height: 0;
@@ -3669,7 +3943,7 @@ body {
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
-  #webzineBox .wz_con_episode {
+  .wz_con_info .wz_con_episode {
     display: block;
     width: 0;
     height: 0;

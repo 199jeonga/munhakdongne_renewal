@@ -62,9 +62,11 @@
   line-height: 35px;
 }
 .moreview_btn a {
+  display: block;
   width: 100%;
   height: 100%;
   color: #333333;
+  font-weight: 700;
 }
 .moreview_btn a:hover {
   text-decoration: none;

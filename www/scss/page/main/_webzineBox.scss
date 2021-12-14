@@ -1,7 +1,7 @@
 
 /* 
 ============================================================================== */
-#webzineBox{
+@at-root #webzineBox{
   width: 100%; height: auto;
   padding: 105px 0; margin-bottom: 90px;
 
@@ -9,55 +9,59 @@
 
     .webzine_inner{
       width: 100%; height: 280px;
-    }
-    .webzine_inner h2{
-      width: auto; height: 45px;
-      font-size: map-get($font_size, h3); line-height: 45px;
-      margin-left: 10px; 
-    }
-    .webzine_area{
-      width: 100%; height: 100%;
-      background-color: #fff;
-    }
-    /* wz_account_part-------------------------------------------------------------------- */
+      h2{
+        width: auto; height: 45px;
+        font-size: map-get($font_size, h3); line-height: 45px;
+        margin-left: 10px; 
+      }
+      .webzine_area{
+        @include full;
+      }
+    }//webzine_inner
     .wz_account_part{
       @include blind;
     }
-    
       /* wz_title_part-------------------------------------------------------------------- */
-    .wz_title_part{
+    @at-root .wz_title_part{
       display: flex; 
-      margin: 30px 0;
-      margin-left: 5px;
-    }
-      .wz_title_part > section{
+      margin: 20px 5px 40px; margin-right: 0;
+      & > section{
+        position: relative;
         width: auto; height: auto;
-        padding: 0 2px;
         margin-right: 4px;
-        background-color: #000;
+        color:$color_black;
+        &::before{
+          content: ""; display: block;
+          position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%);
+          width: 50px; height: 3px; background-color: $color_light_gray;
+        }
       }
-      .wz_title_part button{
-        width: 100%; height: 100%; 
-        color: #fff; text-align: right; font-size: map-get($font_size, content3 );
-        /* background-color: #daa; */
+      & .action{
+        color: $color_promary2;
+        &::before{background-color: $color_promary2;}
+        button{font-weight: 700;}
+      }//action
+      & button{
+        @include full;
+      padding: 0 vwUnit(2);
+      font-size: map-get($font_size, content3 ); color: inherit;
+      &:hover{color: $color_promary2;  font-weight: 700;}
       }
-    
-    
+    }//wz_title_part
     /* wz_con_part-------------------------------------------------------------------- */
     
-    .wz_con_part{
+    @at-root .wz_con_part{
       overflow: hidden;
       width: 100%; height: 170px;
-      &>div{
+      & > div{
         overflow-x: auto; overflow-y: visible;
         width: 100%; height: auto;
-      }
-      ul{
-        display: flex; justify-content: space-between; flex-wrap: wrap;
-        width: calc(135 * $wabzine_slide - 5)+px; height: 170px;
-        // width: 1000px; height: 170px;
-      }
-    }
+        ul{
+          display: flex; justify-content: space-between; flex-wrap: wrap;
+          width: calc(135 * $wabzine_slide - 5)+px; height: 170px;
+        }
+      }//& > div
+    }//wz_con_part
     .wz_con_content{
       overflow: hidden;
       width: 130px; height: 170px;
@@ -65,36 +69,36 @@
       border-radius: 10px;
       padding-top: 5px;
     }
-    // .action{display: block;}
-    .wz_con_info{
-      width: 100%; height: 100%;
-    }
-    .wz_con_date{
-      width: 100%; height: auto;
-      color: #eb4c38; font-size: map-get($font_size, book2); text-align: center;
-      border-top: 1px solid #eb4c38; border-bottom:1px solid #eb4c38;
-      margin: 0 auto;
-    }
-    .wz_con_title{
-        display: flex; flex-direction: column; justify-content: center;
-        width: 100%; height: 130px;
-        text-align: center; 
+    @at-root .wz_con_info{
+      @include full;
+
+      .wz_con_date{
+        width: 100%; height: auto;
+        color: #eb4c38; font-family: nth($font_family_ko, 2); text-align: center;
+        border-top: 1px solid #eb4c38; border-bottom:1px solid #eb4c38;
         margin: 0 auto;
-        background-color: #aad;
       }
-        .wz_book_name{
-          width: 100%; height: auto;
-          font-size: map-get($font_size, book1 );
-        }
-        .wz_writer_name{
-          width: 100%; height: auto;
-          font-size: map-get($font_size, book2 );
-        }
-        .detail{
-          @include blind;
-        }
-    .wz_con_episode{
-      @include blind;
+      .wz_con_title{
+          display: flex; flex-direction: column; justify-content: center;
+          width: 100%; height: 130px;
+          text-align: center; 
+          margin: 0 auto;
+          .wz_book_name{
+            width: 100%; height: auto;
+            font-size: map-get($font_size, book1 );
+            font-family: nth($font_family_ko, 2);
+          }
+          .wz_writer_name{
+            width: 100%; height: auto;
+            font-size: map-get($font_size, book2 );
+          }
+          .detail{
+            @include blind;
+          }
+        }//.wz_con_title
+      .wz_con_episode{
+        @include blind;
+      }
     }
   } //mobile
 
@@ -103,21 +107,21 @@
 .webzine_inner{
   width: 1144px; height: 690px;
   margin: auto;
-}
-.webzine_inner h2{
-  width: auto; height: 45px;
-  font-size: map-get($font_size, h2); line-height: 45px;
-  margin-bottom: 48px;
+  h2{
+    width: auto; height: 45px;
+    font-size: map-get($font_size, h2); line-height: 45px;
+    margin-bottom: 48px;
+  }
 }
 .webzine_area{
   width: auto; height: auto;
   background-color: #fff;
-}
-.webzine_area > div{
-  float: left;
-  width: 380px; height: 600px;
-  box-sizing: border-box;
-  background-color: #acc;
+  & > div{
+    float: left;
+    width: 380px; height: 600px;
+    box-sizing: border-box;
+    background-color: #acc;
+  }
 }
 /* wz_account_part-------------------------------------------------------------------- */
 .wz_account_part{

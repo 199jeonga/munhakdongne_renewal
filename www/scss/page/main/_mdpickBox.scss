@@ -29,24 +29,28 @@
   .mdpick_con_wrap{
     overflow:hidden;
     position: absolute; top: 150px; left: 50%; margin-left: -50vw;
-    width: 100vw; height: 275px;
+    width: 100vw; height: 285px;
     padding-left: 30px;
     .mdpick_booklist_area{
       overflow-x: auto; overflow-y:visible;
-      width: 100%; height: 275px;
+      width: 100%; height: 275px; padding-bottom: 25px;
       padding-bottom: 100px; box-sizing: content-box;
     }
   }
-  .mdpick_booklist_part{
+  @at-root .mdpick_booklist_part{
     display: flex; justify-content: space-between;
     width: calc(calc(220px * $mdpick_tab_slide ) - 20px); height: 100%;
     .mdp_booklist_con{
       width: 200px; height: 275px;
       @include shadow;
       @for $i from 1 through $mdpick_tab_slide{
-        &:nth-child( #{$i} ){ @include img( nth($link_mdpickImg, $i), $size:cover ) };
+        &:nth-child( #{$i} ){ @include img( nth($link_mdpickImg, $i) ) };
       }
-      a{@include full;}
+      a{
+        @include full;
+        &:hover{ background-color: rgba($color_blackReal, 0.2); border-radius: 10px; }
+        &:focus{background-color: rgba($color_blackReal, 0.4); border-radius: 10px; }
+      }
       &:last-child {margin-right: 0;}
     }//mdp_booklist_con
   }//mdpick_booklist_part

@@ -18,7 +18,7 @@
 // image
 $imgPath:'../../multi/img/';
 
-@mixin img($file, $repeat:no-repeat, $position:50% 50%, $size:initial){
+@mixin img($file, $repeat:no-repeat, $position:50% 50%, $size:cover){
   background: {
     image: url(#{$imgPath}#{$file});
     repeat: $repeat;
