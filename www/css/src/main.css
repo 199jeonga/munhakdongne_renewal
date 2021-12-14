@@ -3019,15 +3019,15 @@ body {
   #shopBox .shop_inner h2 {
     width: auto;
     height: 45px;
-    color: #333;
+    color: #333333;
     font-size: 30px;
     line-height: 45px;
     margin-left: 10px;
   }
-  #shopBox .moreview_btn {
+  #shopBox .shop_inner .moreview_btn {
     margin-right: 10px;
   }
-  #shopBox .shop_area {
+  .shop_area {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -3035,16 +3035,20 @@ body {
     height: 100%;
     margin-top: 9.375vw;
   }
-  #shopBox .shop_con {
+  .shop_area .shop_con {
     width: 31.25vw;
     height: 31.25vw;
     margin-bottom: 1.25vw;
     background-color: #aa8;
   }
-  #shopBox .shop_con.action {
+  .shop_area .shop_con.action {
+    display: none;
     background-color: rgba(51, 51, 51, 0.5);
   }
-  #shopBox .shop_con.action a:before {
+  .shop_area .shop_con.action:hover {
+    display: block;
+  }
+  .shop_area .shop_con.action a:before, .shop_area .shop_con.action a::before {
     content: "자세히 보기";
     display: block;
     width: 90%;
@@ -3060,11 +3064,12 @@ body {
     box-sizing: border-box;
     border-radius: 5px;
   }
-  #shopBox .shop_con.action span {
+  .shop_area .shop_con.action span {
     width: 100%;
     height: auto;
     margin: auto;
   }
+
   #shopBox .shop_con:nth-last-child(-n+5) {
     margin-bottom: 0;
   }

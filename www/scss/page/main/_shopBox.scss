@@ -12,35 +12,35 @@
       position: relative;
       width: vwUnit(308); height: vwUnit(204);
       margin: 0 auto;
-    }
-      .shop_inner h2{
+      h2{
         width: auto; height: 45px;
-        color:#333;
-        font-size: map-get($font_size, h3); line-height: 45px;
+        color:$color_black; font-size: map-get($font_size, h3); line-height: 45px;
         margin-left: 10px;
       }
       .moreview_btn{margin-right: 10px;}
-      .shop_area{
+    }
+      @at-root .shop_area{
         display: flex; flex-wrap: wrap; justify-content: space-between;
         width: 100%; height: 100%;
         margin-top: vwUnit(30);
-      }
-      .shop_con{
-        width:vwUnit(100); height: vwUnit(100);
-        margin-bottom: vwUnit(4);
-        background-color: #aa8;
-        &.action{
-          background-color: rgba($color_black, 0.5);
-          a:before{ 
-            content: "자세히 보기"; 
-            display: block; width: 90%; height: 90%;
-            margin: auto; margin-top: 5%; text-align: center; line-height: vwUnit(98);
-            font-size: map-get($font_size, content3 ); font-weight: 500; color:$color_white;
-            border: 2px solid $color_white_op; box-sizing: border-box; border-radius: 5px;
-            
+        .shop_con{
+          width:vwUnit(100); height: vwUnit(100);
+          margin-bottom: vwUnit(4);
+          background-color: #aa8;
+          &.action{
+            &:hover{display: block;}
+            display: none;
+            background-color: rgba($color_black, 0.5);
+            a:before,a::before{ 
+              content: "자세히 보기"; 
+              display: block; width: 90%; height: 90%;
+              margin: auto; margin-top: 5%; text-align: center; line-height: vwUnit(98);
+              font-size: map-get($font_size, content3 ); font-weight: 500; color:$color_white;
+              border: 2px solid $color_white_op; box-sizing: border-box; border-radius: 5px;
+            }
+            span{ width: 100%; height: auto; margin: auto;}
           }
-          span{ width: 100%; height: auto; margin: auto;}
-        }
+        }//shop_con
       }
       
       .shop_con:nth-last-child(-n+5){margin-bottom: 0;}
