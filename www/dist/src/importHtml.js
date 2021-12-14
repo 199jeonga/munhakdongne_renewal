@@ -1,7 +1,7 @@
 
 // data 변수
-const headerCode = '../../temp/headBox.html';
-const footerCode = '../../temp/footBox.html';
+const headerCode = '../temp/headBox.html';
+const footerCode = '../temp/footBox.html';
 
 
 // 선택 변수
