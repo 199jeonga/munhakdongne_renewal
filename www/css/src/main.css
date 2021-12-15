@@ -14,6 +14,9 @@ body {
   height: auto;
 }
 
+#headBox .gnb_inner > li {
+  text-transform: uppercase;
+}
 @media all and (max-width: 1279px) {
   #headBox {
     position: fixed;
@@ -45,27 +48,30 @@ body {
     font-size: 32px;
     line-height: 32px;
   }
-  .head_inner .gnb_btn, .head_inner .search_btn {
+  .gnb_btn, .search_btn {
     position: absolute;
     top: 0;
+    right: 50px;
     z-index: 100;
     width: 35px;
     height: 35px;
-    right: 50px;
     color: #fff;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 10px;
   }
-  .head_inner .gnb_btn > button, .head_inner .search_btn > button {
+  .gnb_btn > button, .search_btn > button {
     color: inherit;
   }
-  .head_inner .gnb_btn:hover, .head_inner .search_btn:hover {
+  .gnb_btn:hover, .search_btn:hover {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     color: #333333;
   }
-  .head_inner .gnb_btn:focus, .head_inner .search_btn:focus {
+  .gnb_btn:focus, .search_btn:focus {
     font-weight: 700;
     background-color: #fff;
   }
+
   .head_inner .gnb_btn {
     right: 0;
   }
@@ -91,14 +97,14 @@ body {
     height: 100%;
     margin-bottom: 10px;
   }
-  .gnb_wrapper .gnb_inner_title {
+  .gnb_inner_title {
     float: left;
     width: 120px;
     height: 45px;
     margin-left: calc(100% - 140px);
     margin-top: 4px;
   }
-  .gnb_wrapper .gnb_inner_title a {
+  .gnb_inner_title a {
     display: block;
     width: 100%;
     height: 100%;
@@ -107,17 +113,18 @@ body {
     text-indent: 5px;
     border-bottom: 2px solid #fff;
   }
-  .gnb_wrapper .gnb_inner_title a:hover {
+  .gnb_inner_title a:hover {
     text-decoration: none;
     color: #FA7950;
     font-weight: 700;
   }
-  .gnb_wrapper .gnb_inner_title a:focus {
+  .gnb_inner_title a:focus {
     text-decoration: none;
     background-color: #FA7950;
     color: #fff;
     font-weight: 700;
   }
+
   .gnb_inner_con {
     display: none;
   }
@@ -221,6 +228,21 @@ body {
     height: 0;
     overflow: hidden;
   }
+  .gnb_sns li:nth-child(5) {
+    background-image: url(../../multi/img/logo_navercafe.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 80% auto;
+  }
+  .gnb_sns li:nth-child(5) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
   .gnb_sns li a {
     display: block;
     width: 100%;
@@ -255,7 +277,7 @@ body {
     width: 100%;
     height: auto;
   }
-  #headBox .searchBox {
+  #headBox .search_wrapper .searchBox {
     display: none;
     position: absolute;
     top: 0;
@@ -265,14 +287,16 @@ body {
     max-width: 550px;
     height: 50px;
   }
-  #headBox .searchBox.action {
+  #headBox .search_wrapper .searchBox.action {
     display: block;
   }
-  #headBox .searchBox fieldset {
-    width: 100%;
+  #headBox .search_wrapper .searchBox fieldset {
+    position: absolute;
+    left: 5px;
+    width: calc(100% - 55px);
     height: 100%;
   }
-  #headBox #search_area {
+  #headBox .search_wrapper #search_area {
     float: left;
     width: calc(100% - 35px);
     height: 35px;
@@ -281,12 +305,36 @@ body {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  #headBox .search_submit {
+  #headBox .search_wrapper .search_submit {
     width: 35px;
     height: 35px;
     background-color: #fff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+  #headBox .search_wrapper #search_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background-color: #505050;
+    border-radius: 10px;
+  }
+  #headBox .search_wrapper #search_close button {
+    color: inherit;
+    font-weight: 700;
+  }
+  #headBox .search_wrapper #search_close button:hover {
+    font-weight: 700;
+    color: #FA7950;
+  }
+  #headBox .search_wrapper #search_close button:focus {
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #757575;
   }
 }
 @media all and (min-width: 1280px) {
@@ -322,7 +370,7 @@ body {
     width: 100%;
     height: auto;
   }
-  #headBox .head_inner .gnb_btn, #headBox .head_inner .search_btn {
+  .gnb_btn, .search_btn {
     position: absolute;
     top: 5px;
     right: 70px;
@@ -330,19 +378,22 @@ body {
     width: 50px;
     height: 50px;
     color: #fff;
+    background-color: rgba(51, 51, 51, 0.3);
+    border-radius: 10px;
   }
-  #headBox .head_inner .gnb_btn > button, #headBox .head_inner .search_btn > button {
+  .gnb_btn > button, .search_btn > button {
     color: inherit;
   }
-  #headBox .head_inner .gnb_btn:hover, #headBox .head_inner .search_btn:hover {
+  .gnb_btn:hover, .search_btn:hover {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     color: #333333;
   }
-  #headBox .head_inner .gnb_btn:focus, #headBox .head_inner .search_btn:focus {
+  .gnb_btn:focus, .search_btn:focus {
     font-weight: 700;
     background-color: #fff;
   }
+
   #headBox .head_inner .gnb_btn {
     right: 0;
   }
@@ -364,6 +415,7 @@ body {
     height: auto;
   }
   .gnb_wrapper .gnb_inner {
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1100px;
@@ -375,11 +427,11 @@ body {
     height: auto;
   }
 
-  #gnbBox .gnb_inner_title {
+  .gnb_inner_title {
     width: 100%;
     height: auto;
   }
-  #gnbBox .gnb_inner_title a {
+  .gnb_inner_title a {
     display: block;
     width: 100%;
     height: 50px;
@@ -389,22 +441,23 @@ body {
     font-size: 18px;
     border-bottom: 2px solid #fff;
   }
-  #gnbBox .gnb_inner_title a:hover {
+  .gnb_inner_title a:hover {
     text-decoration: none;
     color: #FA7950;
     font-weight: 700;
   }
-  #gnbBox .gnb_inner_title a:focus {
+  .gnb_inner_title a:focus {
     text-decoration: none;
     background-color: #FA7950;
     color: #fff;
     font-weight: 700;
   }
-  #gnbBox .gnb_inner_con {
+
+  .gnb_inner_con {
     width: 100%;
     height: auto;
   }
-  #gnbBox .gnb_inner_con a {
+  .gnb_inner_con a {
     display: block;
     width: 100%;
     height: 55px;
@@ -414,33 +467,34 @@ body {
     font-size: 16px;
     padding-right: 10px;
   }
-  #gnbBox .gnb_inner_con a:hover {
+  .gnb_inner_con a:hover {
     text-decoration: none;
     background-color: #505050;
   }
-  #gnbBox .gnb_inner_con a:focus {
+  .gnb_inner_con a:focus {
     text-decoration: none;
     color: #FA7950;
     font-weight: 700;
   }
-  #gnbBox .gnb_sns {
+
+  .gnb_sns {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: auto;
   }
-  #gnbBox .gnb_sns > li {
+  .gnb_sns > li {
     width: 30px;
     height: 30px;
     margin-top: 5px;
   }
-  #gnbBox .gnb_sns > li:nth-child(1) {
+  .gnb_sns > li:nth-child(1) {
     background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
   }
-  #gnbBox .gnb_sns > li:nth-child(1) > span {
+  .gnb_sns > li:nth-child(1) > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -449,13 +503,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #gnbBox .gnb_sns > li:nth-child(2) {
+  .gnb_sns > li:nth-child(2) {
     background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
   }
-  #gnbBox .gnb_sns > li:nth-child(2) > span {
+  .gnb_sns > li:nth-child(2) > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -464,13 +518,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #gnbBox .gnb_sns > li:nth-child(3) {
+  .gnb_sns > li:nth-child(3) {
     background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
   }
-  #gnbBox .gnb_sns > li:nth-child(3) > span {
+  .gnb_sns > li:nth-child(3) > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -479,13 +533,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #gnbBox .gnb_sns > li:nth-child(4) {
+  .gnb_sns > li:nth-child(4) {
     background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
   }
-  #gnbBox .gnb_sns > li:nth-child(4) > span {
+  .gnb_sns > li:nth-child(4) > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -494,13 +548,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #gnbBox .gnb_sns > li:nth-child(5) {
+  .gnb_sns > li:nth-child(5) {
     background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
   }
-  #gnbBox .gnb_sns > li:nth-child(5) > span {
+  .gnb_sns > li:nth-child(5) > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -509,24 +563,27 @@ body {
     height: 0;
     overflow: hidden;
   }
-  #gnbBox .gnb_sns > li a {
+  .gnb_sns > li a {
     display: block;
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
-  #gnbBox #gnb_close {
+
+  #gnb_close {
     position: absolute;
     top: -75px;
-    right: 340px;
+    right: 0;
     width: 50px;
     height: 50px;
   }
-  #gnbBox #gnb_close button {
+  #gnb_close button {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7);
   }
+
   #gnbBox .gnb_bg {
     position: absolute;
     top: 0;
@@ -541,23 +598,23 @@ body {
     width: 100%;
     height: auto;
   }
-  #headBox .searchBox {
+  #headBox .search_wrapper .searchBox {
     display: none;
     position: absolute;
     top: 5px;
-    right: -20px;
+    right: 50px;
     z-index: 900;
     width: 500px;
     height: 50px;
   }
-  #headBox .searchBox.action {
+  #headBox .search_wrapper .searchBox.action {
     display: block;
   }
-  #headBox .searchBox fieldset {
+  #headBox .search_wrapper .searchBox fieldset {
     width: 100%;
     height: 100%;
   }
-  #headBox #search_area {
+  #headBox .search_wrapper #search_area {
     float: left;
     width: 430px;
     height: 50px;
@@ -566,12 +623,35 @@ body {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
   }
-  #headBox .search_submit {
+  #headBox .search_wrapper .search_submit {
     width: 50px;
     height: 50px;
     background-color: #fff;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+  #headBox .search_wrapper #search_close {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  #headBox .search_wrapper #search_close button > button {
+    color: inherit;
+  }
+  #headBox .search_wrapper #search_close button:hover {
+    font-weight: 700;
+    color: #FA7950;
+  }
+  #headBox .search_wrapper #search_close button:focus {
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: #757575;
   }
 }
 
@@ -3798,13 +3878,13 @@ body {
   #webzineBox .webzine_inner {
     width: 100%;
     height: 280px;
+    margin-left: 10px;
   }
   #webzineBox .webzine_inner h2 {
     width: auto;
     height: 45px;
     font-size: 30px;
     line-height: 45px;
-    margin-left: 10px;
   }
   #webzineBox .webzine_inner .webzine_area {
     display: block;
@@ -3822,8 +3902,7 @@ body {
   }
   .wz_title_part {
     display: flex;
-    margin: 20px 5px 40px;
-    margin-right: 0;
+    margin: 20px 0 40px;
   }
   .wz_title_part > section {
     position: relative;
@@ -3881,20 +3960,23 @@ body {
     height: auto;
   }
   .wz_con_part > div ul {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1075px;
+    display: none;
+  }
+  .wz_con_part > div ul.action {
+    display: block;
+    width: 420px;
     height: 170px;
   }
 
-  .wz_con_content {
+  .wz_con_detail {
     overflow: hidden;
+    float: left;
     width: 130px;
     height: 170px;
     border: 1px solid #757575;
     border-radius: 10px;
     padding-top: 5px;
+    margin-right: 10px;
   }
   .wz_con_info .wz_con_date {
     width: 100%;
@@ -3938,7 +4020,7 @@ body {
     overflow: hidden;
   }
 
-  .wz_con_content .wz_con_episode {
+  .wz_con_detail .wz_con_episode {
     display: block;
     width: 0;
     height: 0;
@@ -4020,6 +4102,7 @@ body {
     width: 100%;
     height: 150px;
     padding: 50px 0;
+    padding-right: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background-color: #505050;
   }
@@ -4029,9 +4112,13 @@ body {
   .wz_title_part button {
     width: 100%;
     height: 100%;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.9);
     text-align: right;
     font-size: 30px;
+  }
+  .wz_title_part button:hover {
+    color: #fff;
+    font-weight: 700;
   }
   .wz_title_part .action {
     height: 300px;
@@ -4045,14 +4132,19 @@ body {
     border-bottom-right-radius: 10px;
     background-color: rgba(51, 51, 51, 0.1);
   }
-  #webzineBox .wz_con_part ul {
-    width: 100%;
-    height: 100%;
+  #webzineBox .wz_con_part a {
+    text-decoration: none;
   }
-  #webzineBox .wz_con_part .wz_con_content {
+  #webzineBox .wz_con_part ul {
     display: none;
   }
-  #webzineBox .wz_con_part .action {
+  #webzineBox .wz_con_part ul.action {
+    display: block;
+  }
+  #webzineBox .wz_con_part .wz_con_detail {
+    display: none;
+  }
+  #webzineBox .wz_con_part .wz_con_detail.action {
     display: block;
   }
   #webzineBox .wz_con_part .wz_con_info {
@@ -4067,8 +4159,8 @@ body {
     font-size: 30px;
     text-align: center;
     line-height: 43px;
-    border-top: 1px solid #eb4c38;
-    border-bottom: 1px solid #eb4c38;
+    border-top: 1px solid #FA7950;
+    border-bottom: 1px solid #FA7950;
     margin: 0 auto;
   }
   #webzineBox .wz_con_part .wz_con_title {
@@ -4109,9 +4201,9 @@ body {
   }
   .wz_con_episode .wz_con_episode_link {
     width: 100%;
-    height: 70px;
-    padding: 5px;
+    height: 33.3333333333%;
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+    padding: 5px;
   }
   .wz_con_episode .wz_con_episode_link:last-child {
     border: none;
@@ -4120,16 +4212,43 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    text-decoration: none;
+  }
+  .wz_con_episode a:hover {
+    background-color: rgba(51, 51, 51, 0.1);
+  }
+  .wz_con_episode a:focus {
+    background-color: rgba(51, 51, 51, 0.2);
+  }
+  .wz_con_episode dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
   .wz_con_episode dt {
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    font-family: "KyoboHandwriting2020A";
+    text-overflow: ellipsis;
+    margin-bottom: 5px;
+  }
+  .wz_con_episode dt span {
+    color: rgba(51, 51, 51, 0.5);
+    margin-right: 10px;
   }
   .wz_con_episode dd {
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 18px;
+    font-size: 16px;
+    color: #505050;
+    text-overflow: ellipsis;
   }
 }
 

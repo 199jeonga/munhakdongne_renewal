@@ -27,6 +27,8 @@ $shadow : 0px 5px 10px rgba(0,0,0,0.1);
 
 //imgPath
 $link_snsImg : ('logo_youtube.png','logo_twitter.png','logo_facebook.png','logo_instagram.png', 'logo_navercafe.png' );
+
+
 $link_viewPartImg : ('bookImg01.jpg','bookImg02.jpg','bookImg03.jpg', 'bookImg04.jpg','bookImg05.jpg','bookImg06.jpg');
 $link_mdpickImg : ('bookImg07.jpg','bookImg08.jpg','bookImg09.jpg', 'bookImg11.jpg','bookImg12.jpg','bookImg12.jpg','bookImg13.jpg','bookImg14.jpg','bookImg15.jpg','bookImg16.jpg');
 $link_newbookImg : ('bookImg17.jpg','bookImg18.jpg','bookImg19.jpg', 'bookImg20.jpg','bookImg21.jpg','bookImg22.jpg','bookImg23.jpg','bookImg24.jpg','bookImg25.jpg','bookImg26.jpg','bookImg27.jpg');
@@ -37,6 +39,8 @@ $link_magazineImg : ('bookImg42.jpg', 'bookImg43.jpg', 'bookImg44.jpg', 'bookImg
 $link_brandlistTopImg : ('brandlistImg01.png','brandlistImg02.png','brandlistImg03.png','brandlistImg04.png','brandlistImg05.png','brandlistImg06.png','brandlistImg07.png','brandlistImg08.png','brandlistImg09.png','brandlistImg10.png','brandlistImg11.png','brandlistImg12.png','brandlistImg13.png');
 $link_brandlistBottomImg : ('brandlistImg14.png','brandlistImg15.png','brandlistImg16.png','brandlistImg17.png','brandlistImg18.png','brandlistImg19.png','brandlistImg20.png','brandlistImg21.png','brandlistImg22.png','brandlistImg23.png','brandlistImg24.png','brandlistImg25.png','brandlistImg26.png');
 
+//sub
+$link_subNewBook : ('bookImg01.jpg','bookImg02.jpg','bookImg03.jpg', 'bookImg04.jpg','bookImg05.jpg','bookImg06.jpg','bookImg07.jpg', 'bookImg08.jpg','bookImg09.jpg','bookImg10.jpg');
 
 
 // device size===============================================
@@ -53,6 +57,8 @@ $newbook_slide:11;
 $dokpa_content:8;
 $award_slide:5;
 $magazine_slide:5;
-$wabzine_slide:8;
+$wabzine_slide:3;
 $brandlist_slide:13;
 
+//sub
+$sub_newbookCon:10;

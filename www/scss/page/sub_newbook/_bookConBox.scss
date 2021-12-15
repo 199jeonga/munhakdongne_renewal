@@ -65,6 +65,11 @@
     .bookcon_area {
       width: 100%; height: 330px;
       margin-bottom: 24px;
+
+      @for $i from 1 through $sub_newbookCon{
+        &:nth-child( #{$i} ) .bookcon_img{ @include img( nth($link_subNewBook, $i) ) }; 
+      }
+
     }
     .bookcon_area:nth-last-child(2){
       margin-bottom: 0;
@@ -80,7 +85,6 @@
       float: left;
       width: 220px; height: 100%;
       border-radius: 10px;
-      background-color: #daa;
     }
     .bookcon_text{
       float: left;
@@ -91,7 +95,7 @@
     .extract_content{
       overflow: hidden;
       width: 100%; height: 55px;
-      text-align: left; font-size: map-get($font_size, book2 ); font-family: 'KoPub Batang';
+      text-align: left; font-size: map-get($font_size, book2 ); font-family: nth($font_family_ko,2);
       margin-bottom: 5px; margin-top: 20px;
       border-bottom: 2px solid $color_promary2;
       text-overflow: ellipsis;
@@ -128,6 +132,11 @@
     .bookcon_area {
       width: 560px; height: 330px;
       margin-bottom: 24px;
+
+      @for $i from 1 through $sub_newbookCon{
+        &:nth-child( #{$i} ) .bookcon_img{ @include img( nth($link_subNewBook, $i) ) }; 
+      }
+
     }
     .bookcon_area:nth-last-child(2){
       margin-bottom: 0;
@@ -143,7 +152,6 @@
       float: left;
       width: 220px; height: 100%;
       border-radius: 10px;
-      background-color: #daa;
     }
     .bookcon_text{
       float: right;
@@ -152,8 +160,8 @@
     }
     .extract_content{
       overflow: hidden;
-      width: 100%; height: 55px;
-      text-align: left; font-size: map-get($font_size, book2 ); font-family: 'KoPub Batang';
+      width: 100%; height: 52px;
+      text-align: left; font-size: map-get($font_size, book2 ); font-family: nth($font_family_ko,2);
       margin-bottom: 5px; margin-top: 20px;
       border-bottom: 2px solid $color_promary2;
       text-overflow: ellipsis;
