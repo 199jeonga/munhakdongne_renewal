@@ -81,7 +81,7 @@
               width: 170px; height: auto;
               li{
                 width: 30px; height: 30px;
-                @for $i from 1 to 6 {
+                @for $i from 1 to 5 {
                   &:nth-child(#{$i}){
                     @include img( nth( $link_snsImg, $i ), $size:80% auto );
                   }
@@ -112,7 +112,7 @@
 }//at-root .head_inner
 
       /* searchBox----------*/
-      .search_wrapper{width: 100%; height: auto;}
+    .search_wrapper{width: 100%; height: auto;}
     .searchBox{
       display:none;
       position: absolute; top: 0; right: 0; z-index: 900;
@@ -135,6 +135,7 @@
     }
   }//include
 
+  
 //laptop =============================
     @include laptop{
       position: fixed; top: 0; left: 0; right: 0; margin: 0 auto; z-index: 1000;

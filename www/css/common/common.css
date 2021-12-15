@@ -1,4 +1,11 @@
 /* common.css */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+@font-face {
+  font-family: "KyoboHandwriting2020A";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* IR: image replace */
 .blind_wrap a > span,
 .blind_wrap button > span,

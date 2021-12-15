@@ -12,13 +12,13 @@ $color_gray_op2:rgba(117, 117, 117, 0.3);
 $color_black_op:rgba(0, 0, 0, 0.7);
 $color_white_op:rgba(255,255,255,0.7);
 
+
 $font_family_en : ('Roboto', sans-serif);
-$font_family_ko : ('nanumsquare', 'KoPub Batang', serif);
+$font_family_ko : ('nanumsquare', 'KyoboHandwriting2020A', serif);
 $font_weight:(300,400,500,700);
 $font_size:(
 h2:38px, h3:30px, content1:22px, content2:18px, content3:16px, content4:12px, book1:24px, book2:18px
 );
-
 
 //design
 
@@ -34,6 +34,8 @@ $link_dokpaImg : ('bookImg28.jpg','bookImg29.jpg','bookImg30.jpg', 'bookImg31.jp
 $link_awardImg : ('bookImg37.jpg', 'bookImg38.jpg', 'bookImg39.jpg', 'bookImg40.jpg', 'bookImg41.jpg');
 $link_bookclubImg : ('bookclubImg01.png', 'bookclubImg02.jpg', 'bookclubImg03.jpg', 'bookclubImg04.png', 'bookclubImg05.png','bookclubImg06.png','bookclubImg07.png','bookclubImg08.png');
 $link_magazineImg : ('bookImg42.jpg', 'bookImg43.jpg', 'bookImg44.jpg', 'bookImg45.jpg', 'bookImg46.jpg');
+$link_brandlistTopImg : ('brandlistImg01.png','brandlistImg02.png','brandlistImg03.png','brandlistImg04.png','brandlistImg05.png','brandlistImg06.png','brandlistImg07.png','brandlistImg08.png','brandlistImg09.png','brandlistImg10.png','brandlistImg11.png','brandlistImg12.png','brandlistImg13.png');
+$link_brandlistBottomImg : ('brandlistImg14.png','brandlistImg15.png','brandlistImg16.png','brandlistImg17.png','brandlistImg18.png','brandlistImg19.png','brandlistImg20.png','brandlistImg21.png','brandlistImg22.png','brandlistImg23.png','brandlistImg24.png','brandlistImg25.png','brandlistImg26.png');
 
 
 
@@ -52,5 +54,5 @@ $dokpa_content:8;
 $award_slide:5;
 $magazine_slide:5;
 $wabzine_slide:8;
-$brandlist_slide:12;
+$brandlist_slide:13;
 

@@ -46,8 +46,11 @@
         a{ @include full;
           text-decoration: none;
           > div{ display: none; }
-          &:hover .action, &:focus .action{display: flex;}
-          &:focus{transform: scale(1.03);}
+          &:hover .action{display: flex;}
+          &:focus{
+            transform: scale(1.03);
+            .action{display: flex;}
+          }
         }
         .action{
           @include full;
@@ -107,7 +110,8 @@
             width: auto; height: 40px; padding: 0 5px;
             color: $color_black; background-color:$color_white;
             @include shadow;
-            &:hover, &:focus{background-color: $color_promary2; color: $color_white;}
+            &:hover{background-color: $color_promary2; color: $color_white;}
+            &:focus{background-color: $color_black;}
           }
         }
       }//#dokpa_title
@@ -189,7 +193,8 @@
           width: 140px; height: 40px;
           color: $color_black; background-color:$color_white;
           @include shadow;
-          &:hover, &:focus{background-color: $color_promary2; color: $color_white;}
+          &:hover{background-color: $color_promary2; color: $color_white;}
+          &:focus{background-color: $color_deep_gray; color: $color_white;}
         }
       }//dokpa_button_warpper
     }//dokpa_title

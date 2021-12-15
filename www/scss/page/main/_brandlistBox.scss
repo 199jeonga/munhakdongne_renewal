@@ -1,126 +1,109 @@
 @at-root #brandlistBox{
   overflow:hidden ;
   width: 100%; height: auto;
-  background-color: rgba(85,85,85,0.3);
+  background-color: rgba($color_blackReal,0.1);
   
-  @include mobile{
+  @include handle{
     padding:60px 0 ;
   .brandlist_inner{
     position: relative;
-    width: 100%; height: 350px;
+    width: 100%; height: vwUnit(350); max-height: 400px;
     margin: 0 auto;
-  }
-  .brandlist_inner h2{
-    margin-bottom: 80px;
-    width: auto; height: 45px;
-  font-size: map-get($font_size, h3); line-height: 45px;
-  }
-  .brandlist_wrap{
-    position: absolute; top: 120px; left: 50%; margin-left: -50vw;
-    width: 100vw; height: 130px;
-  }
-  .brandlist_wrap>ul{
-    width: calc(70 * $brandlist_slide)+px; height: auto;
-  }
-  .brandlist_part_top{
-    display: flex; justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .brandlist_part_bottom{
-    margin-left: -35px;
-    display: flex; justify-content: space-between;
-  }
-  .brandlist_wrap li{
-    width: 60px; height: 60px;
-    border-radius: 10px;
-    background-color: #555;
-  }
-  .brandlist_inner > .moreview_btn{
-    position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-    width: 120px; height: 30px;
-  }
-  .brandlist_inner .moreview_btn a{
-    display: block;
-  }
-  } //moblie
-  @include tablet{
-    padding:60px 0 ;
-    .brandlist_inner{
-      position: relative;
-      width: 100%; height: 400px;
-      margin: 0 auto;
-    }
-    .brandlist_inner h2{
-      margin-bottom: 80px; margin-left: 10px;
-      width: auto; height: 45px;
+    h2{
+        margin-bottom: 80px;
+        width: auto; height: 45px; margin-left: 10px;
       font-size: map-get($font_size, h3); line-height: 45px;
+      }
+
+  .brandlist_wrap{
+    position: absolute; top: 100px; left: 50%; margin-left: -50vw;
+    width: 100vw; height: 130px;
+    &>ul{
+      width: vwUnit( calc( 70 * $brandlist_slide) ); max-width: calc(110 * $brandlist_slide)+px; height: auto;
     }
-    .brandlist_wrap{
-      position: absolute; top: 120px; left: 50%; margin-left: -50vw;
-      width: 100vw; height: 130px;
-    }
-    .brandlist_wrap>ul{
-      width: calc(110 * $brandlist_slide)+px; height: auto;
-    }
-    .brandlist_part_top{
-      display: flex; justify-content: space-between;
-      margin-bottom: 10px;
-    }
-    .brandlist_part_bottom{
-      margin-left: -55px;
-      display: flex; justify-content: space-between;
-    }
-    .brandlist_wrap li{
-      width: 100px; height: 100px;
+  }
+
+  @at-root .brandlist_part_top{
+    margin-bottom: 10px;
+    li{
+      float:left; margin-right: 10px;
+      width: vwUnit(60); max-width: 100px; height: vwUnit(60); max-height: 100px;
       border-radius: 10px;
-      background-color: #555;
-    }
-    .brandlist_inner > .moreview_btn{
-      position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
-      width: 120px; height: 30px;
-    }
-    .brandlist_inner .moreview_btn a{
-      display: block;
-    }
-  }//tablet
+      @for $i from 1 through $brandlist_slide{
+        &:nth-child( #{$i} ){ @include img( nth($link_brandlistTopImg, $i) ) };
+      }
+    }//li
+  }//brandlist_part_top
+@at-root  .brandlist_part_bottom{
+    transform: translateX( vwUnit(-20) );
+    li{
+      float:left; margin-right: 10px;
+      width: vwUnit(60); max-width: 100px; height: vwUnit(60); max-height: 100px;
+      border-radius: 10px;
+      @for $i from 1 through $brandlist_slide{
+        &:nth-child( #{$i} ){ @include img( nth($link_brandlistBottomImg , $i) ) };
+      }
+    }//li
+  }//brandlist_part_bottom
+
+  & > .moreview_btn{
+    position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 30px; line-height: 30px; text-align: center;
+    & a{@include full;}
+  }
+  }//inner  
+} //moblie
+
+
+
+
   @include laptop{
     padding: 90px 0;
 
-    .brandlist_inner{
+    @at-root .brandlist_inner{
       position: relative;
       width: 1144px; height: 540px;
       margin: 0 auto;
-    }
-    .brandlist_inner h2{
-      margin-bottom: 80px;
-      width: auto; height: 45px;
-      font-size: map-get($font_size, h2); line-height: 45px;
-    }
-      .brandlist_wrap{
+      h2{
+        margin-bottom: 80px;
+        width: auto; height: 45px;
+        font-size: map-get($font_size, h2); line-height: 45px;
+      }
+      @at-root .brandlist_wrap{
         position: absolute; top: 120px; left: 50%; margin-left: -50vw;
         width: 100vw; height: 310px;
+        &>ul{
+          width: calc( 160 * $brandlist_slide)+px; height: 140px;
+        }
       }
-      .brandlist_wrap>ul{
-        width: 2000px; height: 140px;
+      @at-root .brandlist_part_top{
+        margin-bottom: 20px;
+        li{
+          float:left;
+          width: 140px; height: 140px; margin-right: 20px;
+          border-radius: 10px;
+          @for $i from 1 through $brandlist_slide{
+            &:nth-child( #{$i} ){ @include img( nth($link_brandlistTopImg, $i) ) };
+          }
+        }
       }
-      .brandlist_part_top{
-        margin-bottom: 26px;
-      }
-      .brandlist_part_bottom{
+      @at-root .brandlist_part_bottom{
         margin-left: -70px;
+        li{
+          float:left;
+          width: 140px; height: 140px; margin-right: 20px;
+          border-radius: 10px;
+          @for $i from 1 through $brandlist_slide{
+            &:nth-child( #{$i} ){ @include img( nth($link_brandlistBottomImg , $i) ) };
+          }
+        }
       }
-      .brandlist_wrap li{
-        float:left;
-        width: 140px; height: 140px; margin-right: 26px;
-        border-radius: 10px;
-        background-color: #555;
-      }
-      .brandlist_inner > .moreview_btn{
+
+      & > .moreview_btn{
         position: absolute; bottom: 0; right: 50%; margin-right: -86px;
-        width: 172px; height: 35px;
+        width: 172px; height: 35px; line-height: 35px; text-align: center;
+        & a{@include full;}
       }
-      .brandlist_inner .moreview_btn a{
-        display: block;
-      }
+    }//inner
   }//laptop
 }
