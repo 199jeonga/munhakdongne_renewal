@@ -3,7 +3,6 @@
   .award_title, .magazine_title{
     width: 100%; height: 120px;
     padding-top: 40px;
-    @include img('award_titleBg.svg');
     .title_inner{
       width: 100%; height: 100%; padding-left: 10px;
       h2{

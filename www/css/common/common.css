@@ -7,13 +7,10 @@
   font-style: normal;
 }
 /* IR: image replace */
-.blind_wrap a > span,
-.blind_wrap button > span,
 .blind {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -121,11 +118,16 @@ button {
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
+.stop_btn span {
+  font-size: 24px;
+  line-height: 30px;
+}
 .stop_btn button {
   color: #fff;
 }
 .stop_btn:hover {
-  background-color: #757575;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #333333;
 }
 
 .prev_next_btn {
@@ -146,7 +148,7 @@ button {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .next_btn:hover, .prev_btn:hover {
-  background-color: #757575;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .next_btn {

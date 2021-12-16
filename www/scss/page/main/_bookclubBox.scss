@@ -127,6 +127,7 @@
       font-weight: 500; font-size: map-get($font_size, content2 ); line-height: 40px;
       a{
         @include full;
+        &>span{width: 40px; height: 40px;  font-size: map-get($font_size, content2 );}
         &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
         &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
       }

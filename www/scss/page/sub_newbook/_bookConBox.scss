@@ -25,8 +25,8 @@
   }
   .extract_content{
     overflow: hidden;
-    width: 100%; height: 55px;
-    text-align: left; font-size: map-get( $font_size, book2); font-family:'KoPub Batang';
+    width: 100%; height: 50px;
+    text-align: left; font-size: map-get( $font_size, book2); font-family: nth($font_family_ko,2);
     border-bottom: 2px solid $color_promary2;
     text-overflow: ellipsis;
   }
@@ -49,28 +49,28 @@
       &:last-child{border:none;}
     }//dd
   }//explanation_content
-  .bookcon_area > a:hover{outline:2px solid #757575;}
-  .bookcon_area > a:focus{background-color: #eee;}
+  .bookcon_area > a:hover{outline:2px solid $color_light_gray;}
+  .bookcon_area > a:focus{background-color: rgba($color_blackReal,0.1);}
 }//mobile
 
 
 //tablet ------------------------------------
-  @include tablet{
-    width: 100%; height: auto;
+@include tablet{
+  width: 100%; height: auto;
     padding-top: 20px;
     @at-root .bookcon_inner{
       width: 610px; height: auto;
       margin:0 auto;}
+      
+      .bookcon_area {
+        width: 100%; height: 330px;
+        margin-bottom: 24px;
+        
+        @for $i from 1 through $sub_newbookCon{
+          &:nth-child( #{$i} ) .bookcon_img{ @include img( nth($link_subNewBook, $i) ) }; 
+        }
 
-    .bookcon_area {
-      width: 100%; height: 330px;
-      margin-bottom: 24px;
-
-      @for $i from 1 through $sub_newbookCon{
-        &:nth-child( #{$i} ) .bookcon_img{ @include img( nth($link_subNewBook, $i) ) }; 
       }
-
-    }
     .bookcon_area:nth-last-child(2){
       margin-bottom: 0;
     }
@@ -94,7 +94,7 @@
     }
     .extract_content{
       overflow: hidden;
-      width: 100%; height: 55px;
+      width: 100%; height: 50px;
       text-align: left; font-size: map-get($font_size, book2 ); font-family: nth($font_family_ko,2);
       margin-bottom: 5px; margin-top: 20px;
       border-bottom: 2px solid $color_promary2;
@@ -116,11 +116,11 @@
         text-overflow: ellipsis;
       }
     }
-    .bookcon_area > a:hover{outline:2px solid #757575;}
-    .bookcon_area > a:focus{background-color: #eee;}
+    .bookcon_area > a:hover{outline:2px solid $color_light_gray;}
+    .bookcon_area > a:focus{background-color: rgba($color_blackReal,0.1);}
   }//tablet
-
-
+  
+  
   @include laptop{
     width: 100%; height: auto;
     padding-top: 20px;
@@ -132,11 +132,11 @@
     .bookcon_area {
       width: 560px; height: 330px;
       margin-bottom: 24px;
-
+      
       @for $i from 1 through $sub_newbookCon{
         &:nth-child( #{$i} ) .bookcon_img{ @include img( nth($link_subNewBook, $i) ) }; 
       }
-
+      
     }
     .bookcon_area:nth-last-child(2){
       margin-bottom: 0;
@@ -182,9 +182,7 @@
         text-overflow: ellipsis;
       }
     }
-    .bookcon_area > a:hover{outline:2px solid #757575;}
-    .bookcon_area > a:focus{background-color: #eee;}
-    
-    
+    .bookcon_area > a:hover{outline:2px solid $color_light_gray;}
+    .bookcon_area > a:focus{background-color: rgba($color_blackReal,0.1);}
   }//laptop
 }//#bookConBox

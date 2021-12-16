@@ -13,11 +13,8 @@
 
 
 /* IR: image replace */
-.blind_wrap a > span,
-.blind_wrap button > span,
 .blind { 
   display: block; position:absolute; z-index:-1;
-  clip:rect(0 0 0 0);
   width: 0; height: 0; overflow: hidden; }
 
 .blind_wrap a {
@@ -87,8 +84,9 @@ button{
   width: 30px; height: 30px;
   background-color: $color_promary2;
   @include shadow;
-  button{ color:$color_white; }
-  &:hover{background-color: $color_light_gray;}
+  span{font-size: 24px; line-height: 30px;}
+  button{ color:$color_white;}
+  &:hover{background-color: rgba($color_blackReal,0.2); color:$color_black; }
 }
 .prev_next_btn{
   position:absolute; bottom: 0; right: 35px;
@@ -99,7 +97,7 @@ button{
   margin-right: 5px;
   color:$color_black; background-color: $color_white;
   @include shadow;
-  &:hover{background-color: $color_light_gray;}
+  &:hover{background-color: rgba($color_blackReal,0.2);}
 }
 .next_btn{
   float:right;

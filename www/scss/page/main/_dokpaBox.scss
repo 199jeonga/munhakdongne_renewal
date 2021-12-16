@@ -71,14 +71,15 @@
             border-bottom: 1px solid $color_white;
           }
           .date{
-            width: 100%; height: remUnit2(20);
+            width: 100%; height: auto;
             margin-bottom: vwUnit(30); text-align: center;
             color:$color_white;
           }
           .challenge_link{
             width: 100%; height: auto;
-            font-size: map-get($font_size, content2 );
-            button{color:$color_white;}
+            font-size: map-get($font_size, content2 ); color:$color_white;
+            text-align: center;
+            a{color:$color_white;}
           }
         }//action
         // &:hover .action, &:focus .action{display: block;}
@@ -161,7 +162,7 @@
             .challenge_link{
               width: 100%; height: auto; 
               font-size: map-get($font_size, content2 );
-              button{color:$color_white;}
+              a{color:$color_white;}
             }
           }//.action
         }//dokpa_con
@@ -250,8 +251,9 @@
         .challenge_link{
           width: 100%; height: auto;
           font-size: map-get($font_size, content2 );
-          button{color:$color_white;}
+          a{color:$color_white;}
         }
-      }
-  }
-} //laptop
+      }//.dokpa_con
+  }//laptop
+
+} //dokpaBox

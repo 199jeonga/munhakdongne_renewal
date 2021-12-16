@@ -172,7 +172,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -187,7 +186,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -202,7 +200,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -217,7 +214,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -232,7 +228,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -492,7 +487,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -507,7 +501,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -522,7 +515,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -537,7 +529,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -552,7 +543,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -574,8 +564,16 @@ html, body {
   #gnb_close button {
     width: 100%;
     height: 100%;
+    color: #fff;
+  }
+  #gnb_close button:hover {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  #gnb_close button:focus {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
   }
 
   #gnbBox .gnb_bg {
@@ -585,7 +583,7 @@ html, body {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #333333;
   }
 
   #headBox .search_wrapper {
@@ -631,7 +629,7 @@ html, body {
     z-index: 100;
     width: 50px;
     height: 50px;
-    color: #fff;
+    color: #333333;
     background-color: #fff;
     border-radius: 10px;
   }
@@ -645,7 +643,7 @@ html, body {
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
     border-radius: 10px;
-    background-color: #757575;
+    background-color: rgba(51, 51, 51, 0.1);
   }
 }
 
@@ -667,7 +665,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -800,7 +797,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -926,7 +922,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1270,16 +1265,15 @@ html, body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   #bookConBox .extract_content {
     overflow: hidden;
     width: 100%;
-    height: 55px;
+    height: 50px;
     text-align: left;
     font-size: 18px;
-    font-family: "KoPub Batang";
+    font-family: "KyoboHandwriting2020A";
     border-bottom: 2px solid #FA7950;
     text-overflow: ellipsis;
   }
@@ -1315,7 +1309,7 @@ html, body {
     outline: 2px solid #757575;
   }
   #bookConBox .bookcon_area > a:focus {
-    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -1345,7 +1339,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1360,7 +1353,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1375,7 +1367,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1390,7 +1381,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1405,7 +1395,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1420,7 +1409,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1435,7 +1423,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1450,7 +1437,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1465,7 +1451,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1480,7 +1465,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1514,7 +1498,7 @@ html, body {
   #bookConBox .extract_content {
     overflow: hidden;
     width: 100%;
-    height: 55px;
+    height: 50px;
     text-align: left;
     font-size: 18px;
     font-family: "KyoboHandwriting2020A";
@@ -1549,7 +1533,7 @@ html, body {
     outline: 2px solid #757575;
   }
   #bookConBox .bookcon_area > a:focus {
-    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 @media all and (min-width: 1280px) {
@@ -1581,7 +1565,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1596,7 +1579,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1611,7 +1593,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1626,7 +1607,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1641,7 +1621,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1656,7 +1635,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1671,7 +1649,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1686,7 +1663,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1701,7 +1677,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1716,7 +1691,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1784,7 +1758,7 @@ html, body {
     outline: 2px solid #757575;
   }
   #bookConBox .bookcon_area > a:focus {
-    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1824,7 +1798,6 @@ html, body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   #pageBtn .sub_page_btn li:nth-last-child(-n+5) {
@@ -1833,7 +1806,6 @@ html, body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   #pageBtn .pagebtn_inner button {
@@ -1884,7 +1856,6 @@ html, body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   #pageBtn .pagebtn_inner button {
@@ -2133,7 +2104,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2148,7 +2118,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2163,7 +2132,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2178,7 +2146,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2193,7 +2160,6 @@ html, body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;

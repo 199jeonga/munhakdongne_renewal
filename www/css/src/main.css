@@ -178,7 +178,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -193,7 +192,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -208,7 +206,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -223,7 +220,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -238,7 +234,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -498,7 +493,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -513,7 +507,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -528,7 +521,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -543,7 +535,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -558,7 +549,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -580,8 +570,16 @@ body {
   #gnb_close button {
     width: 100%;
     height: 100%;
+    color: #fff;
+  }
+  #gnb_close button:hover {
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  #gnb_close button:focus {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
   }
 
   #gnbBox .gnb_bg {
@@ -591,7 +589,7 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
-    background-color: #333;
+    background-color: #333333;
   }
 
   #headBox .search_wrapper {
@@ -637,7 +635,7 @@ body {
     z-index: 100;
     width: 50px;
     height: 50px;
-    color: #fff;
+    color: #333333;
     background-color: #fff;
     border-radius: 10px;
   }
@@ -651,7 +649,7 @@ body {
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
     border-radius: 10px;
-    background-color: #757575;
+    background-color: rgba(51, 51, 51, 0.1);
   }
 }
 
@@ -702,7 +700,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -717,7 +714,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -732,7 +728,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -747,7 +742,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -762,7 +756,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -777,7 +770,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -791,7 +783,7 @@ body {
     height: 100%;
   }
 
-  #viewBox .view_indicator {
+  .view_indicator {
     position: absolute;
     left: 50%;
     bottom: -70px;
@@ -800,19 +792,19 @@ body {
     transform: translateX(-50%);
     text-align: center;
   }
-  #viewBox .view_indicator ul {
+  .view_indicator ul {
     float: left;
     width: auto;
     height: auto;
   }
-  #viewBox .view_indicator li {
+  .view_indicator li {
     float: left;
     width: 20px;
     height: 20px;
     margin-right: 20px;
     cursor: pointer;
   }
-  #viewBox .view_indicator li a {
+  .view_indicator li a {
     display: block;
     width: 100%;
     height: 100%;
@@ -820,15 +812,19 @@ body {
     border: 2px solid #757575;
     box-sizing: border-box;
   }
-  #viewBox .view_indicator:last-child {
+  .view_indicator li a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .view_indicator:last-child {
     margin-right: 0;
   }
-  #viewBox .view_indicator .indicator_btn_click {
+  .view_indicator .indicator_btn_click {
     width: 54px;
   }
-  #viewBox .view_indicator .indicator_btn_click a {
+  .view_indicator .indicator_btn_click a {
     background-color: #757575;
   }
+
   #viewBox .view_stop {
     float: right;
     width: 20px;
@@ -877,7 +873,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -892,7 +887,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -907,7 +901,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -922,7 +915,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -937,7 +929,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -952,7 +943,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -996,7 +986,13 @@ body {
     height: 100%;
     border-radius: 5px;
     border: 2px solid #757575;
-    box-sizing: border-box;
+  }
+  #viewBox .view_indicator li a:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  #viewBox .view_indicator li a:focus {
+    border: 2px solid #FA7950;
+    color: #FA7950;
   }
   #viewBox .view_indicator .indicator_btn_click {
     width: 54px;
@@ -1004,11 +1000,23 @@ body {
   #viewBox .view_indicator .indicator_btn_click a {
     background-color: #757575;
   }
+  #viewBox .view_indicator .indicator_btn_click a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   #viewBox .view_stop {
     float: right;
     width: 20px;
     height: 20px;
     color: #757575;
+  }
+  #viewBox .view_stop:hover {
+    color: rgba(0, 0, 0, 0.2);
+  }
+  #viewBox .view_stop a:focus {
+    color: #FA7950;
+  }
+  #viewBox .view_stop a:focus span {
+    color: inherit;
   }
 }
 
@@ -1098,7 +1106,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1113,7 +1120,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1128,7 +1134,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1143,7 +1148,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1158,7 +1162,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1173,7 +1176,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1188,7 +1190,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1203,7 +1204,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1218,7 +1218,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1233,7 +1232,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1333,7 +1331,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1348,7 +1345,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1363,7 +1359,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1378,7 +1373,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1393,7 +1387,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1408,7 +1401,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1423,7 +1415,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1438,7 +1429,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1453,7 +1443,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1468,7 +1457,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1483,7 +1471,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -1608,7 +1595,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1662,7 +1648,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1677,7 +1662,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1692,7 +1676,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1707,7 +1690,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1722,7 +1704,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1737,7 +1718,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1752,7 +1732,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1767,7 +1746,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1822,7 +1800,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   .dokpa_con .action .title {
@@ -1839,7 +1816,7 @@ body {
   }
   .dokpa_con .action .date {
     width: 100%;
-    height: remUnit2(20);
+    height: auto;
     margin-bottom: 9.375vw;
     text-align: center;
     color: #fff;
@@ -1848,8 +1825,10 @@ body {
     width: 100%;
     height: auto;
     font-size: 18px;
+    color: #fff;
+    text-align: center;
   }
-  .dokpa_con .action .challenge_link button {
+  .dokpa_con .action .challenge_link a {
     color: #fff;
   }
 }
@@ -1888,7 +1867,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1943,7 +1921,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1958,7 +1935,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1973,7 +1949,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -1988,7 +1963,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2003,7 +1977,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2018,7 +1991,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2033,7 +2005,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2048,7 +2019,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2097,7 +2067,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   .dokpa_con .action .title {
@@ -2124,7 +2093,7 @@ body {
     height: auto;
     font-size: 18px;
   }
-  .dokpa_con .action .challenge_link button {
+  .dokpa_con .action .challenge_link a {
     color: #fff;
   }
 }
@@ -2164,7 +2133,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2219,7 +2187,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2234,7 +2201,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2249,7 +2215,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2264,7 +2229,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2279,7 +2243,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2294,7 +2257,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2309,7 +2271,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2324,7 +2285,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2399,7 +2359,7 @@ body {
     height: auto;
     font-size: 18px;
   }
-  .dokpa_con .challenge_link button {
+  .dokpa_con .challenge_link a {
     color: #fff;
   }
 }
@@ -2422,7 +2382,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2437,7 +2396,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2452,7 +2410,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2467,7 +2424,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2482,7 +2438,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2497,7 +2452,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -2507,19 +2461,6 @@ body {
     width: 100%;
     height: 120px;
     padding-top: 40px;
-    background-image: url(../../multi/img/award_titleBg.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #awardBox .award_title > span, #awardBox .magazine_title > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0 0 0 0);
-    width: 0;
-    height: 0;
-    overflow: hidden;
   }
   #awardBox .award_title .title_inner, #awardBox .magazine_title .title_inner {
     width: 100%;
@@ -2844,7 +2785,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -2868,7 +2808,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   .bookclub_inner .bookclub_join {
@@ -2931,7 +2870,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3073,6 +3011,11 @@ body {
     width: 100%;
     height: 100%;
   }
+  .bookclub_inner .bookclub_join a > span {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
   .bookclub_inner .bookclub_join a:hover {
     text-decoration: none;
     color: #FA7950;
@@ -3136,7 +3079,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3151,7 +3093,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3166,7 +3107,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3181,7 +3121,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3196,7 +3135,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3211,7 +3149,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3252,7 +3189,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   .shop_area .shop_con > a {
@@ -3315,7 +3251,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3330,7 +3265,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3345,7 +3279,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3360,7 +3293,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3375,7 +3307,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3390,7 +3321,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3405,7 +3335,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3420,7 +3349,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -3497,7 +3425,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -3512,7 +3439,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -3527,7 +3453,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -3542,7 +3467,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -3557,7 +3481,6 @@ body {
   display: block;
   position: absolute;
   z-index: -1;
-  clip: rect(0 0 0 0);
   width: 0;
   height: 0;
   overflow: hidden;
@@ -3567,19 +3490,6 @@ body {
     width: 100%;
     height: 120px;
     padding-top: 40px;
-    background-image: url(../../multi/img/award_titleBg.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #magazineBox .award_title > span, #magazineBox .magazine_title > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    clip: rect(0 0 0 0);
-    width: 0;
-    height: 0;
-    overflow: hidden;
   }
   #magazineBox .award_title .title_inner, #magazineBox .magazine_title .title_inner {
     width: 100%;
@@ -3897,7 +3807,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
   .wz_title_part {
@@ -4016,7 +3925,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
 
@@ -4026,7 +3934,6 @@ body {
     height: 0;
     position: absolute;
     z-index: -1;
-    clip: rect(0, 0, 0, 0);
     overflow: hidden;
   }
 }
@@ -4074,7 +3981,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4258,6 +4164,14 @@ body {
   height: auto;
   background-color: rgba(0, 0, 0, 0.1);
 }
+#brandlistBox .brandlist_wrap span {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
 @media all and (max-width: 1279px) {
   #brandlistBox {
     padding: 60px 0;
@@ -4312,7 +4226,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4327,7 +4240,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4342,7 +4254,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4357,7 +4268,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4372,7 +4282,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4387,7 +4296,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4402,7 +4310,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4417,7 +4324,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4432,7 +4338,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4447,7 +4352,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4462,7 +4366,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4477,7 +4380,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4492,7 +4394,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4520,7 +4421,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4535,7 +4435,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4550,7 +4449,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4565,7 +4463,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4580,7 +4477,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4595,7 +4491,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4610,7 +4505,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4625,7 +4519,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4640,7 +4533,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4655,7 +4547,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4670,7 +4561,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4685,7 +4575,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4700,7 +4589,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4751,6 +4639,11 @@ body {
     width: 2080px;
     height: 140px;
   }
+  .brandlist_wrap > ul a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 
   .brandlist_part_top {
     margin-bottom: 20px;
@@ -4772,7 +4665,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4787,7 +4679,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4802,7 +4693,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4817,7 +4707,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4832,7 +4721,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4847,7 +4735,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4862,7 +4749,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4877,7 +4763,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4892,7 +4777,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4907,7 +4791,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4922,7 +4805,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4937,7 +4819,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4952,7 +4833,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4978,7 +4858,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -4993,7 +4872,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5008,7 +4886,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5023,7 +4900,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5038,7 +4914,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5053,7 +4928,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5068,7 +4942,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5083,7 +4956,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5098,7 +4970,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5113,7 +4984,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5128,7 +4998,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5143,7 +5012,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5158,7 +5026,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5369,7 +5236,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5384,7 +5250,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5399,7 +5264,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5414,7 +5278,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
@@ -5429,7 +5292,6 @@ body {
     display: block;
     position: absolute;
     z-index: -1;
-    clip: rect(0 0 0 0);
     width: 0;
     height: 0;
     overflow: hidden;
