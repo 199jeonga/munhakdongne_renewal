@@ -58,6 +58,7 @@ const silbling = (selector, idx)=>{
   return _array;
 }
 
+
 let IDX = 0;
 elGnbInnerList.forEach( (data, index)=>{
   const _gnbInnerTitle = data.querySelector('.gnb_inner_title > a');
@@ -65,9 +66,11 @@ elGnbInnerList.forEach( (data, index)=>{
 
   _gnbInnerTitle.addEventListener('click', (e)=>{
     e.preventDefault();
-    // ( IDX !== index ) ? _gnbInnerContent.classList.remove(ACTION) : _gnbInnerContent.classList.add(ACTION);
 
+    if(index !== IDX){
       _gnbInnerContent.classList.remove(ACTION);
+      silbling(elGnbInnerList, )
+    }
       IDX = index;
       _gnbInnerContent.classList.add(ACTION);
 
