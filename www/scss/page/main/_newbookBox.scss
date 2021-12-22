@@ -58,7 +58,7 @@
         margin-left: 10px;
         font-size: map-get($font_size, h3); line-height: 45px;
       }
-      .moreview_btn{margin-right: 10px;}
+      .moreview_btn{margin-right: 12px;}
       .prev_next_btn, .stop_btn{display: none;}
   }
   @include mobile{ .newbook_inner{margin:125px 0;} }
@@ -77,4 +77,11 @@
       }
 
   }// @include laptop
+
+  @include maxlaptop{
+    .newbook_booklist_wrap{
+      // left: 50vw; margin-left: -50vw; width: 100vw;
+      left: 0; margin: auto; padding-left: 0;
+    }
+  }
     }// #newBox

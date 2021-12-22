@@ -77,9 +77,16 @@
     }
     .mdpick_inner{
       position: relative;
-        width: 1100px; height: 500px;
-        margin: 0 auto;
+      width: 1100px; height: 500px;
+      margin: 0 auto;
     }//mdpick_inner
-}// @include tablet
+  }// @include laptop
+
+  @include maxlaptop{
+    .mdpick_con_wrap{
+      // left: 50vw; margin-left: -50vw; width: 100vw;
+      left: 0; margin: auto; padding-left: 0;
+    }
+  }
   
 }

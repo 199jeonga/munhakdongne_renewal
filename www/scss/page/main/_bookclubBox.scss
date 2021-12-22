@@ -16,7 +16,7 @@
     dl{
       width: 100%; height: auto;
       .title{ 
-        width: vwUnit(120); max-width: 170px; height: vwUnit(120);
+        width: vwUnit(120); max-width: 160px; height: vwUnit(120); max-height: 160px;
         margin: auto; margin-bottom: vwUnit(20);
         @include img('bookClub_img_title.svg',$size:contain);
       }
@@ -24,16 +24,23 @@
       .sub_title{
         width: 100%; height: auto;
         font-size: map-get($font_size, content2 ); text-align: center; font-weight: 500; color:$color_black;
+        word-break: keep-all;
       }
       .content { @include blind;}
     }
     .bookclub_join{
-      width: 160px; height: 30px; margin: 0 auto; line-height: 30px; text-align: center;
+      width: 160px; height: 30px; margin: 0 auto;
       a{
-        @include full;
+        @include full; text-align: center;
         &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
         &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
-      }
+        span{ 
+          float: left;
+          width: auto; height: 30px; line-height: 30px;
+          font-size: map-get($font_size, content3); font-weight: 500;
+          &:nth-child(1){padding-left: 16px;}
+        }
+      }//a
     }//bookclub_join
   }//bookclub_inner
 
@@ -62,6 +69,7 @@
     .sub_title{
       width: 100%; height: auto;
       font-size: map-get($font_size, h3 ); text-align: center; font-weight: 500; color:$color_black;
+      word-break: keep-all;
       margin-bottom: vwUnit(5);
     }
     .content{
@@ -75,12 +83,18 @@
           }
     }
     .bookclub_join{
-      width: auto; height: 40px; margin: 0 auto;
+      width: 200px; height: 30px; margin: 0 auto;
       font-weight: 500; font-size: map-get($font_size, content2 ); line-height: 40px;
       a{
-        @include full;
+        @include full; text-align: center;
         &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
         &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
+        span{ 
+          float: left;
+          width: auto; height: 30px; line-height: 30px;
+          font-size: map-get($font_size, content3); font-weight: 500;
+          &:nth-child(1){padding-left: 35px;}
+        }
       }
     }//bookclub_join
   }//bookclub_inner
@@ -123,13 +137,18 @@
           }
     }
     .bookclub_join{
-      width: auto; height: 40px; margin: 0 auto;
+      width: 200px; height: 40px; margin: 0 auto;
       font-weight: 500; font-size: map-get($font_size, content2 ); line-height: 40px;
       a{
-        @include full;
-        &>span{width: 40px; height: 40px;  font-size: map-get($font_size, content2 );}
+        @include full; text-align: center;
         &:hover{ text-decoration: none; color:$color_promary2; font-weight: 700;}
         &:focus{ @include shadow;  background-color: rgba($color_black, 0.05); }
+        span{ 
+          float: left;
+          width: auto; height: 40px; line-height: 40px;
+          font-size: map-get($font_size, content3); font-weight: 500;
+          &:nth-child(1){padding-left: 35px;}
+        }
       }
     }//bookclub_join
   }//bookclub_inner

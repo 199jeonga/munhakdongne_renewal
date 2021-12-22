@@ -115,12 +115,12 @@ body {
   }
   .gnb_inner_title a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .gnb_inner_title a:focus {
     text-decoration: none;
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
     font-weight: 700;
   }
@@ -151,7 +151,7 @@ body {
   }
   .gnb_inner_con.action a:focus {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
 
@@ -324,7 +324,7 @@ body {
   }
   #headBox .search_wrapper #search_close button:hover {
     font-weight: 700;
-    color: #FA7950;
+    color: #EB4C38;
   }
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
@@ -434,12 +434,12 @@ body {
   }
   .gnb_inner_title a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .gnb_inner_title a:focus {
     text-decoration: none;
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
     font-weight: 700;
   }
@@ -464,7 +464,7 @@ body {
   }
   .gnb_inner_con a:focus {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
 
@@ -640,7 +640,7 @@ body {
   }
   #headBox .search_wrapper #search_close button:hover {
     font-weight: 700;
-    color: #FA7950;
+    color: #EB4C38;
   }
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
@@ -987,8 +987,8 @@ body {
     border: 2px solid rgba(0, 0, 0, 0.2);
   }
   #viewBox .view_indicator li a:focus {
-    border: 2px solid #FA7950;
-    color: #FA7950;
+    border: 2px solid #EB4C38;
+    color: #EB4C38;
   }
   #viewBox .view_indicator .indicator_btn_click {
     width: 54px;
@@ -1009,7 +1009,7 @@ body {
     color: rgba(0, 0, 0, 0.2);
   }
   #viewBox .view_stop a:focus {
-    color: #FA7950;
+    color: #EB4C38;
   }
   #viewBox .view_stop a:focus span {
     color: inherit;
@@ -1053,7 +1053,7 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .mdpick_tab_part .mdp_tab_con button:hover {
-  background-color: #FA7950;
+  background-color: #EB4C38;
   color: #fff;
 }
 .mdpick_tab_part .mdp_tab_con.action button {
@@ -1279,6 +1279,13 @@ body {
     width: 1100px;
     height: 500px;
     margin: 0 auto;
+  }
+}
+@media all and (min-width: 1920px) {
+  #mdpickBox .mdpick_con_wrap {
+    left: 0;
+    margin: auto;
+    padding-left: 0;
   }
 }
 
@@ -1524,7 +1531,7 @@ body {
     line-height: 45px;
   }
   #newbookBox .moreview_btn {
-    margin-right: 10px;
+    margin-right: 12px;
   }
   #newbookBox .prev_next_btn, #newbookBox .stop_btn {
     display: none;
@@ -1557,6 +1564,13 @@ body {
     width: 1100px;
     height: 490px;
     margin: 0 auto;
+  }
+}
+@media all and (min-width: 1920px) {
+  #newbookBox .newbook_booklist_wrap {
+    left: 0;
+    margin: auto;
+    padding-left: 0;
   }
 }
 
@@ -1613,7 +1627,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   #dokpa_title .dokpa_button_warpper > button:hover, #dokpa_title .dokpa_button_warpper > button:focus {
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
   }
 
@@ -1627,10 +1641,10 @@ body {
   }
 
   .dokpa_con {
-    width: 43.75vw;
-    height: 53.125vw;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    width: 42.1875vw;
+    height: 56.25vw;
+    margin-bottom: 20px;
+    margin-left: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -1832,7 +1846,7 @@ body {
   #dokpaBox {
     position: relative;
     width: 100%;
-    height: 130.2083333333vw;
+    height: 156.25vw;
   }
   #dokpaBox .dokpa_inner {
     display: flex;
@@ -1885,7 +1899,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   #dokpaBox #dokpa_title .dokpa_button_warpper > button:hover {
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
   }
   #dokpaBox #dokpa_title .dokpa_button_warpper > button:focus {
@@ -1901,9 +1915,9 @@ body {
   }
 
   .dokpa_con {
-    width: 24.7395833333vw;
-    height: 29.9479166667vw;
-    margin-bottom: 10px;
+    width: 24.21875vw;
+    height: 35.15625vw;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -2088,16 +2102,15 @@ body {
     width: 100%;
     height: auto;
     font-size: 18px;
-  }
-  .dokpa_con .action .challenge_link a {
     color: #fff;
+    text-align: center;
   }
 }
 @media all and (min-width: 1280px) {
   #dokpaBox {
     position: relative;
     width: 100%;
-    height: 2200px;
+    height: 2450px;
   }
   #dokpaBox .dokpa_inner {
     display: flex;
@@ -2150,7 +2163,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   #dokpa_title .dokpa_button_warpper button:hover {
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
   }
   #dokpa_title .dokpa_button_warpper button:focus {
@@ -2168,8 +2181,8 @@ body {
   }
   .dokpa_con {
     width: 370px;
-    height: 450px;
-    margin-bottom: 34px;
+    height: 520px;
+    margin-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
@@ -2354,9 +2367,8 @@ body {
     width: 100%;
     height: auto;
     font-size: 18px;
-  }
-  .dokpa_con .challenge_link a {
     color: #fff;
+    text-align: center;
   }
 }
 
@@ -2737,7 +2749,7 @@ body {
   }
   #awardBox .more_btn a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
   }
 }
 
@@ -2768,8 +2780,9 @@ body {
   }
   .bookclub_inner dl .title {
     width: 37.5vw;
-    max-width: 170px;
+    max-width: 160px;
     height: 37.5vw;
+    max-height: 160px;
     margin: auto;
     margin-bottom: 6.25vw;
     background-image: url(../../../multi/img/bookClub_img_title.svg);
@@ -2797,6 +2810,7 @@ body {
     text-align: center;
     font-weight: 500;
     color: #333333;
+    word-break: keep-all;
   }
   .bookclub_inner dl .content {
     display: block;
@@ -2810,23 +2824,33 @@ body {
     width: 160px;
     height: 30px;
     margin: 0 auto;
-    line-height: 30px;
-    text-align: center;
   }
   .bookclub_inner .bookclub_join a {
     display: block;
     width: 100%;
     height: 100%;
+    text-align: center;
   }
   .bookclub_inner .bookclub_join a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .bookclub_inner .bookclub_join a:focus {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(51, 51, 51, 0.05);
+  }
+  .bookclub_inner .bookclub_join a span {
+    float: left;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .bookclub_inner .bookclub_join a span:nth-child(1) {
+    padding-left: 16px;
   }
 }
 @media all and (min-width: 768px) and (max-width: 1279px) {
@@ -2884,6 +2908,7 @@ body {
     text-align: center;
     font-weight: 500;
     color: #333333;
+    word-break: keep-all;
     margin-bottom: 1.5625vw;
   }
   .bookclub_inner .content {
@@ -2900,13 +2925,13 @@ body {
     display: block;
     width: 5px;
     height: 5px;
-    color: #FA7950;
+    color: #EB4C38;
     line-height: 38px;
     margin-left: -25px;
   }
   .bookclub_inner .bookclub_join {
-    width: auto;
-    height: 40px;
+    width: 200px;
+    height: 30px;
     margin: 0 auto;
     font-weight: 500;
     font-size: 18px;
@@ -2916,16 +2941,28 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+    text-align: center;
   }
   .bookclub_inner .bookclub_join a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .bookclub_inner .bookclub_join a:focus {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(51, 51, 51, 0.05);
+  }
+  .bookclub_inner .bookclub_join a span {
+    float: left;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .bookclub_inner .bookclub_join a span:nth-child(1) {
+    padding-left: 35px;
   }
 }
 @media all and (min-width: 1280px) {
@@ -2990,12 +3027,12 @@ body {
     display: block;
     width: 5px;
     height: 5px;
-    color: #FA7950;
+    color: #EB4C38;
     line-height: 38px;
     margin-left: -25px;
   }
   .bookclub_inner .bookclub_join {
-    width: auto;
+    width: 200px;
     height: 40px;
     margin: 0 auto;
     font-weight: 500;
@@ -3006,21 +3043,28 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-  }
-  .bookclub_inner .bookclub_join a > span {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    text-align: center;
   }
   .bookclub_inner .bookclub_join a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .bookclub_inner .bookclub_join a:focus {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
     background-color: rgba(51, 51, 51, 0.05);
+  }
+  .bookclub_inner .bookclub_join a span {
+    float: left;
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .bookclub_inner .bookclub_join a span:nth-child(1) {
+    padding-left: 35px;
   }
 }
 
@@ -3037,7 +3081,7 @@ body {
   }
   #shopBox .shop_inner {
     position: relative;
-    width: 96.25vw;
+    width: 100%;
     height: 63.75vw;
     margin: 0 auto;
   }
@@ -3050,7 +3094,7 @@ body {
     margin-left: 10px;
   }
   #shopBox .shop_inner .moreview_btn {
-    margin-right: 10px;
+    margin-right: 12px;
   }
   .shop_area {
     display: flex;
@@ -3766,7 +3810,7 @@ body {
   }
   #magazineBox .more_btn a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
   }
 }
 
@@ -3828,10 +3872,10 @@ body {
     background-color: #757575;
   }
   .wz_title_part .action {
-    color: #FA7950;
+    color: #EB4C38;
   }
   .wz_title_part .action::before {
-    background-color: #FA7950;
+    background-color: #EB4C38;
   }
   .wz_title_part .action button {
     font-weight: 700;
@@ -3845,7 +3889,7 @@ body {
     color: inherit;
   }
   .wz_title_part button:hover {
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .wz_title_part button:focus {
@@ -3886,7 +3930,7 @@ body {
   .wz_con_info .wz_con_date {
     width: 100%;
     height: auto;
-    color: #FA7950;
+    color: #EB4C38;
     font-size: 24px;
     font-family: "KyoboHandwriting2020A";
     text-align: center;
@@ -4025,7 +4069,7 @@ body {
   .wz_title_part .action {
     height: 300px;
     padding-top: 200px;
-    background-color: #FA7950;
+    background-color: #EB4C38;
   }
 
   #webzineBox .wz_con_part {
@@ -4056,13 +4100,13 @@ body {
   #webzineBox .wz_con_part .wz_con_date {
     width: 100%;
     height: 43px;
-    color: #FA7950;
+    color: #EB4C38;
     font-family: "KyoboHandwriting2020A";
     font-size: 30px;
     text-align: center;
     line-height: 43px;
-    border-top: 1px solid #FA7950;
-    border-bottom: 1px solid #FA7950;
+    border-top: 1px solid #EB4C38;
+    border-bottom: 1px solid #EB4C38;
     margin: 0 auto;
   }
   #webzineBox .wz_con_part .wz_con_title {
@@ -4961,6 +5005,15 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+  }
+}
+@media all and (min-width: 1920px) {
+  #brandlistBox .brandlist_wrap {
+    width: 100%;
+    height: 140px;
+  }
+  #brandlistBox .brandlist_wrap ul {
+    float: left;
   }
 }
 

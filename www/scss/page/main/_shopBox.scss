@@ -5,19 +5,19 @@
   
   width: 100%; height: auto;
   background-color: rgba(177,177,177,0.5);
-  
+
   @include handle{
     padding: vwUnit(10) 0 vwUnit(120);
     .shop_inner{
       position: relative;
-      width: vwUnit(308); height: vwUnit(204);
+      width: 100%; height: vwUnit(204);
       margin: 0 auto;
       h2{
         width: auto; height: 45px;
         color:$color_black; font-size: map-get($font_size, h3); line-height: 45px;
         margin-left: 10px;
       }
-      .moreview_btn{margin-right: 10px;}
+      .moreview_btn{margin-right: 12px;}
     }
       @at-root .shop_area{
         display: flex; flex-wrap: wrap; justify-content: space-between;

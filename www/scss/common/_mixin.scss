@@ -105,4 +105,9 @@ $baseDevice:320;
 }
 
 
+@mixin maxlaptop(){
+  @media all and (min-width:$pc){
+    @content;
+  }
+}
 

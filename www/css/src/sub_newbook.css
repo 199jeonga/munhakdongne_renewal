@@ -109,12 +109,12 @@ html, body {
   }
   .gnb_inner_title a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .gnb_inner_title a:focus {
     text-decoration: none;
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
     font-weight: 700;
   }
@@ -145,7 +145,7 @@ html, body {
   }
   .gnb_inner_con.action a:focus {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
 
@@ -318,7 +318,7 @@ html, body {
   }
   #headBox .search_wrapper #search_close button:hover {
     font-weight: 700;
-    color: #FA7950;
+    color: #EB4C38;
   }
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
@@ -428,12 +428,12 @@ html, body {
   }
   .gnb_inner_title a:hover {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   .gnb_inner_title a:focus {
     text-decoration: none;
-    background-color: #FA7950;
+    background-color: #EB4C38;
     color: #fff;
     font-weight: 700;
   }
@@ -458,7 +458,7 @@ html, body {
   }
   .gnb_inner_con a:focus {
     text-decoration: none;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
 
@@ -634,7 +634,7 @@ html, body {
   }
   #headBox .search_wrapper #search_close button:hover {
     font-weight: 700;
-    color: #FA7950;
+    color: #EB4C38;
   }
   #headBox .search_wrapper #search_close button:focus {
     font-weight: 700;
@@ -1090,7 +1090,7 @@ html, body {
   #searchFilter ul li:hover {
     width: 100%;
     height: 100%;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   #searchFilter ul li > button {
@@ -1101,7 +1101,7 @@ html, body {
   #searchFilter ul li > button:hover {
     width: 100%;
     height: 36px;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   #searchFilter ul li.on {
@@ -1191,7 +1191,7 @@ html, body {
   #searchFilter ul li > button:hover {
     width: 100%;
     height: 36px;
-    color: #FA7950;
+    color: #EB4C38;
     font-weight: 700;
   }
   #searchFilter ul li.on {
@@ -1270,7 +1270,7 @@ html, body {
     text-align: left;
     font-size: 18px;
     font-family: "KyoboHandwriting2020A";
-    border-bottom: 2px solid #FA7950;
+    border-bottom: 2px solid #EB4C38;
     text-overflow: ellipsis;
   }
   .explanation_content {
@@ -1500,7 +1500,7 @@ html, body {
     font-family: "KyoboHandwriting2020A";
     margin-bottom: 5px;
     margin-top: 20px;
-    border-bottom: 2px solid #FA7950;
+    border-bottom: 2px solid #EB4C38;
     text-overflow: ellipsis;
   }
   #bookConBox .explanation_content {
@@ -1725,7 +1725,7 @@ html, body {
     font-family: "KyoboHandwriting2020A";
     margin-bottom: 5px;
     margin-top: 20px;
-    border-bottom: 2px solid #FA7950;
+    border-bottom: 2px solid #EB4C38;
     text-overflow: ellipsis;
   }
   #bookConBox .explanation_content {

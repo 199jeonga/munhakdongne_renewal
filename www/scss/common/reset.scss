@@ -41,3 +41,4 @@ input[type="email"], input[type="search"] { text-indent: 0.5rem; cursor: pointer
 select,input,textarea { cursor: pointer;}
 header,article, nav, section, footer, aside, 
 main, figure, figcaption, hgroup { display: block;}
+body{font-family: list($font_family_ko, 1);}

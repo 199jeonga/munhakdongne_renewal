@@ -88,4 +88,8 @@ main, figure, figcaption, hgroup {
   display: block;
 }
 
+body {
+  font-family: list("nanumsquare", "KyoboHandwriting2020A", serif, 1);
+}
+
 /*# sourceMappingURL=reset.css.map */

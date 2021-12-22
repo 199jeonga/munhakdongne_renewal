@@ -108,4 +108,12 @@
       }
     }//inner
   }//laptop
+
+  @include maxlaptop{
+    .brandlist_wrap{
+      // overflow: hidden;
+      width: 100%; height: 140px;
+      ul{float: left;}
+    }
+  }
 }
