@@ -58,7 +58,6 @@ const silbling = (selector, idx)=>{
   return _array;
 }
 
-
 let IDX = 0;
 elGnbInnerList.forEach( (data, index)=>{
   const _gnbInnerTitle = data.querySelector('.gnb_inner_title > a');
@@ -66,15 +65,18 @@ elGnbInnerList.forEach( (data, index)=>{
 
   _gnbInnerTitle.addEventListener('click', (e)=>{
     e.preventDefault();
-
     if(index !== IDX){
-      _gnbInnerContent.classList.remove(ACTION);
-      silbling(elGnbInnerList, )
-    }
+      // _gnbInnerContent.classList.remove(ACTION);
+      silbling(elGnbInnerList, index)
+    }else{
       IDX = index;
       _gnbInnerContent.classList.add(ACTION);
-
+    }
   })
+
+
+
+
 });
 
 
