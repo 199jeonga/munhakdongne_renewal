@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -21,26 +25,51 @@ html, body {
     z-index: 1000;
     width: 100%;
     height: auto;
+    min-height: 100px;
     background-color: transparent;
     padding: 30px 16px;
     /* searchBox----------*/
   }
   .head_inner {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
     margin: auto;
   }
-  .head_inner h1 {
+  .head_inner .logo {
     float: left;
-    width: auto;
+    width: 80px;
+    height: 35px;
     font-weight: 900;
     color: #fff;
-    width: auto;
-    height: auto;
     margin-top: 5px;
-    font-size: 32px;
-    line-height: 32px;
+    background-image: url(../../../multi/img/logo_main_w.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  .head_inner .logo > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  .head_inner .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .head_inner .logo span {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
   }
   .gnb_btn, .search_btn {
     position: absolute;
@@ -50,7 +79,7 @@ html, body {
     width: 35px;
     height: 35px;
     color: #fff;
-    background-color: rgba(51, 51, 51, 0.3);
+    background-color: rgba(51, 51, 51, 0.5);
     border-radius: 10px;
   }
   .gnb_btn > button, .search_btn > button {
@@ -264,9 +293,9 @@ html, body {
   }
 
   #gnbBox .gnb_bg {
-    position: absolute;
-    top: 0;
+    position: fixed;
     left: 0;
+    top: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
@@ -347,6 +376,7 @@ html, body {
     z-index: 1000;
     width: 100%;
     height: auto;
+    min-height: 90px;
     padding: 20px;
     background-color: transparent;
     /* searchBox----------------------------------------- */
@@ -357,14 +387,39 @@ html, body {
     height: 100%;
     margin: auto;
   }
-  #headBox .head_inner h1 {
+  #headBox .head_inner .logo {
     float: left;
     font-weight: 900;
     color: #fff;
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 50px;
     font-size: 40px;
     line-height: 60px;
+    background-image: url(../../../multi/img/logo_main_w.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #headBox .head_inner .logo > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #headBox .head_inner .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #headBox .head_inner .logo span {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
   }
   .gnb_btn, .search_btn {
     position: absolute;

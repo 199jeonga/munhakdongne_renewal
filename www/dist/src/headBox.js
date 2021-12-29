@@ -1,11 +1,12 @@
 //headBox.js
 (()=>{
-  const elHeaderWrap = document.querySelector('.headerWrap');
-  const elGnbBox = elHeaderWrap.querySelector('#gnbBox');
+  const logo = document.querySelector('.logo');
+  const elHeadBox = document.querySelector('#headBox');
+  const elGnbBox = elHeadBox.querySelector('#gnbBox');
 
-  const elGnbOpenBtn = elHeaderWrap.querySelector('.gnb_btn');
+  const elGnbOpenBtn = elHeadBox.querySelector('.gnb_btn');
   const elGnbOpenButton = elGnbOpenBtn.querySelector('button');
-  const elGnbClosebtn = elHeaderWrap.querySelector('#gnb_close');
+  const elGnbClosebtn = elHeadBox.querySelector('#gnb_close');
   const elGnbCloseButton = elGnbClosebtn.querySelector('button');
 
   const elSearchWrap = document.querySelector('.search_wrapper');
@@ -30,13 +31,31 @@ elGnbCloseButton.addEventListener('click', (e)=>{
 
 elSearchOpenButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elSearchBox.style = 'display:block';
+  elSearchBox.style.display = 'block';
+  logo.style.display = 'none';
   elSearchCloseButton.focus();
 })
 elSearchCloseButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elSearchBox.style = 'display:none';
+  elSearchBox.style.display = 'none';
+  logo.style.display = 'block';
 })
+
+
+//스크롤 내리면 어쩌구
+const elheadBoxH = elHeadBox.offsetTop;
+
+const fnscroll = (e)=>{
+  const target = parseInt(e.currentTarget.scrollY);
+  if(target > elheadBoxH){
+    elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6);'; //boxshadow, blur를 사용하면 에러가 나는데 이유가?
+    logo.style = ' background-image: url(../../../multi/img/logo_main_b.png);'
+  }else{
+    elHeadBox.style = 'background-color:transparent';
+    logo.style = ' background-image: url(../../../multi/img/logo_main_w.png);'
+  }
+}//fnscroll
+window.addEventListener( 'scroll', fnscroll);
 
 
 
