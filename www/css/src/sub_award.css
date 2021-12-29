@@ -1291,6 +1291,35 @@ html, body {
   }
 }
 
+@media all and (max-width: 1279px) {
+  #subSearchBox .sub_nav_tab {
+    display: flex;
+    justify-content: space-between;
+    width: 93.75vw;
+    height: 30px;
+    margin: auto;
+  }
+  #subSearchBox .sub_nav_tab button {
+    width: 45.3125vw;
+    height: 100%;
+    background-color: #dda;
+  }
+  #subSearchBox .subsearch_inner {
+    margin: 15px 0;
+  }
+  #subSearchBox .sub_filter_tab {
+    width: 100%;
+    height: 24px;
+    background-color: #dda;
+  }
+  #subSearchBox .sub_filter_tab ul {
+    width: 2000px;
+  }
+  #subSearchBox .sub_filter_tab ul li {
+    float: left;
+  }
+}
+
 /* bookConBox================================================= */
 @media all and (max-width: 767px) {
   #bookConBox {
@@ -2253,4 +2282,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=sub_newbook.css.map */
+/*# sourceMappingURL=sub_award.css.map */

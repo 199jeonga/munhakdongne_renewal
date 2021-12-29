@@ -1,0 +1,30 @@
+@import "_subSearchBox";
+
+@at-root #subSearchBox{
+
+  @include handle{
+    // width: 100%; height: 130px;
+    // padding: 60px 0;
+    .sub_nav_tab{
+      display: flex; justify-content: space-between;
+      width: vwUnit(300); height: 30px;
+      margin: auto;
+      button{width: vwUnit(145); height: 100%; background-color: #dda; }
+    }
+
+    .subsearch_inner{
+      margin: 15px 0;
+    }
+
+    .sub_filter_tab{
+      width: 100%; height: 24px;
+      background-color: #dda;
+      ul{width: 2000px;
+        li{
+          float: left;
+        }
+      }
+    }
+  }
+
+}

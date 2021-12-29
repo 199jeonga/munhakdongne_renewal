@@ -40,9 +40,10 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: auto;
     margin: auto;
+    background-color: #dda;
   }
   .head_inner .logo {
     float: left;
