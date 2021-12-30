@@ -1,0 +1,91 @@
+#bookDetailBox{
+  
+  @include mobile{
+    width: 100%; height: auto;
+    padding: 30px 0;
+    @at-root .book_detail_area {
+      width: calc(100% - vwUnit(20)); max-width: 4vwUnit(50); height: 340px;
+      margin:0 auto;
+      padding: 10px 0;
+      .book_title_inner{
+        @include full;
+        padding: 10px; box-sizing: border-box;
+        @include shadow;
+      }
+    }//bookcon_area
+    .bookcon_img{@include blind;}
+    .extract_content{
+      overflow: hidden;
+      width: 100%; height: 50px;
+      text-align: left; font-size: map-get( $font_size, book2); font-family: nth($font_family_ko,2);
+      border-bottom: 2px solid $color_promary2;
+      text-overflow: ellipsis;
+    }
+    @at-root .explanation_content{
+      width: 100%; height: auto;
+      padding: 10px 0;
+      dt{
+        float: left;
+        width: 60px; height: 40px; line-height: 40px;
+        margin-right: 6px;
+        text-align: left; font-weight: 600;
+      }//dt
+      dd{
+        float: left;
+        overflow: hidden;
+        width: calc(100% - 66px); height: 40px; line-height: 40px;
+        text-align: left;
+        border-bottom: 1px solid $color_gray_op2;
+        text-overflow: ellipsis;
+        &:last-child{border:none;}
+      }//dd
+    }//explanation_content
+
+
+  }//mobile
+  @include tablet{}
+  @include handle{
+
+    @at-root .book_con_area{
+      width: vwUnit(300); height: auto; min-height: 600px;
+      margin: 30px auto 0; padding-bottom: 50px;
+      border-top: 1px solid rgba($color_deep_gray, 0.5); border-bottom: 1px solid rgba($color_deep_gray, 0.5);
+      .book_tab_inner{
+        width: 100%; height: 40px;
+        border-bottom: 1px solid rgba($color_deep_gray, 0.2);
+        padding-top: 10px; padding-left: 10px; margin-bottom: 15px;
+        button{
+          width: auto; height: 30px;
+          padding: 0 vwUnit(6);
+          line-height: 30px;
+          &:hover{color: $color_promary2; border-bottom: 2px solid rgba($color_deep_gray, 0.5); }
+          &.action{ color: $color_promary2; font-weight: 700; border-bottom: 2px solid $color_promary2;}
+        }
+      }//book_tab_inner
+      .book_tabcontents_inner{
+        width: 100%; height: 100%;
+        p{width: 100%; height: 100%;}
+      }//book_tabcontents_inner
+    }//book_con_area
+
+    .book_salesite_area{
+      width: vwUnit(300); height: vwUnit(180); max-height: 270px;
+      margin: 0 auto; padding:30px 0;
+      h3{
+        width: auto; height: auto;
+        font-size: map-get($font_size, content2); margin-bottom: 20px;
+      }
+      .brand_logo{
+        float: left;
+        width: vwUnit(50); height: vwUnit(50);
+        margin-right: 15px;
+        background-color: #dfa;
+        a{
+          @include full;
+        }
+      }
+    }
+  }//handle
+  @include laptop{}//laptop
+
+}//#bookDetailBox

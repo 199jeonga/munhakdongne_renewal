@@ -15,30 +15,33 @@
   const elSearchBox = elSearchWrap.querySelector('.searchBox');
   const elSearchCloseBtn = elSearchWrap.querySelector('#search_close');
   const elSearchCloseButton = elSearchCloseBtn.querySelector('button');
+  
+  const ACTION = 'action';
+  const BLIND = 'blind';
 
 
 // open, close 버튼
 elGnbOpenButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elGnbBox.style = 'display:block';
+  elGnbBox.classList.add(ACTION);
   elGnbCloseButton.focus();
 })
 elGnbCloseButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elGnbBox.style = 'display:none';
+  elGnbBox.classList.remove(ACTION);
 })
 
 
 elSearchOpenButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elSearchBox.style.display = 'block';
-  logo.style.display = 'none';
+  elSearchBox.classList.add(ACTION);
+  logo.classList.add(BLIND);
   elSearchCloseButton.focus();
 })
 elSearchCloseButton.addEventListener('click', (e)=>{
   e.preventDefault();
-  elSearchBox.style.display = 'none';
-  logo.style.display = 'block';
+  elSearchBox.classList.remove(ACTION);
+  logo.classList.remove(BLIND);
 })
 
 
@@ -48,12 +51,16 @@ const elheadBoxH = elHeadBox.offsetTop;
 const fnscroll = (e)=>{
   const target = parseInt(e.currentTarget.scrollY);
   if(target > elheadBoxH){
-    elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6);'; //boxshadow, blur를 사용하면 에러가 나는데 이유가?
-    logo.style = ' background-image: url(../../../multi/img/logo_main_b.png);'
+    elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6); box-shadow: 0px 5px 10px rgba(0,0,0,0.1);'; //boxshadow, blur를 사용하면 에러가 나는데 이유가?
+    if( !logo.classList.contains(BLIND) ){
+      logo.style = ' background-image: url(../../../multi/img/logo_main_b.png);'
+    }
   }else{
     elHeadBox.style = 'background-color:transparent';
+    if( !logo.classList.contains(BLIND) ){
     logo.style = ' background-image: url(../../../multi/img/logo_main_w.png);'
-  }
+    }//if
+  }//else
 }//fnscroll
 window.addEventListener( 'scroll', fnscroll);
 

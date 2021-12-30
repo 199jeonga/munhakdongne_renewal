@@ -94,6 +94,11 @@ main, figure, figcaption, hgroup {
 
 body {
   font-family: list("nanumsquare", "KyoboHandwriting2020A", serif, 1);
+  overflow-x: hidden;
+}
+
+#wrap {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=reset.css.map */

@@ -1114,414 +1114,20 @@ html, body {
   }
 }
 
-/* subSearchBox================================================= */
-#subSearchBox {
-  width: 100%;
-  height: 160px;
-  padding: 60px 0;
-}
-@media all and (max-width: 1279px) {
-  #subSearchBox .subsearch_inner {
-    width: 93.75vw;
-    height: 40px;
-    max-width: 610px;
-    margin: auto;
-    padding: 2px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #searchFilter {
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 50px;
-    height: 100%;
-    border: 0;
-    text-align: center;
-    background-color: transparent;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: #dda;
-  }
-  #searchFilter ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-  }
-  #searchFilter ul::after, #searchFilter ul:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 47px;
-    width: 1px;
-    height: 20px;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
-  }
-  #searchFilter ul li {
-    display: none;
-    float: left;
-    width: 100%;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  #searchFilter ul li:hover {
-    width: 100%;
-    height: 100%;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li > button {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  #searchFilter ul li > button:hover {
-    width: 100%;
-    height: 36px;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li.on {
-    display: block;
-  }
-  #searchFilter ul li:first-child {
-    margin-top: 0;
-  }
-
-  #subSearchBox #searchBookBox {
-    float: left;
-    width: calc(100% - 40px);
-    height: 36px;
-    text-indent: 10px;
-    outline: none;
-  }
-  #subSearchBox #searchBookBox:focus {
-    border-radius: 10px;
-    background-color: #eee;
-  }
-  #subSearchBox .searchButton {
-    float: right;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background-color: #1B2C7A;
-  }
-  #subSearchBox .searchButton > i {
-    color: #fff;
-  }
-}
-@media all and (min-width: 1280px) {
-  #subSearchBox .subsearch_inner {
-    width: 816px;
-    height: 40px;
-    margin: auto;
-    padding: 2px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #searchFilter {
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 158px;
-    height: 36px;
-    border: 0;
-    text-align: center;
-    background-color: transparent;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-  #searchFilter ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  #searchFilter ul::after, #searchFilter ul:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 1px;
-    height: 20px;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
-  }
-  #searchFilter ul li {
-    display: none;
-    float: left;
-    width: 100%;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  #searchFilter ul li > button {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  #searchFilter ul li > button:hover {
-    width: 100%;
-    height: 36px;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li.on {
-    display: block;
-  }
-  #searchFilter ul li:first-child {
-    margin-top: 0;
-  }
-
-  #subSearchBox #searchBookBox {
-    float: left;
-    width: 600px;
-    height: 36px;
-    text-indent: 10px;
-    outline: none;
-  }
-  #subSearchBox #searchBookBox:focus {
-    border-radius: 10px;
-    background-color: #eee;
-  }
-  #subSearchBox .searchButton {
-    float: right;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background-color: #1B2C7A;
-  }
-  #subSearchBox .searchButton > i {
-    color: #fff;
-  }
-}
-
-@media all and (max-width: 1279px) {
-  #subSearchBox {
-    width: 100%;
-    height: auto;
-    padding: 60px 0;
-  }
-  #subSearchBox .sub_nav_tab {
-    display: flex;
-    justify-content: space-between;
-    width: 93.75vw;
-    max-width: 610px;
-    height: 30px;
-    margin: auto;
-  }
-  #subSearchBox .sub_nav_tab button {
-    width: 45.3125vw;
-    max-width: 300px;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #subSearchBox .sub_nav_tab button.action {
-    background-color: #1B2C7A;
-    color: #fff;
-    font-weight: 500;
-  }
-  #subSearchBox .sub_nav_tab button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-  }
-  #subSearchBox .sub_nav_tab button:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: 700;
-  }
-  #subSearchBox .subsearch_inner {
-    margin: 15px auto;
-  }
-  .sub_filter_tab {
-    overflow: hidden;
-    width: 93.75vw;
-    max-width: 610px;
-    height: 28px;
-    transform: translateX(-50%);
-    margin-left: 50%;
-  }
-  .sub_filter_tab div {
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
-    overflow-x: auto;
-    overflow-y: visible;
-  }
-  .sub_filter_wrap {
-    width: 1650px;
-    height: 28px;
-  }
-  .sub_filter_wrap li {
-    float: left;
-    width: auto;
-    min-width: 130px;
-    height: 28px;
-    margin-right: 10px;
-    background-color: #fff;
-  }
-  .sub_filter_wrap li:last-child {
-    margin-right: 0;
-  }
-  .sub_filter_wrap li.action {
-    font-weight: 700;
-  }
-  .sub_filter_wrap li.action a {
-    background-color: #505050;
-    color: #fff;
-  }
-  .sub_filter_wrap a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(80, 80, 80, 0.1);
-    text-align: center;
-    line-height: 28px;
-    padding: 0 2px;
-    text-decoration: none;
-  }
-  .sub_filter_wrap a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-  }
-  .sub_filter_wrap a:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: 700;
-  }
-}
-@media all and (min-width: 1280px) {
-  #subSearchBox {
-    width: 100%;
-    height: auto;
-    padding: 60px 0;
-  }
-  #subSearchBox .sub_nav_tab {
-    display: flex;
-    justify-content: space-between;
-    width: 816px;
-    height: 30px;
-    margin: auto;
-  }
-  #subSearchBox .sub_nav_tab button {
-    width: 400px;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #subSearchBox .sub_nav_tab button.action {
-    background-color: #1B2C7A;
-    color: #fff;
-    font-weight: 500;
-  }
-  #subSearchBox .sub_nav_tab button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-  }
-  #subSearchBox .sub_nav_tab button:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: 700;
-  }
-  #subSearchBox .subsearch_inner {
-    margin: 15px auto;
-  }
-  .sub_filter_tab {
-    overflow: hidden;
-    width: 816px;
-    height: 28px;
-    transform: translateX(-50%);
-    margin-left: 50%;
-  }
-  .sub_filter_tab div {
-    width: 100%;
-    height: auto;
-    padding-bottom: 30px;
-    overflow-x: auto;
-    overflow-y: visible;
-  }
-  .sub_filter_wrap {
-    width: 1650px;
-    height: 28px;
-  }
-  .sub_filter_wrap li {
-    float: left;
-    width: auto;
-    min-width: 130px;
-    height: 28px;
-    margin-right: 10px;
-    background-color: #fff;
-  }
-  .sub_filter_wrap li:last-child {
-    margin-right: 0;
-  }
-  .sub_filter_wrap li.action {
-    font-weight: 700;
-  }
-  .sub_filter_wrap li.action a {
-    background-color: #505050;
-    color: #fff;
-  }
-  .sub_filter_wrap a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(80, 80, 80, 0.1);
-    text-align: center;
-    line-height: 28px;
-    padding: 0 2px;
-    text-decoration: none;
-  }
-  .sub_filter_wrap a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-weight: 500;
-  }
-  .sub_filter_wrap a:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    font-weight: 700;
-  }
-}
-
-/* bookConBox================================================= */
 @media all and (max-width: 767px) {
-  #bookConBox {
+  #bookDetailBox {
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    padding: 30px 0;
   }
-  .bookcon_inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-  }
-  .bookcon_inner .bookcon_area {
+  .book_detail_area {
     width: calc(100% - 6.25vw);
-    max-width: 450px;
+    max-width: 4vwUnit 50;
     height: 340px;
     margin: 0 auto;
     padding: 10px 0;
   }
-  .bookcon_inner .bookcon_area a {
+  .book_detail_area .book_title_inner {
     display: block;
     width: 100%;
     height: 100%;
@@ -1531,7 +1137,7 @@ html, body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
-  #bookConBox .bookcon_img {
+  #bookDetailBox .bookcon_img {
     display: block;
     width: 0;
     height: 0;
@@ -1539,7 +1145,7 @@ html, body {
     z-index: -1;
     overflow: hidden;
   }
-  #bookConBox .extract_content {
+  #bookDetailBox .extract_content {
     overflow: hidden;
     width: 100%;
     height: 50px;
@@ -1576,618 +1182,75 @@ html, body {
   .explanation_content dd:last-child {
     border: none;
   }
-
-  #bookConBox .bookcon_area > a:hover {
-    outline: 2px solid #757575;
-  }
-  #bookConBox .bookcon_area > a:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
 }
-@media all and (min-width: 768px) and (max-width: 1279px) {
-  #bookConBox {
-    width: 100%;
+@media all and (max-width: 1279px) {
+  .book_con_area {
+    width: 93.75vw;
     height: auto;
-    padding-top: 20px;
+    min-height: 600px;
+    margin: 30px auto 0;
+    padding-bottom: 50px;
+    border-top: 1px solid rgba(80, 80, 80, 0.5);
+    border-bottom: 1px solid rgba(80, 80, 80, 0.5);
   }
-  .bookcon_inner {
-    width: 610px;
-    height: auto;
+  .book_con_area .book_tab_inner {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.2);
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+  .book_con_area .book_tab_inner button {
+    width: auto;
+    height: 30px;
+    padding: 0 1.875vw;
+    line-height: 30px;
+  }
+  .book_con_area .book_tab_inner button:hover {
+    color: #EB4C38;
+    border-bottom: 2px solid rgba(80, 80, 80, 0.5);
+  }
+  .book_con_area .book_tab_inner button.action {
+    color: #EB4C38;
+    font-weight: 700;
+    border-bottom: 2px solid #EB4C38;
+  }
+  .book_con_area .book_tabcontents_inner {
+    width: 100%;
+    height: 100%;
+  }
+  .book_con_area .book_tabcontents_inner p {
+    width: 100%;
+    height: 100%;
+  }
+
+  #bookDetailBox .book_salesite_area {
+    width: 93.75vw;
+    height: 56.25vw;
+    max-height: 270px;
     margin: 0 auto;
+    padding: 30px 0;
   }
-
-  #bookConBox .bookcon_area {
-    width: 100%;
-    height: 330px;
-    margin-bottom: 24px;
-  }
-  #bookConBox .bookcon_area:nth-child(1) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg01.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(1) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(2) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg02.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(2) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(3) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg03.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(3) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(4) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg04.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(4) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(5) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg05.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(5) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(6) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg06.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(6) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(7) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg07.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(7) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(8) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg08.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(8) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(9) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg09.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(9) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(10) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg10.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(10) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  #bookConBox .bookcon_area a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #bookConBox .bookcon_img {
-    float: left;
-    width: 220px;
-    height: 100%;
-    border-radius: 10px;
-  }
-  #bookConBox .bookcon_text {
-    float: left;
-    padding-top: 5px;
-    margin-left: 30px;
-    width: 300px;
-    height: 100%;
-  }
-  #bookConBox .extract_content {
-    overflow: hidden;
-    width: 100%;
-    height: 50px;
-    text-align: left;
+  #bookDetailBox .book_salesite_area h3 {
+    width: auto;
+    height: auto;
     font-size: 18px;
-    font-family: "KyoboHandwriting2020A";
-    margin-bottom: 5px;
-    margin-top: 20px;
-    border-bottom: 2px solid #EB4C38;
-    text-overflow: ellipsis;
+    margin-bottom: 20px;
   }
-  #bookConBox .explanation_content {
+  #bookDetailBox .book_salesite_area .brand_logo {
+    float: left;
+    width: 15.625vw;
+    height: 15.625vw;
+    margin-right: 15px;
+    background-color: #dfa;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo a {
+    display: block;
     width: 100%;
-    height: auto;
-  }
-  #bookConBox .explanation_content dt {
-    float: left;
-    width: 60px;
-    height: 35px;
-    line-height: 35px;
-    margin-right: 6px;
-    text-align: left;
-    font-weight: 600;
-  }
-  #bookConBox .explanation_content dd {
-    float: left;
-    overflow: hidden;
-    width: calc(100% - 66px);
-    height: 35px;
-    line-height: 35px;
-    text-align: left;
-    text-overflow: ellipsis;
-  }
-  #bookConBox .bookcon_area > a:hover {
-    outline: 2px solid #757575;
-  }
-  #bookConBox .bookcon_area > a:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+    height: 100%;
   }
 }
-@media all and (min-width: 1280px) {
-  #bookConBox {
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-  }
-  #bookConBox .bookcon_inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 1144px;
-    height: auto;
-    margin: auto;
-  }
-  #bookConBox .bookcon_area {
-    width: 560px;
-    height: 330px;
-    margin-bottom: 24px;
-  }
-  #bookConBox .bookcon_area:nth-child(1) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg01.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(1) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(2) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg02.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(2) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(3) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg03.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(3) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(4) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg04.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(4) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(5) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg05.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(5) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(6) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg06.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(6) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(7) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg07.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(7) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(8) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg08.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(8) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(9) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg09.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(9) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-child(10) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg10.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #bookConBox .bookcon_area:nth-child(10) .bookcon_img > span {
-    display: block;
-    position: absolute;
-    z-index: -1;
-    width: 0;
-    height: 0;
-    overflow: hidden;
-  }
-  #bookConBox .bookcon_area:nth-last-child(2) {
-    margin-bottom: 0;
-  }
-  #bookConBox .bookcon_area a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 12px;
-    box-sizing: border-box;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #bookConBox .bookcon_img {
-    float: left;
-    width: 220px;
-    height: 100%;
-    border-radius: 10px;
-  }
-  #bookConBox .bookcon_text {
-    float: right;
-    padding-top: 5px;
-    width: 300px;
-    height: 100%;
-  }
-  #bookConBox .extract_content {
-    overflow: hidden;
-    width: 100%;
-    height: 52px;
-    text-align: left;
-    font-size: 18px;
-    font-family: "KyoboHandwriting2020A";
-    margin-bottom: 5px;
-    margin-top: 20px;
-    border-bottom: 2px solid #EB4C38;
-    text-overflow: ellipsis;
-  }
-  #bookConBox .explanation_content {
-    width: 100%;
-    height: auto;
-  }
-  #bookConBox .explanation_content dt {
-    float: left;
-    width: 60px;
-    height: 35px;
-    line-height: 35px;
-    margin-right: 6px;
-    text-align: left;
-    font-weight: 600;
-  }
-  #bookConBox .explanation_content dd {
-    float: left;
-    overflow: hidden;
-    width: calc(100% - 66px);
-    height: 35px;
-    line-height: 35px;
-    text-align: left;
-    text-overflow: ellipsis;
-  }
-  #bookConBox .bookcon_area > a:hover {
-    outline: 2px solid #757575;
-  }
-  #bookConBox .bookcon_area > a:focus {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-}
-
-/* pageBtn================================================= */
-@media all and (max-width: 767px) {
-  #pageBtn {
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-  }
-  .pagebtn_inner {
-    width: 310px;
-    height: 40px;
-    margin: auto;
-  }
-  .pagebtn_inner ul {
-    float: left;
-    width: auto;
-    height: 40px;
-  }
-  .pagebtn_inner ul li {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-right: 5px;
-  }
-
-  #pageBtn .pagebtn_inner .sub_next_btn {
-    float: right;
-  }
-  #pageBtn .next_btn_detail {
-    margin-right: 0;
-  }
-  #pageBtn .end_btn_detail, #pageBtn .start_btn_detail {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-  }
-  #pageBtn .sub_page_btn li:nth-last-child(-n+5) {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-  }
-  #pageBtn .pagebtn_inner button {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #pageBtn .pagebtn_inner button:hover {
-    background-color: #EB4C38;
-    color: #fff;
-  }
-}
-@media all and (min-width: 768px) and (max-width: 1279px) {
-  #pageBtn {
-    width: 100%;
-    height: 180px;
-    padding-top: 55px;
-  }
-  .pagebtn_inner {
-    width: 600px;
-    height: 40px;
-    margin: auto;
-  }
-  .pagebtn_inner ul {
-    float: left;
-    width: auto;
-    height: 40px;
-  }
-  .pagebtn_inner ul li {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-
-  #pageBtn .pagebtn_inner .sub_next_btn {
-    float: right;
-  }
-  #pageBtn .next_btn_detail {
-    margin-right: 0;
-  }
-  #pageBtn .end_btn_detail, #pageBtn .start_btn_detail {
-    display: block;
-    width: 0;
-    height: 0;
-    position: absolute;
-    z-index: -1;
-    overflow: hidden;
-  }
-  #pageBtn .pagebtn_inner button {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #pageBtn .pagebtn_inner button:hover {
-    background-color: #EB4C38;
-    color: #fff;
-  }
-}
-@media all and (min-width: 1280px) {
-  #pageBtn {
-    width: 100%;
-    height: 180px;
-    padding-top: 55px;
-  }
-  #pageBtn .pagebtn_inner {
-    width: 690px;
-    height: 40px;
-    margin: auto;
-  }
-  #pageBtn .pagebtn_inner ul {
-    float: left;
-    width: auto;
-    height: 100%;
-  }
-  #pageBtn .pagebtn_inner .sub_next_btn {
-    float: right;
-  }
-  #pageBtn .pagebtn_inner li {
-    float: left;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  #pageBtn .sub_prev_btn li {
-    float: right;
-  }
-  #pageBtn .sub_next_btn li:last-child {
-    margin-right: 0;
-  }
-  #pageBtn .pagebtn_inner button {
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #pageBtn .pagebtn_inner button:hover {
-    background-color: #EB4C38;
-    color: #fff;
-  }
-}
-
 #footBox {
   width: 100%;
   height: auto;
@@ -2462,4 +1525,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=sub_award.css.map */
+/*# sourceMappingURL=sub_bookcontent.css.map */
