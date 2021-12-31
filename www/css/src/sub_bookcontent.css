@@ -1183,6 +1183,81 @@ html, body {
     border: none;
   }
 }
+@media all and (min-width: 768px) and (max-width: 1279px) {
+  #bookDetailBox {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+  }
+  #bookDetailBox .book_detail_area {
+    width: 218.75vw;
+    height: 330px;
+    margin-bottom: 24px;
+  }
+  #bookDetailBox .book_detail_area div {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  #bookDetailBox .bookcon_img {
+    float: left;
+    width: 220px;
+    height: 100%;
+    border-radius: 10px;
+  }
+  #bookDetailBox .bookcon_text {
+    float: left;
+    width: 300px;
+    height: 100%;
+    padding-top: 5px;
+    margin-left: 30px;
+  }
+  #bookDetailBox .extract_content {
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    font-size: 18px;
+    font-family: "KyoboHandwriting2020A";
+    margin-bottom: 5px;
+    margin-top: 20px;
+    border-bottom: 2px solid #EB4C38;
+    text-overflow: ellipsis;
+  }
+  #bookDetailBox .explanation_content {
+    width: 100%;
+    height: auto;
+  }
+  #bookDetailBox .explanation_content dt {
+    float: left;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    margin-right: 6px;
+    text-align: left;
+    font-weight: 600;
+  }
+  #bookDetailBox .explanation_content dd {
+    float: left;
+    overflow: hidden;
+    width: calc(100% - 66px);
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    text-overflow: ellipsis;
+  }
+  #bookDetailBox .bookcon_area > a:hover {
+    outline: 2px solid #757575;
+  }
+  #bookDetailBox .bookcon_area > a:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
 @media all and (max-width: 1279px) {
   .book_con_area {
     width: 93.75vw;
@@ -1243,7 +1318,63 @@ html, body {
     width: 15.625vw;
     height: 15.625vw;
     margin-right: 15px;
-    background-color: #dfa;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(1) {
+    background-image: url(../../../multi/img/logo_salebook1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(1) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(2) {
+    background-image: url(../../../multi/img/logo_salebook2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(2) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(3) {
+    background-image: url(../../../multi/img/logo_salebook3.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(3) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(4) {
+    background-image: url(../../../multi/img/logo_salebook4.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+  }
+  #bookDetailBox .book_salesite_area .brand_logo:nth-of-type(4) > span {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
   #bookDetailBox .book_salesite_area .brand_logo a {
     display: block;
