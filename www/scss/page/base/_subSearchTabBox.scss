@@ -1,27 +1,9 @@
 @import "_subSearchBox";
+@import "_subSearchTabBox_magazine";
 
 @at-root #subSearchBox{
 
   @include handle{
-    width: 100%; height: auto;
-    padding: 60px 0;
-    .sub_nav_tab{
-      display: flex; justify-content: space-between;
-      width: vwUnit(300); max-width: 610px; height: 30px;
-      margin: auto;
-      button{
-        width: vwUnit(145); max-width: 300px; height: 100%; background-color: $color_white;
-        @include shadow;
-        &.action{background-color: $color_primary1; color:$color_white; font-weight: 500;}
-        &:hover{background-color: rgba(0,0,0,0.2); font-weight: 500;}
-        &:focus{outline: none; background-color: rgba(0,0,0,0.3); font-weight: 700; } 
-      }
-    }
-
-    .subsearch_inner{
-      margin: 15px auto;
-    }
-
     @at-root .sub_filter_tab{
       overflow: hidden;
       width: vwUnit(300); max-width: 610px; height: 28px;
@@ -59,26 +41,6 @@
   }//handle
 
   @include laptop{
-
-    width: 100%; height: auto;
-    padding: 60px 0;
-    .sub_nav_tab{
-      display: flex; justify-content: space-between;
-      width: 816px; height: 30px;
-      margin: auto;
-      button{
-        width: 400px; height: 100%; background-color: $color_white;
-        @include shadow;
-        &.action{background-color: $color_primary1; color:$color_white; font-weight: 500;}
-        &:hover{background-color: rgba(0,0,0,0.2); font-weight: 500;}
-        &:focus{outline: none; background-color: rgba(0,0,0,0.3); font-weight: 700; } 
-      }
-    }
-
-    .subsearch_inner{
-      margin: 15px auto;
-    }
-
     @at-root .sub_filter_tab{
       overflow: hidden;
       width: 816px; height: 28px;
@@ -116,4 +78,4 @@
 
   }
 
-}
+}//#subSearchBox

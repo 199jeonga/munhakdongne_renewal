@@ -3,11 +3,13 @@ const wrap = document.querySelector('#wrap');
 // data 변수
 const headerCode = '../temp/headBox.html';
 const footerCode = '../temp/footBox.html';
+const subNavCode = '../temp/subNavBox.html';
 
 
 // 선택 변수
 const headBox = document.querySelector('#headBox');
-const foorBox = document.querySelector('#footBox');
+const footBox = document.querySelector('#footBox');
+const subNavBox = document.querySelector('#subNavBox');
 
 
 //함수
@@ -43,4 +45,9 @@ const foorBox = document.querySelector('#footBox');
 
   fetch(footerCode)
   .then( response => response.text() )
-  .then( data => foorBox.innerHTML = data )
+  .then( data => footBox.innerHTML = data )
+
+  
+  fetch(subNavCode)
+  .then( response => response.text() )
+  .then( data => subNavBox.innerHTML = data )
