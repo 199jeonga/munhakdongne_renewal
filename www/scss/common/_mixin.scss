@@ -98,6 +98,12 @@ $baseDevice:320;
   }
 }
 
+@mixin tabletAndLaptop(){
+  @media all and (min-width:$tablet) and (max-width:#{$pc - 1}) {
+    @content; 
+  }
+}
+
 @mixin laptop(){
   @media all and (min-width:$laptop){
     @content;

@@ -53,13 +53,13 @@
 
   }//handle
 
-
   @include mobile{
     .brandlist_text_area{
       margin: 0 auto;
     }//brandlist_text_area
 
     @at-root .modal_area.action{
+      display: none;
       position: fixed; top: 0; left: 0; z-index: 1200;
       width: 100%; height: 100%;
       background-color: #dda;
@@ -71,7 +71,8 @@
       @at-root .modal_companycontent{
         width: 100%; height: auto;
         dt{
-          width: 100%; height: auto;
+          width: 100%; height: 120px;
+          padding-top: 20px;
           h3{
             letter-spacing: -0.1em;
             font-size: map-get($font_size, h2 );
@@ -81,11 +82,43 @@
             color:$color_promary2; font-weight: 500;
             font-size: map-get($font_size, content2 ); text-transform: uppercase;
           }
+        }//dt
+        @at-root .modal_companydetail{
+          overflow:hidden;
+          width: 100%; height: 320px;
+          padding:15px vwUnit(10);
+          border-bottom: 1px solid rgba($color_black,0.2); border-top: 1px solid rgba($color_black,0.2);
+          @at-root .modal_companydetail_part{
+            overflow-y: auto; overflow-x: visible;
+            width: vwUnit(260); height: 280px; padding-right: 900px;
+            div{
+              width: 100%; height: auto; 
+              p{
+                width: vwUnit(280); height: auto;
+              }
+            }//div
+          }//.modal_companydetail_part
+        }//modal_companydetail
+      }//modal_companycontent
+      @at-root .modal_companyinfo{
+        width: 100%; height: auto;
+        margin-bottom: vwUnit(20);
+        p{
+          em{text-transform: uppercase; font-weight: 700; margin-right: 5px;}
+          // span{}
         }
+      }//.modal_companyinfo
+      button{
+        @include full;
+        width: 80px; height: 30px;
+        line-height: 30px; text-align: center;
+        margin: 0 auto;
+        color:$color_black;
+        &:hover{color:$color_promary2;}
+        &:focus{@include shadow; background-color: rgba($color_black, 0.1);}
       }
     }//modal_area
   }//mobile
-
 
   @include tablet{
     .brandlist_text_area{
@@ -93,6 +126,78 @@
     }
   }//tablet
 
+  @include tabletAndLaptop{
+    position: relative; 
+
+    .modal_area.action{
+      display: none;
+      width: 100%; height: 100%;
+      
+      .modal_content_inner{
+        position: absolute; top: 0; left: 50%; z-index: 1000;
+        transform: translate(-50%, -20%);
+        width: 700px; height: 650px;
+        padding: 10px;
+        background-color: $color_white;
+        @include shadow;
+      }//modal_content_inner
+      @at-root .modal_companycontent{
+        width: 100%; height: auto;
+        dt{
+          width: 100%; height: 120px;
+          padding-top: 20px;
+          padding-left: 20px;
+          h3{
+            letter-spacing: -0.1em;
+            font-size: map-get($font_size, h2 );
+          }
+          p{
+            width: 100%; height: auto;
+            color:$color_promary2; font-weight: 500;
+            font-size: map-get($font_size, content2 ); text-transform: uppercase;
+          }
+        }//dt
+        @at-root .modal_companydetail{
+          overflow:hidden;
+          width: 100%; height: 320px;
+          padding:15px 20px;
+          border-bottom: 1px solid rgba($color_black,0.2); border-top: 1px solid rgba($color_black,0.2);
+          @at-root .modal_companydetail_part{
+            overflow-y: auto; overflow-x: visible;
+            width: 640px; height: 280px; padding-right: 900px;
+            div{
+              width: 100%; height: auto; 
+              p{width: 640px; height: auto;}
+            }//div
+          }//.modal_companydetail_part
+        }//modal_companydetail
+      }//modal_companycontent
+      @at-root .modal_companyinfo{
+        width: 100%; height: auto;
+        margin: 20px 0 60px;
+        p{
+          padding-left: 20px;
+          em{text-transform: uppercase; font-weight: 700; margin-right: 5px;}
+          // span{}
+        }
+      }//.modal_companyinfo
+      button{
+        @include full;
+        width: 80px; height: 30px;
+        line-height: 30px; text-align: center;
+        margin: 0 auto;
+        color:$color_black;
+        &:hover{color:$color_promary2;}
+        &:focus{@include shadow; background-color: rgba($color_black, 0.1);}
+      }
+      .modal_bg{
+        position: fixed; z-index: 50; top: 50%; left: 50%; transform: translate(-50%, -50%);
+        width: 100%; height: 100%;
+        background-color: rgba($color_blackReal,0.4);
+      }
+    }
+
+  }//tabletAndLaptop
 
   @include laptop{
     width: 1145px; height: 3200px;
@@ -161,6 +266,4 @@
 
   }//laptop
 
-
-
-}
+}//_brandListBox
