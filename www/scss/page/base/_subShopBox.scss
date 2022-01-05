@@ -1,0 +1,60 @@
+@at-root #shopBox{
+  width: 100%; height: auto;
+  ul{
+    display: flex; justify-content: space-around; flex-wrap: wrap;
+    margin: auto;
+  }
+  li{
+    @for $i from 1 through $sub_bookShop{
+      &:nth-child( #{$i} ) .img { @include img( nth($link_subBookShopImg, $i) ) }; 
+    }
+  }
+  a{@include full; text-decoration: none;}
+  .img{
+    border-radius: 10px; margin-bottom: 10px;
+  }
+  .status{
+    display: block;
+    width: 80px; height: 20px;
+    background-color: $color_primary1; border-radius: 10px;
+    font-size: map-get($font_size, content4 ); color:$color_white; text-align: center; line-height: 20px;
+    margin-bottom: 10px;
+    &.soldout{background-color: $color_promary2;}
+  }
+  .title{
+    font-weight: 700; color:$color_black;
+  }
+  .price{
+    color:$color_deep_gray;
+  }
+  @include handle{
+    padding: 50px 0;
+    ul{
+      width: vwUnit(310); max-width: 750px; height: auto;
+    }
+    li{
+      width: vwUnit(150); max-width: 180px; height: vwUnit(300); max-height: 334px;
+      margin-bottom: 30px;
+    }
+    .img{
+      width: vwUnit(150); max-width: 180px; height: vwUnit(168); max-height: 200px;
+    }
+  }//handle
+
+
+  @include laptop{
+    padding: 100px 0;
+    ul{
+      width: 1144px; height: auto;
+    }
+    li{
+      width: 250px; height: 380px;
+      margin-bottom: 80px;
+    }
+    .img{
+      width:250px; height: 280px;
+    }
+  }//laptop
+
+
+}
