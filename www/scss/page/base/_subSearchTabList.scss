@@ -1,0 +1,94 @@
+@at-root #subSearchBox{
+
+  @include handle{
+    width: 100%; height: auto;
+    padding: 50px 0;
+    .sub_nav_tab{
+      width: vwUnit(300); max-width: 610px; height: auto;
+      display: flex; justify-content: space-between;
+      margin: 0 auto;
+    }
+    @at-root .searchtab_area{
+      position: relative;
+      width: vwUnit(145); max-width:300px; height: 30px;
+      margin: auto;
+      &:hover .searchtab_inner,&:focus .searchtab_inner{display: block;}
+      &>button{
+        width: 100%; height: 100%; background-color: rgba(0,0,0,0.2);
+        @include shadow;
+        &.action{background-color: $color_primary1; color:$color_white; font-weight: 500;}
+        &:hover{background-color: rgba(0,0,0,0.2); font-weight: 500;}
+        &:focus{outline: none; background-color: rgba(0,0,0,0.3); font-weight: 700; } 
+      }//button
+      @at-root .searchtab_inner{
+        display: none;
+        position: absolute; top: 30px; left: 0; z-index: 10;
+        width: vwUnit(145); max-width:300px; height: auto;
+        padding: 10px;
+        background-color: $color_white;
+        @include shadow;
+        li{
+          width: 100%; height: 40px;
+          border-bottom: 1px solid rgba($color_deep_gray, 0.1);
+          &:last-child{border:none;}
+        }//li
+        button{
+          @include full;
+          &:hover{font-weight: 700; color:$color_promary2;}
+          &:focus{background-color: rgba($color_promary2,0.1);}
+        }//button
+      }
+    }//searchtab_area
+    .subsearch_inner{
+      margin: 15px auto;
+    }
+  }//handle
+
+  @include laptop{
+
+    width: 100%; height: auto;
+    padding: 60px 0;
+    .sub_nav_tab{
+      width: 816px; height: auto;
+      display: flex; justify-content: space-between;
+      margin: 0 auto;
+    }
+    @at-root .searchtab_area{
+      position: relative;
+      width: 400px; height: 30px;
+      margin: auto;
+      &:hover .searchtab_inner,&:focus .searchtab_inner{display: block;}
+      &>button{
+        width: 100%; height: 100%;;
+        @include shadow;
+        &.action{background-color: $color_primary1; color:$color_white;}
+        &:hover{background-color: rgba($color_black, 0.4);}
+        &:focus{outline: none; background-color: rgba($color_black, 0.3); font-weight: 700; } 
+      }//button
+      @at-root .searchtab_inner{
+        display: none;
+        position: absolute; top: 30px; left: 0; z-index: 10;
+        width: 400px; height: auto;
+        padding: 10px;
+        background-color: $color_white;
+        @include shadow;
+        li{
+          width: 100%; height: 40px;
+          border-bottom: 1px solid rgba($color_deep_gray, 0.1);
+          &:last-child{border:none;}
+        }//li
+        button{
+          @include full;
+          &:hover{font-weight: 700; color:$color_promary2;}
+          &:focus{background-color: rgba($color_promary2,0.1);}
+        }//button
+      }
+    }//searchtab_area
+    .subsearch_inner{
+      margin: 15px auto;
+    }
+    
+
+  }//laptop
+
+}

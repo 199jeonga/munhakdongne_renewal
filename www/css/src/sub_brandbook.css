@@ -12,6 +12,11 @@ html, body {
   height: auto;
 }
 
+#bookConBox h3 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
 #headBox .gnb_inner > li {
   text-transform: uppercase;
 }
@@ -1620,6 +1625,11 @@ html, body {
   }
 }
 
+.sub_filter_wrap {
+  width: 3350px;
+  height: 28px;
+}
+
 @media all and (max-width: 1279px) {
   #subSearchBox {
     width: 100%;
@@ -2661,4 +2671,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=sub_award.css.map */
+/*# sourceMappingURL=sub_brandbook.css.map */

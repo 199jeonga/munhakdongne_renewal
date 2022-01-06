@@ -1308,200 +1308,6 @@ html, body {
   }
 }
 
-/* subSearchBox================================================= */
-#subSearchBox {
-  width: 100%;
-  height: 160px;
-  padding: 60px 0;
-}
-@media all and (max-width: 1279px) {
-  #subSearchBox .subsearch_inner {
-    width: 93.75vw;
-    height: 40px;
-    max-width: 610px;
-    margin: auto;
-    padding: 2px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #searchFilter {
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 50px;
-    height: 100%;
-    border: 0;
-    text-align: center;
-    background-color: transparent;
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: #dda;
-  }
-  #searchFilter ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-  }
-  #searchFilter ul::after, #searchFilter ul:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 47px;
-    width: 1px;
-    height: 20px;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
-  }
-  #searchFilter ul li {
-    display: none;
-    float: left;
-    width: 100%;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  #searchFilter ul li:hover {
-    width: 100%;
-    height: 100%;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li > button {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  #searchFilter ul li > button:hover {
-    width: 100%;
-    height: 36px;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li.on {
-    display: block;
-  }
-  #searchFilter ul li:first-child {
-    margin-top: 0;
-  }
-
-  #subSearchBox #searchBookBox {
-    float: left;
-    width: calc(100% - 40px);
-    height: 36px;
-    text-indent: 10px;
-    outline: none;
-  }
-  #subSearchBox #searchBookBox:focus {
-    border-radius: 10px;
-    background-color: #eee;
-  }
-  #subSearchBox .searchButton {
-    float: right;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background-color: #1B2C7A;
-  }
-  #subSearchBox .searchButton > i {
-    color: #fff;
-  }
-}
-@media all and (min-width: 1280px) {
-  #subSearchBox .subsearch_inner {
-    width: 816px;
-    height: 40px;
-    margin: auto;
-    padding: 2px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  #searchFilter {
-    position: relative;
-    top: 0;
-    left: 0;
-    float: left;
-    width: 158px;
-    height: 36px;
-    border: 0;
-    text-align: center;
-    background-color: transparent;
-    margin-right: 10px;
-    border-radius: 10px;
-  }
-  #searchFilter ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-color: #fff;
-    border-radius: 10px;
-  }
-  #searchFilter ul::after, #searchFilter ul:after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    width: 1px;
-    height: 20px;
-    margin-left: 5px;
-    border-right: 1px solid rgba(117, 117, 117, 0.3);
-  }
-  #searchFilter ul li {
-    display: none;
-    float: left;
-    width: 100%;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  #searchFilter ul li > button {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  #searchFilter ul li > button:hover {
-    width: 100%;
-    height: 36px;
-    color: #EB4C38;
-    font-weight: 700;
-  }
-  #searchFilter ul li.on {
-    display: block;
-  }
-  #searchFilter ul li:first-child {
-    margin-top: 0;
-  }
-
-  #subSearchBox #searchBookBox {
-    float: left;
-    width: 600px;
-    height: 36px;
-    text-indent: 10px;
-    outline: none;
-  }
-  #subSearchBox #searchBookBox:focus {
-    border-radius: 10px;
-    background-color: #eee;
-  }
-  #subSearchBox .searchButton {
-    float: right;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    background-color: #1B2C7A;
-  }
-  #subSearchBox .searchButton > i {
-    color: #fff;
-  }
-}
-
 @media all and (max-width: 1279px) {
   .sub_filter_tab {
     overflow: hidden;
@@ -1624,38 +1430,82 @@ html, body {
   #subSearchBox {
     width: 100%;
     height: auto;
-    padding: 60px 0;
+    padding: 50px 0;
   }
   #subSearchBox .sub_nav_tab {
-    display: flex;
-    justify-content: space-between;
     width: 93.75vw;
     max-width: 610px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .searchtab_area {
+    position: relative;
+    width: 45.3125vw;
+    max-width: 300px;
     height: 30px;
     margin: auto;
   }
-  #subSearchBox .sub_nav_tab button {
-    width: 45.3125vw;
-    max-width: 300px;
+  .searchtab_area:hover .searchtab_inner, .searchtab_area:focus .searchtab_inner {
+    display: block;
+  }
+  .searchtab_area > button {
+    width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #subSearchBox .sub_nav_tab button.action {
+  .searchtab_area > button.action {
     background-color: #1B2C7A;
     color: #fff;
     font-weight: 500;
   }
-  #subSearchBox .sub_nav_tab button:hover {
+  .searchtab_area > button:hover {
     background-color: rgba(0, 0, 0, 0.2);
     font-weight: 500;
   }
-  #subSearchBox .sub_nav_tab button:focus {
+  .searchtab_area > button:focus {
     outline: none;
     background-color: rgba(0, 0, 0, 0.3);
     font-weight: 700;
   }
+  .searchtab_inner {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    width: 45.3125vw;
+    max-width: 300px;
+    height: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .searchtab_inner li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.1);
+  }
+  .searchtab_inner li:last-child {
+    border: none;
+  }
+  .searchtab_inner button {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .searchtab_inner button:hover {
+    font-weight: 700;
+    color: #EB4C38;
+  }
+  .searchtab_inner button:focus {
+    background-color: rgba(235, 76, 56, 0.1);
+  }
+
   #subSearchBox .subsearch_inner {
     margin: 15px auto;
   }
@@ -1667,33 +1517,73 @@ html, body {
     padding: 60px 0;
   }
   #subSearchBox .sub_nav_tab {
+    width: 816px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    width: 816px;
+    margin: 0 auto;
+  }
+  .searchtab_area {
+    position: relative;
+    width: 400px;
     height: 30px;
     margin: auto;
   }
-  #subSearchBox .sub_nav_tab button {
-    width: 400px;
+  .searchtab_area:hover .searchtab_inner, .searchtab_area:focus .searchtab_inner {
+    display: block;
+  }
+  .searchtab_area > button {
+    width: 100%;
     height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  .searchtab_area > button.action {
+    background-color: #1B2C7A;
+    color: #fff;
+  }
+  .searchtab_area > button:hover {
+    background-color: rgba(51, 51, 51, 0.4);
+  }
+  .searchtab_area > button:focus {
+    outline: none;
+    background-color: rgba(51, 51, 51, 0.3);
+    font-weight: 700;
+  }
+  .searchtab_inner {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    width: 400px;
+    height: auto;
+    padding: 10px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  #subSearchBox .sub_nav_tab button.action {
-    background-color: #1B2C7A;
-    color: #fff;
-    font-weight: 500;
+  .searchtab_inner li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.1);
   }
-  #subSearchBox .sub_nav_tab button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    font-weight: 500;
+  .searchtab_inner li:last-child {
+    border: none;
   }
-  #subSearchBox .sub_nav_tab button:focus {
-    outline: none;
-    background-color: rgba(0, 0, 0, 0.3);
+  .searchtab_inner button {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .searchtab_inner button:hover {
     font-weight: 700;
+    color: #EB4C38;
   }
+  .searchtab_inner button:focus {
+    background-color: rgba(235, 76, 56, 0.1);
+  }
+
   #subSearchBox .subsearch_inner {
     margin: 15px auto;
   }
@@ -2661,4 +2551,4 @@ html, body {
   }
 }
 
-/*# sourceMappingURL=sub_award.css.map */
+/*# sourceMappingURL=sub_fieldbook.css.map */
