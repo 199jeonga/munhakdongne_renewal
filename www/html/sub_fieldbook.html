@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- sub_newbook.html -->
+<!-- sub_award.html -->
 <html lang="ko-KR" class="no-js">
 
 <head>
@@ -9,28 +9,33 @@
 
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
-
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
-  <link rel="stylesheet" href="../css/src/sub_newbook.css">
+  <link rel="stylesheet" href="../css/src/sub_award.css">
 
   <script src="../js/common/modernizr-custom.js"></script>
 
-  <title>문학동네</title>
+  <title>문학동네</title> 
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../favicon.png">
 
 </head>
 <body>
-  <!-- layout -->
   <div id="wrap">
     <header id="headBox">
     </header><!-- //headBox-->
 
     <nav id="subNavBox">
     </nav>
+    
     <section id="subSearchBox">
       <h2 class="blind">도서 검색창</h2>
+
+      <div class="sub_nav_tab">
+        <button type="button" class="action">문학동네 문학상</button>
+        <button type="button">국내외 문학상</button>
+      </div>
+
       <div class="subsearch_inner">
         <div id="searchFilter">
           <ul>
@@ -58,7 +63,25 @@
           </fieldset>
         </form>
       </div>
-    </section>
+
+      <div class="sub_filter_tab">
+        <div>
+          <ul class="sub_filter_wrap">
+            <li class="action"><a href="#">문학동네소설상</a></li>
+            <li><a href="#">문학동네작가상</a></li>
+            <li><a href="#">젊은작가상</a></li>
+            <li><a href="#">김승옥문학상</a></li>
+            <li><a href="#">문학동네 대학소설상</a></li>
+            <li><a href="#">문학동네청소년문학상</a></li>
+            <li><a href="#">문학동네어린이문학상</a></li>
+            <li><a href="#">문학동네동시문학상</a></li>
+            <li><a href="#">엘릭시르 미스터리 대상</a></li>
+            <li><a href="#">서울동화 일러스트레이션상</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section><!--subSearchBox-->
     <article id="bookConBox">
       <h2 class="blind">도서 리스트</h2>
       <ul class="bookcon_inner">
@@ -90,7 +113,7 @@
 
       </div>
     </section>
-    
+
     <footer id="footBox">
     </footer><!-- //footBox -->
   </div><!--#wrap-->

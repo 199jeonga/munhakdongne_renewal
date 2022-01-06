@@ -16,7 +16,7 @@
 }
 
 // image
-$imgPath:'../../../multi/img/';
+$imgPath:'../../multi/img/';
 
 @mixin img($file, $repeat:no-repeat, $position:50% 50%, $size:cover){
   background: {

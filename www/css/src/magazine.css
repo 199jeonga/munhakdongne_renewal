@@ -46,7 +46,7 @@ html, body {
     font-weight: 900;
     color: #fff;
     margin-top: 5px;
-    background-image: url(../../../multi/img/logo_main_w.png);
+    background-image: url(../../multi/img/logo_main_w.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -206,7 +206,7 @@ html, body {
     height: 30px;
   }
   .gnb_sns li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -220,7 +220,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -234,7 +234,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -248,7 +248,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -262,7 +262,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -407,7 +407,7 @@ html, body {
     height: 50px;
     font-size: 40px;
     line-height: 60px;
-    background-image: url(../../../multi/img/logo_main_w.png);
+    background-image: url(../../multi/img/logo_main_w.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -558,7 +558,7 @@ html, body {
     margin-top: 5px;
   }
   .gnb_sns > li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -572,7 +572,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -586,7 +586,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -600,7 +600,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -614,7 +614,7 @@ html, body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -736,7 +736,7 @@ html, body {
     width: 100%;
     height: 250px;
     padding-top: 100px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 25% 50%;
     background-size: cover;
@@ -868,7 +868,7 @@ html, body {
     width: 100%;
     height: 300px;
     padding-top: 150px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 30% 50%;
     background-size: cover;
@@ -993,7 +993,7 @@ html, body {
     width: 100%;
     height: 300px;
     padding-top: 150px;
-    background-image: url(../../../multi/img/subNavTitleBg.svg);
+    background-image: url(../../multi/img/subNavTitleBg.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1489,7 +1489,7 @@ html, body {
     margin-bottom: 24px;
   }
   #bookConBox .bookcon_area:nth-child(1) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg01.jpg);
+    background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1503,7 +1503,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(2) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg02.jpg);
+    background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1517,7 +1517,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(3) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg03.jpg);
+    background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1531,7 +1531,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(4) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg04.jpg);
+    background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1545,7 +1545,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(5) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg05.jpg);
+    background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1559,7 +1559,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(6) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg06.jpg);
+    background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1573,7 +1573,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(7) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg07.jpg);
+    background-image: url(../../multi/img/bookImg07.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1587,7 +1587,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(8) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg08.jpg);
+    background-image: url(../../multi/img/bookImg08.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1601,7 +1601,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(9) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg09.jpg);
+    background-image: url(../../multi/img/bookImg09.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1615,7 +1615,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(10) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg10.jpg);
+    background-image: url(../../multi/img/bookImg10.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1715,7 +1715,7 @@ html, body {
     margin-bottom: 24px;
   }
   #bookConBox .bookcon_area:nth-child(1) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg01.jpg);
+    background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1729,7 +1729,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(2) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg02.jpg);
+    background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1743,7 +1743,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(3) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg03.jpg);
+    background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1757,7 +1757,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(4) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg04.jpg);
+    background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1771,7 +1771,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(5) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg05.jpg);
+    background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1785,7 +1785,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(6) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg06.jpg);
+    background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1799,7 +1799,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(7) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg07.jpg);
+    background-image: url(../../multi/img/bookImg07.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1813,7 +1813,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(8) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg08.jpg);
+    background-image: url(../../multi/img/bookImg08.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1827,7 +1827,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(9) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg09.jpg);
+    background-image: url(../../multi/img/bookImg09.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1841,7 +1841,7 @@ html, body {
     overflow: hidden;
   }
   #bookConBox .bookcon_area:nth-child(10) .bookcon_img {
-    background-image: url(../../../multi/img/bookImg10.jpg);
+    background-image: url(../../multi/img/bookImg10.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2254,7 +2254,7 @@ html, body {
     margin-right: 30px;
   }
   .sns_link li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -2268,7 +2268,7 @@ html, body {
     overflow: hidden;
   }
   .sns_link li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -2282,7 +2282,7 @@ html, body {
     overflow: hidden;
   }
   .sns_link li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -2296,7 +2296,7 @@ html, body {
     overflow: hidden;
   }
   .sns_link li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -2310,7 +2310,7 @@ html, body {
     overflow: hidden;
   }
   .sns_link li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;

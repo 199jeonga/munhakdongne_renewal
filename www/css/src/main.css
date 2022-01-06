@@ -52,7 +52,7 @@ body {
     font-weight: 900;
     color: #fff;
     margin-top: 5px;
-    background-image: url(../../../multi/img/logo_main_w.png);
+    background-image: url(../../multi/img/logo_main_w.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -212,7 +212,7 @@ body {
     height: 30px;
   }
   .gnb_sns li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -226,7 +226,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -240,7 +240,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -254,7 +254,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -268,7 +268,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -413,7 +413,7 @@ body {
     height: 50px;
     font-size: 40px;
     line-height: 60px;
-    background-image: url(../../../multi/img/logo_main_w.png);
+    background-image: url(../../multi/img/logo_main_w.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -564,7 +564,7 @@ body {
     margin-top: 5px;
   }
   .gnb_sns > li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -578,7 +578,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -592,7 +592,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -606,7 +606,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -620,7 +620,7 @@ body {
     overflow: hidden;
   }
   .gnb_sns > li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 80% auto;
@@ -771,7 +771,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .view_slide_part li:nth-child(1) {
-    background-image: url(../../../multi/img/bookImg01.jpg);
+    background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -785,7 +785,7 @@ body {
     overflow: hidden;
   }
   .view_slide_part li:nth-child(2) {
-    background-image: url(../../../multi/img/bookImg02.jpg);
+    background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -799,7 +799,7 @@ body {
     overflow: hidden;
   }
   .view_slide_part li:nth-child(3) {
-    background-image: url(../../../multi/img/bookImg03.jpg);
+    background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -813,7 +813,7 @@ body {
     overflow: hidden;
   }
   .view_slide_part li:nth-child(4) {
-    background-image: url(../../../multi/img/bookImg04.jpg);
+    background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -827,7 +827,7 @@ body {
     overflow: hidden;
   }
   .view_slide_part li:nth-child(5) {
-    background-image: url(../../../multi/img/bookImg05.jpg);
+    background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -841,7 +841,7 @@ body {
     overflow: hidden;
   }
   .view_slide_part li:nth-child(6) {
-    background-image: url(../../../multi/img/bookImg06.jpg);
+    background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -944,7 +944,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .view_slide_wrap .view_slide_part li:nth-child(1) {
-    background-image: url(../../../multi/img/bookImg01.jpg);
+    background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -958,7 +958,7 @@ body {
     overflow: hidden;
   }
   .view_slide_wrap .view_slide_part li:nth-child(2) {
-    background-image: url(../../../multi/img/bookImg02.jpg);
+    background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -972,7 +972,7 @@ body {
     overflow: hidden;
   }
   .view_slide_wrap .view_slide_part li:nth-child(3) {
-    background-image: url(../../../multi/img/bookImg03.jpg);
+    background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -986,7 +986,7 @@ body {
     overflow: hidden;
   }
   .view_slide_wrap .view_slide_part li:nth-child(4) {
-    background-image: url(../../../multi/img/bookImg04.jpg);
+    background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1000,7 +1000,7 @@ body {
     overflow: hidden;
   }
   .view_slide_wrap .view_slide_part li:nth-child(5) {
-    background-image: url(../../../multi/img/bookImg05.jpg);
+    background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1014,7 +1014,7 @@ body {
     overflow: hidden;
   }
   .view_slide_wrap .view_slide_part li:nth-child(6) {
-    background-image: url(../../../multi/img/bookImg06.jpg);
+    background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1177,7 +1177,7 @@ body {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(1) {
-  background-image: url(../../../multi/img/bookImg07.jpg);
+  background-image: url(../../multi/img/bookImg07.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1191,7 +1191,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(2) {
-  background-image: url(../../../multi/img/bookImg08.jpg);
+  background-image: url(../../multi/img/bookImg08.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1205,7 +1205,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(3) {
-  background-image: url(../../../multi/img/bookImg09.jpg);
+  background-image: url(../../multi/img/bookImg09.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1219,7 +1219,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(4) {
-  background-image: url(../../../multi/img/bookImg11.jpg);
+  background-image: url(../../multi/img/bookImg11.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1233,7 +1233,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(5) {
-  background-image: url(../../../multi/img/bookImg12.jpg);
+  background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1247,7 +1247,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(6) {
-  background-image: url(../../../multi/img/bookImg12.jpg);
+  background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1261,7 +1261,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(7) {
-  background-image: url(../../../multi/img/bookImg13.jpg);
+  background-image: url(../../multi/img/bookImg13.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1275,7 +1275,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(8) {
-  background-image: url(../../../multi/img/bookImg14.jpg);
+  background-image: url(../../multi/img/bookImg14.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1289,7 +1289,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(9) {
-  background-image: url(../../../multi/img/bookImg15.jpg);
+  background-image: url(../../multi/img/bookImg15.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1303,7 +1303,7 @@ body {
   overflow: hidden;
 }
 .mdpick_booklist_part .mdp_booklist_con:nth-child(10) {
-  background-image: url(../../../multi/img/bookImg16.jpg);
+  background-image: url(../../multi/img/bookImg16.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1409,7 +1409,7 @@ body {
   height: auto;
 }
 .newbook_booklist_part li:nth-child(1) .nb_img {
-  background-image: url(../../../multi/img/bookImg17.jpg);
+  background-image: url(../../multi/img/bookImg17.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1423,7 +1423,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(2) .nb_img {
-  background-image: url(../../../multi/img/bookImg18.jpg);
+  background-image: url(../../multi/img/bookImg18.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1437,7 +1437,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(3) .nb_img {
-  background-image: url(../../../multi/img/bookImg19.jpg);
+  background-image: url(../../multi/img/bookImg19.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1451,7 +1451,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(4) .nb_img {
-  background-image: url(../../../multi/img/bookImg20.jpg);
+  background-image: url(../../multi/img/bookImg20.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1465,7 +1465,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(5) .nb_img {
-  background-image: url(../../../multi/img/bookImg21.jpg);
+  background-image: url(../../multi/img/bookImg21.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1479,7 +1479,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(6) .nb_img {
-  background-image: url(../../../multi/img/bookImg22.jpg);
+  background-image: url(../../multi/img/bookImg22.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1493,7 +1493,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(7) .nb_img {
-  background-image: url(../../../multi/img/bookImg23.jpg);
+  background-image: url(../../multi/img/bookImg23.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1507,7 +1507,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(8) .nb_img {
-  background-image: url(../../../multi/img/bookImg24.jpg);
+  background-image: url(../../multi/img/bookImg24.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1521,7 +1521,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(9) .nb_img {
-  background-image: url(../../../multi/img/bookImg25.jpg);
+  background-image: url(../../multi/img/bookImg25.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1535,7 +1535,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(10) .nb_img {
-  background-image: url(../../../multi/img/bookImg26.jpg);
+  background-image: url(../../multi/img/bookImg26.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1549,7 +1549,7 @@ body {
   overflow: hidden;
 }
 .newbook_booklist_part li:nth-child(11) .nb_img {
-  background-image: url(../../../multi/img/bookImg27.jpg);
+  background-image: url(../../multi/img/bookImg27.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -1680,7 +1680,7 @@ body {
     height: calc(100% - 70px);
     margin: 0 auto;
     border-radius: 10px;
-    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-image: url(../../multi/img/dokpa_titleImg.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1733,7 +1733,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .dokpa_con:nth-of-type(1) {
-    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-image: url(../../multi/img/bookImg28.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1747,7 +1747,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(2) {
-    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-image: url(../../multi/img/bookImg29.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1761,7 +1761,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(3) {
-    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-image: url(../../multi/img/bookImg30.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1775,7 +1775,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(4) {
-    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-image: url(../../multi/img/bookImg31.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1789,7 +1789,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(5) {
-    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-image: url(../../multi/img/bookImg32.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1803,7 +1803,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(6) {
-    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-image: url(../../multi/img/bookImg33.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1817,7 +1817,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(7) {
-    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-image: url(../../multi/img/bookImg34.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1831,7 +1831,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(8) {
-    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-image: url(../../multi/img/bookImg35.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -1952,7 +1952,7 @@ body {
   #dokpaBox #dokpa_title .dokpa_view_part {
     width: 100%;
     height: 260px;
-    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-image: url(../../multi/img/dokpa_titleImg.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2006,7 +2006,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .dokpa_con:nth-of-type(1) {
-    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-image: url(../../multi/img/bookImg28.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2020,7 +2020,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(2) {
-    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-image: url(../../multi/img/bookImg29.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2034,7 +2034,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(3) {
-    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-image: url(../../multi/img/bookImg30.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2048,7 +2048,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(4) {
-    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-image: url(../../multi/img/bookImg31.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2062,7 +2062,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(5) {
-    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-image: url(../../multi/img/bookImg32.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2076,7 +2076,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(6) {
-    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-image: url(../../multi/img/bookImg33.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2090,7 +2090,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(7) {
-    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-image: url(../../multi/img/bookImg34.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2104,7 +2104,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(8) {
-    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-image: url(../../multi/img/bookImg35.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2217,7 +2217,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    background-image: url(../../../multi/img/dokpa_titleImg.png);
+    background-image: url(../../multi/img/dokpa_titleImg.png);
     background-repeat: no-repeat;
     background-position: 20% 20%;
     background-size: cover;
@@ -2271,7 +2271,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
   .dokpa_con:nth-of-type(1) {
-    background-image: url(../../../multi/img/bookImg28.jpg);
+    background-image: url(../../multi/img/bookImg28.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2285,7 +2285,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(2) {
-    background-image: url(../../../multi/img/bookImg29.jpg);
+    background-image: url(../../multi/img/bookImg29.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2299,7 +2299,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(3) {
-    background-image: url(../../../multi/img/bookImg30.jpg);
+    background-image: url(../../multi/img/bookImg30.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2313,7 +2313,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(4) {
-    background-image: url(../../../multi/img/bookImg31.jpg);
+    background-image: url(../../multi/img/bookImg31.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2327,7 +2327,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(5) {
-    background-image: url(../../../multi/img/bookImg32.jpg);
+    background-image: url(../../multi/img/bookImg32.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2341,7 +2341,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(6) {
-    background-image: url(../../../multi/img/bookImg33.jpg);
+    background-image: url(../../multi/img/bookImg33.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2355,7 +2355,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(7) {
-    background-image: url(../../../multi/img/bookImg34.jpg);
+    background-image: url(../../multi/img/bookImg34.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2369,7 +2369,7 @@ body {
     overflow: hidden;
   }
   .dokpa_con:nth-of-type(8) {
-    background-image: url(../../../multi/img/bookImg35.jpg);
+    background-image: url(../../multi/img/bookImg35.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -2465,7 +2465,7 @@ body {
   padding: 105px 0;
 }
 #awardBox .award_title {
-  background-image: url(../../../multi/img/award_titleBg.svg);
+  background-image: url(../../multi/img/award_titleBg.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2479,7 +2479,7 @@ body {
   overflow: hidden;
 }
 #awardBox li.book_con:nth-child(1) {
-  background-image: url(../../../multi/img/bookImg37.jpg);
+  background-image: url(../../multi/img/bookImg37.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2493,7 +2493,7 @@ body {
   overflow: hidden;
 }
 #awardBox li.book_con:nth-child(2) {
-  background-image: url(../../../multi/img/bookImg38.jpg);
+  background-image: url(../../multi/img/bookImg38.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2507,7 +2507,7 @@ body {
   overflow: hidden;
 }
 #awardBox li.book_con:nth-child(3) {
-  background-image: url(../../../multi/img/bookImg39.jpg);
+  background-image: url(../../multi/img/bookImg39.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2521,7 +2521,7 @@ body {
   overflow: hidden;
 }
 #awardBox li.book_con:nth-child(4) {
-  background-image: url(../../../multi/img/bookImg40.jpg);
+  background-image: url(../../multi/img/bookImg40.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2535,7 +2535,7 @@ body {
   overflow: hidden;
 }
 #awardBox li.book_con:nth-child(5) {
-  background-image: url(../../../multi/img/bookImg41.jpg);
+  background-image: url(../../multi/img/bookImg41.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -2869,7 +2869,7 @@ body {
     max-height: 160px;
     margin: auto;
     margin-bottom: 6.25vw;
-    background-image: url(../../../multi/img/bookClub_img_title.svg);
+    background-image: url(../../multi/img/bookClub_img_title.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
@@ -2965,7 +2965,7 @@ body {
     height: 170px;
     margin: auto;
     margin-bottom: 1.5625vw;
-    background-image: url(../../../multi/img/bookClub_img_title.svg);
+    background-image: url(../../multi/img/bookClub_img_title.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
@@ -3194,7 +3194,7 @@ body {
     margin-bottom: 1.25vw;
   }
   .shop_area .shop_con:nth-of-type(1) {
-    background-image: url(../../../multi/img/bookclubImg01.png);
+    background-image: url(../../multi/img/bookclubImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3208,7 +3208,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(2) {
-    background-image: url(../../../multi/img/bookclubImg02.jpg);
+    background-image: url(../../multi/img/bookclubImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3222,7 +3222,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(3) {
-    background-image: url(../../../multi/img/bookclubImg03.jpg);
+    background-image: url(../../multi/img/bookclubImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3236,7 +3236,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(4) {
-    background-image: url(../../../multi/img/bookclubImg04.png);
+    background-image: url(../../multi/img/bookclubImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3250,7 +3250,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(5) {
-    background-image: url(../../../multi/img/bookclubImg05.png);
+    background-image: url(../../multi/img/bookclubImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3264,7 +3264,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(6) {
-    background-image: url(../../../multi/img/bookclubImg06.png);
+    background-image: url(../../multi/img/bookclubImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3366,7 +3366,7 @@ body {
     background-color: #aa8;
   }
   .shop_area .shop_con:nth-of-type(1) {
-    background-image: url(../../../multi/img/bookclubImg01.png);
+    background-image: url(../../multi/img/bookclubImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3380,7 +3380,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(2) {
-    background-image: url(../../../multi/img/bookclubImg02.jpg);
+    background-image: url(../../multi/img/bookclubImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3394,7 +3394,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(3) {
-    background-image: url(../../../multi/img/bookclubImg03.jpg);
+    background-image: url(../../multi/img/bookclubImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3408,7 +3408,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(4) {
-    background-image: url(../../../multi/img/bookclubImg04.png);
+    background-image: url(../../multi/img/bookclubImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3422,7 +3422,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(5) {
-    background-image: url(../../../multi/img/bookclubImg05.png);
+    background-image: url(../../multi/img/bookclubImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3436,7 +3436,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(6) {
-    background-image: url(../../../multi/img/bookclubImg06.png);
+    background-image: url(../../multi/img/bookclubImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3450,7 +3450,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(7) {
-    background-image: url(../../../multi/img/bookclubImg07.png);
+    background-image: url(../../multi/img/bookclubImg07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3464,7 +3464,7 @@ body {
     overflow: hidden;
   }
   .shop_area .shop_con:nth-of-type(8) {
-    background-image: url(../../../multi/img/bookclubImg08.png);
+    background-image: url(../../multi/img/bookclubImg08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -3540,7 +3540,7 @@ body {
   background-color: #1B2C7A;
 }
 #magazineBox li.book_con:nth-child(1) {
-  background-image: url(../../../multi/img/bookImg42.jpg);
+  background-image: url(../../multi/img/bookImg42.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -3554,7 +3554,7 @@ body {
   overflow: hidden;
 }
 #magazineBox li.book_con:nth-child(2) {
-  background-image: url(../../../multi/img/bookImg43.jpg);
+  background-image: url(../../multi/img/bookImg43.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -3568,7 +3568,7 @@ body {
   overflow: hidden;
 }
 #magazineBox li.book_con:nth-child(3) {
-  background-image: url(../../../multi/img/bookImg44.jpg);
+  background-image: url(../../multi/img/bookImg44.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -3582,7 +3582,7 @@ body {
   overflow: hidden;
 }
 #magazineBox li.book_con:nth-child(4) {
-  background-image: url(../../../multi/img/bookImg45.jpg);
+  background-image: url(../../multi/img/bookImg45.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -3596,7 +3596,7 @@ body {
   overflow: hidden;
 }
 #magazineBox li.book_con:nth-child(5) {
-  background-image: url(../../../multi/img/bookImg46.jpg);
+  background-image: url(../../multi/img/bookImg46.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -4095,7 +4095,7 @@ body {
     padding-left: 45px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    background-image: url(../../../multi/img/webzineImg.png);
+    background-image: url(../../multi/img/webzineImg.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -4340,7 +4340,7 @@ body {
     background-color: #fff;
   }
   .brandlist_part li:nth-child(1) {
-    background-image: url(../../../multi/img/brandlistImg01.png);
+    background-image: url(../../multi/img/brandlistImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4354,7 +4354,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(2) {
-    background-image: url(../../../multi/img/brandlistImg02.png);
+    background-image: url(../../multi/img/brandlistImg02.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4368,7 +4368,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(3) {
-    background-image: url(../../../multi/img/brandlistImg03.png);
+    background-image: url(../../multi/img/brandlistImg03.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4382,7 +4382,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(4) {
-    background-image: url(../../../multi/img/brandlistImg04.png);
+    background-image: url(../../multi/img/brandlistImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4396,7 +4396,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(5) {
-    background-image: url(../../../multi/img/brandlistImg05.png);
+    background-image: url(../../multi/img/brandlistImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4410,7 +4410,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(6) {
-    background-image: url(../../../multi/img/brandlistImg06.png);
+    background-image: url(../../multi/img/brandlistImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4424,7 +4424,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(7) {
-    background-image: url(../../../multi/img/brandlistImg07.png);
+    background-image: url(../../multi/img/brandlistImg07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4438,7 +4438,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(8) {
-    background-image: url(../../../multi/img/brandlistImg08.png);
+    background-image: url(../../multi/img/brandlistImg08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4452,7 +4452,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(9) {
-    background-image: url(../../../multi/img/brandlistImg09.png);
+    background-image: url(../../multi/img/brandlistImg09.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4466,7 +4466,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(10) {
-    background-image: url(../../../multi/img/brandlistImg10.png);
+    background-image: url(../../multi/img/brandlistImg10.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4480,7 +4480,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(11) {
-    background-image: url(../../../multi/img/brandlistImg11.png);
+    background-image: url(../../multi/img/brandlistImg11.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4494,7 +4494,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(12) {
-    background-image: url(../../../multi/img/brandlistImg12.png);
+    background-image: url(../../multi/img/brandlistImg12.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4508,7 +4508,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(13) {
-    background-image: url(../../../multi/img/brandlistImg13.png);
+    background-image: url(../../multi/img/brandlistImg13.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4522,7 +4522,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(14) {
-    background-image: url(../../../multi/img/brandlistImg14.png);
+    background-image: url(../../multi/img/brandlistImg14.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4536,7 +4536,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(15) {
-    background-image: url(../../../multi/img/brandlistImg15.png);
+    background-image: url(../../multi/img/brandlistImg15.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4550,7 +4550,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(16) {
-    background-image: url(../../../multi/img/brandlistImg16.png);
+    background-image: url(../../multi/img/brandlistImg16.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4564,7 +4564,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(17) {
-    background-image: url(../../../multi/img/brandlistImg17.png);
+    background-image: url(../../multi/img/brandlistImg17.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4578,7 +4578,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(18) {
-    background-image: url(../../../multi/img/brandlistImg18.png);
+    background-image: url(../../multi/img/brandlistImg18.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4592,7 +4592,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(19) {
-    background-image: url(../../../multi/img/brandlistImg19.png);
+    background-image: url(../../multi/img/brandlistImg19.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4606,7 +4606,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(20) {
-    background-image: url(../../../multi/img/brandlistImg20.png);
+    background-image: url(../../multi/img/brandlistImg20.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4620,7 +4620,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(21) {
-    background-image: url(../../../multi/img/brandlistImg21.png);
+    background-image: url(../../multi/img/brandlistImg21.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4634,7 +4634,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(22) {
-    background-image: url(../../../multi/img/brandlistImg22.png);
+    background-image: url(../../multi/img/brandlistImg22.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4648,7 +4648,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(23) {
-    background-image: url(../../../multi/img/brandlistImg23.png);
+    background-image: url(../../multi/img/brandlistImg23.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
@@ -4725,7 +4725,7 @@ body {
     background-color: #fff;
   }
   .brandlist_part li:nth-child(1) {
-    background-image: url(../../../multi/img/brandlistImg01.png);
+    background-image: url(../../multi/img/brandlistImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4739,7 +4739,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(2) {
-    background-image: url(../../../multi/img/brandlistImg02.png);
+    background-image: url(../../multi/img/brandlistImg02.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4753,7 +4753,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(3) {
-    background-image: url(../../../multi/img/brandlistImg03.png);
+    background-image: url(../../multi/img/brandlistImg03.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4767,7 +4767,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(4) {
-    background-image: url(../../../multi/img/brandlistImg04.png);
+    background-image: url(../../multi/img/brandlistImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4781,7 +4781,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(5) {
-    background-image: url(../../../multi/img/brandlistImg05.png);
+    background-image: url(../../multi/img/brandlistImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4795,7 +4795,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(6) {
-    background-image: url(../../../multi/img/brandlistImg06.png);
+    background-image: url(../../multi/img/brandlistImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4809,7 +4809,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(7) {
-    background-image: url(../../../multi/img/brandlistImg07.png);
+    background-image: url(../../multi/img/brandlistImg07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4823,7 +4823,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(8) {
-    background-image: url(../../../multi/img/brandlistImg08.png);
+    background-image: url(../../multi/img/brandlistImg08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4837,7 +4837,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(9) {
-    background-image: url(../../../multi/img/brandlistImg09.png);
+    background-image: url(../../multi/img/brandlistImg09.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4851,7 +4851,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(10) {
-    background-image: url(../../../multi/img/brandlistImg10.png);
+    background-image: url(../../multi/img/brandlistImg10.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4865,7 +4865,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(11) {
-    background-image: url(../../../multi/img/brandlistImg11.png);
+    background-image: url(../../multi/img/brandlistImg11.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4879,7 +4879,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(12) {
-    background-image: url(../../../multi/img/brandlistImg12.png);
+    background-image: url(../../multi/img/brandlistImg12.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4893,7 +4893,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(13) {
-    background-image: url(../../../multi/img/brandlistImg13.png);
+    background-image: url(../../multi/img/brandlistImg13.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4907,7 +4907,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(14) {
-    background-image: url(../../../multi/img/brandlistImg14.png);
+    background-image: url(../../multi/img/brandlistImg14.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4921,7 +4921,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(15) {
-    background-image: url(../../../multi/img/brandlistImg15.png);
+    background-image: url(../../multi/img/brandlistImg15.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4935,7 +4935,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(16) {
-    background-image: url(../../../multi/img/brandlistImg16.png);
+    background-image: url(../../multi/img/brandlistImg16.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4949,7 +4949,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(17) {
-    background-image: url(../../../multi/img/brandlistImg17.png);
+    background-image: url(../../multi/img/brandlistImg17.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4963,7 +4963,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(18) {
-    background-image: url(../../../multi/img/brandlistImg18.png);
+    background-image: url(../../multi/img/brandlistImg18.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4977,7 +4977,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(19) {
-    background-image: url(../../../multi/img/brandlistImg19.png);
+    background-image: url(../../multi/img/brandlistImg19.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -4991,7 +4991,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(20) {
-    background-image: url(../../../multi/img/brandlistImg20.png);
+    background-image: url(../../multi/img/brandlistImg20.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5005,7 +5005,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(21) {
-    background-image: url(../../../multi/img/brandlistImg21.png);
+    background-image: url(../../multi/img/brandlistImg21.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5019,7 +5019,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(22) {
-    background-image: url(../../../multi/img/brandlistImg22.png);
+    background-image: url(../../multi/img/brandlistImg22.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5033,7 +5033,7 @@ body {
     overflow: hidden;
   }
   .brandlist_part li:nth-child(23) {
-    background-image: url(../../../multi/img/brandlistImg23.png);
+    background-image: url(../../multi/img/brandlistImg23.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5252,7 +5252,7 @@ body {
     margin-right: 30px;
   }
   .sns_link li:nth-child(1) {
-    background-image: url(../../../multi/img/logo_youtube.png);
+    background-image: url(../../multi/img/logo_youtube.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5266,7 +5266,7 @@ body {
     overflow: hidden;
   }
   .sns_link li:nth-child(2) {
-    background-image: url(../../../multi/img/logo_twitter.png);
+    background-image: url(../../multi/img/logo_twitter.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5280,7 +5280,7 @@ body {
     overflow: hidden;
   }
   .sns_link li:nth-child(3) {
-    background-image: url(../../../multi/img/logo_facebook.png);
+    background-image: url(../../multi/img/logo_facebook.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5294,7 +5294,7 @@ body {
     overflow: hidden;
   }
   .sns_link li:nth-child(4) {
-    background-image: url(../../../multi/img/logo_instagram.png);
+    background-image: url(../../multi/img/logo_instagram.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
@@ -5308,7 +5308,7 @@ body {
     overflow: hidden;
   }
   .sns_link li:nth-child(5) {
-    background-image: url(../../../multi/img/logo_navercafe.png);
+    background-image: url(../../multi/img/logo_navercafe.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
