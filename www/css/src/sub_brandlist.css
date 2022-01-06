@@ -1517,8 +1517,11 @@ html, body {
   #brandlistBox .brandlist_text_area {
     margin: 0 auto;
   }
-  .modal_area.action {
+  .modal_area {
     display: none;
+  }
+  .modal_area.action {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -1618,17 +1621,20 @@ html, body {
   #brandlistBox {
     position: relative;
   }
-  #brandlistBox .modal_area.action {
+  #brandlistBox .modal_area {
     display: none;
+  }
+  #brandlistBox .modal_area.action {
+    display: block;
     width: 100%;
     height: 100%;
   }
   #brandlistBox .modal_area.action .modal_content_inner {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 50%;
     left: 50%;
     z-index: 1000;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
     width: 700px;
     height: 650px;
     padding: 10px;
