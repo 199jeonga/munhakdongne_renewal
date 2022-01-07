@@ -44,7 +44,7 @@
       width: 200px; height: 275px;
       @include shadow;
       @for $i from 1 through $mdpick_tab_slide{
-        &:nth-child( #{$i} ){ @include img( nth($link_mdpickImg, $i) ) };
+        &.mdpickImg#{$i}{ @include img( nth($link_mdpickImg, $i) ) };
       }
       a{
         @include full;

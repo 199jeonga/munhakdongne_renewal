@@ -1176,13 +1176,13 @@ body {
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(1) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg1 {
   background-image: url(../../multi/img/bookImg07.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(1) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg1 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1190,13 +1190,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(2) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg2 {
   background-image: url(../../multi/img/bookImg08.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(2) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg2 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1204,13 +1204,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(3) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg3 {
   background-image: url(../../multi/img/bookImg09.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(3) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg3 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1218,13 +1218,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(4) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg4 {
   background-image: url(../../multi/img/bookImg11.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(4) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg4 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1232,13 +1232,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(5) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg5 {
   background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(5) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg5 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1246,13 +1246,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(6) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg6 {
   background-image: url(../../multi/img/bookImg12.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(6) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg6 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1260,13 +1260,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(7) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg7 {
   background-image: url(../../multi/img/bookImg13.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(7) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg7 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1274,13 +1274,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(8) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg8 {
   background-image: url(../../multi/img/bookImg14.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(8) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg8 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1288,13 +1288,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(9) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg9 {
   background-image: url(../../multi/img/bookImg15.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(9) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg9 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -1302,13 +1302,13 @@ body {
   height: 0;
   overflow: hidden;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(10) {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg10 {
   background-image: url(../../multi/img/bookImg16.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
-.mdpick_booklist_part .mdp_booklist_con:nth-child(10) > span {
+.mdpick_booklist_part .mdp_booklist_con.mdpickImg10 > span {
   display: block;
   position: absolute;
   z-index: -1;
@@ -4330,6 +4330,7 @@ body {
     height: auto;
   }
   .brandlist_part li {
+    transition: all 500ms linear;
     float: left;
     margin-right: 10px;
     width: 18.75vw;
@@ -4339,13 +4340,13 @@ body {
     border-radius: 10px;
     background-color: #fff;
   }
-  .brandlist_part li:nth-child(1) {
+  .brandlist_part li.brnadlistImg1 {
     background-image: url(../../multi/img/brandlistImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(1) > span {
+  .brandlist_part li.brnadlistImg1 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4353,13 +4354,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(2) {
+  .brandlist_part li.brnadlistImg2 {
     background-image: url(../../multi/img/brandlistImg02.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(2) > span {
+  .brandlist_part li.brnadlistImg2 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4367,13 +4368,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(3) {
+  .brandlist_part li.brnadlistImg3 {
     background-image: url(../../multi/img/brandlistImg03.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(3) > span {
+  .brandlist_part li.brnadlistImg3 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4381,13 +4382,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(4) {
+  .brandlist_part li.brnadlistImg4 {
     background-image: url(../../multi/img/brandlistImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(4) > span {
+  .brandlist_part li.brnadlistImg4 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4395,13 +4396,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(5) {
+  .brandlist_part li.brnadlistImg5 {
     background-image: url(../../multi/img/brandlistImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(5) > span {
+  .brandlist_part li.brnadlistImg5 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4409,13 +4410,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(6) {
+  .brandlist_part li.brnadlistImg6 {
     background-image: url(../../multi/img/brandlistImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(6) > span {
+  .brandlist_part li.brnadlistImg6 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4423,13 +4424,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(7) {
+  .brandlist_part li.brnadlistImg7 {
     background-image: url(../../multi/img/brandlistImg07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(7) > span {
+  .brandlist_part li.brnadlistImg7 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4437,13 +4438,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(8) {
+  .brandlist_part li.brnadlistImg8 {
     background-image: url(../../multi/img/brandlistImg08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(8) > span {
+  .brandlist_part li.brnadlistImg8 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4451,13 +4452,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(9) {
+  .brandlist_part li.brnadlistImg9 {
     background-image: url(../../multi/img/brandlistImg09.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(9) > span {
+  .brandlist_part li.brnadlistImg9 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4465,13 +4466,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(10) {
+  .brandlist_part li.brnadlistImg10 {
     background-image: url(../../multi/img/brandlistImg10.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(10) > span {
+  .brandlist_part li.brnadlistImg10 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4479,13 +4480,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(11) {
+  .brandlist_part li.brnadlistImg11 {
     background-image: url(../../multi/img/brandlistImg11.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(11) > span {
+  .brandlist_part li.brnadlistImg11 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4493,13 +4494,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(12) {
+  .brandlist_part li.brnadlistImg12 {
     background-image: url(../../multi/img/brandlistImg12.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(12) > span {
+  .brandlist_part li.brnadlistImg12 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4507,13 +4508,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(13) {
+  .brandlist_part li.brnadlistImg13 {
     background-image: url(../../multi/img/brandlistImg13.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(13) > span {
+  .brandlist_part li.brnadlistImg13 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4521,13 +4522,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(14) {
+  .brandlist_part li.brnadlistImg14 {
     background-image: url(../../multi/img/brandlistImg14.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(14) > span {
+  .brandlist_part li.brnadlistImg14 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4535,13 +4536,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(15) {
+  .brandlist_part li.brnadlistImg15 {
     background-image: url(../../multi/img/brandlistImg15.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(15) > span {
+  .brandlist_part li.brnadlistImg15 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4549,13 +4550,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(16) {
+  .brandlist_part li.brnadlistImg16 {
     background-image: url(../../multi/img/brandlistImg16.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(16) > span {
+  .brandlist_part li.brnadlistImg16 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4563,13 +4564,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(17) {
+  .brandlist_part li.brnadlistImg17 {
     background-image: url(../../multi/img/brandlistImg17.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(17) > span {
+  .brandlist_part li.brnadlistImg17 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4577,13 +4578,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(18) {
+  .brandlist_part li.brnadlistImg18 {
     background-image: url(../../multi/img/brandlistImg18.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(18) > span {
+  .brandlist_part li.brnadlistImg18 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4591,13 +4592,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(19) {
+  .brandlist_part li.brnadlistImg19 {
     background-image: url(../../multi/img/brandlistImg19.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(19) > span {
+  .brandlist_part li.brnadlistImg19 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4605,13 +4606,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(20) {
+  .brandlist_part li.brnadlistImg20 {
     background-image: url(../../multi/img/brandlistImg20.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(20) > span {
+  .brandlist_part li.brnadlistImg20 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4619,13 +4620,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(21) {
+  .brandlist_part li.brnadlistImg21 {
     background-image: url(../../multi/img/brandlistImg21.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(21) > span {
+  .brandlist_part li.brnadlistImg21 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4633,13 +4634,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(22) {
+  .brandlist_part li.brnadlistImg22 {
     background-image: url(../../multi/img/brandlistImg22.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(22) > span {
+  .brandlist_part li.brnadlistImg22 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4647,19 +4648,27 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(23) {
+  .brandlist_part li.brnadlistImg23 {
     background-image: url(../../multi/img/brandlistImg23.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 95% auto;
   }
-  .brandlist_part li:nth-child(23) > span {
+  .brandlist_part li.brnadlistImg23 > span {
     display: block;
     position: absolute;
     z-index: -1;
     width: 0;
     height: 0;
     overflow: hidden;
+  }
+  .brandlist_part li:nth-child(1) {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  .brandlist_part li:nth-child(2) {
+    opacity: 0.8;
+    transform: scale(0.9);
   }
 
   #brandlistBox .brandlist_inner > .moreview_btn {
@@ -4717,6 +4726,7 @@ body {
     height: 100%;
   }
   .brandlist_part li {
+    transition: all 500ms linear;
     float: left;
     width: 140px;
     height: 140px;
@@ -4724,13 +4734,13 @@ body {
     border-radius: 10px;
     background-color: #fff;
   }
-  .brandlist_part li:nth-child(1) {
+  .brandlist_part li.brnadlistImg1 {
     background-image: url(../../multi/img/brandlistImg01.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(1) > span {
+  .brandlist_part li.brnadlistImg1 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4738,13 +4748,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(2) {
+  .brandlist_part li.brnadlistImg2 {
     background-image: url(../../multi/img/brandlistImg02.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(2) > span {
+  .brandlist_part li.brnadlistImg2 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4752,13 +4762,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(3) {
+  .brandlist_part li.brnadlistImg3 {
     background-image: url(../../multi/img/brandlistImg03.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(3) > span {
+  .brandlist_part li.brnadlistImg3 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4766,13 +4776,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(4) {
+  .brandlist_part li.brnadlistImg4 {
     background-image: url(../../multi/img/brandlistImg04.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(4) > span {
+  .brandlist_part li.brnadlistImg4 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4780,13 +4790,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(5) {
+  .brandlist_part li.brnadlistImg5 {
     background-image: url(../../multi/img/brandlistImg05.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(5) > span {
+  .brandlist_part li.brnadlistImg5 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4794,13 +4804,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(6) {
+  .brandlist_part li.brnadlistImg6 {
     background-image: url(../../multi/img/brandlistImg06.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(6) > span {
+  .brandlist_part li.brnadlistImg6 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4808,13 +4818,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(7) {
+  .brandlist_part li.brnadlistImg7 {
     background-image: url(../../multi/img/brandlistImg07.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(7) > span {
+  .brandlist_part li.brnadlistImg7 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4822,13 +4832,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(8) {
+  .brandlist_part li.brnadlistImg8 {
     background-image: url(../../multi/img/brandlistImg08.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(8) > span {
+  .brandlist_part li.brnadlistImg8 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4836,13 +4846,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(9) {
+  .brandlist_part li.brnadlistImg9 {
     background-image: url(../../multi/img/brandlistImg09.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(9) > span {
+  .brandlist_part li.brnadlistImg9 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4850,13 +4860,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(10) {
+  .brandlist_part li.brnadlistImg10 {
     background-image: url(../../multi/img/brandlistImg10.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(10) > span {
+  .brandlist_part li.brnadlistImg10 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4864,13 +4874,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(11) {
+  .brandlist_part li.brnadlistImg11 {
     background-image: url(../../multi/img/brandlistImg11.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(11) > span {
+  .brandlist_part li.brnadlistImg11 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4878,13 +4888,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(12) {
+  .brandlist_part li.brnadlistImg12 {
     background-image: url(../../multi/img/brandlistImg12.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(12) > span {
+  .brandlist_part li.brnadlistImg12 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4892,13 +4902,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(13) {
+  .brandlist_part li.brnadlistImg13 {
     background-image: url(../../multi/img/brandlistImg13.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(13) > span {
+  .brandlist_part li.brnadlistImg13 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4906,13 +4916,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(14) {
+  .brandlist_part li.brnadlistImg14 {
     background-image: url(../../multi/img/brandlistImg14.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(14) > span {
+  .brandlist_part li.brnadlistImg14 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4920,13 +4930,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(15) {
+  .brandlist_part li.brnadlistImg15 {
     background-image: url(../../multi/img/brandlistImg15.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(15) > span {
+  .brandlist_part li.brnadlistImg15 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4934,13 +4944,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(16) {
+  .brandlist_part li.brnadlistImg16 {
     background-image: url(../../multi/img/brandlistImg16.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(16) > span {
+  .brandlist_part li.brnadlistImg16 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4948,13 +4958,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(17) {
+  .brandlist_part li.brnadlistImg17 {
     background-image: url(../../multi/img/brandlistImg17.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(17) > span {
+  .brandlist_part li.brnadlistImg17 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4962,13 +4972,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(18) {
+  .brandlist_part li.brnadlistImg18 {
     background-image: url(../../multi/img/brandlistImg18.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(18) > span {
+  .brandlist_part li.brnadlistImg18 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4976,13 +4986,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(19) {
+  .brandlist_part li.brnadlistImg19 {
     background-image: url(../../multi/img/brandlistImg19.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(19) > span {
+  .brandlist_part li.brnadlistImg19 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -4990,13 +5000,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(20) {
+  .brandlist_part li.brnadlistImg20 {
     background-image: url(../../multi/img/brandlistImg20.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(20) > span {
+  .brandlist_part li.brnadlistImg20 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -5004,13 +5014,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(21) {
+  .brandlist_part li.brnadlistImg21 {
     background-image: url(../../multi/img/brandlistImg21.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(21) > span {
+  .brandlist_part li.brnadlistImg21 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -5018,13 +5028,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(22) {
+  .brandlist_part li.brnadlistImg22 {
     background-image: url(../../multi/img/brandlistImg22.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(22) > span {
+  .brandlist_part li.brnadlistImg22 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -5032,19 +5042,27 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .brandlist_part li:nth-child(23) {
+  .brandlist_part li.brnadlistImg23 {
     background-image: url(../../multi/img/brandlistImg23.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 90% auto;
   }
-  .brandlist_part li:nth-child(23) > span {
+  .brandlist_part li.brnadlistImg23 > span {
     display: block;
     position: absolute;
     z-index: -1;
     width: 0;
     height: 0;
     overflow: hidden;
+  }
+  .brandlist_part li:nth-child(1) {
+    opacity: 0.5;
+    transform: scale(0.8);
+  }
+  .brandlist_part li:nth-child(2) {
+    opacity: 0.8;
+    transform: scale(0.9);
   }
 
   .brandlist_inner > .moreview_btn {

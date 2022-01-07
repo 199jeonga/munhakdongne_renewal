@@ -45,13 +45,13 @@ elSearchCloseButton.addEventListener('click', (e)=>{
 })
 
 
-//스크롤 내리면 어쩌구
+//스크롤 내리면 headBox 색상 변환
 const elheadBoxH = elHeadBox.offsetTop;
 
 const fnscroll = (e)=>{
   const target = parseInt(e.currentTarget.scrollY);
   if(target > elheadBoxH){
-    elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6); box-shadow: 0px 5px 10px rgba(0,0,0,0.1);'; //boxshadow, blur를 사용하면 에러가 나는데 이유가?
+    elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6); box-shadow: 0px 5px 10px rgba(0,0,0,0.1);'; 
     if( !logo.classList.contains(BLIND) ){
       logo.style = ' background-image: url(../../../multi/img/logo_main_b.png);'
     }
