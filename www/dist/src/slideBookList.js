@@ -1,14 +1,14 @@
 {
   const mdpickBox = document.querySelector('#mdpickBox');
-  const mdPickInner = mdpickBox.querySelector('.mdpick_inner');
+  // const mdPickInner = mdpickBox.querySelector('.mdpick_inner');
   
   const newbookBox = document.querySelector('#newbookBox');
-  const newbookInner = newbookBox.querySelector('.newbook_inner');
+  // const newbookInner = newbookBox.querySelector('.newbook_inner');
 
   let TIME_OPTION = 1500; // 0.1초????
 
   //함수------------------------------------------
-  const fnMainSlide = (box, inner)=>{
+  const fnMainSlide = (box)=>{
     
     const _Ul = box.querySelector('.booklist_part');
     let _Li = _Ul.querySelectorAll('li');
@@ -52,7 +52,6 @@
     _StopBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const ICONTAG = _StopBtn.querySelector('i');
-      console.log(ICONTAG);
       const CK_ICON = ICONTAG.classList.contains('fa-pause');
       if(CK_ICON){
         fnSlidePause();
@@ -68,7 +67,7 @@
     
   }//fnMainSlide
 
-  fnMainSlide(mdpickBox, mdPickInner);
-  fnMainSlide(newbookBox, newbookInner);
+  fnMainSlide(mdpickBox);
+  fnMainSlide(newbookBox);
 
 }

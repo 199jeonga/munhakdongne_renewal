@@ -770,13 +770,13 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  .view_slide_part li:nth-child(1) {
+  .view_slide_part li#viewSlideImg1 {
     background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(1) > span {
+  .view_slide_part li#viewSlideImg1 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -784,13 +784,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_part li:nth-child(2) {
+  .view_slide_part li#viewSlideImg2 {
     background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(2) > span {
+  .view_slide_part li#viewSlideImg2 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -798,13 +798,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_part li:nth-child(3) {
+  .view_slide_part li#viewSlideImg3 {
     background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(3) > span {
+  .view_slide_part li#viewSlideImg3 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -812,13 +812,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_part li:nth-child(4) {
+  .view_slide_part li#viewSlideImg4 {
     background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(4) > span {
+  .view_slide_part li#viewSlideImg4 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -826,13 +826,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_part li:nth-child(5) {
+  .view_slide_part li#viewSlideImg5 {
     background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(5) > span {
+  .view_slide_part li#viewSlideImg5 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -840,13 +840,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_part li:nth-child(6) {
+  .view_slide_part li#viewSlideImg6 {
     background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_part li:nth-child(6) > span {
+  .view_slide_part li#viewSlideImg6 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -931,11 +931,13 @@ body {
     padding-bottom: 50px;
     box-sizing: content-box;
   }
-  .view_slide_wrap .view_slide_part {
+  .view_slide_part {
     width: 2600px;
     height: auto;
+    margin-left: -420px;
+    transition: all 1500ms linear;
   }
-  .view_slide_wrap .view_slide_part li {
+  .view_slide_part li {
     float: left;
     width: 400px;
     height: 550px;
@@ -943,13 +945,13 @@ body {
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   }
-  .view_slide_wrap .view_slide_part li:nth-child(1) {
+  .view_slide_part li#viewSlideImg1 {
     background-image: url(../../multi/img/bookImg01.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(1) > span {
+  .view_slide_part li#viewSlideImg1 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -957,13 +959,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(2) {
+  .view_slide_part li#viewSlideImg2 {
     background-image: url(../../multi/img/bookImg02.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(2) > span {
+  .view_slide_part li#viewSlideImg2 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -971,13 +973,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(3) {
+  .view_slide_part li#viewSlideImg3 {
     background-image: url(../../multi/img/bookImg03.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(3) > span {
+  .view_slide_part li#viewSlideImg3 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -985,13 +987,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(4) {
+  .view_slide_part li#viewSlideImg4 {
     background-image: url(../../multi/img/bookImg04.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(4) > span {
+  .view_slide_part li#viewSlideImg4 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -999,13 +1001,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(5) {
+  .view_slide_part li#viewSlideImg5 {
     background-image: url(../../multi/img/bookImg05.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(5) > span {
+  .view_slide_part li#viewSlideImg5 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -1013,13 +1015,13 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(6) {
+  .view_slide_part li#viewSlideImg6 {
     background-image: url(../../multi/img/bookImg06.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
   }
-  .view_slide_wrap .view_slide_part li:nth-child(6) > span {
+  .view_slide_part li#viewSlideImg6 > span {
     display: block;
     position: absolute;
     z-index: -1;
@@ -1027,10 +1029,10 @@ body {
     height: 0;
     overflow: hidden;
   }
-  .view_slide_wrap .view_slide_part li:last-child {
+  .view_slide_part li:last-child {
     margin-right: 0;
   }
-  .view_slide_wrap .view_slide_part li a {
+  .view_slide_part li a {
     display: block;
     width: 100%;
     height: 100%;
