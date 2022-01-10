@@ -19,7 +19,7 @@
         li{
           width: 200px; height: auto;
           @for $i from 1 through $newbook_slide{
-            &:nth-child( #{$i} ) .nb_img{ @include img( nth($link_newbookImg, $i), $size:cover ) };
+            &.newBookImg#{$i} .nb_img{ @include img( nth($link_newbookImg, $i), $size:cover ) };
           }
           a{ @include full;
             @at-root .nb_img{

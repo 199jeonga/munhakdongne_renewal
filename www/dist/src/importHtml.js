@@ -4,14 +4,14 @@ const wrap = document.querySelector('#wrap');
 const headerCode = '../temp/headBox.html';
 const footerCode = '../temp/footBox.html';
 const subNavCode = '../temp/subNavBox.html';
-const subBookListCode = '../temp/subBookConList.html';
+const subBookListCode = '../temp/subBookconList.html';
 
 
 // 선택 변수
 const headBox = document.querySelector('#headBox');
 const footBox = document.querySelector('#footBox');
-const subNavBox = document.querySelector('#subNavBox');
-const subBookConInner = document.querySelector('#bookConBox > .bookcon_inner');
+const subNavBox = document.querySelector('#subNavBox'); // 선택자오류
+const subBookConInner = document.querySelector('#bookConBox > .bookcon_inner'); // 선택자오류
 
 
 //함수
@@ -51,10 +51,10 @@ const subBookConInner = document.querySelector('#bookConBox > .bookcon_inner');
 
 
   //sub
-  fetch(subNavCode)
-  .then( response => response.text() )
-  .then( data => subNavBox.innerHTML = data )
+  // fetch(subNavCode)
+  // .then( response => response.text() )
+  // .then( data => subNavBox.innerHTML = data )  // // 선택자오류
 
-  fetch(subBookListCode)
-  .then( response => response.text() )
-  .then( data => subBookConInner.innerHTML = data )
+  // fetch(subBookListCode)
+  // .then( response => response.text() )
+  // .then( data => subBookConInner.innerHTML = data ) // // 선택자오류
