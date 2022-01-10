@@ -4,28 +4,44 @@
   const mdPickUl = mdpickBox.querySelector('.mdpick_booklist_part');
   let mdPickLi = mdPickUl.querySelectorAll('li');
 
+  const newbookInner = document.querySelector('.newbook_inner');
+  const newbookUl = newbookInner.querySelector('.newbook_booklist_part');
+  let newbookLi = newbookUl.querySelectorAll('li');
+  
+
   const mdPickStop = mdpickBox.querySelector('.stop_btn > button');
   const prevNextBtn = mdpickBox.querySelector('.prev_next_btn');
 
-  let TIME_OPTION = 1000;
+  let TIME_OPTION = 1500;
 
   //이벤트 함수
-const fnSlideNext = ()=>{
-  let mdPickList = [...mdPickLi];
-  mdPickUl.prepend( mdPickList.at(-1) );
-  mdPickLi = mdPickUl.querySelectorAll('li');
+// const fnSlideNext = ()=>{
+//   let mdPickList = [...mdPickLi];
+//   mdPickUl.prepend( mdPickList.at(-1) );
+//   mdPickLi = mdPickUl.querySelectorAll('li');
+// };
+// const fnSlidePrev = ()=>{
+//   let mdPickList = [...mdPickLi];
+//   mdPickUl.append( mdPickList.at(0) );
+//   mdPickLi = mdPickUl.querySelectorAll('li');
+// };
+
+const fnSlideNext = (List, ul)=>{
+  let reList = [...List];
+  ul.prepend( reList.at(-1) );
+  List = ul.querySelectorAll('li');
 };
 
-const fnSlidePrev = ()=>{
-  let mdPickList = [...mdPickLi];
-  mdPickUl.append( mdPickList.at(0) );
-  mdPickLi = mdPickUl.querySelectorAll('li');
+const fnSlidePrev = (List, ul)=>{
+  let reList = [...List];
+  ul.append( reList.at(0) );
+  List = ul.querySelectorAll('li');
 };
-
 
 const fnSlideSet = ()=> {
   slideGo = setInterval( ()=>{
-    fnSlideNext();
+    fnSlideNext(newbookUl,newbookLi);
+    fnSlideNext(mdPickUl,mdPickLi);
   }, TIME_OPTION );
 };
 
@@ -58,7 +74,6 @@ mdPickStop.addEventListener('click', (e) => {
 mdPickInner.addEventListener('mouseenter', (e) => {
   fnSlidePause();
 });
-
 mdPickInner.addEventListener('mouseleave', (e) => {
   fnSlideSet(); 
 });
