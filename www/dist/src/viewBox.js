@@ -19,11 +19,12 @@ let PERMISSION = true;
 // 이벤트 함수
 const fnSlideNext = ()=>{
     let viewSlideList = [...viewSlideLi];
-    viewSlideUl.style='margin-left: -420px';
     const LAST = viewSlideList.length-1;
-    viewSlideUl.prepend( viewSlideList[LAST] );
-    viewSlideLi = viewSlideUl.querySelectorAll('li');
-    if(SLIDE_COUNT < LAST){
+
+    if(SLIDE_COUNT > LAST){
+      viewSlideUl.style='margin-left: -420px';
+      viewSlideUl.prepend( viewSlideList[LAST] );
+      viewSlideLi = viewSlideUl.querySelectorAll('li');
       SLIDE_COUNT++;
       console.log(SLIDE_COUNT);
     }else{

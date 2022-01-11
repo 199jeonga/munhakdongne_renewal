@@ -1154,15 +1154,18 @@ html, body {
     padding: 0 10px;
   }
   .brandlist_logo_area ul {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 110px);
+    justify-content: space-between;
     width: 82.8125vw;
     height: auto;
+    margin: 50px auto;
   }
   .brandlist_logo_area li {
     width: 100px;
     height: 100px;
-    margin: 40px 1.5625vw;
+    margin-bottom: 40px;
+    margin-left: 5px;
   }
   .brandlist_logo_area li a {
     display: block;

@@ -26,12 +26,17 @@
       width: vwUnit(300); height: auto;
       padding: 0 10px; 
       ul{
-        display: flex; flex-wrap: wrap; 
+        // display: flex; flex-wrap: wrap; 
+        // width: vwUnit(265); height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 110px);
+        justify-content: space-between;
         width: vwUnit(265); height: auto;
+        margin: 50px auto;
       }
       & li{
         width: 100px; height: 100px;
-        margin: 40px vwUnit(5);
+        margin-bottom: 40px; margin-left: 5px;
         a{
           @include full;
           overflow: hidden;
