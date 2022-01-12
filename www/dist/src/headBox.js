@@ -53,12 +53,12 @@ const fnscroll = (e)=>{
   if(target > elheadBoxH){
     elHeadBox.style = 'background-color:rgba(255, 255, 255, 0.6); box-shadow: 0px 5px 10px rgba(0,0,0,0.1);'; 
     if( !logo.classList.contains(BLIND) ){
-      logo.style = ' background-image: url(../../multi/img/logo_main_b.png);'
+      logo.style = ' background-image: url(../multi/img/logo_main_b.png);'
     }
   }else{
     elHeadBox.style = 'background-color:transparent';
     if( !logo.classList.contains(BLIND) ){
-    logo.style = ' background-image: url(../../multi/img/logo_main_w.png);'
+    logo.style = ' background-image: url(../multi/img/logo_main_w.png);'
     }//if
   }//else
 }//fnscroll
