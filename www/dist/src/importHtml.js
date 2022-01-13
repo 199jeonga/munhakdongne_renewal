@@ -1,5 +1,5 @@
 {
-  const wrap = document.querySelector('#wrap');
+const wrap = document.querySelector('#wrap');
 
 // data 변수
 const headerCode = '../temp/headBox.html';

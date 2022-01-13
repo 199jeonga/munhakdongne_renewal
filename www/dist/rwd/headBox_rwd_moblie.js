@@ -13,8 +13,7 @@
     _gnbInnerTitle.addEventListener('click', (e)=>{
       e.preventDefault();
       for(let i=0; i<4; i++){
-        const _gnbInnerContent = elGnbInnerList[i].children[1]; //마지막 인덱스는 다른 방법 사용해야 함
-        // const ckClass = _gnbInnerContent.classList.contains(ACTION);
+        const _gnbInnerContent = elGnbInnerList[i].children[1];
         if(i !== index){
           _gnbInnerContent.classList.remove(ACTION);
         }else{
