@@ -34,6 +34,6 @@
 
 
 
-[✔ Click, 문학동네 홈페이지 리뉴얼 프로젝트 PPT](https://docs.google.com/presentation/d/1X7ztH0rKzYBPfHp-MOv3jxgG2TWRsU8b/edit?usp=sharing&ouid=113329169739332756596&rtpof=true&sd=true)
+[✔ Click, 문학동네 홈페이지 리뉴얼 프로젝트 PPT](https://docs.google.com/presentation/d/1n544wq5KeDsAGLHiDpkOJse1ffqioYjv/edit?usp=sharing&ouid=113329169739332756596&rtpof=true&sd=true)
 
 [✔ Click, 리뉴얼 된 문학동네 홈페이지 링크](https://munhakdongne-renewal.vercel.app/www/html/main_v2.html)
